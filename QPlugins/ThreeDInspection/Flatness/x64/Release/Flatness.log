@@ -1,0 +1,20 @@
+﻿  Reading Qt configuration (C:/Qt/Qt5.12.12/5.12.12/msvc2017_64/bin/qmake)
+  uic frmFlatness.ui
+  rcc sub_res.qrc
+  moc Toolnterface.h
+  moc QToolBase.h
+  moc frmFlatness.h
+  moc mytitlebar.h
+  moc Flatness.h
+  frmFlatness.cpp
+  mytitlebar.cpp
+  Toolnterface.cpp
+  Flatness.cpp
+  qrc_sub_res.cpp
+  moc_Toolnterface.cpp
+  moc_QToolBase.cpp
+  moc_frmFlatness.cpp
+  moc_mytitlebar.cpp
+  moc_Flatness.cpp
+    正在创建库 ../../../QSoftExe/Release/Plugins/Flatness.lib 和对象 ../../../QSoftExe/Release/Plugins/Flatness.exp
+  Flatness.vcxproj -> E:\QMacVisual(CV3)\QSoftExe\Release\Plugins\Flatness.dll

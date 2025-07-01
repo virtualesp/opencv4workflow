@@ -1,0 +1,20 @@
+﻿  Reading Qt configuration (C:/Qt/Qt5.12.12/5.12.12/msvc2017_64/bin/qmake)
+  uic frmLogicJudgeEnd.ui
+  rcc sub_res.qrc
+  moc Toolnterface.h
+  moc QToolBase.h
+  moc mytitlebar.h
+  moc frmLogicJudgeEnd.h
+  moc LogicJudgeEnd.h
+  mytitlebar.cpp
+  Toolnterface.cpp
+  frmLogicJudgeEnd.cpp
+  LogicJudgeEnd.cpp
+  qrc_sub_res.cpp
+  moc_Toolnterface.cpp
+  moc_QToolBase.cpp
+  moc_mytitlebar.cpp
+  moc_frmLogicJudgeEnd.cpp
+  moc_LogicJudgeEnd.cpp
+    正在创建库 ../../../QSoftExe/Debug/Plugins/LogicJudgeEnd.lib 和对象 ../../../QSoftExe/Debug/Plugins/LogicJudgeEnd.exp
+  LogicJudgeEnd.vcxproj -> E:\QMacVisual(CV3)\QSoftExe\Debug\Plugins\LogicJudgeEnd.dll

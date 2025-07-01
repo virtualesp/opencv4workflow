@@ -1,0 +1,21 @@
+﻿  Reading Qt configuration (C:/Qt/Qt5.12.12/5.12.12/msvc2017_64/bin/qmake)
+  uic frmPlcCommunicate.ui
+  rcc sub_res.qrc
+  moc QToolBase.h
+  moc Toolnterface.h
+  moc frmPlcCommunicate.h
+  moc mytitlebar.h
+  moc PlcCommunicate.h
+  frmPlcCommunicate.cpp
+  mytitlebar.cpp
+  PlcTcpSocket.cpp
+  Toolnterface.cpp
+  PlcCommunicate.cpp
+  qrc_sub_res.cpp
+  moc_QToolBase.cpp
+  moc_Toolnterface.cpp
+  moc_frmPlcCommunicate.cpp
+  moc_mytitlebar.cpp
+  moc_PlcCommunicate.cpp
+    正在创建库 ../../../QSoftExe/Debug/Plugins/PlcCommunicate.lib 和对象 ../../../QSoftExe/Debug/Plugins/PlcCommunicate.exp
+  PlcCommunicate.vcxproj -> E:\QMacVisual(CV3)\QSoftExe\Debug\Plugins\PlcCommunicate.dll
