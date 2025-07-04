@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'frmBarcodeIdentify.ui'
 **
-** Created by: Qt User Interface Compiler version 5.12.12
+** Created by: Qt User Interface Compiler version 5.14.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -397,32 +397,32 @@ public:
 
     void retranslateUi(QDialog *frmBarcodeIdentifyClass)
     {
-        frmBarcodeIdentifyClass->setWindowTitle(QApplication::translate("frmBarcodeIdentifyClass", "\346\235\241\345\275\242\347\240\201\350\257\206\345\210\253", nullptr));
-        groupC1->setTitle(QApplication::translate("frmBarcodeIdentifyClass", "\345\233\276\345\203\217\345\257\271\350\261\241", nullptr));
-        label_4->setText(QApplication::translate("frmBarcodeIdentifyClass", "\350\276\223\345\205\245\345\233\276\345\203\217\357\274\232", nullptr));
-#ifndef QT_NO_TOOLTIP
-        btnLinkImage->setToolTip(QApplication::translate("frmBarcodeIdentifyClass", "\351\223\276\346\216\245\345\233\276\345\203\217", nullptr));
-#endif // QT_NO_TOOLTIP
+        frmBarcodeIdentifyClass->setWindowTitle(QCoreApplication::translate("frmBarcodeIdentifyClass", "\346\235\241\345\275\242\347\240\201\350\257\206\345\210\253", nullptr));
+        groupC1->setTitle(QCoreApplication::translate("frmBarcodeIdentifyClass", "\345\233\276\345\203\217\345\257\271\350\261\241", nullptr));
+        label_4->setText(QCoreApplication::translate("frmBarcodeIdentifyClass", "\350\276\223\345\205\245\345\233\276\345\203\217\357\274\232", nullptr));
+#if QT_CONFIG(tooltip)
+        btnLinkImage->setToolTip(QCoreApplication::translate("frmBarcodeIdentifyClass", "\351\223\276\346\216\245\345\233\276\345\203\217", nullptr));
+#endif // QT_CONFIG(tooltip)
         btnLinkImage->setText(QString());
-#ifndef QT_NO_TOOLTIP
-        btnDelLinkImage->setToolTip(QApplication::translate("frmBarcodeIdentifyClass", "\345\210\240\351\231\244\345\233\276\345\203\217\351\223\276\346\216\245", nullptr));
-#endif // QT_NO_TOOLTIP
+#if QT_CONFIG(tooltip)
+        btnDelLinkImage->setToolTip(QCoreApplication::translate("frmBarcodeIdentifyClass", "\345\210\240\351\231\244\345\233\276\345\203\217\351\223\276\346\216\245", nullptr));
+#endif // QT_CONFIG(tooltip)
         btnDelLinkImage->setText(QString());
-        groupC2->setTitle(QApplication::translate("frmBarcodeIdentifyClass", "\346\235\241\345\275\242\347\240\201\347\261\273\345\236\213", nullptr));
-        label_5->setText(QApplication::translate("frmBarcodeIdentifyClass", "\346\224\257\346\214\201\347\232\204\346\235\241\345\275\242\347\240\201\347\261\273\345\236\213\357\274\232", nullptr));
-        comboMode->setItemText(0, QApplication::translate("frmBarcodeIdentifyClass", "EAN8", nullptr));
-        comboMode->setItemText(1, QApplication::translate("frmBarcodeIdentifyClass", "EAN13", nullptr));
-        comboMode->setItemText(2, QApplication::translate("frmBarcodeIdentifyClass", "UPC-A", nullptr));
+        groupC2->setTitle(QCoreApplication::translate("frmBarcodeIdentifyClass", "\346\235\241\345\275\242\347\240\201\347\261\273\345\236\213", nullptr));
+        label_5->setText(QCoreApplication::translate("frmBarcodeIdentifyClass", "\346\224\257\346\214\201\347\232\204\346\235\241\345\275\242\347\240\201\347\261\273\345\236\213\357\274\232", nullptr));
+        comboMode->setItemText(0, QCoreApplication::translate("frmBarcodeIdentifyClass", "EAN8", nullptr));
+        comboMode->setItemText(1, QCoreApplication::translate("frmBarcodeIdentifyClass", "EAN13", nullptr));
+        comboMode->setItemText(2, QCoreApplication::translate("frmBarcodeIdentifyClass", "UPC-A", nullptr));
 
-        groupC3->setTitle(QApplication::translate("frmBarcodeIdentifyClass", "\346\235\241\345\275\242\347\240\201\345\217\202\346\225\260", nullptr));
-        groupC4->setTitle(QApplication::translate("frmBarcodeIdentifyClass", "\345\233\276\345\203\217\347\233\270\344\271\230\345\217\202\346\225\260", nullptr));
-        label_52->setText(QApplication::translate("frmBarcodeIdentifyClass", "\347\233\270\344\271\230\347\263\273\346\225\260\357\274\232", nullptr));
-        btnTestImage->setText(QApplication::translate("frmBarcodeIdentifyClass", "\346\265\213\350\257\225\345\233\276\345\203\217", nullptr));
+        groupC3->setTitle(QCoreApplication::translate("frmBarcodeIdentifyClass", "\346\235\241\345\275\242\347\240\201\345\217\202\346\225\260", nullptr));
+        groupC4->setTitle(QCoreApplication::translate("frmBarcodeIdentifyClass", "\345\233\276\345\203\217\347\233\270\344\271\230\345\217\202\346\225\260", nullptr));
+        label_52->setText(QCoreApplication::translate("frmBarcodeIdentifyClass", "\347\233\270\344\271\230\347\263\273\346\225\260\357\274\232", nullptr));
+        btnTestImage->setText(QCoreApplication::translate("frmBarcodeIdentifyClass", "\346\265\213\350\257\225\345\233\276\345\203\217", nullptr));
         label_8->setText(QString());
-        groupC6->setTitle(QApplication::translate("frmBarcodeIdentifyClass", "\346\235\241\345\275\242\347\240\201\345\206\205\345\256\271", nullptr));
-        tabWidget->setTabText(tabWidget->indexOf(tab), QApplication::translate("frmBarcodeIdentifyClass", "\345\237\272\346\234\254\350\256\276\347\275\256", nullptr));
-        label_3->setText(QApplication::translate("frmBarcodeIdentifyClass", "\345\215\225\345\205\203\346\217\217\350\277\260\357\274\232", nullptr));
-        btnExecute->setText(QApplication::translate("frmBarcodeIdentifyClass", "\346\211\247\350\241\214", nullptr));
+        groupC6->setTitle(QCoreApplication::translate("frmBarcodeIdentifyClass", "\346\235\241\345\275\242\347\240\201\345\206\205\345\256\271", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab), QCoreApplication::translate("frmBarcodeIdentifyClass", "\345\237\272\346\234\254\350\256\276\347\275\256", nullptr));
+        label_3->setText(QCoreApplication::translate("frmBarcodeIdentifyClass", "\345\215\225\345\205\203\346\217\217\350\277\260\357\274\232", nullptr));
+        btnExecute->setText(QCoreApplication::translate("frmBarcodeIdentifyClass", "\346\211\247\350\241\214", nullptr));
     } // retranslateUi
 
 };

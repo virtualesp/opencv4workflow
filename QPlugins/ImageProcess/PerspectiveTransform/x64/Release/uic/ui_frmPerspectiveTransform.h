@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'frmPerspectiveTransform.ui'
 **
-** Created by: Qt User Interface Compiler version 5.12.12
+** Created by: Qt User Interface Compiler version 5.14.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -497,126 +497,126 @@ public:
 
     void retranslateUi(QDialog *frmPerspectiveTransformClass)
     {
-        frmPerspectiveTransformClass->setWindowTitle(QApplication::translate("frmPerspectiveTransformClass", "\351\200\217\350\247\206\345\217\230\346\215\242", nullptr));
-        groupCamera->setTitle(QApplication::translate("frmPerspectiveTransformClass", "\345\233\276\345\203\217\345\257\271\350\261\241", nullptr));
-        label_4->setText(QApplication::translate("frmPerspectiveTransformClass", "\350\276\223\345\205\245\345\233\276\345\203\217\357\274\232", nullptr));
-#ifndef QT_NO_TOOLTIP
-        btnLinkImage->setToolTip(QApplication::translate("frmPerspectiveTransformClass", "\351\223\276\346\216\245\345\233\276\345\203\217", nullptr));
-#endif // QT_NO_TOOLTIP
+        frmPerspectiveTransformClass->setWindowTitle(QCoreApplication::translate("frmPerspectiveTransformClass", "\351\200\217\350\247\206\345\217\230\346\215\242", nullptr));
+        groupCamera->setTitle(QCoreApplication::translate("frmPerspectiveTransformClass", "\345\233\276\345\203\217\345\257\271\350\261\241", nullptr));
+        label_4->setText(QCoreApplication::translate("frmPerspectiveTransformClass", "\350\276\223\345\205\245\345\233\276\345\203\217\357\274\232", nullptr));
+#if QT_CONFIG(tooltip)
+        btnLinkImage->setToolTip(QCoreApplication::translate("frmPerspectiveTransformClass", "\351\223\276\346\216\245\345\233\276\345\203\217", nullptr));
+#endif // QT_CONFIG(tooltip)
         btnLinkImage->setText(QString());
-#ifndef QT_NO_TOOLTIP
-        btnDelLinkImage->setToolTip(QApplication::translate("frmPerspectiveTransformClass", "\345\210\240\351\231\244\345\233\276\345\203\217\351\223\276\346\216\245", nullptr));
-#endif // QT_NO_TOOLTIP
+#if QT_CONFIG(tooltip)
+        btnDelLinkImage->setToolTip(QCoreApplication::translate("frmPerspectiveTransformClass", "\345\210\240\351\231\244\345\233\276\345\203\217\351\223\276\346\216\245", nullptr));
+#endif // QT_CONFIG(tooltip)
         btnDelLinkImage->setText(QString());
-        groupCamera_2->setTitle(QApplication::translate("frmPerspectiveTransformClass", "\350\276\223\345\205\245\347\202\271", nullptr));
-        label_11->setText(QApplication::translate("frmPerspectiveTransformClass", "\350\276\223\345\205\245\347\202\2712\357\274\232", nullptr));
-#ifndef QT_NO_TOOLTIP
-        txtInPutPos1->setToolTip(QApplication::translate("frmPerspectiveTransformClass", "\345\205\250\345\261\200\345\217\230\351\207\217cv::Point2f\347\261\273\345\236\213", nullptr));
-#endif // QT_NO_TOOLTIP
+        groupCamera_2->setTitle(QCoreApplication::translate("frmPerspectiveTransformClass", "\350\276\223\345\205\245\347\202\271", nullptr));
+        label_11->setText(QCoreApplication::translate("frmPerspectiveTransformClass", "\350\276\223\345\205\245\347\202\2712\357\274\232", nullptr));
+#if QT_CONFIG(tooltip)
+        txtInPutPos1->setToolTip(QCoreApplication::translate("frmPerspectiveTransformClass", "\345\205\250\345\261\200\345\217\230\351\207\217cv::Point2f\347\261\273\345\236\213", nullptr));
+#endif // QT_CONFIG(tooltip)
         txtInPutPos1->setText(QString());
-#ifndef QT_NO_TOOLTIP
-        btnLinkInPutPos1->setToolTip(QApplication::translate("frmPerspectiveTransformClass", "\351\223\276\346\216\245\350\276\223\345\205\245\347\202\2711", nullptr));
-#endif // QT_NO_TOOLTIP
+#if QT_CONFIG(tooltip)
+        btnLinkInPutPos1->setToolTip(QCoreApplication::translate("frmPerspectiveTransformClass", "\351\223\276\346\216\245\350\276\223\345\205\245\347\202\2711", nullptr));
+#endif // QT_CONFIG(tooltip)
         btnLinkInPutPos1->setText(QString());
-#ifndef QT_NO_TOOLTIP
-        btnDelLinkInPutPos1->setToolTip(QApplication::translate("frmPerspectiveTransformClass", "\345\210\240\351\231\244\350\276\223\345\205\245\347\202\2711\351\223\276\346\216\245", nullptr));
-#endif // QT_NO_TOOLTIP
+#if QT_CONFIG(tooltip)
+        btnDelLinkInPutPos1->setToolTip(QCoreApplication::translate("frmPerspectiveTransformClass", "\345\210\240\351\231\244\350\276\223\345\205\245\347\202\2711\351\223\276\346\216\245", nullptr));
+#endif // QT_CONFIG(tooltip)
         btnDelLinkInPutPos1->setText(QString());
-        label_10->setText(QApplication::translate("frmPerspectiveTransformClass", "\350\276\223\345\205\245\347\202\2711\357\274\232", nullptr));
-#ifndef QT_NO_TOOLTIP
-        btnDelLinkInPutPos2->setToolTip(QApplication::translate("frmPerspectiveTransformClass", "\345\210\240\351\231\244\350\276\223\345\205\245\347\202\2712\351\223\276\346\216\245", nullptr));
-#endif // QT_NO_TOOLTIP
+        label_10->setText(QCoreApplication::translate("frmPerspectiveTransformClass", "\350\276\223\345\205\245\347\202\2711\357\274\232", nullptr));
+#if QT_CONFIG(tooltip)
+        btnDelLinkInPutPos2->setToolTip(QCoreApplication::translate("frmPerspectiveTransformClass", "\345\210\240\351\231\244\350\276\223\345\205\245\347\202\2712\351\223\276\346\216\245", nullptr));
+#endif // QT_CONFIG(tooltip)
         btnDelLinkInPutPos2->setText(QString());
-#ifndef QT_NO_TOOLTIP
-        txtInPutPos2->setToolTip(QApplication::translate("frmPerspectiveTransformClass", "\345\205\250\345\261\200\345\217\230\351\207\217cv::Point2f\347\261\273\345\236\213", nullptr));
-#endif // QT_NO_TOOLTIP
+#if QT_CONFIG(tooltip)
+        txtInPutPos2->setToolTip(QCoreApplication::translate("frmPerspectiveTransformClass", "\345\205\250\345\261\200\345\217\230\351\207\217cv::Point2f\347\261\273\345\236\213", nullptr));
+#endif // QT_CONFIG(tooltip)
         txtInPutPos2->setText(QString());
-#ifndef QT_NO_TOOLTIP
-        btnLinkInPutPos2->setToolTip(QApplication::translate("frmPerspectiveTransformClass", "\351\223\276\346\216\245\350\276\223\345\205\245\347\202\2712", nullptr));
-#endif // QT_NO_TOOLTIP
+#if QT_CONFIG(tooltip)
+        btnLinkInPutPos2->setToolTip(QCoreApplication::translate("frmPerspectiveTransformClass", "\351\223\276\346\216\245\350\276\223\345\205\245\347\202\2712", nullptr));
+#endif // QT_CONFIG(tooltip)
         btnLinkInPutPos2->setText(QString());
-#ifndef QT_NO_TOOLTIP
-        btnLinkInPutPos4->setToolTip(QApplication::translate("frmPerspectiveTransformClass", "\351\223\276\346\216\245\350\276\223\345\205\245\347\202\2714", nullptr));
-#endif // QT_NO_TOOLTIP
+#if QT_CONFIG(tooltip)
+        btnLinkInPutPos4->setToolTip(QCoreApplication::translate("frmPerspectiveTransformClass", "\351\223\276\346\216\245\350\276\223\345\205\245\347\202\2714", nullptr));
+#endif // QT_CONFIG(tooltip)
         btnLinkInPutPos4->setText(QString());
-#ifndef QT_NO_TOOLTIP
-        btnDelLinkInPutPos4->setToolTip(QApplication::translate("frmPerspectiveTransformClass", "\345\210\240\351\231\244\350\276\223\345\205\245\347\202\2714\351\223\276\346\216\245", nullptr));
-#endif // QT_NO_TOOLTIP
+#if QT_CONFIG(tooltip)
+        btnDelLinkInPutPos4->setToolTip(QCoreApplication::translate("frmPerspectiveTransformClass", "\345\210\240\351\231\244\350\276\223\345\205\245\347\202\2714\351\223\276\346\216\245", nullptr));
+#endif // QT_CONFIG(tooltip)
         btnDelLinkInPutPos4->setText(QString());
-        label_13->setText(QApplication::translate("frmPerspectiveTransformClass", "\350\276\223\345\205\245\347\202\2713\357\274\232", nullptr));
-#ifndef QT_NO_TOOLTIP
-        btnDelLinkInPutPos3->setToolTip(QApplication::translate("frmPerspectiveTransformClass", "\345\210\240\351\231\244\350\276\223\345\205\245\347\202\2713\351\223\276\346\216\245", nullptr));
-#endif // QT_NO_TOOLTIP
+        label_13->setText(QCoreApplication::translate("frmPerspectiveTransformClass", "\350\276\223\345\205\245\347\202\2713\357\274\232", nullptr));
+#if QT_CONFIG(tooltip)
+        btnDelLinkInPutPos3->setToolTip(QCoreApplication::translate("frmPerspectiveTransformClass", "\345\210\240\351\231\244\350\276\223\345\205\245\347\202\2713\351\223\276\346\216\245", nullptr));
+#endif // QT_CONFIG(tooltip)
         btnDelLinkInPutPos3->setText(QString());
-        label_12->setText(QApplication::translate("frmPerspectiveTransformClass", "\350\276\223\345\205\245\347\202\2714\357\274\232", nullptr));
-#ifndef QT_NO_TOOLTIP
-        txtInPutPos3->setToolTip(QApplication::translate("frmPerspectiveTransformClass", "\345\205\250\345\261\200\345\217\230\351\207\217cv::Point2f\347\261\273\345\236\213", nullptr));
-#endif // QT_NO_TOOLTIP
+        label_12->setText(QCoreApplication::translate("frmPerspectiveTransformClass", "\350\276\223\345\205\245\347\202\2714\357\274\232", nullptr));
+#if QT_CONFIG(tooltip)
+        txtInPutPos3->setToolTip(QCoreApplication::translate("frmPerspectiveTransformClass", "\345\205\250\345\261\200\345\217\230\351\207\217cv::Point2f\347\261\273\345\236\213", nullptr));
+#endif // QT_CONFIG(tooltip)
         txtInPutPos3->setText(QString());
-#ifndef QT_NO_TOOLTIP
-        txtInPutPos4->setToolTip(QApplication::translate("frmPerspectiveTransformClass", "\345\205\250\345\261\200\345\217\230\351\207\217cv::Point2f\347\261\273\345\236\213", nullptr));
-#endif // QT_NO_TOOLTIP
+#if QT_CONFIG(tooltip)
+        txtInPutPos4->setToolTip(QCoreApplication::translate("frmPerspectiveTransformClass", "\345\205\250\345\261\200\345\217\230\351\207\217cv::Point2f\347\261\273\345\236\213", nullptr));
+#endif // QT_CONFIG(tooltip)
         txtInPutPos4->setText(QString());
-#ifndef QT_NO_TOOLTIP
-        btnLinkInPutPos3->setToolTip(QApplication::translate("frmPerspectiveTransformClass", "\351\223\276\346\216\245\350\276\223\345\205\245\347\202\2713", nullptr));
-#endif // QT_NO_TOOLTIP
+#if QT_CONFIG(tooltip)
+        btnLinkInPutPos3->setToolTip(QCoreApplication::translate("frmPerspectiveTransformClass", "\351\223\276\346\216\245\350\276\223\345\205\245\347\202\2713", nullptr));
+#endif // QT_CONFIG(tooltip)
         btnLinkInPutPos3->setText(QString());
-        groupCamera_3->setTitle(QApplication::translate("frmPerspectiveTransformClass", "\350\276\223\345\207\272\347\202\271", nullptr));
-        label_14->setText(QApplication::translate("frmPerspectiveTransformClass", "\350\276\223\345\207\272\347\202\2712\357\274\232", nullptr));
-#ifndef QT_NO_TOOLTIP
-        txtOutPutPos1->setToolTip(QApplication::translate("frmPerspectiveTransformClass", "\345\205\250\345\261\200\345\217\230\351\207\217cv::Point2f\347\261\273\345\236\213", nullptr));
-#endif // QT_NO_TOOLTIP
+        groupCamera_3->setTitle(QCoreApplication::translate("frmPerspectiveTransformClass", "\350\276\223\345\207\272\347\202\271", nullptr));
+        label_14->setText(QCoreApplication::translate("frmPerspectiveTransformClass", "\350\276\223\345\207\272\347\202\2712\357\274\232", nullptr));
+#if QT_CONFIG(tooltip)
+        txtOutPutPos1->setToolTip(QCoreApplication::translate("frmPerspectiveTransformClass", "\345\205\250\345\261\200\345\217\230\351\207\217cv::Point2f\347\261\273\345\236\213", nullptr));
+#endif // QT_CONFIG(tooltip)
         txtOutPutPos1->setText(QString());
-#ifndef QT_NO_TOOLTIP
-        btnLinkOutPutPos1->setToolTip(QApplication::translate("frmPerspectiveTransformClass", "\351\223\276\346\216\245\350\276\223\345\207\272\347\202\2711", nullptr));
-#endif // QT_NO_TOOLTIP
+#if QT_CONFIG(tooltip)
+        btnLinkOutPutPos1->setToolTip(QCoreApplication::translate("frmPerspectiveTransformClass", "\351\223\276\346\216\245\350\276\223\345\207\272\347\202\2711", nullptr));
+#endif // QT_CONFIG(tooltip)
         btnLinkOutPutPos1->setText(QString());
-#ifndef QT_NO_TOOLTIP
-        btnDelLinkOutPutPos1->setToolTip(QApplication::translate("frmPerspectiveTransformClass", "\345\210\240\351\231\244\350\276\223\345\207\272\347\202\2711\351\223\276\346\216\245", nullptr));
-#endif // QT_NO_TOOLTIP
+#if QT_CONFIG(tooltip)
+        btnDelLinkOutPutPos1->setToolTip(QCoreApplication::translate("frmPerspectiveTransformClass", "\345\210\240\351\231\244\350\276\223\345\207\272\347\202\2711\351\223\276\346\216\245", nullptr));
+#endif // QT_CONFIG(tooltip)
         btnDelLinkOutPutPos1->setText(QString());
-        label_15->setText(QApplication::translate("frmPerspectiveTransformClass", "\350\276\223\345\207\272\347\202\2711\357\274\232", nullptr));
-#ifndef QT_NO_TOOLTIP
-        btnDelLinkOutPutPos2->setToolTip(QApplication::translate("frmPerspectiveTransformClass", "\345\210\240\351\231\244\350\276\223\345\207\272\347\202\2712\351\223\276\346\216\245", nullptr));
-#endif // QT_NO_TOOLTIP
+        label_15->setText(QCoreApplication::translate("frmPerspectiveTransformClass", "\350\276\223\345\207\272\347\202\2711\357\274\232", nullptr));
+#if QT_CONFIG(tooltip)
+        btnDelLinkOutPutPos2->setToolTip(QCoreApplication::translate("frmPerspectiveTransformClass", "\345\210\240\351\231\244\350\276\223\345\207\272\347\202\2712\351\223\276\346\216\245", nullptr));
+#endif // QT_CONFIG(tooltip)
         btnDelLinkOutPutPos2->setText(QString());
-#ifndef QT_NO_TOOLTIP
-        txtOutPutPos2->setToolTip(QApplication::translate("frmPerspectiveTransformClass", "\345\205\250\345\261\200\345\217\230\351\207\217cv::Point2f\347\261\273\345\236\213", nullptr));
-#endif // QT_NO_TOOLTIP
+#if QT_CONFIG(tooltip)
+        txtOutPutPos2->setToolTip(QCoreApplication::translate("frmPerspectiveTransformClass", "\345\205\250\345\261\200\345\217\230\351\207\217cv::Point2f\347\261\273\345\236\213", nullptr));
+#endif // QT_CONFIG(tooltip)
         txtOutPutPos2->setText(QString());
-#ifndef QT_NO_TOOLTIP
-        btnLinkOutPutPos2->setToolTip(QApplication::translate("frmPerspectiveTransformClass", "\351\223\276\346\216\245\350\276\223\345\207\272\347\202\2712", nullptr));
-#endif // QT_NO_TOOLTIP
+#if QT_CONFIG(tooltip)
+        btnLinkOutPutPos2->setToolTip(QCoreApplication::translate("frmPerspectiveTransformClass", "\351\223\276\346\216\245\350\276\223\345\207\272\347\202\2712", nullptr));
+#endif // QT_CONFIG(tooltip)
         btnLinkOutPutPos2->setText(QString());
-#ifndef QT_NO_TOOLTIP
-        btnLinkOutPutPos4->setToolTip(QApplication::translate("frmPerspectiveTransformClass", "\351\223\276\346\216\245\350\276\223\345\207\272\347\202\2714", nullptr));
-#endif // QT_NO_TOOLTIP
+#if QT_CONFIG(tooltip)
+        btnLinkOutPutPos4->setToolTip(QCoreApplication::translate("frmPerspectiveTransformClass", "\351\223\276\346\216\245\350\276\223\345\207\272\347\202\2714", nullptr));
+#endif // QT_CONFIG(tooltip)
         btnLinkOutPutPos4->setText(QString());
-#ifndef QT_NO_TOOLTIP
-        btnDelLinkOutPutPos4->setToolTip(QApplication::translate("frmPerspectiveTransformClass", "\345\210\240\351\231\244\350\276\223\345\207\272\347\202\2714\351\223\276\346\216\245", nullptr));
-#endif // QT_NO_TOOLTIP
+#if QT_CONFIG(tooltip)
+        btnDelLinkOutPutPos4->setToolTip(QCoreApplication::translate("frmPerspectiveTransformClass", "\345\210\240\351\231\244\350\276\223\345\207\272\347\202\2714\351\223\276\346\216\245", nullptr));
+#endif // QT_CONFIG(tooltip)
         btnDelLinkOutPutPos4->setText(QString());
-        label_16->setText(QApplication::translate("frmPerspectiveTransformClass", "\350\276\223\345\207\272\347\202\2713\357\274\232", nullptr));
-#ifndef QT_NO_TOOLTIP
-        btnDelLinkOutPutPos3->setToolTip(QApplication::translate("frmPerspectiveTransformClass", "\345\210\240\351\231\244\350\276\223\345\207\272\347\202\2713\351\223\276\346\216\245", nullptr));
-#endif // QT_NO_TOOLTIP
+        label_16->setText(QCoreApplication::translate("frmPerspectiveTransformClass", "\350\276\223\345\207\272\347\202\2713\357\274\232", nullptr));
+#if QT_CONFIG(tooltip)
+        btnDelLinkOutPutPos3->setToolTip(QCoreApplication::translate("frmPerspectiveTransformClass", "\345\210\240\351\231\244\350\276\223\345\207\272\347\202\2713\351\223\276\346\216\245", nullptr));
+#endif // QT_CONFIG(tooltip)
         btnDelLinkOutPutPos3->setText(QString());
-        label_17->setText(QApplication::translate("frmPerspectiveTransformClass", "\350\276\223\345\207\272\347\202\2714\357\274\232", nullptr));
-#ifndef QT_NO_TOOLTIP
-        txtOutPutPos3->setToolTip(QApplication::translate("frmPerspectiveTransformClass", "\345\205\250\345\261\200\345\217\230\351\207\217cv::Point2f\347\261\273\345\236\213", nullptr));
-#endif // QT_NO_TOOLTIP
+        label_17->setText(QCoreApplication::translate("frmPerspectiveTransformClass", "\350\276\223\345\207\272\347\202\2714\357\274\232", nullptr));
+#if QT_CONFIG(tooltip)
+        txtOutPutPos3->setToolTip(QCoreApplication::translate("frmPerspectiveTransformClass", "\345\205\250\345\261\200\345\217\230\351\207\217cv::Point2f\347\261\273\345\236\213", nullptr));
+#endif // QT_CONFIG(tooltip)
         txtOutPutPos3->setText(QString());
-#ifndef QT_NO_TOOLTIP
-        txtOutPutPos4->setToolTip(QApplication::translate("frmPerspectiveTransformClass", "\345\205\250\345\261\200\345\217\230\351\207\217cv::Point2f\347\261\273\345\236\213", nullptr));
-#endif // QT_NO_TOOLTIP
+#if QT_CONFIG(tooltip)
+        txtOutPutPos4->setToolTip(QCoreApplication::translate("frmPerspectiveTransformClass", "\345\205\250\345\261\200\345\217\230\351\207\217cv::Point2f\347\261\273\345\236\213", nullptr));
+#endif // QT_CONFIG(tooltip)
         txtOutPutPos4->setText(QString());
-#ifndef QT_NO_TOOLTIP
-        btnLinkOutPutPos3->setToolTip(QApplication::translate("frmPerspectiveTransformClass", "\351\223\276\346\216\245\350\276\223\345\207\272\347\202\2713", nullptr));
-#endif // QT_NO_TOOLTIP
+#if QT_CONFIG(tooltip)
+        btnLinkOutPutPos3->setToolTip(QCoreApplication::translate("frmPerspectiveTransformClass", "\351\223\276\346\216\245\350\276\223\345\207\272\347\202\2713", nullptr));
+#endif // QT_CONFIG(tooltip)
         btnLinkOutPutPos3->setText(QString());
-        tabWidget->setTabText(tabWidget->indexOf(tab), QApplication::translate("frmPerspectiveTransformClass", "\345\237\272\346\234\254\350\256\276\347\275\256", nullptr));
-        label_3->setText(QApplication::translate("frmPerspectiveTransformClass", "\345\215\225\345\205\203\346\217\217\350\277\260\357\274\232", nullptr));
-        btnExecute->setText(QApplication::translate("frmPerspectiveTransformClass", "\346\211\247\350\241\214", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab), QCoreApplication::translate("frmPerspectiveTransformClass", "\345\237\272\346\234\254\350\256\276\347\275\256", nullptr));
+        label_3->setText(QCoreApplication::translate("frmPerspectiveTransformClass", "\345\215\225\345\205\203\346\217\217\350\277\260\357\274\232", nullptr));
+        btnExecute->setText(QCoreApplication::translate("frmPerspectiveTransformClass", "\346\211\247\350\241\214", nullptr));
     } // retranslateUi
 
 };

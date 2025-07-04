@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'frmImageSource.ui'
 **
-** Created by: Qt User Interface Compiler version 5.12.12
+** Created by: Qt User Interface Compiler version 5.14.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -536,57 +536,57 @@ public:
 
     void retranslateUi(QDialog *frmImageSourceClass)
     {
-        frmImageSourceClass->setWindowTitle(QApplication::translate("frmImageSourceClass", "\350\216\267\345\217\226\345\233\276\345\203\217", nullptr));
-        label_3->setText(QApplication::translate("frmImageSourceClass", "\345\215\225\345\205\203\346\217\217\350\277\260\357\274\232", nullptr));
-        btnExecute->setText(QApplication::translate("frmImageSourceClass", "\346\211\247\350\241\214", nullptr));
-        radioImage->setText(QApplication::translate("frmImageSourceClass", "\346\234\254\345\234\260\345\233\276\345\203\217", nullptr));
-        radioFolder->setText(QApplication::translate("frmImageSourceClass", "\346\226\207\344\273\266\345\244\271", nullptr));
-        radioCamera->setText(QApplication::translate("frmImageSourceClass", "\347\233\270\346\234\272", nullptr));
-        groupImage->setTitle(QApplication::translate("frmImageSourceClass", "\345\215\225\345\274\240\345\233\276\345\203\217", nullptr));
-        label->setText(QApplication::translate("frmImageSourceClass", "\345\233\276\345\203\217\350\267\257\345\276\204\357\274\232", nullptr));
-        btnSelectImage->setText(QApplication::translate("frmImageSourceClass", "\345\233\276\345\203\217\351\200\211\346\213\251", nullptr));
-        groupCamera->setTitle(QApplication::translate("frmImageSourceClass", "\344\273\216\347\233\270\346\234\272\350\216\267\345\217\226\345\233\276\345\203\217", nullptr));
-        label_4->setText(QApplication::translate("frmImageSourceClass", "\351\200\211\346\213\251\347\233\270\346\234\272\357\274\232", nullptr));
-        btnUpdata->setText(QApplication::translate("frmImageSourceClass", "\346\233\264\346\226\260\345\210\227\350\241\250", nullptr));
-        groupFolder->setTitle(QApplication::translate("frmImageSourceClass", "\344\273\216\346\226\207\344\273\266\345\244\271\350\216\267\345\217\226\345\233\276\345\203\217", nullptr));
-        label_2->setText(QApplication::translate("frmImageSourceClass", "\346\226\207\344\273\266\345\244\271\350\267\257\345\276\204\357\274\232", nullptr));
+        frmImageSourceClass->setWindowTitle(QCoreApplication::translate("frmImageSourceClass", "\350\216\267\345\217\226\345\233\276\345\203\217", nullptr));
+        label_3->setText(QCoreApplication::translate("frmImageSourceClass", "\345\215\225\345\205\203\346\217\217\350\277\260\357\274\232", nullptr));
+        btnExecute->setText(QCoreApplication::translate("frmImageSourceClass", "\346\211\247\350\241\214", nullptr));
+        radioImage->setText(QCoreApplication::translate("frmImageSourceClass", "\346\234\254\345\234\260\345\233\276\345\203\217", nullptr));
+        radioFolder->setText(QCoreApplication::translate("frmImageSourceClass", "\346\226\207\344\273\266\345\244\271", nullptr));
+        radioCamera->setText(QCoreApplication::translate("frmImageSourceClass", "\347\233\270\346\234\272", nullptr));
+        groupImage->setTitle(QCoreApplication::translate("frmImageSourceClass", "\345\215\225\345\274\240\345\233\276\345\203\217", nullptr));
+        label->setText(QCoreApplication::translate("frmImageSourceClass", "\345\233\276\345\203\217\350\267\257\345\276\204\357\274\232", nullptr));
+        btnSelectImage->setText(QCoreApplication::translate("frmImageSourceClass", "\345\233\276\345\203\217\351\200\211\346\213\251", nullptr));
+        groupCamera->setTitle(QCoreApplication::translate("frmImageSourceClass", "\344\273\216\347\233\270\346\234\272\350\216\267\345\217\226\345\233\276\345\203\217", nullptr));
+        label_4->setText(QCoreApplication::translate("frmImageSourceClass", "\351\200\211\346\213\251\347\233\270\346\234\272\357\274\232", nullptr));
+        btnUpdata->setText(QCoreApplication::translate("frmImageSourceClass", "\346\233\264\346\226\260\345\210\227\350\241\250", nullptr));
+        groupFolder->setTitle(QCoreApplication::translate("frmImageSourceClass", "\344\273\216\346\226\207\344\273\266\345\244\271\350\216\267\345\217\226\345\233\276\345\203\217", nullptr));
+        label_2->setText(QCoreApplication::translate("frmImageSourceClass", "\346\226\207\344\273\266\345\244\271\350\267\257\345\276\204\357\274\232", nullptr));
         txtFolderPath->setText(QString());
-        btnSelectPath->setText(QApplication::translate("frmImageSourceClass", "\350\267\257\345\276\204\351\200\211\346\213\251", nullptr));
-        tabWidget->setTabText(tabWidget->indexOf(tab), QApplication::translate("frmImageSourceClass", "\345\237\272\346\234\254\350\256\276\347\275\256", nullptr));
-        groupC8->setTitle(QApplication::translate("frmImageSourceClass", "\347\225\270\345\217\230\346\240\207\345\256\232\345\217\202\346\225\260", nullptr));
-        checkUseCalib->setText(QApplication::translate("frmImageSourceClass", "\344\275\277\347\224\250\347\225\270\345\217\230\346\240\207\345\256\232\346\240\241\346\255\243\345\233\276\345\203\217", nullptr));
-        radioLinkParam->setText(QApplication::translate("frmImageSourceClass", "\351\223\276\346\216\245\345\217\202\346\225\260\346\226\271\345\274\217", nullptr));
-        radioCalibFile->setText(QApplication::translate("frmImageSourceClass", "\350\257\273\345\217\226\346\240\207\345\256\232\346\226\207\344\273\266\346\226\271\345\274\217", nullptr));
-        groupC->setTitle(QApplication::translate("frmImageSourceClass", "\351\223\276\346\216\245\345\217\202\346\225\260\346\226\271\345\274\217", nullptr));
-        label_5->setText(QApplication::translate("frmImageSourceClass", "\345\206\205\345\217\202K\357\274\232", nullptr));
-#ifndef QT_NO_TOOLTIP
-        txtLinkCameraMatrix->setToolTip(QApplication::translate("frmImageSourceClass", "\345\206\205\345\217\202K", nullptr));
-#endif // QT_NO_TOOLTIP
-#ifndef QT_NO_TOOLTIP
-        btnLinkCameraMatrix->setToolTip(QApplication::translate("frmImageSourceClass", "\351\223\276\346\216\245\345\206\205\345\217\202K", nullptr));
-#endif // QT_NO_TOOLTIP
+        btnSelectPath->setText(QCoreApplication::translate("frmImageSourceClass", "\350\267\257\345\276\204\351\200\211\346\213\251", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab), QCoreApplication::translate("frmImageSourceClass", "\345\237\272\346\234\254\350\256\276\347\275\256", nullptr));
+        groupC8->setTitle(QCoreApplication::translate("frmImageSourceClass", "\347\225\270\345\217\230\346\240\207\345\256\232\345\217\202\346\225\260", nullptr));
+        checkUseCalib->setText(QCoreApplication::translate("frmImageSourceClass", "\344\275\277\347\224\250\347\225\270\345\217\230\346\240\207\345\256\232\346\240\241\346\255\243\345\233\276\345\203\217", nullptr));
+        radioLinkParam->setText(QCoreApplication::translate("frmImageSourceClass", "\351\223\276\346\216\245\345\217\202\346\225\260\346\226\271\345\274\217", nullptr));
+        radioCalibFile->setText(QCoreApplication::translate("frmImageSourceClass", "\350\257\273\345\217\226\346\240\207\345\256\232\346\226\207\344\273\266\346\226\271\345\274\217", nullptr));
+        groupC->setTitle(QCoreApplication::translate("frmImageSourceClass", "\351\223\276\346\216\245\345\217\202\346\225\260\346\226\271\345\274\217", nullptr));
+        label_5->setText(QCoreApplication::translate("frmImageSourceClass", "\345\206\205\345\217\202K\357\274\232", nullptr));
+#if QT_CONFIG(tooltip)
+        txtLinkCameraMatrix->setToolTip(QCoreApplication::translate("frmImageSourceClass", "\345\206\205\345\217\202K", nullptr));
+#endif // QT_CONFIG(tooltip)
+#if QT_CONFIG(tooltip)
+        btnLinkCameraMatrix->setToolTip(QCoreApplication::translate("frmImageSourceClass", "\351\223\276\346\216\245\345\206\205\345\217\202K", nullptr));
+#endif // QT_CONFIG(tooltip)
         btnLinkCameraMatrix->setText(QString());
-#ifndef QT_NO_TOOLTIP
-        btnDelLinkCameraMatrix->setToolTip(QApplication::translate("frmImageSourceClass", "\345\210\240\351\231\244\345\206\205\345\217\202K\351\223\276\346\216\245", nullptr));
-#endif // QT_NO_TOOLTIP
+#if QT_CONFIG(tooltip)
+        btnDelLinkCameraMatrix->setToolTip(QCoreApplication::translate("frmImageSourceClass", "\345\210\240\351\231\244\345\206\205\345\217\202K\351\223\276\346\216\245", nullptr));
+#endif // QT_CONFIG(tooltip)
         btnDelLinkCameraMatrix->setText(QString());
-#ifndef QT_NO_TOOLTIP
-        btnDelLinkDistCoeffs->setToolTip(QApplication::translate("frmImageSourceClass", "\345\210\240\351\231\244\347\225\270\345\217\230\347\263\273\346\225\260\351\223\276\346\216\245", nullptr));
-#endif // QT_NO_TOOLTIP
+#if QT_CONFIG(tooltip)
+        btnDelLinkDistCoeffs->setToolTip(QCoreApplication::translate("frmImageSourceClass", "\345\210\240\351\231\244\347\225\270\345\217\230\347\263\273\346\225\260\351\223\276\346\216\245", nullptr));
+#endif // QT_CONFIG(tooltip)
         btnDelLinkDistCoeffs->setText(QString());
-#ifndef QT_NO_TOOLTIP
-        btnLinkDistCoeffs->setToolTip(QApplication::translate("frmImageSourceClass", "\351\223\276\346\216\245\347\225\270\345\217\230\347\263\273\346\225\260", nullptr));
-#endif // QT_NO_TOOLTIP
+#if QT_CONFIG(tooltip)
+        btnLinkDistCoeffs->setToolTip(QCoreApplication::translate("frmImageSourceClass", "\351\223\276\346\216\245\347\225\270\345\217\230\347\263\273\346\225\260", nullptr));
+#endif // QT_CONFIG(tooltip)
         btnLinkDistCoeffs->setText(QString());
-        label_6->setText(QApplication::translate("frmImageSourceClass", "\347\225\270\345\217\230\347\263\273\346\225\260\357\274\232", nullptr));
-#ifndef QT_NO_TOOLTIP
-        txtLinkDistCoeffs->setToolTip(QApplication::translate("frmImageSourceClass", "\347\225\270\345\217\230\347\263\273\346\225\260", nullptr));
-#endif // QT_NO_TOOLTIP
-        groupC2->setTitle(QApplication::translate("frmImageSourceClass", "\350\257\273\345\217\226\346\240\207\345\256\232\346\226\207\344\273\266\346\226\271\345\274\217", nullptr));
-        label_7->setText(QApplication::translate("frmImageSourceClass", "\346\240\207\345\256\232\346\226\207\344\273\266\350\267\257\345\276\204\357\274\232", nullptr));
+        label_6->setText(QCoreApplication::translate("frmImageSourceClass", "\347\225\270\345\217\230\347\263\273\346\225\260\357\274\232", nullptr));
+#if QT_CONFIG(tooltip)
+        txtLinkDistCoeffs->setToolTip(QCoreApplication::translate("frmImageSourceClass", "\347\225\270\345\217\230\347\263\273\346\225\260", nullptr));
+#endif // QT_CONFIG(tooltip)
+        groupC2->setTitle(QCoreApplication::translate("frmImageSourceClass", "\350\257\273\345\217\226\346\240\207\345\256\232\346\226\207\344\273\266\346\226\271\345\274\217", nullptr));
+        label_7->setText(QCoreApplication::translate("frmImageSourceClass", "\346\240\207\345\256\232\346\226\207\344\273\266\350\267\257\345\276\204\357\274\232", nullptr));
         txtCalibPath->setText(QString());
-        btnSelectCalibPath->setText(QApplication::translate("frmImageSourceClass", "\346\226\207\344\273\266\351\200\211\346\213\251", nullptr));
-        tabWidget->setTabText(tabWidget->indexOf(tab_2), QApplication::translate("frmImageSourceClass", "\346\240\207\345\256\232\350\256\276\347\275\256", nullptr));
+        btnSelectCalibPath->setText(QCoreApplication::translate("frmImageSourceClass", "\346\226\207\344\273\266\351\200\211\346\213\251", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab_2), QCoreApplication::translate("frmImageSourceClass", "\346\240\207\345\256\232\350\256\276\347\275\256", nullptr));
     } // retranslateUi
 
 };

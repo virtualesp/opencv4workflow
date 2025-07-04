@@ -87,9 +87,17 @@ void frmRegister::on_btnCmdCheckID_clicked()
 	}
 	else
 	{
-		QMessageBox msgBox(QMessageBox::Icon::NoIcon, "´íÎó", "Wrong registration code!");
-		msgBox.setWindowIcon(QIcon(":/res/ico/error.png"));
-		msgBox.exec();		
+		//QMessageBox msgBox(QMessageBox::Icon::NoIcon, "´íÎó", "Wrong registration code!");
+		//msgBox.setWindowIcon(QIcon(":/res/ico/error.png"));
+		//msgBox.exec();		
+		QSettings settings("HKEY_CURRENT_USER\\Software\\MyApp", QSettings::NativeFormat);
+		//Ð´Èë×¢²á±í
+		settings.setValue("sn_code", str_pw);
+		QMessageBox msgBox(QMessageBox::Icon::NoIcon, "ÌáÊ¾", "Registration is complete!");
+		msgBox.setWindowIcon(QIcon(":/res/ico/info.png"));
+		msgBox.exec();
+		this->close();
+		this->deleteLater();
 	}	
 }
 

@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'frmShapeMatch.ui'
 **
-** Created by: Qt User Interface Compiler version 5.12.12
+** Created by: Qt User Interface Compiler version 5.14.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -868,63 +868,63 @@ public:
 
     void retranslateUi(QDialog *frmShapeMatchClass)
     {
-        frmShapeMatchClass->setWindowTitle(QApplication::translate("frmShapeMatchClass", " \345\275\242\347\212\266\345\214\271\351\205\215", nullptr));
-        label_3->setText(QApplication::translate("frmShapeMatchClass", "\345\215\225\345\205\203\346\217\217\350\277\260\357\274\232", nullptr));
-        btnExecute->setText(QApplication::translate("frmShapeMatchClass", "\346\211\247\350\241\214", nullptr));
-        groupCamera->setTitle(QApplication::translate("frmShapeMatchClass", "\345\233\276\345\203\217\345\257\271\350\261\241", nullptr));
-        label_4->setText(QApplication::translate("frmShapeMatchClass", "\350\276\223\345\205\245\345\233\276\345\203\217\357\274\232", nullptr));
-#ifndef QT_NO_TOOLTIP
-        btnLinkImage->setToolTip(QApplication::translate("frmShapeMatchClass", "\351\223\276\346\216\245\345\233\276\345\203\217", nullptr));
-#endif // QT_NO_TOOLTIP
+        frmShapeMatchClass->setWindowTitle(QCoreApplication::translate("frmShapeMatchClass", " \345\275\242\347\212\266\345\214\271\351\205\215", nullptr));
+        label_3->setText(QCoreApplication::translate("frmShapeMatchClass", "\345\215\225\345\205\203\346\217\217\350\277\260\357\274\232", nullptr));
+        btnExecute->setText(QCoreApplication::translate("frmShapeMatchClass", "\346\211\247\350\241\214", nullptr));
+        groupCamera->setTitle(QCoreApplication::translate("frmShapeMatchClass", "\345\233\276\345\203\217\345\257\271\350\261\241", nullptr));
+        label_4->setText(QCoreApplication::translate("frmShapeMatchClass", "\350\276\223\345\205\245\345\233\276\345\203\217\357\274\232", nullptr));
+#if QT_CONFIG(tooltip)
+        btnLinkImage->setToolTip(QCoreApplication::translate("frmShapeMatchClass", "\351\223\276\346\216\245\345\233\276\345\203\217", nullptr));
+#endif // QT_CONFIG(tooltip)
         btnLinkImage->setText(QString());
-#ifndef QT_NO_TOOLTIP
-        btnDelLinkImage->setToolTip(QApplication::translate("frmShapeMatchClass", "\345\210\240\351\231\244\345\233\276\345\203\217\351\223\276\346\216\245", nullptr));
-#endif // QT_NO_TOOLTIP
+#if QT_CONFIG(tooltip)
+        btnDelLinkImage->setToolTip(QCoreApplication::translate("frmShapeMatchClass", "\345\210\240\351\231\244\345\233\276\345\203\217\351\223\276\346\216\245", nullptr));
+#endif // QT_CONFIG(tooltip)
         btnDelLinkImage->setText(QString());
-        groupC2->setTitle(QApplication::translate("frmShapeMatchClass", "\345\214\271\351\205\215\345\217\202\346\225\260\350\256\276\347\275\256", nullptr));
-        label_11->setText(QApplication::translate("frmShapeMatchClass", "\345\214\271\351\205\215\344\270\252\346\225\260\357\274\232", nullptr));
-        label_19->setText(QApplication::translate("frmShapeMatchClass", "\346\234\200\344\275\216\345\210\206\346\225\260\357\274\232", nullptr));
-        label_13->setText(QApplication::translate("frmShapeMatchClass", "\346\230\276\347\244\272\350\275\256\345\273\223\347\272\277\345\256\275\357\274\232", nullptr));
-        label_21->setText(QApplication::translate("frmShapeMatchClass", "\346\230\276\347\244\272\350\275\256\345\273\223\357\274\232", nullptr));
-        comboViewMode->setItemText(0, QApplication::translate("frmShapeMatchClass", "\344\270\215\346\230\276\347\244\272", nullptr));
-        comboViewMode->setItemText(1, QApplication::translate("frmShapeMatchClass", "\346\230\276\347\244\272", nullptr));
+        groupC2->setTitle(QCoreApplication::translate("frmShapeMatchClass", "\345\214\271\351\205\215\345\217\202\346\225\260\350\256\276\347\275\256", nullptr));
+        label_11->setText(QCoreApplication::translate("frmShapeMatchClass", "\345\214\271\351\205\215\344\270\252\346\225\260\357\274\232", nullptr));
+        label_19->setText(QCoreApplication::translate("frmShapeMatchClass", "\346\234\200\344\275\216\345\210\206\346\225\260\357\274\232", nullptr));
+        label_13->setText(QCoreApplication::translate("frmShapeMatchClass", "\346\230\276\347\244\272\350\275\256\345\273\223\347\272\277\345\256\275\357\274\232", nullptr));
+        label_21->setText(QCoreApplication::translate("frmShapeMatchClass", "\346\230\276\347\244\272\350\275\256\345\273\223\357\274\232", nullptr));
+        comboViewMode->setItemText(0, QCoreApplication::translate("frmShapeMatchClass", "\344\270\215\346\230\276\347\244\272", nullptr));
+        comboViewMode->setItemText(1, QCoreApplication::translate("frmShapeMatchClass", "\346\230\276\347\244\272", nullptr));
 
-        label_14->setText(QApplication::translate("frmShapeMatchClass", "\345\233\276\345\203\217\351\207\221\345\255\227\345\241\224\345\261\202\346\225\260\357\274\232", nullptr));
-#ifndef QT_NO_TOOLTIP
-        spinPyramid->setToolTip(QApplication::translate("frmShapeMatchClass", "\345\273\272\347\253\213\346\250\241\346\235\277\346\227\266\350\256\276\345\256\232\346\234\211\346\225\210", nullptr));
-#endif // QT_NO_TOOLTIP
-        label_22->setText(QApplication::translate("frmShapeMatchClass", "\351\207\215\345\217\240\345\214\272\345\237\237\346\257\224\344\276\213\357\274\232", nullptr));
-        comboNumMatches->setItemText(0, QApplication::translate("frmShapeMatchClass", "\344\270\200\344\270\252", nullptr));
-        comboNumMatches->setItemText(1, QApplication::translate("frmShapeMatchClass", "\345\244\232\344\270\252", nullptr));
+        label_14->setText(QCoreApplication::translate("frmShapeMatchClass", "\345\233\276\345\203\217\351\207\221\345\255\227\345\241\224\345\261\202\346\225\260\357\274\232", nullptr));
+#if QT_CONFIG(tooltip)
+        spinPyramid->setToolTip(QCoreApplication::translate("frmShapeMatchClass", "\345\273\272\347\253\213\346\250\241\346\235\277\346\227\266\350\256\276\345\256\232\346\234\211\346\225\210", nullptr));
+#endif // QT_CONFIG(tooltip)
+        label_22->setText(QCoreApplication::translate("frmShapeMatchClass", "\351\207\215\345\217\240\345\214\272\345\237\237\346\257\224\344\276\213\357\274\232", nullptr));
+        comboNumMatches->setItemText(0, QCoreApplication::translate("frmShapeMatchClass", "\344\270\200\344\270\252", nullptr));
+        comboNumMatches->setItemText(1, QCoreApplication::translate("frmShapeMatchClass", "\345\244\232\344\270\252", nullptr));
 
-        groupCamera_2->setTitle(QApplication::translate("frmShapeMatchClass", "\346\250\241\346\235\277\345\257\271\350\261\241", nullptr));
-        btnDeleteROI_2->setText(QApplication::translate("frmShapeMatchClass", "\345\210\240\351\231\244", nullptr));
-        btnAddROI_2->setText(QApplication::translate("frmShapeMatchClass", "\346\267\273\345\212\240", nullptr));
-        comboROIShape_2->setItemText(0, QApplication::translate("frmShapeMatchClass", "\347\237\251\345\275\242", nullptr));
+        groupCamera_2->setTitle(QCoreApplication::translate("frmShapeMatchClass", "\346\250\241\346\235\277\345\257\271\350\261\241", nullptr));
+        btnDeleteROI_2->setText(QCoreApplication::translate("frmShapeMatchClass", "\345\210\240\351\231\244", nullptr));
+        btnAddROI_2->setText(QCoreApplication::translate("frmShapeMatchClass", "\346\267\273\345\212\240", nullptr));
+        comboROIShape_2->setItemText(0, QCoreApplication::translate("frmShapeMatchClass", "\347\237\251\345\275\242", nullptr));
 
-        btnCreateROI->setText(QApplication::translate("frmShapeMatchClass", "\345\210\233\345\273\272\346\250\241\346\235\277", nullptr));
+        btnCreateROI->setText(QCoreApplication::translate("frmShapeMatchClass", "\345\210\233\345\273\272\346\250\241\346\235\277", nullptr));
         txtSaveModel->setText(QString());
-        label_7->setText(QApplication::translate("frmShapeMatchClass", "\344\277\235\345\255\230\346\250\241\346\235\277\346\226\207\344\273\266\357\274\232", nullptr));
-        label_5->setText(QApplication::translate("frmShapeMatchClass", "\346\250\241\346\235\277\345\214\272\345\237\237\357\274\232", nullptr));
-        btnDeleteModel->setText(QApplication::translate("frmShapeMatchClass", "\346\270\205\351\231\244", nullptr));
-        label_12->setText(QApplication::translate("frmShapeMatchClass", "\346\220\234\347\264\242\350\247\222\345\272\246\350\214\203\345\233\264(\302\261)\357\274\232", nullptr));
-        label_20->setText(QApplication::translate("frmShapeMatchClass", "\347\211\271\345\276\201\347\202\271\357\274\232", nullptr));
-        label_23->setText(QApplication::translate("frmShapeMatchClass", "\345\274\272\351\230\210\345\200\274\357\274\232", nullptr));
-        label_15->setText(QApplication::translate("frmShapeMatchClass", "\345\274\261\351\230\210\345\200\274\357\274\232", nullptr));
-        tabWidget->setTabText(tabWidget->indexOf(tab), QApplication::translate("frmShapeMatchClass", "\345\237\272\346\234\254\350\256\276\347\275\256", nullptr));
-        groupCamera_8->setTitle(QApplication::translate("frmShapeMatchClass", "\346\220\234\347\264\242\345\214\272\345\237\237", nullptr));
-        checkUseROI->setText(QApplication::translate("frmShapeMatchClass", "\344\275\277\347\224\250ROI", nullptr));
-        comboROIShape->setItemText(0, QApplication::translate("frmShapeMatchClass", "\347\237\251\345\275\242", nullptr));
+        label_7->setText(QCoreApplication::translate("frmShapeMatchClass", "\344\277\235\345\255\230\346\250\241\346\235\277\346\226\207\344\273\266\357\274\232", nullptr));
+        label_5->setText(QCoreApplication::translate("frmShapeMatchClass", "\346\250\241\346\235\277\345\214\272\345\237\237\357\274\232", nullptr));
+        btnDeleteModel->setText(QCoreApplication::translate("frmShapeMatchClass", "\346\270\205\351\231\244", nullptr));
+        label_12->setText(QCoreApplication::translate("frmShapeMatchClass", "\346\220\234\347\264\242\350\247\222\345\272\246\350\214\203\345\233\264(\302\261)\357\274\232", nullptr));
+        label_20->setText(QCoreApplication::translate("frmShapeMatchClass", "\347\211\271\345\276\201\347\202\271\357\274\232", nullptr));
+        label_23->setText(QCoreApplication::translate("frmShapeMatchClass", "\345\274\272\351\230\210\345\200\274\357\274\232", nullptr));
+        label_15->setText(QCoreApplication::translate("frmShapeMatchClass", "\345\274\261\351\230\210\345\200\274\357\274\232", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab), QCoreApplication::translate("frmShapeMatchClass", "\345\237\272\346\234\254\350\256\276\347\275\256", nullptr));
+        groupCamera_8->setTitle(QCoreApplication::translate("frmShapeMatchClass", "\346\220\234\347\264\242\345\214\272\345\237\237", nullptr));
+        checkUseROI->setText(QCoreApplication::translate("frmShapeMatchClass", "\344\275\277\347\224\250ROI", nullptr));
+        comboROIShape->setItemText(0, QCoreApplication::translate("frmShapeMatchClass", "\347\237\251\345\275\242", nullptr));
 
-        btnAddROI->setText(QApplication::translate("frmShapeMatchClass", "\346\267\273\345\212\240", nullptr));
-        btnDeleteROI->setText(QApplication::translate("frmShapeMatchClass", "\345\210\240\351\231\244", nullptr));
-        checkViewROI->setText(QApplication::translate("frmShapeMatchClass", "\346\230\276\347\244\272ROI", nullptr));
-        label_16->setText(QApplication::translate("frmShapeMatchClass", "ROI\345\256\275\345\272\246\357\274\232", nullptr));
-        label_17->setText(QApplication::translate("frmShapeMatchClass", "ROI\351\242\234\350\211\262\357\274\232", nullptr));
+        btnAddROI->setText(QCoreApplication::translate("frmShapeMatchClass", "\346\267\273\345\212\240", nullptr));
+        btnDeleteROI->setText(QCoreApplication::translate("frmShapeMatchClass", "\345\210\240\351\231\244", nullptr));
+        checkViewROI->setText(QCoreApplication::translate("frmShapeMatchClass", "\346\230\276\347\244\272ROI", nullptr));
+        label_16->setText(QCoreApplication::translate("frmShapeMatchClass", "ROI\345\256\275\345\272\246\357\274\232", nullptr));
+        label_17->setText(QCoreApplication::translate("frmShapeMatchClass", "ROI\351\242\234\350\211\262\357\274\232", nullptr));
         btnRoiColor->setText(QString());
-        tabWidget->setTabText(tabWidget->indexOf(tab_2), QApplication::translate("frmShapeMatchClass", "ROI\350\256\276\347\275\256", nullptr));
-        groupC3->setTitle(QApplication::translate("frmShapeMatchClass", "\350\276\223\345\207\272\346\225\260\346\215\256(\345\214\271\351\205\215\347\232\204\344\270\255\345\277\203\343\200\201\350\247\222\345\272\246\343\200\201\345\210\206\346\225\260)", nullptr));
-        tabWidget->setTabText(tabWidget->indexOf(tab_3), QApplication::translate("frmShapeMatchClass", "\350\276\223\345\207\272\346\230\276\347\244\272", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab_2), QCoreApplication::translate("frmShapeMatchClass", "ROI\350\256\276\347\275\256", nullptr));
+        groupC3->setTitle(QCoreApplication::translate("frmShapeMatchClass", "\350\276\223\345\207\272\346\225\260\346\215\256(\345\214\271\351\205\215\347\232\204\344\270\255\345\277\203\343\200\201\350\247\222\345\272\246\343\200\201\345\210\206\346\225\260)", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab_3), QCoreApplication::translate("frmShapeMatchClass", "\350\276\223\345\207\272\346\230\276\347\244\272", nullptr));
     } // retranslateUi
 
 };

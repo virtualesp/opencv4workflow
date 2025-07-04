@@ -1765,6 +1765,7 @@ QString frmScriptEdit::GetIconName(QString Name)
 	if (Name.contains("通用I/O")) IconName = ":/resource/general_io.png";
 	if (Name.contains("延时")) IconName = ":/resource/delay.png";
 	if (Name.contains("导出CSV")) IconName = ":/resource/export_csv.png";
+	if (Name.contains("YoloV13")) IconName = ":/resource/classifier.png";
 	return IconName;
 }
 
@@ -1902,7 +1903,7 @@ void frmScriptEdit::slot_ListClick(QModelIndex index)
 	toolNames.clear();
 	toolNames << "全局变量" << "获取图像" << "图像显示" << "导出图像" << "预处理" << "图像拼接" << "图像修复" << "图像细化" << "图像翻转" << "图像旋转" << "透视变换" << "裁切图像" << "创建ROI" << "条形码识别" << "斑点分析" << "二维码识别"
 		<< "字符识别" << "分类器" << "颜色识别" << "亮度检测" << "图像清晰度" << "轮廓特征选择" << "N点标定" << "畸变标定" << "测量标定" << "灰度匹配" << "形状匹配" << "目标跟踪" << "线性计算" << "寻找圆" << "寻找直线" << "拟合圆" << "拟合椭圆" << "拟合直线" << "获取边界点"
-		<< "线圆交点" << "点+点" << "点+线" << "线线交点" << "查找圆缺角" << "边缘宽度测量" << "拟合平面" << "扩展库" << "跳转语句" << "判断语句" << "结束语句" << "脚本编辑" << "TCP/IP服务器" << "TCP/IP客户端" << "PLC通信" << "串口通信" << "通用I/O" << "延时" << "导出CSV";
+		<< "线圆交点" << "点+点" << "点+线" << "线线交点" << "查找圆缺角" << "边缘宽度测量" << "拟合平面" << "扩展库" << "跳转语句" << "判断语句" << "结束语句" << "脚本编辑" << "TCP/IP服务器" << "TCP/IP客户端" << "PLC通信" << "串口通信" << "通用I/O" << "延时" << "导出CSV" << "YoloV13";
 	//清空Table
 	int rowNum = ui.tableWidget->rowCount();
 	for (int i = rowNum - 1; i >= 0; i--)

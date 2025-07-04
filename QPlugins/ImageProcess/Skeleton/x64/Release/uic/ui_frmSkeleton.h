@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'frmSkeleton.ui'
 **
-** Created by: Qt User Interface Compiler version 5.12.12
+** Created by: Qt User Interface Compiler version 5.14.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -353,32 +353,32 @@ public:
 
     void retranslateUi(QDialog *frmSkeletonClass)
     {
-        frmSkeletonClass->setWindowTitle(QApplication::translate("frmSkeletonClass", "\345\233\276\345\203\217\347\273\206\345\214\226", nullptr));
-        groupCamera->setTitle(QApplication::translate("frmSkeletonClass", "\345\233\276\345\203\217\345\257\271\350\261\241", nullptr));
-        label_4->setText(QApplication::translate("frmSkeletonClass", "\350\276\223\345\205\245\345\233\276\345\203\217\357\274\232", nullptr));
-#ifndef QT_NO_TOOLTIP
-        btnLinkImage->setToolTip(QApplication::translate("frmSkeletonClass", "\351\223\276\346\216\245\345\233\276\345\203\217", nullptr));
-#endif // QT_NO_TOOLTIP
+        frmSkeletonClass->setWindowTitle(QCoreApplication::translate("frmSkeletonClass", "\345\233\276\345\203\217\347\273\206\345\214\226", nullptr));
+        groupCamera->setTitle(QCoreApplication::translate("frmSkeletonClass", "\345\233\276\345\203\217\345\257\271\350\261\241", nullptr));
+        label_4->setText(QCoreApplication::translate("frmSkeletonClass", "\350\276\223\345\205\245\345\233\276\345\203\217\357\274\232", nullptr));
+#if QT_CONFIG(tooltip)
+        btnLinkImage->setToolTip(QCoreApplication::translate("frmSkeletonClass", "\351\223\276\346\216\245\345\233\276\345\203\217", nullptr));
+#endif // QT_CONFIG(tooltip)
         btnLinkImage->setText(QString());
-#ifndef QT_NO_TOOLTIP
-        btnDelLinkImage->setToolTip(QApplication::translate("frmSkeletonClass", "\345\210\240\351\231\244\345\233\276\345\203\217\351\223\276\346\216\245", nullptr));
-#endif // QT_NO_TOOLTIP
+#if QT_CONFIG(tooltip)
+        btnDelLinkImage->setToolTip(QCoreApplication::translate("frmSkeletonClass", "\345\210\240\351\231\244\345\233\276\345\203\217\351\223\276\346\216\245", nullptr));
+#endif // QT_CONFIG(tooltip)
         btnDelLinkImage->setText(QString());
-        groupCamera_2->setTitle(QApplication::translate("frmSkeletonClass", "\347\273\206\345\214\226\346\235\241\344\273\266", nullptr));
-        label_5->setText(QApplication::translate("frmSkeletonClass", "\350\277\255\344\273\243\346\254\241\346\225\260\357\274\232", nullptr));
-        tabWidget->setTabText(tabWidget->indexOf(tab), QApplication::translate("frmSkeletonClass", "\345\237\272\346\234\254\350\256\276\347\275\256", nullptr));
-        groupCamera_8->setTitle(QApplication::translate("frmSkeletonClass", "ROI\345\257\271\350\261\241", nullptr));
-        checkUseROI->setText(QApplication::translate("frmSkeletonClass", "\344\275\277\347\224\250ROI", nullptr));
-        comboROIShape->setItemText(0, QApplication::translate("frmSkeletonClass", "\347\237\251\345\275\242", nullptr));
-        comboROIShape->setItemText(1, QApplication::translate("frmSkeletonClass", "\346\227\213\350\275\254\347\237\251\345\275\242", nullptr));
-        comboROIShape->setItemText(2, QApplication::translate("frmSkeletonClass", "\345\234\206\345\275\242", nullptr));
-        comboROIShape->setItemText(3, QApplication::translate("frmSkeletonClass", "\345\244\232\350\276\271\345\275\242", nullptr));
+        groupCamera_2->setTitle(QCoreApplication::translate("frmSkeletonClass", "\347\273\206\345\214\226\346\235\241\344\273\266", nullptr));
+        label_5->setText(QCoreApplication::translate("frmSkeletonClass", "\350\277\255\344\273\243\346\254\241\346\225\260\357\274\232", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab), QCoreApplication::translate("frmSkeletonClass", "\345\237\272\346\234\254\350\256\276\347\275\256", nullptr));
+        groupCamera_8->setTitle(QCoreApplication::translate("frmSkeletonClass", "ROI\345\257\271\350\261\241", nullptr));
+        checkUseROI->setText(QCoreApplication::translate("frmSkeletonClass", "\344\275\277\347\224\250ROI", nullptr));
+        comboROIShape->setItemText(0, QCoreApplication::translate("frmSkeletonClass", "\347\237\251\345\275\242", nullptr));
+        comboROIShape->setItemText(1, QCoreApplication::translate("frmSkeletonClass", "\346\227\213\350\275\254\347\237\251\345\275\242", nullptr));
+        comboROIShape->setItemText(2, QCoreApplication::translate("frmSkeletonClass", "\345\234\206\345\275\242", nullptr));
+        comboROIShape->setItemText(3, QCoreApplication::translate("frmSkeletonClass", "\345\244\232\350\276\271\345\275\242", nullptr));
 
-        btnAddROI->setText(QApplication::translate("frmSkeletonClass", "\346\267\273\345\212\240", nullptr));
-        btnDeleteROI->setText(QApplication::translate("frmSkeletonClass", "\345\210\240\351\231\244", nullptr));
-        tabWidget->setTabText(tabWidget->indexOf(tab_2), QApplication::translate("frmSkeletonClass", "ROI\350\256\276\347\275\256", nullptr));
-        label_3->setText(QApplication::translate("frmSkeletonClass", "\345\215\225\345\205\203\346\217\217\350\277\260\357\274\232", nullptr));
-        btnExecute->setText(QApplication::translate("frmSkeletonClass", "\346\211\247\350\241\214", nullptr));
+        btnAddROI->setText(QCoreApplication::translate("frmSkeletonClass", "\346\267\273\345\212\240", nullptr));
+        btnDeleteROI->setText(QCoreApplication::translate("frmSkeletonClass", "\345\210\240\351\231\244", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab_2), QCoreApplication::translate("frmSkeletonClass", "ROI\350\256\276\347\275\256", nullptr));
+        label_3->setText(QCoreApplication::translate("frmSkeletonClass", "\345\215\225\345\205\203\346\217\217\350\277\260\357\274\232", nullptr));
+        btnExecute->setText(QCoreApplication::translate("frmSkeletonClass", "\346\211\247\350\241\214", nullptr));
     } // retranslateUi
 
 };

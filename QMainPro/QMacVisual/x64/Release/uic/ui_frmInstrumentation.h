@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'frmInstrumentation.ui'
 **
-** Created by: Qt User Interface Compiler version 5.12.12
+** Created by: Qt User Interface Compiler version 5.14.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -1341,90 +1341,90 @@ public:
 
     void retranslateUi(QDialog *frmInstrumentationClass)
     {
-        frmInstrumentationClass->setWindowTitle(QApplication::translate("frmInstrumentationClass", "\344\273\252\345\231\250\344\273\252\350\241\250", nullptr));
+        frmInstrumentationClass->setWindowTitle(QCoreApplication::translate("frmInstrumentationClass", "\344\273\252\345\231\250\344\273\252\350\241\250", nullptr));
         QTableWidgetItem *___qtablewidgetitem = tableWidget->horizontalHeaderItem(0);
-        ___qtablewidgetitem->setText(QApplication::translate("frmInstrumentationClass", "\344\273\252\345\231\250\351\200\232\350\256\257\345\210\227\350\241\250", nullptr));
-        btnConnect->setText(QApplication::translate("frmInstrumentationClass", "\350\277\236\346\216\245\344\273\252\345\231\250", nullptr));
-        btnDisconnect->setText(QApplication::translate("frmInstrumentationClass", "\346\226\255\345\274\200\344\273\252\345\231\250", nullptr));
-        btnSave->setText(QApplication::translate("frmInstrumentationClass", "\344\277\235\345\255\230\345\217\202\346\225\260", nullptr));
-        label_2->setText(QApplication::translate("frmInstrumentationClass", "\344\273\252\345\231\250\345\220\215\347\247\260\346\210\226\347\274\226\345\217\267\357\274\232", nullptr));
-        comboInstrumentName->setItemText(0, QApplication::translate("frmInstrumentationClass", "DAM-E3021N", nullptr));
+        ___qtablewidgetitem->setText(QCoreApplication::translate("frmInstrumentationClass", "\344\273\252\345\231\250\351\200\232\350\256\257\345\210\227\350\241\250", nullptr));
+        btnConnect->setText(QCoreApplication::translate("frmInstrumentationClass", "\350\277\236\346\216\245\344\273\252\345\231\250", nullptr));
+        btnDisconnect->setText(QCoreApplication::translate("frmInstrumentationClass", "\346\226\255\345\274\200\344\273\252\345\231\250", nullptr));
+        btnSave->setText(QCoreApplication::translate("frmInstrumentationClass", "\344\277\235\345\255\230\345\217\202\346\225\260", nullptr));
+        label_2->setText(QCoreApplication::translate("frmInstrumentationClass", "\344\273\252\345\231\250\345\220\215\347\247\260\346\210\226\347\274\226\345\217\267\357\274\232", nullptr));
+        comboInstrumentName->setItemText(0, QCoreApplication::translate("frmInstrumentationClass", "DAM-E3021N", nullptr));
 
-        label_3->setText(QApplication::translate("frmInstrumentationClass", "\351\200\211\346\213\251\344\273\252\345\231\250\351\200\232\350\256\257\345\220\215\347\247\260\346\210\226\347\274\226\345\217\267\357\274\232", nullptr));
+        label_3->setText(QCoreApplication::translate("frmInstrumentationClass", "\351\200\211\346\213\251\344\273\252\345\231\250\351\200\232\350\256\257\345\220\215\347\247\260\346\210\226\347\274\226\345\217\267\357\274\232", nullptr));
         lblType->setText(QString());
-        label_12->setText(QApplication::translate("frmInstrumentationClass", "\344\273\252\345\231\250\347\253\257\345\217\243\345\217\267\357\274\232", nullptr));
-        label_4->setText(QApplication::translate("frmInstrumentationClass", "\344\273\252\345\231\250IP\345\234\260\345\235\200\357\274\232", nullptr));
-        label_10->setText(QApplication::translate("frmInstrumentationClass", "\350\266\205\346\227\266(ms)\357\274\232", nullptr));
-        label_11->setText(QApplication::translate("frmInstrumentationClass", "\345\244\207\346\263\250\357\274\232", nullptr));
-        label_14->setText(QApplication::translate("frmInstrumentationClass", "\345\244\207\346\263\250\357\274\232", nullptr));
-        label_5->setText(QApplication::translate("frmInstrumentationClass", "\344\273\252\345\231\250IP\345\234\260\345\235\200\357\274\232", nullptr));
-        label_17->setText(QApplication::translate("frmInstrumentationClass", "\350\266\205\346\227\266(ms)\357\274\232", nullptr));
-        label_15->setText(QApplication::translate("frmInstrumentationClass", "\344\273\252\345\231\250\347\253\257\345\217\243\345\217\267\357\274\232", nullptr));
-        comboFlowControl->setItemText(0, QApplication::translate("frmInstrumentationClass", "\346\227\240", nullptr));
-        comboFlowControl->setItemText(1, QApplication::translate("frmInstrumentationClass", "\347\241\254\344\273\266", nullptr));
-        comboFlowControl->setItemText(2, QApplication::translate("frmInstrumentationClass", "\350\275\257\344\273\266", nullptr));
+        label_12->setText(QCoreApplication::translate("frmInstrumentationClass", "\344\273\252\345\231\250\347\253\257\345\217\243\345\217\267\357\274\232", nullptr));
+        label_4->setText(QCoreApplication::translate("frmInstrumentationClass", "\344\273\252\345\231\250IP\345\234\260\345\235\200\357\274\232", nullptr));
+        label_10->setText(QCoreApplication::translate("frmInstrumentationClass", "\350\266\205\346\227\266(ms)\357\274\232", nullptr));
+        label_11->setText(QCoreApplication::translate("frmInstrumentationClass", "\345\244\207\346\263\250\357\274\232", nullptr));
+        label_14->setText(QCoreApplication::translate("frmInstrumentationClass", "\345\244\207\346\263\250\357\274\232", nullptr));
+        label_5->setText(QCoreApplication::translate("frmInstrumentationClass", "\344\273\252\345\231\250IP\345\234\260\345\235\200\357\274\232", nullptr));
+        label_17->setText(QCoreApplication::translate("frmInstrumentationClass", "\350\266\205\346\227\266(ms)\357\274\232", nullptr));
+        label_15->setText(QCoreApplication::translate("frmInstrumentationClass", "\344\273\252\345\231\250\347\253\257\345\217\243\345\217\267\357\274\232", nullptr));
+        comboFlowControl->setItemText(0, QCoreApplication::translate("frmInstrumentationClass", "\346\227\240", nullptr));
+        comboFlowControl->setItemText(1, QCoreApplication::translate("frmInstrumentationClass", "\347\241\254\344\273\266", nullptr));
+        comboFlowControl->setItemText(2, QCoreApplication::translate("frmInstrumentationClass", "\350\275\257\344\273\266", nullptr));
 
-        label_19->setText(QApplication::translate("frmInstrumentationClass", "\346\263\242\347\211\271\347\216\207\357\274\232", nullptr));
-        label_8->setText(QApplication::translate("frmInstrumentationClass", "\346\225\260\346\215\256\344\275\215\357\274\232", nullptr));
-        label_18->setText(QApplication::translate("frmInstrumentationClass", "\345\244\207\346\263\250\357\274\232", nullptr));
-        comboSerialPort->setItemText(0, QApplication::translate("frmInstrumentationClass", "COM1", nullptr));
-        comboSerialPort->setItemText(1, QApplication::translate("frmInstrumentationClass", "COM2", nullptr));
-        comboSerialPort->setItemText(2, QApplication::translate("frmInstrumentationClass", "COM3", nullptr));
-        comboSerialPort->setItemText(3, QApplication::translate("frmInstrumentationClass", "COM4", nullptr));
-        comboSerialPort->setItemText(4, QApplication::translate("frmInstrumentationClass", "COM5", nullptr));
-        comboSerialPort->setItemText(5, QApplication::translate("frmInstrumentationClass", "COM6", nullptr));
-        comboSerialPort->setItemText(6, QApplication::translate("frmInstrumentationClass", "COM7", nullptr));
-        comboSerialPort->setItemText(7, QApplication::translate("frmInstrumentationClass", "COM8", nullptr));
-        comboSerialPort->setItemText(8, QApplication::translate("frmInstrumentationClass", "COM9", nullptr));
+        label_19->setText(QCoreApplication::translate("frmInstrumentationClass", "\346\263\242\347\211\271\347\216\207\357\274\232", nullptr));
+        label_8->setText(QCoreApplication::translate("frmInstrumentationClass", "\346\225\260\346\215\256\344\275\215\357\274\232", nullptr));
+        label_18->setText(QCoreApplication::translate("frmInstrumentationClass", "\345\244\207\346\263\250\357\274\232", nullptr));
+        comboSerialPort->setItemText(0, QCoreApplication::translate("frmInstrumentationClass", "COM1", nullptr));
+        comboSerialPort->setItemText(1, QCoreApplication::translate("frmInstrumentationClass", "COM2", nullptr));
+        comboSerialPort->setItemText(2, QCoreApplication::translate("frmInstrumentationClass", "COM3", nullptr));
+        comboSerialPort->setItemText(3, QCoreApplication::translate("frmInstrumentationClass", "COM4", nullptr));
+        comboSerialPort->setItemText(4, QCoreApplication::translate("frmInstrumentationClass", "COM5", nullptr));
+        comboSerialPort->setItemText(5, QCoreApplication::translate("frmInstrumentationClass", "COM6", nullptr));
+        comboSerialPort->setItemText(6, QCoreApplication::translate("frmInstrumentationClass", "COM7", nullptr));
+        comboSerialPort->setItemText(7, QCoreApplication::translate("frmInstrumentationClass", "COM8", nullptr));
+        comboSerialPort->setItemText(8, QCoreApplication::translate("frmInstrumentationClass", "COM9", nullptr));
 
-        label_6->setText(QApplication::translate("frmInstrumentationClass", "\344\270\262\345\217\243\345\217\267\357\274\232", nullptr));
-        label_9->setText(QApplication::translate("frmInstrumentationClass", "\345\201\234\346\255\242\344\275\215\357\274\232", nullptr));
-        comboCheckDigit->setItemText(0, QApplication::translate("frmInstrumentationClass", "\346\227\240", nullptr));
-        comboCheckDigit->setItemText(1, QApplication::translate("frmInstrumentationClass", "\345\245\207", nullptr));
-        comboCheckDigit->setItemText(2, QApplication::translate("frmInstrumentationClass", "\345\201\266", nullptr));
-        comboCheckDigit->setItemText(3, QApplication::translate("frmInstrumentationClass", "\346\240\207\345\277\227", nullptr));
-        comboCheckDigit->setItemText(4, QApplication::translate("frmInstrumentationClass", "\347\251\272\346\240\274", nullptr));
+        label_6->setText(QCoreApplication::translate("frmInstrumentationClass", "\344\270\262\345\217\243\345\217\267\357\274\232", nullptr));
+        label_9->setText(QCoreApplication::translate("frmInstrumentationClass", "\345\201\234\346\255\242\344\275\215\357\274\232", nullptr));
+        comboCheckDigit->setItemText(0, QCoreApplication::translate("frmInstrumentationClass", "\346\227\240", nullptr));
+        comboCheckDigit->setItemText(1, QCoreApplication::translate("frmInstrumentationClass", "\345\245\207", nullptr));
+        comboCheckDigit->setItemText(2, QCoreApplication::translate("frmInstrumentationClass", "\345\201\266", nullptr));
+        comboCheckDigit->setItemText(3, QCoreApplication::translate("frmInstrumentationClass", "\346\240\207\345\277\227", nullptr));
+        comboCheckDigit->setItemText(4, QCoreApplication::translate("frmInstrumentationClass", "\347\251\272\346\240\274", nullptr));
 
-        label_21->setText(QApplication::translate("frmInstrumentationClass", "\346\240\241\351\252\214\344\275\215\357\274\232", nullptr));
-        comboStopBit->setItemText(0, QApplication::translate("frmInstrumentationClass", "1", nullptr));
-        comboStopBit->setItemText(1, QApplication::translate("frmInstrumentationClass", "1.5", nullptr));
-        comboStopBit->setItemText(2, QApplication::translate("frmInstrumentationClass", "2", nullptr));
+        label_21->setText(QCoreApplication::translate("frmInstrumentationClass", "\346\240\241\351\252\214\344\275\215\357\274\232", nullptr));
+        comboStopBit->setItemText(0, QCoreApplication::translate("frmInstrumentationClass", "1", nullptr));
+        comboStopBit->setItemText(1, QCoreApplication::translate("frmInstrumentationClass", "1.5", nullptr));
+        comboStopBit->setItemText(2, QCoreApplication::translate("frmInstrumentationClass", "2", nullptr));
 
-        comboBaudRate->setItemText(0, QApplication::translate("frmInstrumentationClass", "4800", nullptr));
-        comboBaudRate->setItemText(1, QApplication::translate("frmInstrumentationClass", "9600", nullptr));
-        comboBaudRate->setItemText(2, QApplication::translate("frmInstrumentationClass", "14400", nullptr));
-        comboBaudRate->setItemText(3, QApplication::translate("frmInstrumentationClass", "19200", nullptr));
-        comboBaudRate->setItemText(4, QApplication::translate("frmInstrumentationClass", "38400", nullptr));
-        comboBaudRate->setItemText(5, QApplication::translate("frmInstrumentationClass", "57600", nullptr));
-        comboBaudRate->setItemText(6, QApplication::translate("frmInstrumentationClass", "115200", nullptr));
-        comboBaudRate->setItemText(7, QApplication::translate("frmInstrumentationClass", "128000", nullptr));
-        comboBaudRate->setItemText(8, QApplication::translate("frmInstrumentationClass", "230400", nullptr));
-        comboBaudRate->setItemText(9, QApplication::translate("frmInstrumentationClass", "256000", nullptr));
+        comboBaudRate->setItemText(0, QCoreApplication::translate("frmInstrumentationClass", "4800", nullptr));
+        comboBaudRate->setItemText(1, QCoreApplication::translate("frmInstrumentationClass", "9600", nullptr));
+        comboBaudRate->setItemText(2, QCoreApplication::translate("frmInstrumentationClass", "14400", nullptr));
+        comboBaudRate->setItemText(3, QCoreApplication::translate("frmInstrumentationClass", "19200", nullptr));
+        comboBaudRate->setItemText(4, QCoreApplication::translate("frmInstrumentationClass", "38400", nullptr));
+        comboBaudRate->setItemText(5, QCoreApplication::translate("frmInstrumentationClass", "57600", nullptr));
+        comboBaudRate->setItemText(6, QCoreApplication::translate("frmInstrumentationClass", "115200", nullptr));
+        comboBaudRate->setItemText(7, QCoreApplication::translate("frmInstrumentationClass", "128000", nullptr));
+        comboBaudRate->setItemText(8, QCoreApplication::translate("frmInstrumentationClass", "230400", nullptr));
+        comboBaudRate->setItemText(9, QCoreApplication::translate("frmInstrumentationClass", "256000", nullptr));
 
-        comboBaudRate->setCurrentText(QApplication::translate("frmInstrumentationClass", "4800", nullptr));
-        comboDataBits->setItemText(0, QApplication::translate("frmInstrumentationClass", "5", nullptr));
-        comboDataBits->setItemText(1, QApplication::translate("frmInstrumentationClass", "6", nullptr));
-        comboDataBits->setItemText(2, QApplication::translate("frmInstrumentationClass", "7", nullptr));
-        comboDataBits->setItemText(3, QApplication::translate("frmInstrumentationClass", "8", nullptr));
+        comboBaudRate->setCurrentText(QCoreApplication::translate("frmInstrumentationClass", "4800", nullptr));
+        comboDataBits->setItemText(0, QCoreApplication::translate("frmInstrumentationClass", "5", nullptr));
+        comboDataBits->setItemText(1, QCoreApplication::translate("frmInstrumentationClass", "6", nullptr));
+        comboDataBits->setItemText(2, QCoreApplication::translate("frmInstrumentationClass", "7", nullptr));
+        comboDataBits->setItemText(3, QCoreApplication::translate("frmInstrumentationClass", "8", nullptr));
 
-        comboDataBits->setCurrentText(QApplication::translate("frmInstrumentationClass", "5", nullptr));
-        label_7->setText(QApplication::translate("frmInstrumentationClass", "\346\265\201\346\216\247\345\210\266\357\274\232", nullptr));
-        plainTextEdit_2->setPlainText(QApplication::translate("frmInstrumentationClass", "\350\257\264\346\230\216\357\274\232\344\270\262\345\217\243\351\200\232\344\277\241\345\210\227\350\241\250\346\225\260\351\207\217\346\210\226\350\277\236\346\216\245\347\212\266\346\200\201\346\224\271\345\217\230\345\220\216\357\274\214\351\234\200\350\246\201\346\233\264\346\226\260\346\265\201\347\250\213\347\232\204\344\270\262\345\217\243\351\200\232\344\277\241\350\256\276\347\275\256\343\200\202", nullptr));
-        plainTextEdit->setPlainText(QApplication::translate("frmInstrumentationClass", "\350\257\264\346\230\216\357\274\232(1)\346\234\215\345\212\241\345\231\250\350\277\236\346\216\245\345\220\216\357\274\214\351\234\200\350\246\201\345\234\250\346\265\201\347\250\213\346\226\260\345\273\272TCP/IP\351\200\232\344\277\241\345\267\245\345\205\267\345\220\216\357\274\214\345\256\242\346\210\267\347\253\257\346\211\215\350\203\275\350\277\236\346\216\245\357\274\233(2)TCP/IP\351\200\232\344\277\241\345\210\227\350\241\250\346\225\260\351\207\217\346\210\226\350\277\236\346\216\245\347\212\266\346\200\201\346\224\271\345\217\230\345\220\216\357\274\214\351\234\200\350\246\201\346\233\264\346\226\260\346\265\201\347\250\213\347\232\204TCP/IP\351\200\232\344\277\241\350\256\276\347\275\256\343\200\202", nullptr));
-        comboProtocol->setItemText(0, QApplication::translate("frmInstrumentationClass", "TCP Server", nullptr));
-        comboProtocol->setItemText(1, QApplication::translate("frmInstrumentationClass", "TCP Client", nullptr));
+        comboDataBits->setCurrentText(QCoreApplication::translate("frmInstrumentationClass", "5", nullptr));
+        label_7->setText(QCoreApplication::translate("frmInstrumentationClass", "\346\265\201\346\216\247\345\210\266\357\274\232", nullptr));
+        plainTextEdit_2->setPlainText(QCoreApplication::translate("frmInstrumentationClass", "\350\257\264\346\230\216\357\274\232\344\270\262\345\217\243\351\200\232\344\277\241\345\210\227\350\241\250\346\225\260\351\207\217\346\210\226\350\277\236\346\216\245\347\212\266\346\200\201\346\224\271\345\217\230\345\220\216\357\274\214\351\234\200\350\246\201\346\233\264\346\226\260\346\265\201\347\250\213\347\232\204\344\270\262\345\217\243\351\200\232\344\277\241\350\256\276\347\275\256\343\200\202", nullptr));
+        plainTextEdit->setPlainText(QCoreApplication::translate("frmInstrumentationClass", "\350\257\264\346\230\216\357\274\232(1)\346\234\215\345\212\241\345\231\250\350\277\236\346\216\245\345\220\216\357\274\214\351\234\200\350\246\201\345\234\250\346\265\201\347\250\213\346\226\260\345\273\272TCP/IP\351\200\232\344\277\241\345\267\245\345\205\267\345\220\216\357\274\214\345\256\242\346\210\267\347\253\257\346\211\215\350\203\275\350\277\236\346\216\245\357\274\233(2)TCP/IP\351\200\232\344\277\241\345\210\227\350\241\250\346\225\260\351\207\217\346\210\226\350\277\236\346\216\245\347\212\266\346\200\201\346\224\271\345\217\230\345\220\216\357\274\214\351\234\200\350\246\201\346\233\264\346\226\260\346\265\201\347\250\213\347\232\204TCP/IP\351\200\232\344\277\241\350\256\276\347\275\256\343\200\202", nullptr));
+        comboProtocol->setItemText(0, QCoreApplication::translate("frmInstrumentationClass", "TCP Server", nullptr));
+        comboProtocol->setItemText(1, QCoreApplication::translate("frmInstrumentationClass", "TCP Client", nullptr));
 
-        label_20->setText(QApplication::translate("frmInstrumentationClass", "\345\215\217\350\256\256\347\261\273\345\236\213\357\274\232", nullptr));
-        lbl_ip->setText(QApplication::translate("frmInstrumentationClass", "\346\234\254\345\234\260IP\345\234\260\345\235\200\357\274\232", nullptr));
-        label_22->setText(QApplication::translate("frmInstrumentationClass", "\345\244\207\346\263\250\357\274\232", nullptr));
-        lbl_port->setText(QApplication::translate("frmInstrumentationClass", "\346\234\254\345\234\260\347\253\257\345\217\243\345\217\267\357\274\232", nullptr));
-        label->setText(QApplication::translate("frmInstrumentationClass", "\344\273\252\345\231\250\351\200\232\350\256\257\347\261\273\345\210\253\357\274\232", nullptr));
-        comboInstrument->setItemText(0, QApplication::translate("frmInstrumentationClass", "\351\200\232\347\224\250I/O", nullptr));
-        comboInstrument->setItemText(1, QApplication::translate("frmInstrumentationClass", "PLC\351\200\232\344\277\241", nullptr));
-        comboInstrument->setItemText(2, QApplication::translate("frmInstrumentationClass", "\344\270\262\345\217\243\351\200\232\344\277\241", nullptr));
-        comboInstrument->setItemText(3, QApplication::translate("frmInstrumentationClass", "TCP/IP\351\200\232\344\277\241", nullptr));
+        label_20->setText(QCoreApplication::translate("frmInstrumentationClass", "\345\215\217\350\256\256\347\261\273\345\236\213\357\274\232", nullptr));
+        lbl_ip->setText(QCoreApplication::translate("frmInstrumentationClass", "\346\234\254\345\234\260IP\345\234\260\345\235\200\357\274\232", nullptr));
+        label_22->setText(QCoreApplication::translate("frmInstrumentationClass", "\345\244\207\346\263\250\357\274\232", nullptr));
+        lbl_port->setText(QCoreApplication::translate("frmInstrumentationClass", "\346\234\254\345\234\260\347\253\257\345\217\243\345\217\267\357\274\232", nullptr));
+        label->setText(QCoreApplication::translate("frmInstrumentationClass", "\344\273\252\345\231\250\351\200\232\350\256\257\347\261\273\345\210\253\357\274\232", nullptr));
+        comboInstrument->setItemText(0, QCoreApplication::translate("frmInstrumentationClass", "\351\200\232\347\224\250I/O", nullptr));
+        comboInstrument->setItemText(1, QCoreApplication::translate("frmInstrumentationClass", "PLC\351\200\232\344\277\241", nullptr));
+        comboInstrument->setItemText(2, QCoreApplication::translate("frmInstrumentationClass", "\344\270\262\345\217\243\351\200\232\344\277\241", nullptr));
+        comboInstrument->setItemText(3, QCoreApplication::translate("frmInstrumentationClass", "TCP/IP\351\200\232\344\277\241", nullptr));
 
-        btnAdd->setText(QApplication::translate("frmInstrumentationClass", "\346\267\273\345\212\240\344\273\252\345\231\250", nullptr));
+        btnAdd->setText(QCoreApplication::translate("frmInstrumentationClass", "\346\267\273\345\212\240\344\273\252\345\231\250", nullptr));
     } // retranslateUi
 
 };

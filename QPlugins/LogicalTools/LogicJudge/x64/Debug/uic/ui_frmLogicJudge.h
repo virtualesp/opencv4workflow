@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'frmLogicJudge.ui'
 **
-** Created by: Qt User Interface Compiler version 5.12.12
+** Created by: Qt User Interface Compiler version 5.14.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -407,52 +407,52 @@ public:
 
     void retranslateUi(QDialog *frmLogicJudgeClass)
     {
-        frmLogicJudgeClass->setWindowTitle(QApplication::translate("frmLogicJudgeClass", "\345\210\244\346\226\255\350\257\255\345\217\245", nullptr));
-        label_3->setText(QApplication::translate("frmLogicJudgeClass", "\345\215\225\345\205\203\346\217\217\350\277\260\357\274\232", nullptr));
-        btnExecute->setText(QApplication::translate("frmLogicJudgeClass", "\346\211\247\350\241\214", nullptr));
-        groupC->setTitle(QApplication::translate("frmLogicJudgeClass", "\346\235\241\344\273\266\350\256\276\347\275\256", nullptr));
-        comboType->setItemText(0, QApplication::translate("frmLogicJudgeClass", "Bool\351\223\276\346\216\245", nullptr));
-        comboType->setItemText(1, QApplication::translate("frmLogicJudgeClass", "\350\256\241\347\256\227\350\241\250\350\276\276\345\274\217", nullptr));
+        frmLogicJudgeClass->setWindowTitle(QCoreApplication::translate("frmLogicJudgeClass", "\345\210\244\346\226\255\350\257\255\345\217\245", nullptr));
+        label_3->setText(QCoreApplication::translate("frmLogicJudgeClass", "\345\215\225\345\205\203\346\217\217\350\277\260\357\274\232", nullptr));
+        btnExecute->setText(QCoreApplication::translate("frmLogicJudgeClass", "\346\211\247\350\241\214", nullptr));
+        groupC->setTitle(QCoreApplication::translate("frmLogicJudgeClass", "\346\235\241\344\273\266\350\256\276\347\275\256", nullptr));
+        comboType->setItemText(0, QCoreApplication::translate("frmLogicJudgeClass", "Bool\351\223\276\346\216\245", nullptr));
+        comboType->setItemText(1, QCoreApplication::translate("frmLogicJudgeClass", "\350\256\241\347\256\227\350\241\250\350\276\276\345\274\217", nullptr));
 
-        label_30->setText(QApplication::translate("frmLogicJudgeClass", "\345\210\244\346\226\255\346\226\271\345\274\217\357\274\232", nullptr));
-        groupC2->setTitle(QApplication::translate("frmLogicJudgeClass", "Bool\351\223\276\346\216\245", nullptr));
-#ifndef QT_NO_TOOLTIP
-        btnDelLinkBool->setToolTip(QApplication::translate("frmLogicJudgeClass", "\345\210\240\351\231\244Bool\346\225\260\346\215\256\351\223\276\346\216\245", nullptr));
-#endif // QT_NO_TOOLTIP
+        label_30->setText(QCoreApplication::translate("frmLogicJudgeClass", "\345\210\244\346\226\255\346\226\271\345\274\217\357\274\232", nullptr));
+        groupC2->setTitle(QCoreApplication::translate("frmLogicJudgeClass", "Bool\351\223\276\346\216\245", nullptr));
+#if QT_CONFIG(tooltip)
+        btnDelLinkBool->setToolTip(QCoreApplication::translate("frmLogicJudgeClass", "\345\210\240\351\231\244Bool\346\225\260\346\215\256\351\223\276\346\216\245", nullptr));
+#endif // QT_CONFIG(tooltip)
         btnDelLinkBool->setText(QString());
-#ifndef QT_NO_TOOLTIP
-        btnLinkBool->setToolTip(QApplication::translate("frmLogicJudgeClass", "\351\223\276\346\216\245Bool\346\225\260\346\215\256", nullptr));
-#endif // QT_NO_TOOLTIP
+#if QT_CONFIG(tooltip)
+        btnLinkBool->setToolTip(QCoreApplication::translate("frmLogicJudgeClass", "\351\223\276\346\216\245Bool\346\225\260\346\215\256", nullptr));
+#endif // QT_CONFIG(tooltip)
         btnLinkBool->setText(QString());
-        label_5->setText(QApplication::translate("frmLogicJudgeClass", "=", nullptr));
-        label_4->setText(QApplication::translate("frmLogicJudgeClass", "Bool\346\225\260\346\215\256\351\223\276\346\216\245\357\274\232", nullptr));
-#ifndef QT_NO_TOOLTIP
-        txtLinkBool->setToolTip(QApplication::translate("frmLogicJudgeClass", "Bool\347\261\273\345\236\213", nullptr));
-#endif // QT_NO_TOOLTIP
-        comboBool->setItemText(0, QApplication::translate("frmLogicJudgeClass", "true", nullptr));
+        label_5->setText(QCoreApplication::translate("frmLogicJudgeClass", "=", nullptr));
+        label_4->setText(QCoreApplication::translate("frmLogicJudgeClass", "Bool\346\225\260\346\215\256\351\223\276\346\216\245\357\274\232", nullptr));
+#if QT_CONFIG(tooltip)
+        txtLinkBool->setToolTip(QCoreApplication::translate("frmLogicJudgeClass", "Bool\347\261\273\345\236\213", nullptr));
+#endif // QT_CONFIG(tooltip)
+        comboBool->setItemText(0, QCoreApplication::translate("frmLogicJudgeClass", "true", nullptr));
 
-        groupC3->setTitle(QApplication::translate("frmLogicJudgeClass", "\350\256\241\347\256\227\350\241\250\350\276\276\345\274\217", nullptr));
-#ifndef QT_NO_TOOLTIP
-        btnDelLinkRegex->setToolTip(QApplication::translate("frmLogicJudgeClass", "\345\210\240\351\231\244\350\256\241\347\256\227\350\241\250\350\276\276\345\274\217\351\223\276\346\216\245", nullptr));
-#endif // QT_NO_TOOLTIP
+        groupC3->setTitle(QCoreApplication::translate("frmLogicJudgeClass", "\350\256\241\347\256\227\350\241\250\350\276\276\345\274\217", nullptr));
+#if QT_CONFIG(tooltip)
+        btnDelLinkRegex->setToolTip(QCoreApplication::translate("frmLogicJudgeClass", "\345\210\240\351\231\244\350\256\241\347\256\227\350\241\250\350\276\276\345\274\217\351\223\276\346\216\245", nullptr));
+#endif // QT_CONFIG(tooltip)
         btnDelLinkRegex->setText(QString());
-#ifndef QT_NO_TOOLTIP
-        btnLinkRegex->setToolTip(QApplication::translate("frmLogicJudgeClass", "\351\223\276\346\216\245\350\256\241\347\256\227\350\241\250\350\276\276\345\274\217", nullptr));
-#endif // QT_NO_TOOLTIP
+#if QT_CONFIG(tooltip)
+        btnLinkRegex->setToolTip(QCoreApplication::translate("frmLogicJudgeClass", "\351\223\276\346\216\245\350\256\241\347\256\227\350\241\250\350\276\276\345\274\217", nullptr));
+#endif // QT_CONFIG(tooltip)
         btnLinkRegex->setText(QString());
-        label_7->setText(QApplication::translate("frmLogicJudgeClass", "\350\241\250\350\276\276\345\274\217\351\223\276\346\216\245\357\274\232", nullptr));
-#ifndef QT_NO_TOOLTIP
-        txtLinkRegex->setToolTip(QApplication::translate("frmLogicJudgeClass", "Int\347\261\273\345\236\213", nullptr));
-#endif // QT_NO_TOOLTIP
-        comboRegex->setItemText(0, QApplication::translate("frmLogicJudgeClass", "==", nullptr));
-        comboRegex->setItemText(1, QApplication::translate("frmLogicJudgeClass", "!=", nullptr));
-        comboRegex->setItemText(2, QApplication::translate("frmLogicJudgeClass", ">", nullptr));
-        comboRegex->setItemText(3, QApplication::translate("frmLogicJudgeClass", ">=", nullptr));
-        comboRegex->setItemText(4, QApplication::translate("frmLogicJudgeClass", "<", nullptr));
-        comboRegex->setItemText(5, QApplication::translate("frmLogicJudgeClass", "<=", nullptr));
+        label_7->setText(QCoreApplication::translate("frmLogicJudgeClass", "\350\241\250\350\276\276\345\274\217\351\223\276\346\216\245\357\274\232", nullptr));
+#if QT_CONFIG(tooltip)
+        txtLinkRegex->setToolTip(QCoreApplication::translate("frmLogicJudgeClass", "Int\347\261\273\345\236\213", nullptr));
+#endif // QT_CONFIG(tooltip)
+        comboRegex->setItemText(0, QCoreApplication::translate("frmLogicJudgeClass", "==", nullptr));
+        comboRegex->setItemText(1, QCoreApplication::translate("frmLogicJudgeClass", "!=", nullptr));
+        comboRegex->setItemText(2, QCoreApplication::translate("frmLogicJudgeClass", ">", nullptr));
+        comboRegex->setItemText(3, QCoreApplication::translate("frmLogicJudgeClass", ">=", nullptr));
+        comboRegex->setItemText(4, QCoreApplication::translate("frmLogicJudgeClass", "<", nullptr));
+        comboRegex->setItemText(5, QCoreApplication::translate("frmLogicJudgeClass", "<=", nullptr));
 
         lblMsg->setText(QString());
-        tabWidget->setTabText(tabWidget->indexOf(tab), QApplication::translate("frmLogicJudgeClass", "\345\237\272\346\234\254\350\256\276\347\275\256", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab), QCoreApplication::translate("frmLogicJudgeClass", "\345\237\272\346\234\254\350\256\276\347\275\256", nullptr));
     } // retranslateUi
 
 };

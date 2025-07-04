@@ -1,18 +1,19 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'QToolBase.h'
 **
-** Created by: The Qt Meta Object Compiler version 67 (Qt 5.12.12)
+** Created by: The Qt Meta Object Compiler version 67 (Qt 5.14.2)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
 
+#include <memory>
 #include "../../../QToolBase.h"
 #include <QtCore/qbytearray.h>
 #include <QtCore/qmetatype.h>
 #if !defined(Q_MOC_OUTPUT_REVISION)
 #error "The header file 'QToolBase.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 67
-#error "This file was generated using the moc from 5.12.12. It"
+#error "This file was generated using the moc from 5.14.2. It"
 #error "cannot be used with the include files from this version of Qt."
 #error "(The moc has changed too much.)"
 #endif
@@ -124,7 +125,7 @@ void QToolBase::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, v
 }
 
 QT_INIT_METAOBJECT const QMetaObject QToolBase::staticMetaObject = { {
-    &QObject::staticMetaObject,
+    QMetaObject::SuperData::link<QObject::staticMetaObject>(),
     qt_meta_stringdata_QToolBase.data,
     qt_meta_data_QToolBase,
     qt_static_metacall,
@@ -166,21 +167,21 @@ int QToolBase::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 // SIGNAL 0
 void QToolBase::sig_Info(const QString _t1)
 {
-    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
+    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))) };
     QMetaObject::activate(this, &staticMetaObject, 0, _a);
 }
 
 // SIGNAL 1
 void QToolBase::sig_Warn(const QString _t1)
 {
-    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
+    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))) };
     QMetaObject::activate(this, &staticMetaObject, 1, _a);
 }
 
 // SIGNAL 2
 void QToolBase::sig_Error(const QString _t1)
 {
-    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
+    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))) };
     QMetaObject::activate(this, &staticMetaObject, 2, _a);
 }
 
@@ -188,7 +189,7 @@ void QToolBase::sig_Error(const QString _t1)
 QString QToolBase::sig_SetGlobalValue(const QString _t1, const QString _t2, const int _t3)
 {
     QString _t0{};
-    void *_a[] = { const_cast<void*>(reinterpret_cast<const void*>(&_t0)), const_cast<void*>(reinterpret_cast<const void*>(&_t1)), const_cast<void*>(reinterpret_cast<const void*>(&_t2)), const_cast<void*>(reinterpret_cast<const void*>(&_t3)) };
+    void *_a[] = { const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t0))), const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))), const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t2))), const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t3))) };
     QMetaObject::activate(this, &staticMetaObject, 3, _a);
     return _t0;
 }

@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'frmFindCircle.ui'
 **
-** Created by: Qt User Interface Compiler version 5.12.12
+** Created by: Qt User Interface Compiler version 5.14.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -694,57 +694,57 @@ public:
 
     void retranslateUi(QDialog *frmFindCircleClass)
     {
-        frmFindCircleClass->setWindowTitle(QApplication::translate("frmFindCircleClass", "\345\257\273\346\211\276\345\234\206", nullptr));
-        label_3->setText(QApplication::translate("frmFindCircleClass", "\345\215\225\345\205\203\346\217\217\350\277\260\357\274\232", nullptr));
-        btnExecute->setText(QApplication::translate("frmFindCircleClass", "\346\211\247\350\241\214", nullptr));
-        groupCamera->setTitle(QApplication::translate("frmFindCircleClass", "\345\233\276\345\203\217\345\257\271\350\261\241", nullptr));
-        label_4->setText(QApplication::translate("frmFindCircleClass", "\350\276\223\345\205\245\345\233\276\345\203\217\357\274\232", nullptr));
-#ifndef QT_NO_TOOLTIP
-        btnLinkImage->setToolTip(QApplication::translate("frmFindCircleClass", "\351\223\276\346\216\245\345\233\276\345\203\217", nullptr));
-#endif // QT_NO_TOOLTIP
+        frmFindCircleClass->setWindowTitle(QCoreApplication::translate("frmFindCircleClass", "\345\257\273\346\211\276\345\234\206", nullptr));
+        label_3->setText(QCoreApplication::translate("frmFindCircleClass", "\345\215\225\345\205\203\346\217\217\350\277\260\357\274\232", nullptr));
+        btnExecute->setText(QCoreApplication::translate("frmFindCircleClass", "\346\211\247\350\241\214", nullptr));
+        groupCamera->setTitle(QCoreApplication::translate("frmFindCircleClass", "\345\233\276\345\203\217\345\257\271\350\261\241", nullptr));
+        label_4->setText(QCoreApplication::translate("frmFindCircleClass", "\350\276\223\345\205\245\345\233\276\345\203\217\357\274\232", nullptr));
+#if QT_CONFIG(tooltip)
+        btnLinkImage->setToolTip(QCoreApplication::translate("frmFindCircleClass", "\351\223\276\346\216\245\345\233\276\345\203\217", nullptr));
+#endif // QT_CONFIG(tooltip)
         btnLinkImage->setText(QString());
-#ifndef QT_NO_TOOLTIP
-        btnDelLinkImage->setToolTip(QApplication::translate("frmFindCircleClass", "\345\210\240\351\231\244\345\233\276\345\203\217\351\223\276\346\216\245", nullptr));
-#endif // QT_NO_TOOLTIP
+#if QT_CONFIG(tooltip)
+        btnDelLinkImage->setToolTip(QCoreApplication::translate("frmFindCircleClass", "\345\210\240\351\231\244\345\233\276\345\203\217\351\223\276\346\216\245", nullptr));
+#endif // QT_CONFIG(tooltip)
         btnDelLinkImage->setText(QString());
-        groupC2->setTitle(QApplication::translate("frmFindCircleClass", "\345\217\202\346\225\260\350\256\276\347\275\256", nullptr));
-        comboGrayDirection->setItemText(0, QApplication::translate("frmFindCircleClass", "\347\231\275\345\210\260\351\273\221", nullptr));
-        comboGrayDirection->setItemText(1, QApplication::translate("frmFindCircleClass", "\351\273\221\345\210\260\347\231\275", nullptr));
+        groupC2->setTitle(QCoreApplication::translate("frmFindCircleClass", "\345\217\202\346\225\260\350\256\276\347\275\256", nullptr));
+        comboGrayDirection->setItemText(0, QCoreApplication::translate("frmFindCircleClass", "\347\231\275\345\210\260\351\273\221", nullptr));
+        comboGrayDirection->setItemText(1, QCoreApplication::translate("frmFindCircleClass", "\351\273\221\345\210\260\347\231\275", nullptr));
 
-        label_10->setText(QApplication::translate("frmFindCircleClass", "\347\201\260\345\272\246\346\226\271\345\220\221\357\274\232", nullptr));
-        label_14->setText(QApplication::translate("frmFindCircleClass", "\350\276\271\347\274\230\345\274\272\345\272\246\357\274\232", nullptr));
-        label_15->setText(QApplication::translate("frmFindCircleClass", "\346\211\253\346\217\217\346\226\271\345\220\221\357\274\232", nullptr));
-        comboScanDirection->setItemText(0, QApplication::translate("frmFindCircleClass", "\345\206\205\345\210\260\345\244\226", nullptr));
-        comboScanDirection->setItemText(1, QApplication::translate("frmFindCircleClass", "\345\244\226\345\210\260\345\206\205", nullptr));
+        label_10->setText(QCoreApplication::translate("frmFindCircleClass", "\347\201\260\345\272\246\346\226\271\345\220\221\357\274\232", nullptr));
+        label_14->setText(QCoreApplication::translate("frmFindCircleClass", "\350\276\271\347\274\230\345\274\272\345\272\246\357\274\232", nullptr));
+        label_15->setText(QCoreApplication::translate("frmFindCircleClass", "\346\211\253\346\217\217\346\226\271\345\220\221\357\274\232", nullptr));
+        comboScanDirection->setItemText(0, QCoreApplication::translate("frmFindCircleClass", "\345\206\205\345\210\260\345\244\226", nullptr));
+        comboScanDirection->setItemText(1, QCoreApplication::translate("frmFindCircleClass", "\345\244\226\345\210\260\345\206\205", nullptr));
 
-        label_16->setText(QApplication::translate("frmFindCircleClass", "\345\210\206\345\211\262\346\225\260\351\207\217\357\274\232", nullptr));
-        label_19->setText(QApplication::translate("frmFindCircleClass", "\345\211\224\351\231\244\350\267\235\347\246\273\357\274\232", nullptr));
-        groupC3->setTitle(QApplication::translate("frmFindCircleClass", "\350\276\223\345\207\272\346\225\260\346\215\256(\345\234\206\347\232\204\344\270\255\345\277\203\345\235\220\346\240\207\343\200\201\345\215\212\345\276\204)", nullptr));
-        tabWidget->setTabText(tabWidget->indexOf(tab), QApplication::translate("frmFindCircleClass", "\345\237\272\346\234\254\350\256\276\347\275\256", nullptr));
-        groupC4->setTitle(QApplication::translate("frmFindCircleClass", "ROI\345\257\271\350\261\241", nullptr));
-        checkUseROI->setText(QApplication::translate("frmFindCircleClass", "\344\275\277\347\224\250ROI", nullptr));
-        comboROIShape->setItemText(0, QApplication::translate("frmFindCircleClass", "\345\234\206\347\216\257", nullptr));
+        label_16->setText(QCoreApplication::translate("frmFindCircleClass", "\345\210\206\345\211\262\346\225\260\351\207\217\357\274\232", nullptr));
+        label_19->setText(QCoreApplication::translate("frmFindCircleClass", "\345\211\224\351\231\244\350\267\235\347\246\273\357\274\232", nullptr));
+        groupC3->setTitle(QCoreApplication::translate("frmFindCircleClass", "\350\276\223\345\207\272\346\225\260\346\215\256(\345\234\206\347\232\204\344\270\255\345\277\203\345\235\220\346\240\207\343\200\201\345\215\212\345\276\204)", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab), QCoreApplication::translate("frmFindCircleClass", "\345\237\272\346\234\254\350\256\276\347\275\256", nullptr));
+        groupC4->setTitle(QCoreApplication::translate("frmFindCircleClass", "ROI\345\257\271\350\261\241", nullptr));
+        checkUseROI->setText(QCoreApplication::translate("frmFindCircleClass", "\344\275\277\347\224\250ROI", nullptr));
+        comboROIShape->setItemText(0, QCoreApplication::translate("frmFindCircleClass", "\345\234\206\347\216\257", nullptr));
 
-        btnAddROI->setText(QApplication::translate("frmFindCircleClass", "\346\267\273\345\212\240", nullptr));
-        btnDeleteROI->setText(QApplication::translate("frmFindCircleClass", "\345\210\240\351\231\244", nullptr));
-        checkViewROI->setText(QApplication::translate("frmFindCircleClass", "\346\230\276\347\244\272ROI", nullptr));
-        label_17->setText(QApplication::translate("frmFindCircleClass", "ROI\351\242\234\350\211\262\357\274\232", nullptr));
+        btnAddROI->setText(QCoreApplication::translate("frmFindCircleClass", "\346\267\273\345\212\240", nullptr));
+        btnDeleteROI->setText(QCoreApplication::translate("frmFindCircleClass", "\345\210\240\351\231\244", nullptr));
+        checkViewROI->setText(QCoreApplication::translate("frmFindCircleClass", "\346\230\276\347\244\272ROI", nullptr));
+        label_17->setText(QCoreApplication::translate("frmFindCircleClass", "ROI\351\242\234\350\211\262\357\274\232", nullptr));
         btnRoiColor->setText(QString());
-        label_20->setText(QApplication::translate("frmFindCircleClass", "ROI\345\256\275\345\272\246\357\274\232", nullptr));
-        label_18->setText(QApplication::translate("frmFindCircleClass", "\344\272\244\345\217\211\347\272\277\351\225\277\345\272\246\357\274\232", nullptr));
-#ifndef QT_NO_TOOLTIP
-        txtLinkFollow->setToolTip(QApplication::translate("frmFindCircleClass", "\345\214\271\351\205\215\345\237\272\345\207\206\344\270\255\345\277\203", nullptr));
-#endif // QT_NO_TOOLTIP
-#ifndef QT_NO_TOOLTIP
-        btnDelLinkFollow->setToolTip(QApplication::translate("frmFindCircleClass", "\345\210\240\351\231\244\344\275\215\347\275\256\350\267\237\351\232\217\351\223\276\346\216\245", nullptr));
-#endif // QT_NO_TOOLTIP
+        label_20->setText(QCoreApplication::translate("frmFindCircleClass", "ROI\345\256\275\345\272\246\357\274\232", nullptr));
+        label_18->setText(QCoreApplication::translate("frmFindCircleClass", "\344\272\244\345\217\211\347\272\277\351\225\277\345\272\246\357\274\232", nullptr));
+#if QT_CONFIG(tooltip)
+        txtLinkFollow->setToolTip(QCoreApplication::translate("frmFindCircleClass", "\345\214\271\351\205\215\345\237\272\345\207\206\344\270\255\345\277\203", nullptr));
+#endif // QT_CONFIG(tooltip)
+#if QT_CONFIG(tooltip)
+        btnDelLinkFollow->setToolTip(QCoreApplication::translate("frmFindCircleClass", "\345\210\240\351\231\244\344\275\215\347\275\256\350\267\237\351\232\217\351\223\276\346\216\245", nullptr));
+#endif // QT_CONFIG(tooltip)
         btnDelLinkFollow->setText(QString());
-#ifndef QT_NO_TOOLTIP
-        btnLinkFollow->setToolTip(QApplication::translate("frmFindCircleClass", "\351\223\276\346\216\245\344\275\215\347\275\256\350\267\237\351\232\217", nullptr));
-#endif // QT_NO_TOOLTIP
+#if QT_CONFIG(tooltip)
+        btnLinkFollow->setToolTip(QCoreApplication::translate("frmFindCircleClass", "\351\223\276\346\216\245\344\275\215\347\275\256\350\267\237\351\232\217", nullptr));
+#endif // QT_CONFIG(tooltip)
         btnLinkFollow->setText(QString());
-        checkUseFollow->setText(QApplication::translate("frmFindCircleClass", "\344\275\215\347\275\256\350\267\237\351\232\217", nullptr));
-        tabWidget->setTabText(tabWidget->indexOf(tab_2), QApplication::translate("frmFindCircleClass", "ROI\350\256\276\347\275\256", nullptr));
+        checkUseFollow->setText(QCoreApplication::translate("frmFindCircleClass", "\344\275\215\347\275\256\350\267\237\351\232\217", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab_2), QCoreApplication::translate("frmFindCircleClass", "ROI\350\256\276\347\275\256", nullptr));
     } // retranslateUi
 
 };

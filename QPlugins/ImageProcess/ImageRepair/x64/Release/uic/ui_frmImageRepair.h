@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'frmImageRepair.ui'
 **
-** Created by: Qt User Interface Compiler version 5.12.12
+** Created by: Qt User Interface Compiler version 5.14.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -326,24 +326,24 @@ public:
 
     void retranslateUi(QDialog *frmImageRepairClass)
     {
-        frmImageRepairClass->setWindowTitle(QApplication::translate("frmImageRepairClass", "\345\233\276\345\203\217\344\277\256\345\244\215", nullptr));
-        groupCamera_8->setTitle(QApplication::translate("frmImageRepairClass", "\344\277\256\345\244\215\345\217\202\346\225\260", nullptr));
-        label_8->setText(QApplication::translate("frmImageRepairClass", "\346\234\200\345\244\247\351\230\210\345\200\274\357\274\232", nullptr));
-        label_7->setText(QApplication::translate("frmImageRepairClass", "\346\234\200\345\260\217\351\230\210\345\200\274\357\274\232", nullptr));
-        label_10->setText(QApplication::translate("frmImageRepairClass", "\345\215\212\345\276\204\357\274\232", nullptr));
-        groupCamera->setTitle(QApplication::translate("frmImageRepairClass", "\345\233\276\345\203\217\345\257\271\350\261\241", nullptr));
-        label_4->setText(QApplication::translate("frmImageRepairClass", "\350\276\223\345\205\245\345\233\276\345\203\217\357\274\232", nullptr));
-#ifndef QT_NO_TOOLTIP
-        btnLinkImage->setToolTip(QApplication::translate("frmImageRepairClass", "\351\223\276\346\216\245\345\233\276\345\203\217", nullptr));
-#endif // QT_NO_TOOLTIP
+        frmImageRepairClass->setWindowTitle(QCoreApplication::translate("frmImageRepairClass", "\345\233\276\345\203\217\344\277\256\345\244\215", nullptr));
+        groupCamera_8->setTitle(QCoreApplication::translate("frmImageRepairClass", "\344\277\256\345\244\215\345\217\202\346\225\260", nullptr));
+        label_8->setText(QCoreApplication::translate("frmImageRepairClass", "\346\234\200\345\244\247\351\230\210\345\200\274\357\274\232", nullptr));
+        label_7->setText(QCoreApplication::translate("frmImageRepairClass", "\346\234\200\345\260\217\351\230\210\345\200\274\357\274\232", nullptr));
+        label_10->setText(QCoreApplication::translate("frmImageRepairClass", "\345\215\212\345\276\204\357\274\232", nullptr));
+        groupCamera->setTitle(QCoreApplication::translate("frmImageRepairClass", "\345\233\276\345\203\217\345\257\271\350\261\241", nullptr));
+        label_4->setText(QCoreApplication::translate("frmImageRepairClass", "\350\276\223\345\205\245\345\233\276\345\203\217\357\274\232", nullptr));
+#if QT_CONFIG(tooltip)
+        btnLinkImage->setToolTip(QCoreApplication::translate("frmImageRepairClass", "\351\223\276\346\216\245\345\233\276\345\203\217", nullptr));
+#endif // QT_CONFIG(tooltip)
         btnLinkImage->setText(QString());
-#ifndef QT_NO_TOOLTIP
-        btnDelLinkImage->setToolTip(QApplication::translate("frmImageRepairClass", "\345\210\240\351\231\244\345\233\276\345\203\217\351\223\276\346\216\245", nullptr));
-#endif // QT_NO_TOOLTIP
+#if QT_CONFIG(tooltip)
+        btnDelLinkImage->setToolTip(QCoreApplication::translate("frmImageRepairClass", "\345\210\240\351\231\244\345\233\276\345\203\217\351\223\276\346\216\245", nullptr));
+#endif // QT_CONFIG(tooltip)
         btnDelLinkImage->setText(QString());
-        tabWidget->setTabText(tabWidget->indexOf(tab), QApplication::translate("frmImageRepairClass", "\345\237\272\346\234\254\350\256\276\347\275\256", nullptr));
-        label_3->setText(QApplication::translate("frmImageRepairClass", "\345\215\225\345\205\203\346\217\217\350\277\260\357\274\232", nullptr));
-        btnExecute->setText(QApplication::translate("frmImageRepairClass", "\346\211\247\350\241\214", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab), QCoreApplication::translate("frmImageRepairClass", "\345\237\272\346\234\254\350\256\276\347\275\256", nullptr));
+        label_3->setText(QCoreApplication::translate("frmImageRepairClass", "\345\215\225\345\205\203\346\217\217\350\277\260\357\274\232", nullptr));
+        btnExecute->setText(QCoreApplication::translate("frmImageRepairClass", "\346\211\247\350\241\214", nullptr));
     } // retranslateUi
 
 };

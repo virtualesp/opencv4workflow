@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'frmPlcCommunicate.ui'
 **
-** Created by: Qt User Interface Compiler version 5.12.12
+** Created by: Qt User Interface Compiler version 5.14.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -677,52 +677,52 @@ public:
 
     void retranslateUi(QDialog *frmPlcCommunicateClass)
     {
-        frmPlcCommunicateClass->setWindowTitle(QApplication::translate("frmPlcCommunicateClass", "PLC\351\200\232\344\277\241", nullptr));
-        label_3->setText(QApplication::translate("frmPlcCommunicateClass", "\345\215\225\345\205\203\346\217\217\350\277\260\357\274\232", nullptr));
-        btnExecute->setText(QApplication::translate("frmPlcCommunicateClass", "\346\211\247\350\241\214", nullptr));
-        groupC->setTitle(QApplication::translate("frmPlcCommunicateClass", "\351\200\232\350\256\257\345\257\271\350\261\241", nullptr));
+        frmPlcCommunicateClass->setWindowTitle(QCoreApplication::translate("frmPlcCommunicateClass", "PLC\351\200\232\344\277\241", nullptr));
+        label_3->setText(QCoreApplication::translate("frmPlcCommunicateClass", "\345\215\225\345\205\203\346\217\217\350\277\260\357\274\232", nullptr));
+        btnExecute->setText(QCoreApplication::translate("frmPlcCommunicateClass", "\346\211\247\350\241\214", nullptr));
+        groupC->setTitle(QCoreApplication::translate("frmPlcCommunicateClass", "\351\200\232\350\256\257\345\257\271\350\261\241", nullptr));
         lblMsg->setText(QString());
-        label_8->setText(QApplication::translate("frmPlcCommunicateClass", "\351\200\232\350\256\257\345\220\215\347\247\260\357\274\232", nullptr));
-        btnUpdata->setText(QApplication::translate("frmPlcCommunicateClass", "\346\233\264\346\226\260\345\210\227\350\241\250", nullptr));
-        groupC2->setTitle(QApplication::translate("frmPlcCommunicateClass", "\351\223\276\346\216\245\345\257\271\350\261\241", nullptr));
+        label_8->setText(QCoreApplication::translate("frmPlcCommunicateClass", "\351\200\232\350\256\257\345\220\215\347\247\260\357\274\232", nullptr));
+        btnUpdata->setText(QCoreApplication::translate("frmPlcCommunicateClass", "\346\233\264\346\226\260\345\210\227\350\241\250", nullptr));
+        groupC2->setTitle(QCoreApplication::translate("frmPlcCommunicateClass", "\351\223\276\346\216\245\345\257\271\350\261\241", nullptr));
         QTableWidgetItem *___qtablewidgetitem = tableWidgetPlc->horizontalHeaderItem(0);
-        ___qtablewidgetitem->setText(QApplication::translate("frmPlcCommunicateClass", "PLC\345\257\204\345\255\230\345\231\250\351\223\276\346\216\245\345\234\260\345\235\200", nullptr));
-        btnAddRegister->setText(QApplication::translate("frmPlcCommunicateClass", "\346\267\273\345\212\240", nullptr));
-        btnDeleteRegister->setText(QApplication::translate("frmPlcCommunicateClass", "\345\210\240\351\231\244", nullptr));
-        groupC3->setTitle(QApplication::translate("frmPlcCommunicateClass", "\344\270\211\350\217\261PLC\350\256\276\347\275\256", nullptr));
-        label_14->setText(QApplication::translate("frmPlcCommunicateClass", "\345\257\204\345\255\230\345\231\250\345\206\231\345\205\245\345\200\274\357\274\232", nullptr));
-#ifndef QT_NO_TOOLTIP
-        txtMitRegisterData->setToolTip(QApplication::translate("frmPlcCommunicateClass", "\345\205\250\345\261\200\345\217\230\351\207\217Int\347\261\273\345\236\213", nullptr));
-#endif // QT_NO_TOOLTIP
-#ifndef QT_NO_TOOLTIP
-        btnLinkMitRegisterData->setToolTip(QApplication::translate("frmPlcCommunicateClass", "\351\223\276\346\216\245\345\206\205\345\256\271", nullptr));
-#endif // QT_NO_TOOLTIP
+        ___qtablewidgetitem->setText(QCoreApplication::translate("frmPlcCommunicateClass", "PLC\345\257\204\345\255\230\345\231\250\351\223\276\346\216\245\345\234\260\345\235\200", nullptr));
+        btnAddRegister->setText(QCoreApplication::translate("frmPlcCommunicateClass", "\346\267\273\345\212\240", nullptr));
+        btnDeleteRegister->setText(QCoreApplication::translate("frmPlcCommunicateClass", "\345\210\240\351\231\244", nullptr));
+        groupC3->setTitle(QCoreApplication::translate("frmPlcCommunicateClass", "\344\270\211\350\217\261PLC\350\256\276\347\275\256", nullptr));
+        label_14->setText(QCoreApplication::translate("frmPlcCommunicateClass", "\345\257\204\345\255\230\345\231\250\345\206\231\345\205\245\345\200\274\357\274\232", nullptr));
+#if QT_CONFIG(tooltip)
+        txtMitRegisterData->setToolTip(QCoreApplication::translate("frmPlcCommunicateClass", "\345\205\250\345\261\200\345\217\230\351\207\217Int\347\261\273\345\236\213", nullptr));
+#endif // QT_CONFIG(tooltip)
+#if QT_CONFIG(tooltip)
+        btnLinkMitRegisterData->setToolTip(QCoreApplication::translate("frmPlcCommunicateClass", "\351\223\276\346\216\245\345\206\205\345\256\271", nullptr));
+#endif // QT_CONFIG(tooltip)
         btnLinkMitRegisterData->setText(QString());
-#ifndef QT_NO_TOOLTIP
-        btnDelLinkMitRegisterData->setToolTip(QApplication::translate("frmPlcCommunicateClass", "\345\210\240\351\231\244\345\206\205\345\256\271\351\223\276\346\216\245", nullptr));
-#endif // QT_NO_TOOLTIP
+#if QT_CONFIG(tooltip)
+        btnDelLinkMitRegisterData->setToolTip(QCoreApplication::translate("frmPlcCommunicateClass", "\345\210\240\351\231\244\345\206\205\345\256\271\351\223\276\346\216\245", nullptr));
+#endif // QT_CONFIG(tooltip)
         btnDelLinkMitRegisterData->setText(QString());
-        btnMitBack->setText(QApplication::translate("frmPlcCommunicateClass", "\344\270\212\344\270\200\351\241\265", nullptr));
+        btnMitBack->setText(QCoreApplication::translate("frmPlcCommunicateClass", "\344\270\212\344\270\200\351\241\265", nullptr));
         label->setText(QString());
-        btnMitSave->setText(QApplication::translate("frmPlcCommunicateClass", "\345\217\202\346\225\260\344\277\235\345\255\230", nullptr));
-        lbl_mit->setText(QApplication::translate("frmPlcCommunicateClass", "\351\200\232\344\277\241\346\225\260\346\215\256\344\273\243\347\240\201\357\274\232", nullptr));
-        comboMitCode->setItemText(0, QApplication::translate("frmPlcCommunicateClass", "\344\272\214\350\277\233\345\210\266\347\240\201", nullptr));
-        comboMitCode->setItemText(1, QApplication::translate("frmPlcCommunicateClass", "ASCII\347\240\201", nullptr));
+        btnMitSave->setText(QCoreApplication::translate("frmPlcCommunicateClass", "\345\217\202\346\225\260\344\277\235\345\255\230", nullptr));
+        lbl_mit->setText(QCoreApplication::translate("frmPlcCommunicateClass", "\351\200\232\344\277\241\346\225\260\346\215\256\344\273\243\347\240\201\357\274\232", nullptr));
+        comboMitCode->setItemText(0, QCoreApplication::translate("frmPlcCommunicateClass", "\344\272\214\350\277\233\345\210\266\347\240\201", nullptr));
+        comboMitCode->setItemText(1, QCoreApplication::translate("frmPlcCommunicateClass", "ASCII\347\240\201", nullptr));
 
-        label_12->setText(QApplication::translate("frmPlcCommunicateClass", "\351\200\232\344\277\241\346\250\241\345\274\217\357\274\232", nullptr));
-        radioMitRead->setText(QApplication::translate("frmPlcCommunicateClass", "\350\257\273", nullptr));
-        radioMitWrite->setText(QApplication::translate("frmPlcCommunicateClass", "\345\206\231", nullptr));
-#ifndef QT_NO_TOOLTIP
-        txtMitRegisterAddress->setToolTip(QApplication::translate("frmPlcCommunicateClass", "eg: D0", nullptr));
-#endif // QT_NO_TOOLTIP
-        label_15->setText(QApplication::translate("frmPlcCommunicateClass", "\345\257\204\345\255\230\345\231\250\345\234\260\345\235\200\357\274\232", nullptr));
-        lbl_mit_2->setText(QApplication::translate("frmPlcCommunicateClass", "\351\200\232\344\277\241\350\256\277\351\227\256\346\226\271\345\274\217\357\274\232", nullptr));
-        comboMitMethod->setItemText(0, QApplication::translate("frmPlcCommunicateClass", "\345\255\227", nullptr));
-        comboMitMethod->setItemText(1, QApplication::translate("frmPlcCommunicateClass", "\345\217\214\345\255\227", nullptr));
+        label_12->setText(QCoreApplication::translate("frmPlcCommunicateClass", "\351\200\232\344\277\241\346\250\241\345\274\217\357\274\232", nullptr));
+        radioMitRead->setText(QCoreApplication::translate("frmPlcCommunicateClass", "\350\257\273", nullptr));
+        radioMitWrite->setText(QCoreApplication::translate("frmPlcCommunicateClass", "\345\206\231", nullptr));
+#if QT_CONFIG(tooltip)
+        txtMitRegisterAddress->setToolTip(QCoreApplication::translate("frmPlcCommunicateClass", "eg: D0", nullptr));
+#endif // QT_CONFIG(tooltip)
+        label_15->setText(QCoreApplication::translate("frmPlcCommunicateClass", "\345\257\204\345\255\230\345\231\250\345\234\260\345\235\200\357\274\232", nullptr));
+        lbl_mit_2->setText(QCoreApplication::translate("frmPlcCommunicateClass", "\351\200\232\344\277\241\350\256\277\351\227\256\346\226\271\345\274\217\357\274\232", nullptr));
+        comboMitMethod->setItemText(0, QCoreApplication::translate("frmPlcCommunicateClass", "\345\255\227", nullptr));
+        comboMitMethod->setItemText(1, QCoreApplication::translate("frmPlcCommunicateClass", "\345\217\214\345\255\227", nullptr));
 
-        tabWidget->setTabText(tabWidget->indexOf(tab), QApplication::translate("frmPlcCommunicateClass", "\345\237\272\346\234\254\350\256\276\347\275\256", nullptr));
-        groupC3_2->setTitle(QApplication::translate("frmPlcCommunicateClass", "\350\276\223\345\207\272\346\225\260\346\215\256", nullptr));
-        tabWidget->setTabText(tabWidget->indexOf(tab_2), QApplication::translate("frmPlcCommunicateClass", "\350\276\223\345\207\272\346\230\276\347\244\272", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab), QCoreApplication::translate("frmPlcCommunicateClass", "\345\237\272\346\234\254\350\256\276\347\275\256", nullptr));
+        groupC3_2->setTitle(QCoreApplication::translate("frmPlcCommunicateClass", "\350\276\223\345\207\272\346\225\260\346\215\256", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab_2), QCoreApplication::translate("frmPlcCommunicateClass", "\350\276\223\345\207\272\346\230\276\347\244\272", nullptr));
     } // retranslateUi
 
 };

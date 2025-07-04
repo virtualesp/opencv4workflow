@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'frmLogin.ui'
 **
-** Created by: Qt User Interface Compiler version 5.12.12
+** Created by: Qt User Interface Compiler version 5.14.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -213,13 +213,13 @@ public:
 
     void retranslateUi(QWidget *frmLoginClass)
     {
-        frmLoginClass->setWindowTitle(QApplication::translate("frmLoginClass", "QMacVisual", nullptr));
-        btnLogout->setText(QApplication::translate("frmLoginClass", "\346\263\250\351\224\200", nullptr));
+        frmLoginClass->setWindowTitle(QCoreApplication::translate("frmLoginClass", "QMacVisual", nullptr));
+        btnLogout->setText(QCoreApplication::translate("frmLoginClass", "\346\263\250\351\224\200", nullptr));
         txtUserPW->setText(QString());
-        btnLogin->setText(QApplication::translate("frmLoginClass", "\347\231\273\345\275\225", nullptr));
+        btnLogin->setText(QCoreApplication::translate("frmLoginClass", "\347\231\273\345\275\225", nullptr));
         label->setText(QString());
-        label_3->setText(QApplication::translate("frmLoginClass", "\347\224\250\346\210\267\345\220\215\347\247\260\357\274\232", nullptr));
-        label_2->setText(QApplication::translate("frmLoginClass", "\347\224\250\346\210\267\345\257\206\347\240\201\357\274\232", nullptr));
+        label_3->setText(QCoreApplication::translate("frmLoginClass", "\347\224\250\346\210\267\345\220\215\347\247\260\357\274\232", nullptr));
+        label_2->setText(QCoreApplication::translate("frmLoginClass", "\347\224\250\346\210\267\345\257\206\347\240\201\357\274\232", nullptr));
     } // retranslateUi
 
 };

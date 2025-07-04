@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'frmImageMorphology.ui'
 **
-** Created by: Qt User Interface Compiler version 5.12.12
+** Created by: Qt User Interface Compiler version 5.14.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -3148,318 +3148,318 @@ public:
 
     void retranslateUi(QDialog *frmImageMorphologyClass)
     {
-        frmImageMorphologyClass->setWindowTitle(QApplication::translate("frmImageMorphologyClass", "\351\242\204\345\244\204\347\220\206", nullptr));
-        label_3->setText(QApplication::translate("frmImageMorphologyClass", "\345\215\225\345\205\203\346\217\217\350\277\260\357\274\232", nullptr));
-        btnExecute->setText(QApplication::translate("frmImageMorphologyClass", "\346\211\247\350\241\214", nullptr));
-        groupC_3->setTitle(QApplication::translate("frmImageMorphologyClass", "\345\233\276\345\203\217\345\257\271\350\261\241", nullptr));
-        label_4->setText(QApplication::translate("frmImageMorphologyClass", "\350\276\223\345\205\245\345\233\276\345\203\217\357\274\232", nullptr));
-#ifndef QT_NO_TOOLTIP
-        btnLinkImage->setToolTip(QApplication::translate("frmImageMorphologyClass", "\351\223\276\346\216\245\345\233\276\345\203\217", nullptr));
-#endif // QT_NO_TOOLTIP
+        frmImageMorphologyClass->setWindowTitle(QCoreApplication::translate("frmImageMorphologyClass", "\351\242\204\345\244\204\347\220\206", nullptr));
+        label_3->setText(QCoreApplication::translate("frmImageMorphologyClass", "\345\215\225\345\205\203\346\217\217\350\277\260\357\274\232", nullptr));
+        btnExecute->setText(QCoreApplication::translate("frmImageMorphologyClass", "\346\211\247\350\241\214", nullptr));
+        groupC_3->setTitle(QCoreApplication::translate("frmImageMorphologyClass", "\345\233\276\345\203\217\345\257\271\350\261\241", nullptr));
+        label_4->setText(QCoreApplication::translate("frmImageMorphologyClass", "\350\276\223\345\205\245\345\233\276\345\203\217\357\274\232", nullptr));
+#if QT_CONFIG(tooltip)
+        btnLinkImage->setToolTip(QCoreApplication::translate("frmImageMorphologyClass", "\351\223\276\346\216\245\345\233\276\345\203\217", nullptr));
+#endif // QT_CONFIG(tooltip)
         btnLinkImage->setText(QString());
-#ifndef QT_NO_TOOLTIP
-        btnDelLinkImage->setToolTip(QApplication::translate("frmImageMorphologyClass", "\345\210\240\351\231\244\345\233\276\345\203\217\351\223\276\346\216\245", nullptr));
-#endif // QT_NO_TOOLTIP
+#if QT_CONFIG(tooltip)
+        btnDelLinkImage->setToolTip(QCoreApplication::translate("frmImageMorphologyClass", "\345\210\240\351\231\244\345\233\276\345\203\217\351\223\276\346\216\245", nullptr));
+#endif // QT_CONFIG(tooltip)
         btnDelLinkImage->setText(QString());
-        groupC->setTitle(QApplication::translate("frmImageMorphologyClass", "\351\242\204\345\244\204\347\220\206\345\217\202\346\225\260", nullptr));
+        groupC->setTitle(QCoreApplication::translate("frmImageMorphologyClass", "\351\242\204\345\244\204\347\220\206\345\217\202\346\225\260", nullptr));
         QTableWidgetItem *___qtablewidgetitem = tableWidgetType->horizontalHeaderItem(0);
-        ___qtablewidgetitem->setText(QApplication::translate("frmImageMorphologyClass", "\351\242\204\345\244\204\347\220\206\351\241\271\347\233\256", nullptr));
-        btnAddType->setText(QApplication::translate("frmImageMorphologyClass", "\346\267\273\345\212\240", nullptr));
-        btnDeleteType->setText(QApplication::translate("frmImageMorphologyClass", "\345\210\240\351\231\244", nullptr));
-        btnMoveUp->setText(QApplication::translate("frmImageMorphologyClass", "\344\270\212\347\247\273", nullptr));
-        btnMoveDown->setText(QApplication::translate("frmImageMorphologyClass", "\344\270\213\347\247\273", nullptr));
-        label->setText(QApplication::translate("frmImageMorphologyClass", "\351\242\204\345\244\204\347\220\206\347\261\273\345\236\213\357\274\232", nullptr));
+        ___qtablewidgetitem->setText(QCoreApplication::translate("frmImageMorphologyClass", "\351\242\204\345\244\204\347\220\206\351\241\271\347\233\256", nullptr));
+        btnAddType->setText(QCoreApplication::translate("frmImageMorphologyClass", "\346\267\273\345\212\240", nullptr));
+        btnDeleteType->setText(QCoreApplication::translate("frmImageMorphologyClass", "\345\210\240\351\231\244", nullptr));
+        btnMoveUp->setText(QCoreApplication::translate("frmImageMorphologyClass", "\344\270\212\347\247\273", nullptr));
+        btnMoveDown->setText(QCoreApplication::translate("frmImageMorphologyClass", "\344\270\213\347\247\273", nullptr));
+        label->setText(QCoreApplication::translate("frmImageMorphologyClass", "\351\242\204\345\244\204\347\220\206\347\261\273\345\236\213\357\274\232", nullptr));
         lblType->setText(QString());
-#ifndef QT_NO_TOOLTIP
-        btnMenu->setToolTip(QApplication::translate("frmImageMorphologyClass", "\346\267\273\345\212\240\351\242\204\345\244\204\347\220\206", nullptr));
-#endif // QT_NO_TOOLTIP
+#if QT_CONFIG(tooltip)
+        btnMenu->setToolTip(QCoreApplication::translate("frmImageMorphologyClass", "\346\267\273\345\212\240\351\242\204\345\244\204\347\220\206", nullptr));
+#endif // QT_CONFIG(tooltip)
         btnMenu->setText(QString());
-        checkRealTime->setText(QApplication::translate("frmImageMorphologyClass", "\345\256\236\346\227\266", nullptr));
-        groupParam_30->setTitle(QApplication::translate("frmImageMorphologyClass", "\351\242\234\350\211\262\347\251\272\351\227\264\345\217\230\346\215\242\345\217\202\346\225\260\350\256\276\347\275\256", nullptr));
-        btnChannelBack->setText(QApplication::translate("frmImageMorphologyClass", "\344\270\212\344\270\200\351\241\265", nullptr));
-        label_62->setText(QApplication::translate("frmImageMorphologyClass", "\351\242\234\350\211\262\347\251\272\351\227\264\345\217\230\346\215\242\347\261\273\345\236\213\357\274\232", nullptr));
-        comboChannel->setItemText(0, QApplication::translate("frmImageMorphologyClass", "BGR2HSV", nullptr));
-        comboChannel->setItemText(1, QApplication::translate("frmImageMorphologyClass", "BGR2HLS", nullptr));
-        comboChannel->setItemText(2, QApplication::translate("frmImageMorphologyClass", "BGR2Lab", nullptr));
-        comboChannel->setItemText(3, QApplication::translate("frmImageMorphologyClass", "BGR2Luv", nullptr));
-        comboChannel->setItemText(4, QApplication::translate("frmImageMorphologyClass", "BGR2XYZ", nullptr));
-        comboChannel->setItemText(5, QApplication::translate("frmImageMorphologyClass", "BGR2YUV", nullptr));
-        comboChannel->setItemText(6, QApplication::translate("frmImageMorphologyClass", "BGR2YCrCb", nullptr));
+        checkRealTime->setText(QCoreApplication::translate("frmImageMorphologyClass", "\345\256\236\346\227\266", nullptr));
+        groupParam_30->setTitle(QCoreApplication::translate("frmImageMorphologyClass", "\351\242\234\350\211\262\347\251\272\351\227\264\345\217\230\346\215\242\345\217\202\346\225\260\350\256\276\347\275\256", nullptr));
+        btnChannelBack->setText(QCoreApplication::translate("frmImageMorphologyClass", "\344\270\212\344\270\200\351\241\265", nullptr));
+        label_62->setText(QCoreApplication::translate("frmImageMorphologyClass", "\351\242\234\350\211\262\347\251\272\351\227\264\345\217\230\346\215\242\347\261\273\345\236\213\357\274\232", nullptr));
+        comboChannel->setItemText(0, QCoreApplication::translate("frmImageMorphologyClass", "BGR2HSV", nullptr));
+        comboChannel->setItemText(1, QCoreApplication::translate("frmImageMorphologyClass", "BGR2HLS", nullptr));
+        comboChannel->setItemText(2, QCoreApplication::translate("frmImageMorphologyClass", "BGR2Lab", nullptr));
+        comboChannel->setItemText(3, QCoreApplication::translate("frmImageMorphologyClass", "BGR2Luv", nullptr));
+        comboChannel->setItemText(4, QCoreApplication::translate("frmImageMorphologyClass", "BGR2XYZ", nullptr));
+        comboChannel->setItemText(5, QCoreApplication::translate("frmImageMorphologyClass", "BGR2YUV", nullptr));
+        comboChannel->setItemText(6, QCoreApplication::translate("frmImageMorphologyClass", "BGR2YCrCb", nullptr));
 
-        groupC_2->setTitle(QApplication::translate("frmImageMorphologyClass", "\350\276\223\345\207\272\345\233\276\345\203\217\345\257\271\350\261\241", nullptr));
-        radioImage->setText(QApplication::translate("frmImageMorphologyClass", "3\351\200\232\351\201\223\345\233\276\345\203\217", nullptr));
-        radioImageC1->setText(QApplication::translate("frmImageMorphologyClass", "\351\200\232\351\201\2231\345\233\276\345\203\217", nullptr));
-        radioImageC2->setText(QApplication::translate("frmImageMorphologyClass", "\351\200\232\351\201\2232\345\233\276\345\203\217", nullptr));
-        radioImageC3->setText(QApplication::translate("frmImageMorphologyClass", "\351\200\232\351\201\2233\345\233\276\345\203\217", nullptr));
-        groupParam_26->setTitle(QApplication::translate("frmImageMorphologyClass", "fill_up\345\217\202\346\225\260\350\256\276\347\275\256", nullptr));
-        btnFillUpBack->setText(QApplication::translate("frmImageMorphologyClass", "\344\270\212\344\270\200\351\241\265", nullptr));
-        label_58->setText(QApplication::translate("frmImageMorphologyClass", "\351\273\221\347\231\275\350\211\262\351\200\211\346\213\251\357\274\232", nullptr));
-        comboFillUp->setItemText(0, QApplication::translate("frmImageMorphologyClass", "WHITE", nullptr));
-        comboFillUp->setItemText(1, QApplication::translate("frmImageMorphologyClass", "BLACK", nullptr));
+        groupC_2->setTitle(QCoreApplication::translate("frmImageMorphologyClass", "\350\276\223\345\207\272\345\233\276\345\203\217\345\257\271\350\261\241", nullptr));
+        radioImage->setText(QCoreApplication::translate("frmImageMorphologyClass", "3\351\200\232\351\201\223\345\233\276\345\203\217", nullptr));
+        radioImageC1->setText(QCoreApplication::translate("frmImageMorphologyClass", "\351\200\232\351\201\2231\345\233\276\345\203\217", nullptr));
+        radioImageC2->setText(QCoreApplication::translate("frmImageMorphologyClass", "\351\200\232\351\201\2232\345\233\276\345\203\217", nullptr));
+        radioImageC3->setText(QCoreApplication::translate("frmImageMorphologyClass", "\351\200\232\351\201\2233\345\233\276\345\203\217", nullptr));
+        groupParam_26->setTitle(QCoreApplication::translate("frmImageMorphologyClass", "fill_up\345\217\202\346\225\260\350\256\276\347\275\256", nullptr));
+        btnFillUpBack->setText(QCoreApplication::translate("frmImageMorphologyClass", "\344\270\212\344\270\200\351\241\265", nullptr));
+        label_58->setText(QCoreApplication::translate("frmImageMorphologyClass", "\351\273\221\347\231\275\350\211\262\351\200\211\346\213\251\357\274\232", nullptr));
+        comboFillUp->setItemText(0, QCoreApplication::translate("frmImageMorphologyClass", "WHITE", nullptr));
+        comboFillUp->setItemText(1, QCoreApplication::translate("frmImageMorphologyClass", "BLACK", nullptr));
 
-        groupParam_27->setTitle(QApplication::translate("frmImageMorphologyClass", "shape_trans\345\217\202\346\225\260\350\256\276\347\275\256", nullptr));
-        btnShapeTransBack->setText(QApplication::translate("frmImageMorphologyClass", "\344\270\212\344\270\200\351\241\265", nullptr));
-        label_59->setText(QApplication::translate("frmImageMorphologyClass", "\345\275\242\347\212\266\347\261\273\345\236\213\357\274\232", nullptr));
-        comboShapeTrans->setItemText(0, QApplication::translate("frmImageMorphologyClass", "RECTANGLE", nullptr));
-        comboShapeTrans->setItemText(1, QApplication::translate("frmImageMorphologyClass", "CIRCLE", nullptr));
-        comboShapeTrans->setItemText(2, QApplication::translate("frmImageMorphologyClass", "CONVER", nullptr));
+        groupParam_27->setTitle(QCoreApplication::translate("frmImageMorphologyClass", "shape_trans\345\217\202\346\225\260\350\256\276\347\275\256", nullptr));
+        btnShapeTransBack->setText(QCoreApplication::translate("frmImageMorphologyClass", "\344\270\212\344\270\200\351\241\265", nullptr));
+        label_59->setText(QCoreApplication::translate("frmImageMorphologyClass", "\345\275\242\347\212\266\347\261\273\345\236\213\357\274\232", nullptr));
+        comboShapeTrans->setItemText(0, QCoreApplication::translate("frmImageMorphologyClass", "RECTANGLE", nullptr));
+        comboShapeTrans->setItemText(1, QCoreApplication::translate("frmImageMorphologyClass", "CIRCLE", nullptr));
+        comboShapeTrans->setItemText(2, QCoreApplication::translate("frmImageMorphologyClass", "CONVER", nullptr));
 
-        comboSTColor->setItemText(0, QApplication::translate("frmImageMorphologyClass", "WHITE", nullptr));
-        comboSTColor->setItemText(1, QApplication::translate("frmImageMorphologyClass", "BLACK", nullptr));
+        comboSTColor->setItemText(0, QCoreApplication::translate("frmImageMorphologyClass", "WHITE", nullptr));
+        comboSTColor->setItemText(1, QCoreApplication::translate("frmImageMorphologyClass", "BLACK", nullptr));
 
-        label_60->setText(QApplication::translate("frmImageMorphologyClass", "\351\273\221\347\231\275\350\211\262\351\200\211\346\213\251\357\274\232", nullptr));
-        groupParam->setTitle(QApplication::translate("frmImageMorphologyClass", "\345\233\272\345\256\232\351\230\210\345\200\274\345\217\202\346\225\260\350\256\276\347\275\256", nullptr));
-        label_7->setText(QApplication::translate("frmImageMorphologyClass", "\346\234\200\345\260\217\351\230\210\345\200\274\357\274\232", nullptr));
-        btnThresholdBack->setText(QApplication::translate("frmImageMorphologyClass", "\344\270\212\344\270\200\351\241\265", nullptr));
-        label_8->setText(QApplication::translate("frmImageMorphologyClass", "\346\234\200\345\244\247\351\230\210\345\200\274\357\274\232", nullptr));
-        label_9->setText(QApplication::translate("frmImageMorphologyClass", "\351\230\210\345\200\274\347\261\273\345\236\213\357\274\232", nullptr));
-        comboThreshold->setItemText(0, QApplication::translate("frmImageMorphologyClass", "THRESH_BINARY", nullptr));
-        comboThreshold->setItemText(1, QApplication::translate("frmImageMorphologyClass", "THRESH_BINARY_INV", nullptr));
-        comboThreshold->setItemText(2, QApplication::translate("frmImageMorphologyClass", "THRESH_TOZERO", nullptr));
-        comboThreshold->setItemText(3, QApplication::translate("frmImageMorphologyClass", "THRESH_TOZERO_INV", nullptr));
-        comboThreshold->setItemText(4, QApplication::translate("frmImageMorphologyClass", "THRESH_TRUNC", nullptr));
-        comboThreshold->setItemText(5, QApplication::translate("frmImageMorphologyClass", "THRESH_OTSU", nullptr));
-        comboThreshold->setItemText(6, QApplication::translate("frmImageMorphologyClass", "THRESH_TRIANGLE", nullptr));
+        label_60->setText(QCoreApplication::translate("frmImageMorphologyClass", "\351\273\221\347\231\275\350\211\262\351\200\211\346\213\251\357\274\232", nullptr));
+        groupParam->setTitle(QCoreApplication::translate("frmImageMorphologyClass", "\345\233\272\345\256\232\351\230\210\345\200\274\345\217\202\346\225\260\350\256\276\347\275\256", nullptr));
+        label_7->setText(QCoreApplication::translate("frmImageMorphologyClass", "\346\234\200\345\260\217\351\230\210\345\200\274\357\274\232", nullptr));
+        btnThresholdBack->setText(QCoreApplication::translate("frmImageMorphologyClass", "\344\270\212\344\270\200\351\241\265", nullptr));
+        label_8->setText(QCoreApplication::translate("frmImageMorphologyClass", "\346\234\200\345\244\247\351\230\210\345\200\274\357\274\232", nullptr));
+        label_9->setText(QCoreApplication::translate("frmImageMorphologyClass", "\351\230\210\345\200\274\347\261\273\345\236\213\357\274\232", nullptr));
+        comboThreshold->setItemText(0, QCoreApplication::translate("frmImageMorphologyClass", "THRESH_BINARY", nullptr));
+        comboThreshold->setItemText(1, QCoreApplication::translate("frmImageMorphologyClass", "THRESH_BINARY_INV", nullptr));
+        comboThreshold->setItemText(2, QCoreApplication::translate("frmImageMorphologyClass", "THRESH_TOZERO", nullptr));
+        comboThreshold->setItemText(3, QCoreApplication::translate("frmImageMorphologyClass", "THRESH_TOZERO_INV", nullptr));
+        comboThreshold->setItemText(4, QCoreApplication::translate("frmImageMorphologyClass", "THRESH_TRUNC", nullptr));
+        comboThreshold->setItemText(5, QCoreApplication::translate("frmImageMorphologyClass", "THRESH_OTSU", nullptr));
+        comboThreshold->setItemText(6, QCoreApplication::translate("frmImageMorphologyClass", "THRESH_TRIANGLE", nullptr));
 
-        groupParam_28->setTitle(QApplication::translate("frmImageMorphologyClass", "threshold\345\217\202\346\225\260\350\256\276\347\275\256", nullptr));
-        label_56->setText(QApplication::translate("frmImageMorphologyClass", "\346\234\200\345\260\217\351\230\210\345\200\274\357\274\232", nullptr));
-        btnThreshBack->setText(QApplication::translate("frmImageMorphologyClass", "\344\270\212\344\270\200\351\241\265", nullptr));
-        label_57->setText(QApplication::translate("frmImageMorphologyClass", "\346\234\200\345\244\247\351\230\210\345\200\274\357\274\232", nullptr));
-        groupParam_2->setTitle(QApplication::translate("frmImageMorphologyClass", "dyn_threshold\345\217\202\346\225\260\350\256\276\347\275\256", nullptr));
-        label_10->setText(QApplication::translate("frmImageMorphologyClass", "\345\201\217\347\247\273\351\207\217\357\274\232", nullptr));
-        btnAdaptiveBack->setText(QApplication::translate("frmImageMorphologyClass", "\344\270\212\344\270\200\351\241\265", nullptr));
-        label_11->setText(QApplication::translate("frmImageMorphologyClass", "\345\235\207\345\200\274\346\273\244\346\263\242\346\240\270\345\244\247\345\260\217\357\274\232", nullptr));
-#ifndef QT_NO_TOOLTIP
+        groupParam_28->setTitle(QCoreApplication::translate("frmImageMorphologyClass", "threshold\345\217\202\346\225\260\350\256\276\347\275\256", nullptr));
+        label_56->setText(QCoreApplication::translate("frmImageMorphologyClass", "\346\234\200\345\260\217\351\230\210\345\200\274\357\274\232", nullptr));
+        btnThreshBack->setText(QCoreApplication::translate("frmImageMorphologyClass", "\344\270\212\344\270\200\351\241\265", nullptr));
+        label_57->setText(QCoreApplication::translate("frmImageMorphologyClass", "\346\234\200\345\244\247\351\230\210\345\200\274\357\274\232", nullptr));
+        groupParam_2->setTitle(QCoreApplication::translate("frmImageMorphologyClass", "dyn_threshold\345\217\202\346\225\260\350\256\276\347\275\256", nullptr));
+        label_10->setText(QCoreApplication::translate("frmImageMorphologyClass", "\345\201\217\347\247\273\351\207\217\357\274\232", nullptr));
+        btnAdaptiveBack->setText(QCoreApplication::translate("frmImageMorphologyClass", "\344\270\212\344\270\200\351\241\265", nullptr));
+        label_11->setText(QCoreApplication::translate("frmImageMorphologyClass", "\345\235\207\345\200\274\346\273\244\346\263\242\346\240\270\345\244\247\345\260\217\357\274\232", nullptr));
+#if QT_CONFIG(tooltip)
         spinAdaptiveKSize->setToolTip(QString());
-#endif // QT_NO_TOOLTIP
-        label_12->setText(QApplication::translate("frmImageMorphologyClass", "\346\217\220\345\217\226\345\214\272\345\237\237\347\261\273\345\236\213\357\274\232", nullptr));
-        comboAdaptiveType->setItemText(0, QApplication::translate("frmImageMorphologyClass", "LIGHT", nullptr));
-        comboAdaptiveType->setItemText(1, QApplication::translate("frmImageMorphologyClass", "DARK", nullptr));
-        comboAdaptiveType->setItemText(2, QApplication::translate("frmImageMorphologyClass", "EQUAL", nullptr));
-        comboAdaptiveType->setItemText(3, QApplication::translate("frmImageMorphologyClass", "NOT_EQUAL", nullptr));
+#endif // QT_CONFIG(tooltip)
+        label_12->setText(QCoreApplication::translate("frmImageMorphologyClass", "\346\217\220\345\217\226\345\214\272\345\237\237\347\261\273\345\236\213\357\274\232", nullptr));
+        comboAdaptiveType->setItemText(0, QCoreApplication::translate("frmImageMorphologyClass", "LIGHT", nullptr));
+        comboAdaptiveType->setItemText(1, QCoreApplication::translate("frmImageMorphologyClass", "DARK", nullptr));
+        comboAdaptiveType->setItemText(2, QCoreApplication::translate("frmImageMorphologyClass", "EQUAL", nullptr));
+        comboAdaptiveType->setItemText(3, QCoreApplication::translate("frmImageMorphologyClass", "NOT_EQUAL", nullptr));
 
-        groupParam_3->setTitle(QApplication::translate("frmImageMorphologyClass", "\345\235\207\345\200\274\346\273\244\346\263\242\345\217\202\346\225\260\350\256\276\347\275\256", nullptr));
-        btnBlurBack->setText(QApplication::translate("frmImageMorphologyClass", "\344\270\212\344\270\200\351\241\265", nullptr));
-        label_14->setText(QApplication::translate("frmImageMorphologyClass", "\345\235\207\345\200\274\346\273\244\346\263\242\346\240\270\345\244\247\345\260\217\357\274\232", nullptr));
-#ifndef QT_NO_TOOLTIP
+        groupParam_3->setTitle(QCoreApplication::translate("frmImageMorphologyClass", "\345\235\207\345\200\274\346\273\244\346\263\242\345\217\202\346\225\260\350\256\276\347\275\256", nullptr));
+        btnBlurBack->setText(QCoreApplication::translate("frmImageMorphologyClass", "\344\270\212\344\270\200\351\241\265", nullptr));
+        label_14->setText(QCoreApplication::translate("frmImageMorphologyClass", "\345\235\207\345\200\274\346\273\244\346\263\242\346\240\270\345\244\247\345\260\217\357\274\232", nullptr));
+#if QT_CONFIG(tooltip)
         spinBlurKSize->setToolTip(QString());
-#endif // QT_NO_TOOLTIP
-        groupParam_4->setTitle(QApplication::translate("frmImageMorphologyClass", "\344\270\255\345\200\274\346\273\244\346\263\242\345\217\202\346\225\260\350\256\276\347\275\256", nullptr));
-        btnMedianBlurBack->setText(QApplication::translate("frmImageMorphologyClass", "\344\270\212\344\270\200\351\241\265", nullptr));
-        label_15->setText(QApplication::translate("frmImageMorphologyClass", "\344\270\255\345\200\274\346\273\244\346\263\242\346\240\270\345\244\247\345\260\217\357\274\232", nullptr));
-#ifndef QT_NO_TOOLTIP
+#endif // QT_CONFIG(tooltip)
+        groupParam_4->setTitle(QCoreApplication::translate("frmImageMorphologyClass", "\344\270\255\345\200\274\346\273\244\346\263\242\345\217\202\346\225\260\350\256\276\347\275\256", nullptr));
+        btnMedianBlurBack->setText(QCoreApplication::translate("frmImageMorphologyClass", "\344\270\212\344\270\200\351\241\265", nullptr));
+        label_15->setText(QCoreApplication::translate("frmImageMorphologyClass", "\344\270\255\345\200\274\346\273\244\346\263\242\346\240\270\345\244\247\345\260\217\357\274\232", nullptr));
+#if QT_CONFIG(tooltip)
         spinMedianBlurKSize->setToolTip(QString());
-#endif // QT_NO_TOOLTIP
-        groupParam_5->setTitle(QApplication::translate("frmImageMorphologyClass", "\351\253\230\346\226\257\346\273\244\346\263\242\345\217\202\346\225\260\350\256\276\347\275\256", nullptr));
-        btnGaussianBlurBack->setText(QApplication::translate("frmImageMorphologyClass", "\344\270\212\344\270\200\351\241\265", nullptr));
-        label_16->setText(QApplication::translate("frmImageMorphologyClass", "\351\253\230\346\226\257\346\273\244\346\263\242\346\240\270\345\244\247\345\260\217\357\274\232", nullptr));
-#ifndef QT_NO_TOOLTIP
+#endif // QT_CONFIG(tooltip)
+        groupParam_5->setTitle(QCoreApplication::translate("frmImageMorphologyClass", "\351\253\230\346\226\257\346\273\244\346\263\242\345\217\202\346\225\260\350\256\276\347\275\256", nullptr));
+        btnGaussianBlurBack->setText(QCoreApplication::translate("frmImageMorphologyClass", "\344\270\212\344\270\200\351\241\265", nullptr));
+        label_16->setText(QCoreApplication::translate("frmImageMorphologyClass", "\351\253\230\346\226\257\346\273\244\346\263\242\346\240\270\345\244\247\345\260\217\357\274\232", nullptr));
+#if QT_CONFIG(tooltip)
         spinGaussianBlurKSize->setToolTip(QString());
-#endif // QT_NO_TOOLTIP
-        groupParam_6->setTitle(QApplication::translate("frmImageMorphologyClass", "\345\217\214\350\276\271\346\273\244\346\263\242\345\217\202\346\225\260\350\256\276\347\275\256", nullptr));
-        btnBilateralBack->setText(QApplication::translate("frmImageMorphologyClass", "\344\270\212\344\270\200\351\241\265", nullptr));
-        label_17->setText(QApplication::translate("frmImageMorphologyClass", "\345\220\204\345\203\217\347\264\240\351\202\273\345\237\237\347\233\264\345\276\204\357\274\232", nullptr));
-#ifndef QT_NO_TOOLTIP
+#endif // QT_CONFIG(tooltip)
+        groupParam_6->setTitle(QCoreApplication::translate("frmImageMorphologyClass", "\345\217\214\350\276\271\346\273\244\346\263\242\345\217\202\346\225\260\350\256\276\347\275\256", nullptr));
+        btnBilateralBack->setText(QCoreApplication::translate("frmImageMorphologyClass", "\344\270\212\344\270\200\351\241\265", nullptr));
+        label_17->setText(QCoreApplication::translate("frmImageMorphologyClass", "\345\220\204\345\203\217\347\264\240\351\202\273\345\237\237\347\233\264\345\276\204\357\274\232", nullptr));
+#if QT_CONFIG(tooltip)
         spinBilateralDSize->setToolTip(QString());
-#endif // QT_NO_TOOLTIP
-        label_18->setText(QApplication::translate("frmImageMorphologyClass", "sigma\345\200\274\357\274\232", nullptr));
-#ifndef QT_NO_TOOLTIP
+#endif // QT_CONFIG(tooltip)
+        label_18->setText(QCoreApplication::translate("frmImageMorphologyClass", "sigma\345\200\274\357\274\232", nullptr));
+#if QT_CONFIG(tooltip)
         spinBilateralSigma->setToolTip(QString());
-#endif // QT_NO_TOOLTIP
-        groupParam_7->setTitle(QApplication::translate("frmImageMorphologyClass", "\346\226\271\346\241\206\346\273\244\346\263\242\345\217\202\346\225\260\350\256\276\347\275\256", nullptr));
-        btnBoxBack->setText(QApplication::translate("frmImageMorphologyClass", "\344\270\212\344\270\200\351\241\265", nullptr));
-        label_19->setText(QApplication::translate("frmImageMorphologyClass", "\346\226\271\346\241\206\346\273\244\346\263\242\346\240\270\345\244\247\345\260\217\357\274\232", nullptr));
-#ifndef QT_NO_TOOLTIP
+#endif // QT_CONFIG(tooltip)
+        groupParam_7->setTitle(QCoreApplication::translate("frmImageMorphologyClass", "\346\226\271\346\241\206\346\273\244\346\263\242\345\217\202\346\225\260\350\256\276\347\275\256", nullptr));
+        btnBoxBack->setText(QCoreApplication::translate("frmImageMorphologyClass", "\344\270\212\344\270\200\351\241\265", nullptr));
+        label_19->setText(QCoreApplication::translate("frmImageMorphologyClass", "\346\226\271\346\241\206\346\273\244\346\263\242\346\240\270\345\244\247\345\260\217\357\274\232", nullptr));
+#if QT_CONFIG(tooltip)
         spinBoxKSize->setToolTip(QString());
-#endif // QT_NO_TOOLTIP
-        groupParam_8->setTitle(QApplication::translate("frmImageMorphologyClass", "sobel\346\273\244\346\263\242\345\217\202\346\225\260\350\256\276\347\275\256", nullptr));
-        btnSobelBack->setText(QApplication::translate("frmImageMorphologyClass", "\344\270\212\344\270\200\351\241\265", nullptr));
-        label_20->setText(QApplication::translate("frmImageMorphologyClass", "sobel\346\273\244\346\263\242\346\240\270\345\244\247\345\260\217\357\274\232", nullptr));
-#ifndef QT_NO_TOOLTIP
+#endif // QT_CONFIG(tooltip)
+        groupParam_8->setTitle(QCoreApplication::translate("frmImageMorphologyClass", "sobel\346\273\244\346\263\242\345\217\202\346\225\260\350\256\276\347\275\256", nullptr));
+        btnSobelBack->setText(QCoreApplication::translate("frmImageMorphologyClass", "\344\270\212\344\270\200\351\241\265", nullptr));
+        label_20->setText(QCoreApplication::translate("frmImageMorphologyClass", "sobel\346\273\244\346\263\242\346\240\270\345\244\247\345\260\217\357\274\232", nullptr));
+#if QT_CONFIG(tooltip)
         spinSobelKSize->setToolTip(QString());
-#endif // QT_NO_TOOLTIP
-        groupParam_9->setTitle(QApplication::translate("frmImageMorphologyClass", "canny\346\273\244\346\263\242\345\217\202\346\225\260\350\256\276\347\275\256", nullptr));
-        label_13->setText(QApplication::translate("frmImageMorphologyClass", "\346\234\200\345\260\217\351\230\210\345\200\274\357\274\232", nullptr));
-        btnCannyBack->setText(QApplication::translate("frmImageMorphologyClass", "\344\270\212\344\270\200\351\241\265", nullptr));
-        label_21->setText(QApplication::translate("frmImageMorphologyClass", "\346\234\200\345\244\247\351\230\210\345\200\274\357\274\232", nullptr));
-#ifndef QT_NO_TOOLTIP
+#endif // QT_CONFIG(tooltip)
+        groupParam_9->setTitle(QCoreApplication::translate("frmImageMorphologyClass", "canny\346\273\244\346\263\242\345\217\202\346\225\260\350\256\276\347\275\256", nullptr));
+        label_13->setText(QCoreApplication::translate("frmImageMorphologyClass", "\346\234\200\345\260\217\351\230\210\345\200\274\357\274\232", nullptr));
+        btnCannyBack->setText(QCoreApplication::translate("frmImageMorphologyClass", "\344\270\212\344\270\200\351\241\265", nullptr));
+        label_21->setText(QCoreApplication::translate("frmImageMorphologyClass", "\346\234\200\345\244\247\351\230\210\345\200\274\357\274\232", nullptr));
+#if QT_CONFIG(tooltip)
         spinCannyKSize->setToolTip(QString());
-#endif // QT_NO_TOOLTIP
-        label_23->setText(QApplication::translate("frmImageMorphologyClass", "canny\346\273\244\346\263\242\346\240\270\345\244\247\345\260\217\357\274\232", nullptr));
-        groupParam_10->setTitle(QApplication::translate("frmImageMorphologyClass", "laplace\346\273\244\346\263\242\345\217\202\346\225\260\350\256\276\347\275\256", nullptr));
-        btnLaplaceBack->setText(QApplication::translate("frmImageMorphologyClass", "\344\270\212\344\270\200\351\241\265", nullptr));
-        label_22->setText(QApplication::translate("frmImageMorphologyClass", "laplace\346\273\244\346\263\242\346\240\270\345\244\247\345\260\217\357\274\232", nullptr));
-#ifndef QT_NO_TOOLTIP
+#endif // QT_CONFIG(tooltip)
+        label_23->setText(QCoreApplication::translate("frmImageMorphologyClass", "canny\346\273\244\346\263\242\346\240\270\345\244\247\345\260\217\357\274\232", nullptr));
+        groupParam_10->setTitle(QCoreApplication::translate("frmImageMorphologyClass", "laplace\346\273\244\346\263\242\345\217\202\346\225\260\350\256\276\347\275\256", nullptr));
+        btnLaplaceBack->setText(QCoreApplication::translate("frmImageMorphologyClass", "\344\270\212\344\270\200\351\241\265", nullptr));
+        label_22->setText(QCoreApplication::translate("frmImageMorphologyClass", "laplace\346\273\244\346\263\242\346\240\270\345\244\247\345\260\217\357\274\232", nullptr));
+#if QT_CONFIG(tooltip)
         spinLaplaceKSize->setToolTip(QString());
-#endif // QT_NO_TOOLTIP
-        groupParam_11->setTitle(QApplication::translate("frmImageMorphologyClass", "\350\205\220\350\232\200\345\217\202\346\225\260\350\256\276\347\275\256", nullptr));
-        btnErodeBack->setText(QApplication::translate("frmImageMorphologyClass", "\344\270\212\344\270\200\351\241\265", nullptr));
-        label_25->setText(QApplication::translate("frmImageMorphologyClass", "\347\273\223\346\236\204\345\205\203\347\264\240\345\244\247\345\260\217\357\274\232", nullptr));
-#ifndef QT_NO_TOOLTIP
+#endif // QT_CONFIG(tooltip)
+        groupParam_11->setTitle(QCoreApplication::translate("frmImageMorphologyClass", "\350\205\220\350\232\200\345\217\202\346\225\260\350\256\276\347\275\256", nullptr));
+        btnErodeBack->setText(QCoreApplication::translate("frmImageMorphologyClass", "\344\270\212\344\270\200\351\241\265", nullptr));
+        label_25->setText(QCoreApplication::translate("frmImageMorphologyClass", "\347\273\223\346\236\204\345\205\203\347\264\240\345\244\247\345\260\217\357\274\232", nullptr));
+#if QT_CONFIG(tooltip)
         spinErodeSize->setToolTip(QString());
-#endif // QT_NO_TOOLTIP
-        label_26->setText(QApplication::translate("frmImageMorphologyClass", "\347\273\223\346\236\204\347\261\273\345\236\213\357\274\232", nullptr));
-        comboErodeType->setItemText(0, QApplication::translate("frmImageMorphologyClass", "RECT", nullptr));
-        comboErodeType->setItemText(1, QApplication::translate("frmImageMorphologyClass", "CROSS", nullptr));
-        comboErodeType->setItemText(2, QApplication::translate("frmImageMorphologyClass", "ELLIPSE", nullptr));
+#endif // QT_CONFIG(tooltip)
+        label_26->setText(QCoreApplication::translate("frmImageMorphologyClass", "\347\273\223\346\236\204\347\261\273\345\236\213\357\274\232", nullptr));
+        comboErodeType->setItemText(0, QCoreApplication::translate("frmImageMorphologyClass", "RECT", nullptr));
+        comboErodeType->setItemText(1, QCoreApplication::translate("frmImageMorphologyClass", "CROSS", nullptr));
+        comboErodeType->setItemText(2, QCoreApplication::translate("frmImageMorphologyClass", "ELLIPSE", nullptr));
 
-        label_27->setText(QApplication::translate("frmImageMorphologyClass", "\350\277\255\344\273\243\346\254\241\346\225\260\357\274\232", nullptr));
-#ifndef QT_NO_TOOLTIP
+        label_27->setText(QCoreApplication::translate("frmImageMorphologyClass", "\350\277\255\344\273\243\346\254\241\346\225\260\357\274\232", nullptr));
+#if QT_CONFIG(tooltip)
         spinErodeIterations->setToolTip(QString());
-#endif // QT_NO_TOOLTIP
-        groupParam_12->setTitle(QApplication::translate("frmImageMorphologyClass", "\350\206\250\350\203\200\345\217\202\346\225\260\350\256\276\347\275\256", nullptr));
-        btnDilateBack->setText(QApplication::translate("frmImageMorphologyClass", "\344\270\212\344\270\200\351\241\265", nullptr));
-        label_28->setText(QApplication::translate("frmImageMorphologyClass", "\347\273\223\346\236\204\345\205\203\347\264\240\345\244\247\345\260\217\357\274\232", nullptr));
-#ifndef QT_NO_TOOLTIP
+#endif // QT_CONFIG(tooltip)
+        groupParam_12->setTitle(QCoreApplication::translate("frmImageMorphologyClass", "\350\206\250\350\203\200\345\217\202\346\225\260\350\256\276\347\275\256", nullptr));
+        btnDilateBack->setText(QCoreApplication::translate("frmImageMorphologyClass", "\344\270\212\344\270\200\351\241\265", nullptr));
+        label_28->setText(QCoreApplication::translate("frmImageMorphologyClass", "\347\273\223\346\236\204\345\205\203\347\264\240\345\244\247\345\260\217\357\274\232", nullptr));
+#if QT_CONFIG(tooltip)
         spinDilateSize->setToolTip(QString());
-#endif // QT_NO_TOOLTIP
-        label_29->setText(QApplication::translate("frmImageMorphologyClass", "\347\273\223\346\236\204\347\261\273\345\236\213\357\274\232", nullptr));
-        comboDilateType->setItemText(0, QApplication::translate("frmImageMorphologyClass", "RECT", nullptr));
-        comboDilateType->setItemText(1, QApplication::translate("frmImageMorphologyClass", "CROSS", nullptr));
-        comboDilateType->setItemText(2, QApplication::translate("frmImageMorphologyClass", "ELLIPSE", nullptr));
+#endif // QT_CONFIG(tooltip)
+        label_29->setText(QCoreApplication::translate("frmImageMorphologyClass", "\347\273\223\346\236\204\347\261\273\345\236\213\357\274\232", nullptr));
+        comboDilateType->setItemText(0, QCoreApplication::translate("frmImageMorphologyClass", "RECT", nullptr));
+        comboDilateType->setItemText(1, QCoreApplication::translate("frmImageMorphologyClass", "CROSS", nullptr));
+        comboDilateType->setItemText(2, QCoreApplication::translate("frmImageMorphologyClass", "ELLIPSE", nullptr));
 
-        label_30->setText(QApplication::translate("frmImageMorphologyClass", "\350\277\255\344\273\243\346\254\241\346\225\260\357\274\232", nullptr));
-#ifndef QT_NO_TOOLTIP
+        label_30->setText(QCoreApplication::translate("frmImageMorphologyClass", "\350\277\255\344\273\243\346\254\241\346\225\260\357\274\232", nullptr));
+#if QT_CONFIG(tooltip)
         spinDilateIterations->setToolTip(QString());
-#endif // QT_NO_TOOLTIP
-        groupParam_13->setTitle(QApplication::translate("frmImageMorphologyClass", "\345\274\200\350\277\220\347\256\227\345\217\202\346\225\260\350\256\276\347\275\256", nullptr));
-        btnOpenBack->setText(QApplication::translate("frmImageMorphologyClass", "\344\270\212\344\270\200\351\241\265", nullptr));
-        label_31->setText(QApplication::translate("frmImageMorphologyClass", "\347\273\223\346\236\204\345\205\203\347\264\240\345\244\247\345\260\217\357\274\232", nullptr));
-#ifndef QT_NO_TOOLTIP
+#endif // QT_CONFIG(tooltip)
+        groupParam_13->setTitle(QCoreApplication::translate("frmImageMorphologyClass", "\345\274\200\350\277\220\347\256\227\345\217\202\346\225\260\350\256\276\347\275\256", nullptr));
+        btnOpenBack->setText(QCoreApplication::translate("frmImageMorphologyClass", "\344\270\212\344\270\200\351\241\265", nullptr));
+        label_31->setText(QCoreApplication::translate("frmImageMorphologyClass", "\347\273\223\346\236\204\345\205\203\347\264\240\345\244\247\345\260\217\357\274\232", nullptr));
+#if QT_CONFIG(tooltip)
         spinOpenSize->setToolTip(QString());
-#endif // QT_NO_TOOLTIP
-        label_32->setText(QApplication::translate("frmImageMorphologyClass", "\347\273\223\346\236\204\347\261\273\345\236\213\357\274\232", nullptr));
-        comboOpenType->setItemText(0, QApplication::translate("frmImageMorphologyClass", "RECT", nullptr));
-        comboOpenType->setItemText(1, QApplication::translate("frmImageMorphologyClass", "CROSS", nullptr));
-        comboOpenType->setItemText(2, QApplication::translate("frmImageMorphologyClass", "ELLIPSE", nullptr));
+#endif // QT_CONFIG(tooltip)
+        label_32->setText(QCoreApplication::translate("frmImageMorphologyClass", "\347\273\223\346\236\204\347\261\273\345\236\213\357\274\232", nullptr));
+        comboOpenType->setItemText(0, QCoreApplication::translate("frmImageMorphologyClass", "RECT", nullptr));
+        comboOpenType->setItemText(1, QCoreApplication::translate("frmImageMorphologyClass", "CROSS", nullptr));
+        comboOpenType->setItemText(2, QCoreApplication::translate("frmImageMorphologyClass", "ELLIPSE", nullptr));
 
-        label_33->setText(QApplication::translate("frmImageMorphologyClass", "\350\277\255\344\273\243\346\254\241\346\225\260\357\274\232", nullptr));
-#ifndef QT_NO_TOOLTIP
+        label_33->setText(QCoreApplication::translate("frmImageMorphologyClass", "\350\277\255\344\273\243\346\254\241\346\225\260\357\274\232", nullptr));
+#if QT_CONFIG(tooltip)
         spinOpenIterations->setToolTip(QString());
-#endif // QT_NO_TOOLTIP
-        groupParam_14->setTitle(QApplication::translate("frmImageMorphologyClass", "\351\227\255\350\277\220\347\256\227\345\217\202\346\225\260\350\256\276\347\275\256", nullptr));
-        btnCloseBack->setText(QApplication::translate("frmImageMorphologyClass", "\344\270\212\344\270\200\351\241\265", nullptr));
-        label_34->setText(QApplication::translate("frmImageMorphologyClass", "\347\273\223\346\236\204\345\205\203\347\264\240\345\244\247\345\260\217\357\274\232", nullptr));
-#ifndef QT_NO_TOOLTIP
+#endif // QT_CONFIG(tooltip)
+        groupParam_14->setTitle(QCoreApplication::translate("frmImageMorphologyClass", "\351\227\255\350\277\220\347\256\227\345\217\202\346\225\260\350\256\276\347\275\256", nullptr));
+        btnCloseBack->setText(QCoreApplication::translate("frmImageMorphologyClass", "\344\270\212\344\270\200\351\241\265", nullptr));
+        label_34->setText(QCoreApplication::translate("frmImageMorphologyClass", "\347\273\223\346\236\204\345\205\203\347\264\240\345\244\247\345\260\217\357\274\232", nullptr));
+#if QT_CONFIG(tooltip)
         spinCloseSize->setToolTip(QString());
-#endif // QT_NO_TOOLTIP
-        label_35->setText(QApplication::translate("frmImageMorphologyClass", "\347\273\223\346\236\204\347\261\273\345\236\213\357\274\232", nullptr));
-        comboCloseType->setItemText(0, QApplication::translate("frmImageMorphologyClass", "RECT", nullptr));
-        comboCloseType->setItemText(1, QApplication::translate("frmImageMorphologyClass", "CROSS", nullptr));
-        comboCloseType->setItemText(2, QApplication::translate("frmImageMorphologyClass", "ELLIPSE", nullptr));
+#endif // QT_CONFIG(tooltip)
+        label_35->setText(QCoreApplication::translate("frmImageMorphologyClass", "\347\273\223\346\236\204\347\261\273\345\236\213\357\274\232", nullptr));
+        comboCloseType->setItemText(0, QCoreApplication::translate("frmImageMorphologyClass", "RECT", nullptr));
+        comboCloseType->setItemText(1, QCoreApplication::translate("frmImageMorphologyClass", "CROSS", nullptr));
+        comboCloseType->setItemText(2, QCoreApplication::translate("frmImageMorphologyClass", "ELLIPSE", nullptr));
 
-        label_36->setText(QApplication::translate("frmImageMorphologyClass", "\350\277\255\344\273\243\346\254\241\346\225\260\357\274\232", nullptr));
-#ifndef QT_NO_TOOLTIP
+        label_36->setText(QCoreApplication::translate("frmImageMorphologyClass", "\350\277\255\344\273\243\346\254\241\346\225\260\357\274\232", nullptr));
+#if QT_CONFIG(tooltip)
         spinCloseIterations->setToolTip(QString());
-#endif // QT_NO_TOOLTIP
-        groupParam_15->setTitle(QApplication::translate("frmImageMorphologyClass", "\351\241\266\345\270\275\345\217\202\346\225\260\350\256\276\347\275\256", nullptr));
-        btnTophatBack->setText(QApplication::translate("frmImageMorphologyClass", "\344\270\212\344\270\200\351\241\265", nullptr));
-        label_37->setText(QApplication::translate("frmImageMorphologyClass", "\347\273\223\346\236\204\345\205\203\347\264\240\345\244\247\345\260\217\357\274\232", nullptr));
-#ifndef QT_NO_TOOLTIP
+#endif // QT_CONFIG(tooltip)
+        groupParam_15->setTitle(QCoreApplication::translate("frmImageMorphologyClass", "\351\241\266\345\270\275\345\217\202\346\225\260\350\256\276\347\275\256", nullptr));
+        btnTophatBack->setText(QCoreApplication::translate("frmImageMorphologyClass", "\344\270\212\344\270\200\351\241\265", nullptr));
+        label_37->setText(QCoreApplication::translate("frmImageMorphologyClass", "\347\273\223\346\236\204\345\205\203\347\264\240\345\244\247\345\260\217\357\274\232", nullptr));
+#if QT_CONFIG(tooltip)
         spinTophatSize->setToolTip(QString());
-#endif // QT_NO_TOOLTIP
-        label_38->setText(QApplication::translate("frmImageMorphologyClass", "\347\273\223\346\236\204\347\261\273\345\236\213\357\274\232", nullptr));
-        comboTophatType->setItemText(0, QApplication::translate("frmImageMorphologyClass", "RECT", nullptr));
-        comboTophatType->setItemText(1, QApplication::translate("frmImageMorphologyClass", "CROSS", nullptr));
-        comboTophatType->setItemText(2, QApplication::translate("frmImageMorphologyClass", "ELLIPSE", nullptr));
+#endif // QT_CONFIG(tooltip)
+        label_38->setText(QCoreApplication::translate("frmImageMorphologyClass", "\347\273\223\346\236\204\347\261\273\345\236\213\357\274\232", nullptr));
+        comboTophatType->setItemText(0, QCoreApplication::translate("frmImageMorphologyClass", "RECT", nullptr));
+        comboTophatType->setItemText(1, QCoreApplication::translate("frmImageMorphologyClass", "CROSS", nullptr));
+        comboTophatType->setItemText(2, QCoreApplication::translate("frmImageMorphologyClass", "ELLIPSE", nullptr));
 
-        label_39->setText(QApplication::translate("frmImageMorphologyClass", "\350\277\255\344\273\243\346\254\241\346\225\260\357\274\232", nullptr));
-#ifndef QT_NO_TOOLTIP
+        label_39->setText(QCoreApplication::translate("frmImageMorphologyClass", "\350\277\255\344\273\243\346\254\241\346\225\260\357\274\232", nullptr));
+#if QT_CONFIG(tooltip)
         spinTophatIterations->setToolTip(QString());
-#endif // QT_NO_TOOLTIP
-        groupParam_16->setTitle(QApplication::translate("frmImageMorphologyClass", "\351\273\221\345\270\275\345\217\202\346\225\260\350\256\276\347\275\256", nullptr));
-        btnBlackhatBack->setText(QApplication::translate("frmImageMorphologyClass", "\344\270\212\344\270\200\351\241\265", nullptr));
-        label_40->setText(QApplication::translate("frmImageMorphologyClass", "\347\273\223\346\236\204\345\205\203\347\264\240\345\244\247\345\260\217\357\274\232", nullptr));
-#ifndef QT_NO_TOOLTIP
+#endif // QT_CONFIG(tooltip)
+        groupParam_16->setTitle(QCoreApplication::translate("frmImageMorphologyClass", "\351\273\221\345\270\275\345\217\202\346\225\260\350\256\276\347\275\256", nullptr));
+        btnBlackhatBack->setText(QCoreApplication::translate("frmImageMorphologyClass", "\344\270\212\344\270\200\351\241\265", nullptr));
+        label_40->setText(QCoreApplication::translate("frmImageMorphologyClass", "\347\273\223\346\236\204\345\205\203\347\264\240\345\244\247\345\260\217\357\274\232", nullptr));
+#if QT_CONFIG(tooltip)
         spinBlackhatSize->setToolTip(QString());
-#endif // QT_NO_TOOLTIP
-        label_41->setText(QApplication::translate("frmImageMorphologyClass", "\347\273\223\346\236\204\347\261\273\345\236\213\357\274\232", nullptr));
-        comboBlackhatType->setItemText(0, QApplication::translate("frmImageMorphologyClass", "RECT", nullptr));
-        comboBlackhatType->setItemText(1, QApplication::translate("frmImageMorphologyClass", "CROSS", nullptr));
-        comboBlackhatType->setItemText(2, QApplication::translate("frmImageMorphologyClass", "ELLIPSE", nullptr));
+#endif // QT_CONFIG(tooltip)
+        label_41->setText(QCoreApplication::translate("frmImageMorphologyClass", "\347\273\223\346\236\204\347\261\273\345\236\213\357\274\232", nullptr));
+        comboBlackhatType->setItemText(0, QCoreApplication::translate("frmImageMorphologyClass", "RECT", nullptr));
+        comboBlackhatType->setItemText(1, QCoreApplication::translate("frmImageMorphologyClass", "CROSS", nullptr));
+        comboBlackhatType->setItemText(2, QCoreApplication::translate("frmImageMorphologyClass", "ELLIPSE", nullptr));
 
-        label_42->setText(QApplication::translate("frmImageMorphologyClass", "\350\277\255\344\273\243\346\254\241\346\225\260\357\274\232", nullptr));
-#ifndef QT_NO_TOOLTIP
+        label_42->setText(QCoreApplication::translate("frmImageMorphologyClass", "\350\277\255\344\273\243\346\254\241\346\225\260\357\274\232", nullptr));
+#if QT_CONFIG(tooltip)
         spinBlackhatIterations->setToolTip(QString());
-#endif // QT_NO_TOOLTIP
-        groupParam_17->setTitle(QApplication::translate("frmImageMorphologyClass", "\346\242\257\345\272\246\345\217\202\346\225\260\350\256\276\347\275\256", nullptr));
-        btnGradientBack->setText(QApplication::translate("frmImageMorphologyClass", "\344\270\212\344\270\200\351\241\265", nullptr));
-        label_43->setText(QApplication::translate("frmImageMorphologyClass", "\347\273\223\346\236\204\345\205\203\347\264\240\345\244\247\345\260\217\357\274\232", nullptr));
-#ifndef QT_NO_TOOLTIP
+#endif // QT_CONFIG(tooltip)
+        groupParam_17->setTitle(QCoreApplication::translate("frmImageMorphologyClass", "\346\242\257\345\272\246\345\217\202\346\225\260\350\256\276\347\275\256", nullptr));
+        btnGradientBack->setText(QCoreApplication::translate("frmImageMorphologyClass", "\344\270\212\344\270\200\351\241\265", nullptr));
+        label_43->setText(QCoreApplication::translate("frmImageMorphologyClass", "\347\273\223\346\236\204\345\205\203\347\264\240\345\244\247\345\260\217\357\274\232", nullptr));
+#if QT_CONFIG(tooltip)
         spinGradientSize->setToolTip(QString());
-#endif // QT_NO_TOOLTIP
-        label_44->setText(QApplication::translate("frmImageMorphologyClass", "\347\273\223\346\236\204\347\261\273\345\236\213\357\274\232", nullptr));
-        comboGradientType->setItemText(0, QApplication::translate("frmImageMorphologyClass", "RECT", nullptr));
-        comboGradientType->setItemText(1, QApplication::translate("frmImageMorphologyClass", "CROSS", nullptr));
-        comboGradientType->setItemText(2, QApplication::translate("frmImageMorphologyClass", "ELLIPSE", nullptr));
+#endif // QT_CONFIG(tooltip)
+        label_44->setText(QCoreApplication::translate("frmImageMorphologyClass", "\347\273\223\346\236\204\347\261\273\345\236\213\357\274\232", nullptr));
+        comboGradientType->setItemText(0, QCoreApplication::translate("frmImageMorphologyClass", "RECT", nullptr));
+        comboGradientType->setItemText(1, QCoreApplication::translate("frmImageMorphologyClass", "CROSS", nullptr));
+        comboGradientType->setItemText(2, QCoreApplication::translate("frmImageMorphologyClass", "ELLIPSE", nullptr));
 
-        label_45->setText(QApplication::translate("frmImageMorphologyClass", "\350\277\255\344\273\243\346\254\241\346\225\260\357\274\232", nullptr));
-#ifndef QT_NO_TOOLTIP
+        label_45->setText(QCoreApplication::translate("frmImageMorphologyClass", "\350\277\255\344\273\243\346\254\241\346\225\260\357\274\232", nullptr));
+#if QT_CONFIG(tooltip)
         spinGradientIterations->setToolTip(QString());
-#endif // QT_NO_TOOLTIP
-        groupParam_18->setTitle(QApplication::translate("frmImageMorphologyClass", "\345\207\273\344\270\255/\345\207\273\344\270\215\344\270\255\345\217\202\346\225\260\350\256\276\347\275\256", nullptr));
-        btnHitmissBack->setText(QApplication::translate("frmImageMorphologyClass", "\344\270\212\344\270\200\351\241\265", nullptr));
-        label_46->setText(QApplication::translate("frmImageMorphologyClass", "\347\273\223\346\236\204\345\205\203\347\264\240\345\244\247\345\260\217\357\274\232", nullptr));
-#ifndef QT_NO_TOOLTIP
+#endif // QT_CONFIG(tooltip)
+        groupParam_18->setTitle(QCoreApplication::translate("frmImageMorphologyClass", "\345\207\273\344\270\255/\345\207\273\344\270\215\344\270\255\345\217\202\346\225\260\350\256\276\347\275\256", nullptr));
+        btnHitmissBack->setText(QCoreApplication::translate("frmImageMorphologyClass", "\344\270\212\344\270\200\351\241\265", nullptr));
+        label_46->setText(QCoreApplication::translate("frmImageMorphologyClass", "\347\273\223\346\236\204\345\205\203\347\264\240\345\244\247\345\260\217\357\274\232", nullptr));
+#if QT_CONFIG(tooltip)
         spinHitmissSize->setToolTip(QString());
-#endif // QT_NO_TOOLTIP
-        label_47->setText(QApplication::translate("frmImageMorphologyClass", "\347\273\223\346\236\204\347\261\273\345\236\213\357\274\232", nullptr));
-        comboHitmissType->setItemText(0, QApplication::translate("frmImageMorphologyClass", "RECT", nullptr));
-        comboHitmissType->setItemText(1, QApplication::translate("frmImageMorphologyClass", "CROSS", nullptr));
-        comboHitmissType->setItemText(2, QApplication::translate("frmImageMorphologyClass", "ELLIPSE", nullptr));
+#endif // QT_CONFIG(tooltip)
+        label_47->setText(QCoreApplication::translate("frmImageMorphologyClass", "\347\273\223\346\236\204\347\261\273\345\236\213\357\274\232", nullptr));
+        comboHitmissType->setItemText(0, QCoreApplication::translate("frmImageMorphologyClass", "RECT", nullptr));
+        comboHitmissType->setItemText(1, QCoreApplication::translate("frmImageMorphologyClass", "CROSS", nullptr));
+        comboHitmissType->setItemText(2, QCoreApplication::translate("frmImageMorphologyClass", "ELLIPSE", nullptr));
 
-        label_48->setText(QApplication::translate("frmImageMorphologyClass", "\350\277\255\344\273\243\346\254\241\346\225\260\357\274\232", nullptr));
-#ifndef QT_NO_TOOLTIP
+        label_48->setText(QCoreApplication::translate("frmImageMorphologyClass", "\350\277\255\344\273\243\346\254\241\346\225\260\357\274\232", nullptr));
+#if QT_CONFIG(tooltip)
         spinHitmissIterations->setToolTip(QString());
-#endif // QT_NO_TOOLTIP
-        groupParam_19->setTitle(QApplication::translate("frmImageMorphologyClass", "\344\272\256\345\272\246\345\217\202\346\225\260\350\256\276\347\275\256", nullptr));
-        btnLightBack->setText(QApplication::translate("frmImageMorphologyClass", "\344\270\212\344\270\200\351\241\265", nullptr));
-        label_24->setText(QApplication::translate("frmImageMorphologyClass", "\344\272\256\345\272\246\345\242\236\347\233\212\345\200\274\357\274\232", nullptr));
-#ifndef QT_NO_TOOLTIP
+#endif // QT_CONFIG(tooltip)
+        groupParam_19->setTitle(QCoreApplication::translate("frmImageMorphologyClass", "\344\272\256\345\272\246\345\217\202\346\225\260\350\256\276\347\275\256", nullptr));
+        btnLightBack->setText(QCoreApplication::translate("frmImageMorphologyClass", "\344\270\212\344\270\200\351\241\265", nullptr));
+        label_24->setText(QCoreApplication::translate("frmImageMorphologyClass", "\344\272\256\345\272\246\345\242\236\347\233\212\345\200\274\357\274\232", nullptr));
+#if QT_CONFIG(tooltip)
         spinLightValue->setToolTip(QString());
-#endif // QT_NO_TOOLTIP
-        groupParam_20->setTitle(QApplication::translate("frmImageMorphologyClass", "\351\224\220\345\214\226\345\217\202\346\225\260\350\256\276\347\275\256", nullptr));
-        btnLaplacianBack->setText(QApplication::translate("frmImageMorphologyClass", "\344\270\212\344\270\200\351\241\265", nullptr));
-        label_49->setText(QApplication::translate("frmImageMorphologyClass", "laplacian\346\240\270\345\244\247\345\260\217\357\274\232", nullptr));
-#ifndef QT_NO_TOOLTIP
+#endif // QT_CONFIG(tooltip)
+        groupParam_20->setTitle(QCoreApplication::translate("frmImageMorphologyClass", "\351\224\220\345\214\226\345\217\202\346\225\260\350\256\276\347\275\256", nullptr));
+        btnLaplacianBack->setText(QCoreApplication::translate("frmImageMorphologyClass", "\344\270\212\344\270\200\351\241\265", nullptr));
+        label_49->setText(QCoreApplication::translate("frmImageMorphologyClass", "laplacian\346\240\270\345\244\247\345\260\217\357\274\232", nullptr));
+#if QT_CONFIG(tooltip)
         spinLaplacianKSize->setToolTip(QString());
-#endif // QT_NO_TOOLTIP
-        groupParam_21->setTitle(QApplication::translate("frmImageMorphologyClass", "\345\257\271\346\257\224\345\272\246\345\217\202\346\225\260\350\256\276\347\275\256", nullptr));
-        btnContrastBack->setText(QApplication::translate("frmImageMorphologyClass", "\344\270\212\344\270\200\351\241\265", nullptr));
-        label_50->setText(QApplication::translate("frmImageMorphologyClass", "\345\257\271\346\257\224\345\272\246\345\242\236\347\233\212\345\200\274\357\274\232", nullptr));
-#ifndef QT_NO_TOOLTIP
+#endif // QT_CONFIG(tooltip)
+        groupParam_21->setTitle(QCoreApplication::translate("frmImageMorphologyClass", "\345\257\271\346\257\224\345\272\246\345\217\202\346\225\260\350\256\276\347\275\256", nullptr));
+        btnContrastBack->setText(QCoreApplication::translate("frmImageMorphologyClass", "\344\270\212\344\270\200\351\241\265", nullptr));
+        label_50->setText(QCoreApplication::translate("frmImageMorphologyClass", "\345\257\271\346\257\224\345\272\246\345\242\236\347\233\212\345\200\274\357\274\232", nullptr));
+#if QT_CONFIG(tooltip)
         spinContrastValue->setToolTip(QString());
-#endif // QT_NO_TOOLTIP
-        groupParam_22->setTitle(QApplication::translate("frmImageMorphologyClass", "\344\274\275\351\251\254\346\240\241\346\255\243\345\217\202\346\225\260\350\256\276\347\275\256", nullptr));
-        btnGammaBack->setText(QApplication::translate("frmImageMorphologyClass", "\344\270\212\344\270\200\351\241\265", nullptr));
-        label_51->setText(QApplication::translate("frmImageMorphologyClass", "\344\274\275\351\251\254\346\240\241\346\255\243\345\200\274\357\274\232", nullptr));
-        groupParam_23->setTitle(QApplication::translate("frmImageMorphologyClass", "\345\233\276\345\203\217\347\233\270\344\271\230\345\217\202\346\225\260\350\256\276\347\275\256", nullptr));
-        btnMulBack->setText(QApplication::translate("frmImageMorphologyClass", "\344\270\212\344\270\200\351\241\265", nullptr));
-        label_52->setText(QApplication::translate("frmImageMorphologyClass", "\347\233\270\344\271\230\347\263\273\346\225\260\357\274\232", nullptr));
-        groupParam_24->setTitle(QApplication::translate("frmImageMorphologyClass", "emphasize\345\217\202\346\225\260\350\256\276\347\275\256", nullptr));
-        btnEmphasizeBack->setText(QApplication::translate("frmImageMorphologyClass", "\344\270\212\344\270\200\351\241\265", nullptr));
-        label_53->setText(QApplication::translate("frmImageMorphologyClass", "\345\235\207\345\200\274\346\273\244\346\263\242\346\240\270\345\244\247\345\260\217\357\274\232", nullptr));
-#ifndef QT_NO_TOOLTIP
+#endif // QT_CONFIG(tooltip)
+        groupParam_22->setTitle(QCoreApplication::translate("frmImageMorphologyClass", "\344\274\275\351\251\254\346\240\241\346\255\243\345\217\202\346\225\260\350\256\276\347\275\256", nullptr));
+        btnGammaBack->setText(QCoreApplication::translate("frmImageMorphologyClass", "\344\270\212\344\270\200\351\241\265", nullptr));
+        label_51->setText(QCoreApplication::translate("frmImageMorphologyClass", "\344\274\275\351\251\254\346\240\241\346\255\243\345\200\274\357\274\232", nullptr));
+        groupParam_23->setTitle(QCoreApplication::translate("frmImageMorphologyClass", "\345\233\276\345\203\217\347\233\270\344\271\230\345\217\202\346\225\260\350\256\276\347\275\256", nullptr));
+        btnMulBack->setText(QCoreApplication::translate("frmImageMorphologyClass", "\344\270\212\344\270\200\351\241\265", nullptr));
+        label_52->setText(QCoreApplication::translate("frmImageMorphologyClass", "\347\233\270\344\271\230\347\263\273\346\225\260\357\274\232", nullptr));
+        groupParam_24->setTitle(QCoreApplication::translate("frmImageMorphologyClass", "emphasize\345\217\202\346\225\260\350\256\276\347\275\256", nullptr));
+        btnEmphasizeBack->setText(QCoreApplication::translate("frmImageMorphologyClass", "\344\270\212\344\270\200\351\241\265", nullptr));
+        label_53->setText(QCoreApplication::translate("frmImageMorphologyClass", "\345\235\207\345\200\274\346\273\244\346\263\242\346\240\270\345\244\247\345\260\217\357\274\232", nullptr));
+#if QT_CONFIG(tooltip)
         spinEmphasizeKSize->setToolTip(QString());
-#endif // QT_NO_TOOLTIP
-        label_54->setText(QApplication::translate("frmImageMorphologyClass", "\345\257\271\346\257\224\345\272\246\345\233\240\345\255\220\357\274\232", nullptr));
-        groupParam_25->setTitle(QApplication::translate("frmImageMorphologyClass", "\344\270\215\345\235\207\345\214\200\345\205\211\347\205\247\350\241\245\345\201\277\345\217\202\346\225\260\350\256\276\347\275\256", nullptr));
-        btnUnevenLightBack->setText(QApplication::translate("frmImageMorphologyClass", "\344\270\212\344\270\200\351\241\265", nullptr));
-        label_55->setText(QApplication::translate("frmImageMorphologyClass", "\345\205\211\347\205\247\350\241\245\345\201\277\345\235\227\345\244\247\345\260\217\357\274\232", nullptr));
-#ifndef QT_NO_TOOLTIP
+#endif // QT_CONFIG(tooltip)
+        label_54->setText(QCoreApplication::translate("frmImageMorphologyClass", "\345\257\271\346\257\224\345\272\246\345\233\240\345\255\220\357\274\232", nullptr));
+        groupParam_25->setTitle(QCoreApplication::translate("frmImageMorphologyClass", "\344\270\215\345\235\207\345\214\200\345\205\211\347\205\247\350\241\245\345\201\277\345\217\202\346\225\260\350\256\276\347\275\256", nullptr));
+        btnUnevenLightBack->setText(QCoreApplication::translate("frmImageMorphologyClass", "\344\270\212\344\270\200\351\241\265", nullptr));
+        label_55->setText(QCoreApplication::translate("frmImageMorphologyClass", "\345\205\211\347\205\247\350\241\245\345\201\277\345\235\227\345\244\247\345\260\217\357\274\232", nullptr));
+#if QT_CONFIG(tooltip)
         spinUnevenLightSize->setToolTip(QString());
-#endif // QT_NO_TOOLTIP
-        tabWidget->setTabText(tabWidget->indexOf(tab), QApplication::translate("frmImageMorphologyClass", "\345\237\272\346\234\254\350\256\276\347\275\256", nullptr));
-        groupCamera_9->setTitle(QApplication::translate("frmImageMorphologyClass", "ROI\345\257\271\350\261\241", nullptr));
-        checkUseROI->setText(QApplication::translate("frmImageMorphologyClass", "\344\275\277\347\224\250ROI", nullptr));
-        comboROIShape->setItemText(0, QApplication::translate("frmImageMorphologyClass", "\347\237\251\345\275\242", nullptr));
-        comboROIShape->setItemText(1, QApplication::translate("frmImageMorphologyClass", "\346\227\213\350\275\254\347\237\251\345\275\242", nullptr));
-        comboROIShape->setItemText(2, QApplication::translate("frmImageMorphologyClass", "\345\234\206\345\275\242", nullptr));
-        comboROIShape->setItemText(3, QApplication::translate("frmImageMorphologyClass", "\345\244\232\350\276\271\345\275\242", nullptr));
+#endif // QT_CONFIG(tooltip)
+        tabWidget->setTabText(tabWidget->indexOf(tab), QCoreApplication::translate("frmImageMorphologyClass", "\345\237\272\346\234\254\350\256\276\347\275\256", nullptr));
+        groupCamera_9->setTitle(QCoreApplication::translate("frmImageMorphologyClass", "ROI\345\257\271\350\261\241", nullptr));
+        checkUseROI->setText(QCoreApplication::translate("frmImageMorphologyClass", "\344\275\277\347\224\250ROI", nullptr));
+        comboROIShape->setItemText(0, QCoreApplication::translate("frmImageMorphologyClass", "\347\237\251\345\275\242", nullptr));
+        comboROIShape->setItemText(1, QCoreApplication::translate("frmImageMorphologyClass", "\346\227\213\350\275\254\347\237\251\345\275\242", nullptr));
+        comboROIShape->setItemText(2, QCoreApplication::translate("frmImageMorphologyClass", "\345\234\206\345\275\242", nullptr));
+        comboROIShape->setItemText(3, QCoreApplication::translate("frmImageMorphologyClass", "\345\244\232\350\276\271\345\275\242", nullptr));
 
-        btnAddROI->setText(QApplication::translate("frmImageMorphologyClass", "\346\267\273\345\212\240", nullptr));
-        btnDeleteROI->setText(QApplication::translate("frmImageMorphologyClass", "\345\210\240\351\231\244", nullptr));
-        tabWidget->setTabText(tabWidget->indexOf(tab_4), QApplication::translate("frmImageMorphologyClass", "ROI\350\256\276\347\275\256", nullptr));
+        btnAddROI->setText(QCoreApplication::translate("frmImageMorphologyClass", "\346\267\273\345\212\240", nullptr));
+        btnDeleteROI->setText(QCoreApplication::translate("frmImageMorphologyClass", "\345\210\240\351\231\244", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab_4), QCoreApplication::translate("frmImageMorphologyClass", "ROI\350\256\276\347\275\256", nullptr));
     } // retranslateUi
 
 };

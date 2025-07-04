@@ -1,18 +1,19 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'autoThread.h'
 **
-** Created by: The Qt Meta Object Compiler version 67 (Qt 5.12.12)
+** Created by: The Qt Meta Object Compiler version 67 (Qt 5.14.2)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
 
+#include <memory>
 #include "../../../autoThread.h"
 #include <QtCore/qbytearray.h>
 #include <QtCore/qmetatype.h>
 #if !defined(Q_MOC_OUTPUT_REVISION)
 #error "The header file 'autoThread.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 67
-#error "This file was generated using the moc from 5.12.12. It"
+#error "This file was generated using the moc from 5.14.2. It"
 #error "cannot be used with the include files from this version of Qt."
 #error "(The moc has changed too much.)"
 #endif
@@ -63,7 +64,7 @@ void autoThread_B1::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _i
 }
 
 QT_INIT_METAOBJECT const QMetaObject autoThread_B1::staticMetaObject = { {
-    &QObject::staticMetaObject,
+    QMetaObject::SuperData::link<QObject::staticMetaObject>(),
     qt_meta_stringdata_autoThread_B1.data,
     qt_meta_data_autoThread_B1,
     qt_static_metacall,
@@ -133,7 +134,7 @@ void autoThread_B2::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _i
 }
 
 QT_INIT_METAOBJECT const QMetaObject autoThread_B2::staticMetaObject = { {
-    &QObject::staticMetaObject,
+    QMetaObject::SuperData::link<QObject::staticMetaObject>(),
     qt_meta_stringdata_autoThread_B2.data,
     qt_meta_data_autoThread_B2,
     qt_static_metacall,
@@ -203,7 +204,7 @@ void autoThread_B3::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _i
 }
 
 QT_INIT_METAOBJECT const QMetaObject autoThread_B3::staticMetaObject = { {
-    &QObject::staticMetaObject,
+    QMetaObject::SuperData::link<QObject::staticMetaObject>(),
     qt_meta_stringdata_autoThread_B3.data,
     qt_meta_data_autoThread_B3,
     qt_static_metacall,
@@ -273,7 +274,7 @@ void autoThread_B4::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _i
 }
 
 QT_INIT_METAOBJECT const QMetaObject autoThread_B4::staticMetaObject = { {
-    &QObject::staticMetaObject,
+    QMetaObject::SuperData::link<QObject::staticMetaObject>(),
     qt_meta_stringdata_autoThread_B4.data,
     qt_meta_data_autoThread_B4,
     qt_static_metacall,
@@ -343,7 +344,7 @@ void autoThread_B5::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _i
 }
 
 QT_INIT_METAOBJECT const QMetaObject autoThread_B5::staticMetaObject = { {
-    &QObject::staticMetaObject,
+    QMetaObject::SuperData::link<QObject::staticMetaObject>(),
     qt_meta_stringdata_autoThread_B5.data,
     qt_meta_data_autoThread_B5,
     qt_static_metacall,
@@ -413,7 +414,7 @@ void autoThread_B6::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _i
 }
 
 QT_INIT_METAOBJECT const QMetaObject autoThread_B6::staticMetaObject = { {
-    &QObject::staticMetaObject,
+    QMetaObject::SuperData::link<QObject::staticMetaObject>(),
     qt_meta_stringdata_autoThread_B6.data,
     qt_meta_data_autoThread_B6,
     qt_static_metacall,
@@ -483,7 +484,7 @@ void autoThread_B7::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _i
 }
 
 QT_INIT_METAOBJECT const QMetaObject autoThread_B7::staticMetaObject = { {
-    &QObject::staticMetaObject,
+    QMetaObject::SuperData::link<QObject::staticMetaObject>(),
     qt_meta_stringdata_autoThread_B7.data,
     qt_meta_data_autoThread_B7,
     qt_static_metacall,
@@ -553,7 +554,7 @@ void autoThread_B8::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _i
 }
 
 QT_INIT_METAOBJECT const QMetaObject autoThread_B8::staticMetaObject = { {
-    &QObject::staticMetaObject,
+    QMetaObject::SuperData::link<QObject::staticMetaObject>(),
     qt_meta_stringdata_autoThread_B8.data,
     qt_meta_data_autoThread_B8,
     qt_static_metacall,
@@ -623,7 +624,7 @@ void autoThread_B9::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _i
 }
 
 QT_INIT_METAOBJECT const QMetaObject autoThread_B9::staticMetaObject = { {
-    &QObject::staticMetaObject,
+    QMetaObject::SuperData::link<QObject::staticMetaObject>(),
     qt_meta_stringdata_autoThread_B9.data,
     qt_meta_data_autoThread_B9,
     qt_static_metacall,
@@ -693,7 +694,7 @@ void autoThread_B10::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _
 }
 
 QT_INIT_METAOBJECT const QMetaObject autoThread_B10::staticMetaObject = { {
-    &QObject::staticMetaObject,
+    QMetaObject::SuperData::link<QObject::staticMetaObject>(),
     qt_meta_stringdata_autoThread_B10.data,
     qt_meta_data_autoThread_B10,
     qt_static_metacall,
@@ -763,7 +764,7 @@ void autoThread_B11::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _
 }
 
 QT_INIT_METAOBJECT const QMetaObject autoThread_B11::staticMetaObject = { {
-    &QObject::staticMetaObject,
+    QMetaObject::SuperData::link<QObject::staticMetaObject>(),
     qt_meta_stringdata_autoThread_B11.data,
     qt_meta_data_autoThread_B11,
     qt_static_metacall,
@@ -833,7 +834,7 @@ void autoThread_B12::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _
 }
 
 QT_INIT_METAOBJECT const QMetaObject autoThread_B12::staticMetaObject = { {
-    &QObject::staticMetaObject,
+    QMetaObject::SuperData::link<QObject::staticMetaObject>(),
     qt_meta_stringdata_autoThread_B12.data,
     qt_meta_data_autoThread_B12,
     qt_static_metacall,
@@ -903,7 +904,7 @@ void autoThread_B13::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _
 }
 
 QT_INIT_METAOBJECT const QMetaObject autoThread_B13::staticMetaObject = { {
-    &QObject::staticMetaObject,
+    QMetaObject::SuperData::link<QObject::staticMetaObject>(),
     qt_meta_stringdata_autoThread_B13.data,
     qt_meta_data_autoThread_B13,
     qt_static_metacall,
@@ -973,7 +974,7 @@ void autoThread_B14::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _
 }
 
 QT_INIT_METAOBJECT const QMetaObject autoThread_B14::staticMetaObject = { {
-    &QObject::staticMetaObject,
+    QMetaObject::SuperData::link<QObject::staticMetaObject>(),
     qt_meta_stringdata_autoThread_B14.data,
     qt_meta_data_autoThread_B14,
     qt_static_metacall,
@@ -1043,7 +1044,7 @@ void autoThread_B15::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _
 }
 
 QT_INIT_METAOBJECT const QMetaObject autoThread_B15::staticMetaObject = { {
-    &QObject::staticMetaObject,
+    QMetaObject::SuperData::link<QObject::staticMetaObject>(),
     qt_meta_stringdata_autoThread_B15.data,
     qt_meta_data_autoThread_B15,
     qt_static_metacall,
@@ -1113,7 +1114,7 @@ void autoThread_B16::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _
 }
 
 QT_INIT_METAOBJECT const QMetaObject autoThread_B16::staticMetaObject = { {
-    &QObject::staticMetaObject,
+    QMetaObject::SuperData::link<QObject::staticMetaObject>(),
     qt_meta_stringdata_autoThread_B16.data,
     qt_meta_data_autoThread_B16,
     qt_static_metacall,
@@ -1183,7 +1184,7 @@ void autoThread_B17::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _
 }
 
 QT_INIT_METAOBJECT const QMetaObject autoThread_B17::staticMetaObject = { {
-    &QObject::staticMetaObject,
+    QMetaObject::SuperData::link<QObject::staticMetaObject>(),
     qt_meta_stringdata_autoThread_B17.data,
     qt_meta_data_autoThread_B17,
     qt_static_metacall,
@@ -1253,7 +1254,7 @@ void autoThread_B18::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _
 }
 
 QT_INIT_METAOBJECT const QMetaObject autoThread_B18::staticMetaObject = { {
-    &QObject::staticMetaObject,
+    QMetaObject::SuperData::link<QObject::staticMetaObject>(),
     qt_meta_stringdata_autoThread_B18.data,
     qt_meta_data_autoThread_B18,
     qt_static_metacall,
@@ -1323,7 +1324,7 @@ void autoThread_B19::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _
 }
 
 QT_INIT_METAOBJECT const QMetaObject autoThread_B19::staticMetaObject = { {
-    &QObject::staticMetaObject,
+    QMetaObject::SuperData::link<QObject::staticMetaObject>(),
     qt_meta_stringdata_autoThread_B19.data,
     qt_meta_data_autoThread_B19,
     qt_static_metacall,
@@ -1393,7 +1394,7 @@ void autoThread_B20::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _
 }
 
 QT_INIT_METAOBJECT const QMetaObject autoThread_B20::staticMetaObject = { {
-    &QObject::staticMetaObject,
+    QMetaObject::SuperData::link<QObject::staticMetaObject>(),
     qt_meta_stringdata_autoThread_B20.data,
     qt_meta_data_autoThread_B20,
     qt_static_metacall,

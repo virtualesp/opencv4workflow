@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'frmExportImage.ui'
 **
-** Created by: Qt User Interface Compiler version 5.12.12
+** Created by: Qt User Interface Compiler version 5.14.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -354,48 +354,48 @@ public:
 
     void retranslateUi(QDialog *frmExportImageClass)
     {
-        frmExportImageClass->setWindowTitle(QApplication::translate("frmExportImageClass", "\345\257\274\345\207\272\345\233\276\345\203\217", nullptr));
-        label_3->setText(QApplication::translate("frmExportImageClass", "\345\215\225\345\205\203\346\217\217\350\277\260\357\274\232", nullptr));
-        btnExecute->setText(QApplication::translate("frmExportImageClass", "\346\211\247\350\241\214", nullptr));
-#ifndef QT_NO_TOOLTIP
-        btnLinkImage->setToolTip(QApplication::translate("frmExportImageClass", "\351\223\276\346\216\245\345\233\276\345\203\217", nullptr));
-#endif // QT_NO_TOOLTIP
+        frmExportImageClass->setWindowTitle(QCoreApplication::translate("frmExportImageClass", "\345\257\274\345\207\272\345\233\276\345\203\217", nullptr));
+        label_3->setText(QCoreApplication::translate("frmExportImageClass", "\345\215\225\345\205\203\346\217\217\350\277\260\357\274\232", nullptr));
+        btnExecute->setText(QCoreApplication::translate("frmExportImageClass", "\346\211\247\350\241\214", nullptr));
+#if QT_CONFIG(tooltip)
+        btnLinkImage->setToolTip(QCoreApplication::translate("frmExportImageClass", "\351\223\276\346\216\245\345\233\276\345\203\217", nullptr));
+#endif // QT_CONFIG(tooltip)
         btnLinkImage->setText(QString());
-        label_4->setText(QApplication::translate("frmExportImageClass", "\350\276\223\345\205\245\345\233\276\345\203\217\357\274\232", nullptr));
-#ifndef QT_NO_TOOLTIP
-        btnDelLinkImage->setToolTip(QApplication::translate("frmExportImageClass", "\345\210\240\351\231\244\345\233\276\345\203\217\351\223\276\346\216\245", nullptr));
-#endif // QT_NO_TOOLTIP
+        label_4->setText(QCoreApplication::translate("frmExportImageClass", "\350\276\223\345\205\245\345\233\276\345\203\217\357\274\232", nullptr));
+#if QT_CONFIG(tooltip)
+        btnDelLinkImage->setToolTip(QCoreApplication::translate("frmExportImageClass", "\345\210\240\351\231\244\345\233\276\345\203\217\351\223\276\346\216\245", nullptr));
+#endif // QT_CONFIG(tooltip)
         btnDelLinkImage->setText(QString());
-#ifndef QT_NO_TOOLTIP
-        btnStoragePath->setToolTip(QApplication::translate("frmExportImageClass", "\345\255\230\345\202\250\350\267\257\345\276\204", nullptr));
-#endif // QT_NO_TOOLTIP
+#if QT_CONFIG(tooltip)
+        btnStoragePath->setToolTip(QCoreApplication::translate("frmExportImageClass", "\345\255\230\345\202\250\350\267\257\345\276\204", nullptr));
+#endif // QT_CONFIG(tooltip)
         btnStoragePath->setText(QString());
-        label_5->setText(QApplication::translate("frmExportImageClass", "\345\255\230\345\202\250\350\267\257\345\276\204\357\274\232", nullptr));
-#ifndef QT_NO_TOOLTIP
-        btnDelLinkFileName->setToolTip(QApplication::translate("frmExportImageClass", "\345\210\240\351\231\244\346\226\207\344\273\266\345\220\215\347\247\260\351\223\276\346\216\245", nullptr));
-#endif // QT_NO_TOOLTIP
+        label_5->setText(QCoreApplication::translate("frmExportImageClass", "\345\255\230\345\202\250\350\267\257\345\276\204\357\274\232", nullptr));
+#if QT_CONFIG(tooltip)
+        btnDelLinkFileName->setToolTip(QCoreApplication::translate("frmExportImageClass", "\345\210\240\351\231\244\346\226\207\344\273\266\345\220\215\347\247\260\351\223\276\346\216\245", nullptr));
+#endif // QT_CONFIG(tooltip)
         btnDelLinkFileName->setText(QString());
-#ifndef QT_NO_TOOLTIP
-        btnLinkFileName->setToolTip(QApplication::translate("frmExportImageClass", "\351\223\276\346\216\245\346\226\207\344\273\266\345\220\215\347\247\260", nullptr));
-#endif // QT_NO_TOOLTIP
+#if QT_CONFIG(tooltip)
+        btnLinkFileName->setToolTip(QCoreApplication::translate("frmExportImageClass", "\351\223\276\346\216\245\346\226\207\344\273\266\345\220\215\347\247\260", nullptr));
+#endif // QT_CONFIG(tooltip)
         btnLinkFileName->setText(QString());
-        label_6->setText(QApplication::translate("frmExportImageClass", "\346\226\207\344\273\266\345\220\215\347\247\260\357\274\232", nullptr));
-#ifndef QT_NO_TOOLTIP
-        txtFileName->setToolTip(QApplication::translate("frmExportImageClass", "\345\205\250\345\261\200\345\217\230\351\207\217QString\347\261\273\345\236\213", nullptr));
-#endif // QT_NO_TOOLTIP
-        checkUseTime->setText(QApplication::translate("frmExportImageClass", "\346\226\207\344\273\266\345\220\215\350\207\252\345\212\250\346\267\273\345\212\240\346\227\266\351\227\264", nullptr));
-#ifndef QT_NO_TOOLTIP
+        label_6->setText(QCoreApplication::translate("frmExportImageClass", "\346\226\207\344\273\266\345\220\215\347\247\260\357\274\232", nullptr));
+#if QT_CONFIG(tooltip)
+        txtFileName->setToolTip(QCoreApplication::translate("frmExportImageClass", "\345\205\250\345\261\200\345\217\230\351\207\217QString\347\261\273\345\236\213", nullptr));
+#endif // QT_CONFIG(tooltip)
+        checkUseTime->setText(QCoreApplication::translate("frmExportImageClass", "\346\226\207\344\273\266\345\220\215\350\207\252\345\212\250\346\267\273\345\212\240\346\227\266\351\227\264", nullptr));
+#if QT_CONFIG(tooltip)
         txtStoragePath->setToolTip(QString());
-#endif // QT_NO_TOOLTIP
-        tabWidget->setTabText(tabWidget->indexOf(tab), QApplication::translate("frmExportImageClass", "\345\237\272\346\234\254\350\256\276\347\275\256", nullptr));
-        label_8->setText(QApplication::translate("frmExportImageClass", "\345\233\276\345\203\217\344\277\235\345\255\230\345\244\251\346\225\260\357\274\232", nullptr));
-        label_9->setText(QApplication::translate("frmExportImageClass", "\345\244\251", nullptr));
-        label_10->setText(QApplication::translate("frmExportImageClass", "\345\233\276\345\203\217\346\240\274\345\274\217\357\274\232", nullptr));
-        comboImageFormat->setItemText(0, QApplication::translate("frmExportImageClass", "bmp", nullptr));
-        comboImageFormat->setItemText(1, QApplication::translate("frmExportImageClass", "jpg", nullptr));
-        comboImageFormat->setItemText(2, QApplication::translate("frmExportImageClass", "png", nullptr));
+#endif // QT_CONFIG(tooltip)
+        tabWidget->setTabText(tabWidget->indexOf(tab), QCoreApplication::translate("frmExportImageClass", "\345\237\272\346\234\254\350\256\276\347\275\256", nullptr));
+        label_8->setText(QCoreApplication::translate("frmExportImageClass", "\345\233\276\345\203\217\344\277\235\345\255\230\345\244\251\346\225\260\357\274\232", nullptr));
+        label_9->setText(QCoreApplication::translate("frmExportImageClass", "\345\244\251", nullptr));
+        label_10->setText(QCoreApplication::translate("frmExportImageClass", "\345\233\276\345\203\217\346\240\274\345\274\217\357\274\232", nullptr));
+        comboImageFormat->setItemText(0, QCoreApplication::translate("frmExportImageClass", "bmp", nullptr));
+        comboImageFormat->setItemText(1, QCoreApplication::translate("frmExportImageClass", "jpg", nullptr));
+        comboImageFormat->setItemText(2, QCoreApplication::translate("frmExportImageClass", "png", nullptr));
 
-        tabWidget->setTabText(tabWidget->indexOf(tab_2), QApplication::translate("frmExportImageClass", "\345\217\202\346\225\260\350\256\276\347\275\256", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab_2), QCoreApplication::translate("frmExportImageClass", "\345\217\202\346\225\260\350\256\276\347\275\256", nullptr));
     } // retranslateUi
 
 };

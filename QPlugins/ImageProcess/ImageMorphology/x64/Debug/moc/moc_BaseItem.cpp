@@ -1,11 +1,12 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'BaseItem.h'
 **
-** Created by: The Qt Meta Object Compiler version 67 (Qt 5.12.12)
+** Created by: The Qt Meta Object Compiler version 67 (Qt 5.14.2)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
 
+#include <memory>
 #include "../../../BaseItem.h"
 #include <QtCore/qbytearray.h>
 #include <QtCore/qmetatype.h>
@@ -13,7 +14,7 @@
 #if !defined(Q_MOC_OUTPUT_REVISION)
 #error "The header file 'BaseItem.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 67
-#error "This file was generated using the moc from 5.12.12. It"
+#error "This file was generated using the moc from 5.14.2. It"
 #error "cannot be used with the include files from this version of Qt."
 #error "(The moc has changed too much.)"
 #endif
@@ -64,7 +65,7 @@ void BaseItem::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, vo
 }
 
 QT_INIT_METAOBJECT const QMetaObject BaseItem::staticMetaObject = { {
-    &QObject::staticMetaObject,
+    QMetaObject::SuperData::link<QObject::staticMetaObject>(),
     qt_meta_stringdata_BaseItem.data,
     qt_meta_data_BaseItem,
     qt_static_metacall,
@@ -136,7 +137,7 @@ void DrawItem::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, vo
 }
 
 QT_INIT_METAOBJECT const QMetaObject DrawItem::staticMetaObject = { {
-    &BaseItem::staticMetaObject,
+    QMetaObject::SuperData::link<BaseItem::staticMetaObject>(),
     qt_meta_stringdata_DrawItem.data,
     qt_meta_data_DrawItem,
     qt_static_metacall,
@@ -206,7 +207,7 @@ void RectangleItem::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _i
 }
 
 QT_INIT_METAOBJECT const QMetaObject RectangleItem::staticMetaObject = { {
-    &BaseItem::staticMetaObject,
+    QMetaObject::SuperData::link<BaseItem::staticMetaObject>(),
     qt_meta_stringdata_RectangleItem.data,
     qt_meta_data_RectangleItem,
     qt_static_metacall,
@@ -276,7 +277,7 @@ void RectangleRItem::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _
 }
 
 QT_INIT_METAOBJECT const QMetaObject RectangleRItem::staticMetaObject = { {
-    &BaseItem::staticMetaObject,
+    QMetaObject::SuperData::link<BaseItem::staticMetaObject>(),
     qt_meta_stringdata_RectangleRItem.data,
     qt_meta_data_RectangleRItem,
     qt_static_metacall,
@@ -374,7 +375,7 @@ void PolygonItem::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id,
 }
 
 QT_INIT_METAOBJECT const QMetaObject PolygonItem::staticMetaObject = { {
-    &BaseItem::staticMetaObject,
+    QMetaObject::SuperData::link<BaseItem::staticMetaObject>(),
     qt_meta_stringdata_PolygonItem.data,
     qt_meta_data_PolygonItem,
     qt_static_metacall,
@@ -455,7 +456,7 @@ void EllipseItem::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id,
 }
 
 QT_INIT_METAOBJECT const QMetaObject EllipseItem::staticMetaObject = { {
-    &RectangleRItem::staticMetaObject,
+    QMetaObject::SuperData::link<RectangleRItem::staticMetaObject>(),
     qt_meta_stringdata_EllipseItem.data,
     qt_meta_data_EllipseItem,
     qt_static_metacall,
@@ -525,7 +526,7 @@ void CircleItem::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
 }
 
 QT_INIT_METAOBJECT const QMetaObject CircleItem::staticMetaObject = { {
-    &BaseItem::staticMetaObject,
+    QMetaObject::SuperData::link<BaseItem::staticMetaObject>(),
     qt_meta_stringdata_CircleItem.data,
     qt_meta_data_CircleItem,
     qt_static_metacall,
@@ -595,7 +596,7 @@ void ConcentricCircleItem::qt_static_metacall(QObject *_o, QMetaObject::Call _c,
 }
 
 QT_INIT_METAOBJECT const QMetaObject ConcentricCircleItem::staticMetaObject = { {
-    &BaseItem::staticMetaObject,
+    QMetaObject::SuperData::link<BaseItem::staticMetaObject>(),
     qt_meta_stringdata_ConcentricCircleItem.data,
     qt_meta_data_ConcentricCircleItem,
     qt_static_metacall,
@@ -665,7 +666,7 @@ void LineItem::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, vo
 }
 
 QT_INIT_METAOBJECT const QMetaObject LineItem::staticMetaObject = { {
-    &BaseItem::staticMetaObject,
+    QMetaObject::SuperData::link<BaseItem::staticMetaObject>(),
     qt_meta_stringdata_LineItem.data,
     qt_meta_data_LineItem,
     qt_static_metacall,
@@ -735,7 +736,7 @@ void Caliper::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, voi
 }
 
 QT_INIT_METAOBJECT const QMetaObject Caliper::staticMetaObject = { {
-    &BaseItem::staticMetaObject,
+    QMetaObject::SuperData::link<BaseItem::staticMetaObject>(),
     qt_meta_stringdata_Caliper.data,
     qt_meta_data_Caliper,
     qt_static_metacall,

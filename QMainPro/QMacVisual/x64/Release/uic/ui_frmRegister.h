@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'frmRegister.ui'
 **
-** Created by: Qt User Interface Compiler version 5.12.12
+** Created by: Qt User Interface Compiler version 5.14.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -89,11 +89,11 @@ public:
 
     void retranslateUi(QWidget *frmRegisterClass)
     {
-        frmRegisterClass->setWindowTitle(QApplication::translate("frmRegisterClass", "\346\263\250\345\206\214\350\275\257\344\273\266", nullptr));
-        btnCmdCheckID->setText(QApplication::translate("frmRegisterClass", "\346\263\250\345\206\214\350\275\257\344\273\266", nullptr));
+        frmRegisterClass->setWindowTitle(QCoreApplication::translate("frmRegisterClass", "\346\263\250\345\206\214\350\275\257\344\273\266", nullptr));
+        btnCmdCheckID->setText(QCoreApplication::translate("frmRegisterClass", "\346\263\250\345\206\214\350\275\257\344\273\266", nullptr));
         txtAuthorizationCode->setText(QString());
-        label->setText(QApplication::translate("frmRegisterClass", "\345\272\217\345\210\227\345\217\267\357\274\232", nullptr));
-        label_2->setText(QApplication::translate("frmRegisterClass", "\346\216\210\346\235\203\347\240\201\357\274\232", nullptr));
+        label->setText(QCoreApplication::translate("frmRegisterClass", "\345\272\217\345\210\227\345\217\267\357\274\232", nullptr));
+        label_2->setText(QCoreApplication::translate("frmRegisterClass", "\346\216\210\346\235\203\347\240\201\357\274\232", nullptr));
     } // retranslateUi
 
 };

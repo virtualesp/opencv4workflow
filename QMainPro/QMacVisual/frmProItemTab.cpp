@@ -1256,7 +1256,22 @@ void frmProItemTab::timerEvent()
 				nExportCsvState = 0;
 			}
 		}
-#pragma endregion		
+#pragma endregion	
+#pragma region 目标检测
+		//YoloV13
+		if (nClassifierState_buf == 1)
+		{
+			nClassifierState = getClassifierState();
+			if (nClassifierState == 1)
+			{
+				dataVar::int_link = 1;
+				frmLink* fLink = new frmLink();
+				fLink->exec();
+				setClassifierState();
+				nClassifierState = 0;
+			}
+		}
+#pragma endregion
 	}
 	catch (...) {}
 }
@@ -1453,6 +1468,7 @@ ToolNameList frmProItemTab::GetProcessItemNum(const QString itemName)
 	if (itemName.contains("通用I/O")) return ToolNameList::GENERAL_IO;
 	if (itemName.contains("延时")) return ToolNameList::DELAY_TOOL;
 	if (itemName.contains("导出CSV")) return ToolNameList::EXPORT_CSV;
+	if (itemName.contains("YoloV13")) return ToolNameList::YOLOV13;
 	return ToolNameList::DEFULT_ERROR;
 }
 
@@ -2392,7 +2408,27 @@ Toolnterface* frmProItemTab::GetNewToolDlg(const int mode, const QString sToolNa
 			}
 		}
 	}break;
-#pragma endregion	
+#pragma endregion
+
+#pragma region 目标检测
+	case YOLOV13: {
+		//YoloV13
+		QLibrary mylib("./Plugins/YoloV13.dll");   //声明所用到的dll文件
+		if (mylib.load())    //判断是否正确加载
+		{
+			getClassifierState = (GetClassifier)mylib.resolve("ShowFormState");
+			setClassifierState = (SetClassifier)mylib.resolve("SetFormState");
+			Funs open = (Funs)mylib.resolve("showDialog");
+			if (open)
+			{
+				nClassifierState_buf = 1;
+				Toolnterface* frmPage = open(sToolName, QConfig::ToolBase[flow_index]);
+				frmPage->setObjectName(sToolName);
+				return frmPage;
+			}
+		}
+	}break;
+#pragma endregion
 	default: break;
 	}
 	return new Toolnterface(sToolName, QConfig::ToolBase[flow_index], this);

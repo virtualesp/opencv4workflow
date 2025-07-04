@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'frmBrightness.ui'
 **
-** Created by: Qt User Interface Compiler version 5.12.12
+** Created by: Qt User Interface Compiler version 5.14.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -294,23 +294,23 @@ public:
 
     void retranslateUi(QDialog *frmBrightnessClass)
     {
-        frmBrightnessClass->setWindowTitle(QApplication::translate("frmBrightnessClass", "\344\272\256\345\272\246\346\243\200\346\265\213", nullptr));
-        groupCamera->setTitle(QApplication::translate("frmBrightnessClass", "\345\233\276\345\203\217\345\257\271\350\261\241", nullptr));
-        label_4->setText(QApplication::translate("frmBrightnessClass", "\350\276\223\345\205\245\345\233\276\345\203\217\357\274\232", nullptr));
-#ifndef QT_NO_TOOLTIP
-        btnLinkImage->setToolTip(QApplication::translate("frmBrightnessClass", "\351\223\276\346\216\245\345\233\276\345\203\217", nullptr));
-#endif // QT_NO_TOOLTIP
+        frmBrightnessClass->setWindowTitle(QCoreApplication::translate("frmBrightnessClass", "\344\272\256\345\272\246\346\243\200\346\265\213", nullptr));
+        groupCamera->setTitle(QCoreApplication::translate("frmBrightnessClass", "\345\233\276\345\203\217\345\257\271\350\261\241", nullptr));
+        label_4->setText(QCoreApplication::translate("frmBrightnessClass", "\350\276\223\345\205\245\345\233\276\345\203\217\357\274\232", nullptr));
+#if QT_CONFIG(tooltip)
+        btnLinkImage->setToolTip(QCoreApplication::translate("frmBrightnessClass", "\351\223\276\346\216\245\345\233\276\345\203\217", nullptr));
+#endif // QT_CONFIG(tooltip)
         btnLinkImage->setText(QString());
-#ifndef QT_NO_TOOLTIP
-        btnDelLinkImage->setToolTip(QApplication::translate("frmBrightnessClass", "\345\210\240\351\231\244\345\233\276\345\203\217\351\223\276\346\216\245", nullptr));
-#endif // QT_NO_TOOLTIP
+#if QT_CONFIG(tooltip)
+        btnDelLinkImage->setToolTip(QCoreApplication::translate("frmBrightnessClass", "\345\210\240\351\231\244\345\233\276\345\203\217\351\223\276\346\216\245", nullptr));
+#endif // QT_CONFIG(tooltip)
         btnDelLinkImage->setText(QString());
-        groupCamera_6->setTitle(QApplication::translate("frmBrightnessClass", "\344\272\256\345\272\246\345\217\202\346\225\260", nullptr));
-        label_11->setText(QApplication::translate("frmBrightnessClass", "\346\234\200\345\260\217\344\272\256\345\272\246\357\274\232", nullptr));
-        label_12->setText(QApplication::translate("frmBrightnessClass", "\346\234\200\345\244\247\344\272\256\345\272\246\357\274\232", nullptr));
-        tabWidget->setTabText(tabWidget->indexOf(tab), QApplication::translate("frmBrightnessClass", "\345\237\272\346\234\254\350\256\276\347\275\256", nullptr));
-        label_3->setText(QApplication::translate("frmBrightnessClass", "\345\215\225\345\205\203\346\217\217\350\277\260\357\274\232", nullptr));
-        btnExecute->setText(QApplication::translate("frmBrightnessClass", "\346\211\247\350\241\214", nullptr));
+        groupCamera_6->setTitle(QCoreApplication::translate("frmBrightnessClass", "\344\272\256\345\272\246\345\217\202\346\225\260", nullptr));
+        label_11->setText(QCoreApplication::translate("frmBrightnessClass", "\346\234\200\345\260\217\344\272\256\345\272\246\357\274\232", nullptr));
+        label_12->setText(QCoreApplication::translate("frmBrightnessClass", "\346\234\200\345\244\247\344\272\256\345\272\246\357\274\232", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab), QCoreApplication::translate("frmBrightnessClass", "\345\237\272\346\234\254\350\256\276\347\275\256", nullptr));
+        label_3->setText(QCoreApplication::translate("frmBrightnessClass", "\345\215\225\345\205\203\346\217\217\350\277\260\357\274\232", nullptr));
+        btnExecute->setText(QCoreApplication::translate("frmBrightnessClass", "\346\211\247\350\241\214", nullptr));
     } // retranslateUi
 
 };

@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'frmImageLayout.ui'
 **
-** Created by: Qt User Interface Compiler version 5.12.12
+** Created by: Qt User Interface Compiler version 5.14.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -627,45 +627,45 @@ public:
 
     void retranslateUi(QDialog *frmImageLayoutClass)
     {
-        frmImageLayoutClass->setWindowTitle(QApplication::translate("frmImageLayoutClass", "\345\233\276\345\203\217\345\270\203\345\261\200", nullptr));
-        radioImage6B->setText(QApplication::translate("frmImageLayoutClass", "6\345\233\276\345\203\217B", nullptr));
-        label_2->setText(QApplication::translate("frmImageLayoutClass", "1", nullptr));
-        radioImage3->setText(QApplication::translate("frmImageLayoutClass", "3\345\233\276\345\203\217", nullptr));
-        label_4->setText(QApplication::translate("frmImageLayoutClass", "2", nullptr));
-        label_3->setText(QApplication::translate("frmImageLayoutClass", "1", nullptr));
-        radioImage2->setText(QApplication::translate("frmImageLayoutClass", "2\345\233\276\345\203\217", nullptr));
-        radioImage1->setText(QApplication::translate("frmImageLayoutClass", "1\345\233\276\345\203\217", nullptr));
-        label->setText(QApplication::translate("frmImageLayoutClass", "1", nullptr));
-        label_8->setText(QApplication::translate("frmImageLayoutClass", "2", nullptr));
-        label_9->setText(QApplication::translate("frmImageLayoutClass", "3", nullptr));
-        label_10->setText(QApplication::translate("frmImageLayoutClass", "4", nullptr));
-        label_6->setText(QApplication::translate("frmImageLayoutClass", "2", nullptr));
-        label_7->setText(QApplication::translate("frmImageLayoutClass", "3", nullptr));
-        label_5->setText(QApplication::translate("frmImageLayoutClass", "1", nullptr));
-        label_12->setText(QApplication::translate("frmImageLayoutClass", "2", nullptr));
-        label_11->setText(QApplication::translate("frmImageLayoutClass", "1", nullptr));
-        label_13->setText(QApplication::translate("frmImageLayoutClass", "3", nullptr));
-        label_14->setText(QApplication::translate("frmImageLayoutClass", "4", nullptr));
-        label_15->setText(QApplication::translate("frmImageLayoutClass", "5", nullptr));
-        label_16->setText(QApplication::translate("frmImageLayoutClass", "6", nullptr));
-        radioImage6A->setText(QApplication::translate("frmImageLayoutClass", "6\345\233\276\345\203\217A", nullptr));
-        radioImage9->setText(QApplication::translate("frmImageLayoutClass", "9\345\233\276\345\203\217", nullptr));
-        label_24->setText(QApplication::translate("frmImageLayoutClass", "4", nullptr));
-        label_26->setText(QApplication::translate("frmImageLayoutClass", "2", nullptr));
-        label_28->setText(QApplication::translate("frmImageLayoutClass", "8", nullptr));
-        label_23->setText(QApplication::translate("frmImageLayoutClass", "1", nullptr));
-        label_27->setText(QApplication::translate("frmImageLayoutClass", "5", nullptr));
-        label_25->setText(QApplication::translate("frmImageLayoutClass", "7", nullptr));
-        label_29->setText(QApplication::translate("frmImageLayoutClass", "3", nullptr));
-        label_30->setText(QApplication::translate("frmImageLayoutClass", "6", nullptr));
-        label_31->setText(QApplication::translate("frmImageLayoutClass", "9", nullptr));
-        radioImage4->setText(QApplication::translate("frmImageLayoutClass", "4\345\233\276\345\203\217", nullptr));
-        label_22->setText(QApplication::translate("frmImageLayoutClass", "4", nullptr));
-        label_21->setText(QApplication::translate("frmImageLayoutClass", "6", nullptr));
-        label_19->setText(QApplication::translate("frmImageLayoutClass", "2", nullptr));
-        label_20->setText(QApplication::translate("frmImageLayoutClass", "3", nullptr));
-        label_18->setText(QApplication::translate("frmImageLayoutClass", "5", nullptr));
-        label_17->setText(QApplication::translate("frmImageLayoutClass", "1", nullptr));
+        frmImageLayoutClass->setWindowTitle(QCoreApplication::translate("frmImageLayoutClass", "\345\233\276\345\203\217\345\270\203\345\261\200", nullptr));
+        radioImage6B->setText(QCoreApplication::translate("frmImageLayoutClass", "6\345\233\276\345\203\217B", nullptr));
+        label_2->setText(QCoreApplication::translate("frmImageLayoutClass", "1", nullptr));
+        radioImage3->setText(QCoreApplication::translate("frmImageLayoutClass", "3\345\233\276\345\203\217", nullptr));
+        label_4->setText(QCoreApplication::translate("frmImageLayoutClass", "2", nullptr));
+        label_3->setText(QCoreApplication::translate("frmImageLayoutClass", "1", nullptr));
+        radioImage2->setText(QCoreApplication::translate("frmImageLayoutClass", "2\345\233\276\345\203\217", nullptr));
+        radioImage1->setText(QCoreApplication::translate("frmImageLayoutClass", "1\345\233\276\345\203\217", nullptr));
+        label->setText(QCoreApplication::translate("frmImageLayoutClass", "1", nullptr));
+        label_8->setText(QCoreApplication::translate("frmImageLayoutClass", "2", nullptr));
+        label_9->setText(QCoreApplication::translate("frmImageLayoutClass", "3", nullptr));
+        label_10->setText(QCoreApplication::translate("frmImageLayoutClass", "4", nullptr));
+        label_6->setText(QCoreApplication::translate("frmImageLayoutClass", "2", nullptr));
+        label_7->setText(QCoreApplication::translate("frmImageLayoutClass", "3", nullptr));
+        label_5->setText(QCoreApplication::translate("frmImageLayoutClass", "1", nullptr));
+        label_12->setText(QCoreApplication::translate("frmImageLayoutClass", "2", nullptr));
+        label_11->setText(QCoreApplication::translate("frmImageLayoutClass", "1", nullptr));
+        label_13->setText(QCoreApplication::translate("frmImageLayoutClass", "3", nullptr));
+        label_14->setText(QCoreApplication::translate("frmImageLayoutClass", "4", nullptr));
+        label_15->setText(QCoreApplication::translate("frmImageLayoutClass", "5", nullptr));
+        label_16->setText(QCoreApplication::translate("frmImageLayoutClass", "6", nullptr));
+        radioImage6A->setText(QCoreApplication::translate("frmImageLayoutClass", "6\345\233\276\345\203\217A", nullptr));
+        radioImage9->setText(QCoreApplication::translate("frmImageLayoutClass", "9\345\233\276\345\203\217", nullptr));
+        label_24->setText(QCoreApplication::translate("frmImageLayoutClass", "4", nullptr));
+        label_26->setText(QCoreApplication::translate("frmImageLayoutClass", "2", nullptr));
+        label_28->setText(QCoreApplication::translate("frmImageLayoutClass", "8", nullptr));
+        label_23->setText(QCoreApplication::translate("frmImageLayoutClass", "1", nullptr));
+        label_27->setText(QCoreApplication::translate("frmImageLayoutClass", "5", nullptr));
+        label_25->setText(QCoreApplication::translate("frmImageLayoutClass", "7", nullptr));
+        label_29->setText(QCoreApplication::translate("frmImageLayoutClass", "3", nullptr));
+        label_30->setText(QCoreApplication::translate("frmImageLayoutClass", "6", nullptr));
+        label_31->setText(QCoreApplication::translate("frmImageLayoutClass", "9", nullptr));
+        radioImage4->setText(QCoreApplication::translate("frmImageLayoutClass", "4\345\233\276\345\203\217", nullptr));
+        label_22->setText(QCoreApplication::translate("frmImageLayoutClass", "4", nullptr));
+        label_21->setText(QCoreApplication::translate("frmImageLayoutClass", "6", nullptr));
+        label_19->setText(QCoreApplication::translate("frmImageLayoutClass", "2", nullptr));
+        label_20->setText(QCoreApplication::translate("frmImageLayoutClass", "3", nullptr));
+        label_18->setText(QCoreApplication::translate("frmImageLayoutClass", "5", nullptr));
+        label_17->setText(QCoreApplication::translate("frmImageLayoutClass", "1", nullptr));
     } // retranslateUi
 
 };

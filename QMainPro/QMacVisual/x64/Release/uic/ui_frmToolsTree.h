@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'frmToolsTree.ui'
 **
-** Created by: Qt User Interface Compiler version 5.12.12
+** Created by: Qt User Interface Compiler version 5.14.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -60,7 +60,7 @@ public:
 
     void retranslateUi(QWidget *frmToolsTreeClass)
     {
-        frmToolsTreeClass->setWindowTitle(QApplication::translate("frmToolsTreeClass", "\345\267\245\345\205\267\347\256\261", nullptr));
+        frmToolsTreeClass->setWindowTitle(QCoreApplication::translate("frmToolsTreeClass", "\345\267\245\345\205\267\347\256\261", nullptr));
     } // retranslateUi
 
 };

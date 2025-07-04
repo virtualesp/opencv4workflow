@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'frmSocketTcpClient.ui'
 **
-** Created by: Qt User Interface Compiler version 5.12.12
+** Created by: Qt User Interface Compiler version 5.14.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -477,38 +477,38 @@ public:
 
     void retranslateUi(QDialog *frmSocketTcpClientClass)
     {
-        frmSocketTcpClientClass->setWindowTitle(QApplication::translate("frmSocketTcpClientClass", "TCP/IP\351\200\232\344\277\241", nullptr));
-        label_3->setText(QApplication::translate("frmSocketTcpClientClass", "\345\215\225\345\205\203\346\217\217\350\277\260\357\274\232", nullptr));
-        btnExecute->setText(QApplication::translate("frmSocketTcpClientClass", "\346\211\247\350\241\214", nullptr));
-        groupC->setTitle(QApplication::translate("frmSocketTcpClientClass", "\351\200\232\350\256\257\345\257\271\350\261\241", nullptr));
+        frmSocketTcpClientClass->setWindowTitle(QCoreApplication::translate("frmSocketTcpClientClass", "TCP/IP\351\200\232\344\277\241", nullptr));
+        label_3->setText(QCoreApplication::translate("frmSocketTcpClientClass", "\345\215\225\345\205\203\346\217\217\350\277\260\357\274\232", nullptr));
+        btnExecute->setText(QCoreApplication::translate("frmSocketTcpClientClass", "\346\211\247\350\241\214", nullptr));
+        groupC->setTitle(QCoreApplication::translate("frmSocketTcpClientClass", "\351\200\232\350\256\257\345\257\271\350\261\241", nullptr));
         lblMsg->setText(QString());
-        label_8->setText(QApplication::translate("frmSocketTcpClientClass", "\351\200\232\350\256\257\345\220\215\347\247\260\357\274\232", nullptr));
-        btnUpdata->setText(QApplication::translate("frmSocketTcpClientClass", "\346\233\264\346\226\260\345\210\227\350\241\250", nullptr));
-        groupC2->setTitle(QApplication::translate("frmSocketTcpClientClass", "\345\217\221\351\200\201\350\256\276\347\275\256", nullptr));
-#ifndef QT_NO_TOOLTIP
-        btnDelLinkContent->setToolTip(QApplication::translate("frmSocketTcpClientClass", "\345\210\240\351\231\244\345\217\221\351\200\201\345\206\205\345\256\271\351\223\276\346\216\245", nullptr));
-#endif // QT_NO_TOOLTIP
+        label_8->setText(QCoreApplication::translate("frmSocketTcpClientClass", "\351\200\232\350\256\257\345\220\215\347\247\260\357\274\232", nullptr));
+        btnUpdata->setText(QCoreApplication::translate("frmSocketTcpClientClass", "\346\233\264\346\226\260\345\210\227\350\241\250", nullptr));
+        groupC2->setTitle(QCoreApplication::translate("frmSocketTcpClientClass", "\345\217\221\351\200\201\350\256\276\347\275\256", nullptr));
+#if QT_CONFIG(tooltip)
+        btnDelLinkContent->setToolTip(QCoreApplication::translate("frmSocketTcpClientClass", "\345\210\240\351\231\244\345\217\221\351\200\201\345\206\205\345\256\271\351\223\276\346\216\245", nullptr));
+#endif // QT_CONFIG(tooltip)
         btnDelLinkContent->setText(QString());
-#ifndef QT_NO_TOOLTIP
-        btnLinkContent->setToolTip(QApplication::translate("frmSocketTcpClientClass", "\351\223\276\346\216\245\345\217\221\351\200\201\345\206\205\345\256\271", nullptr));
-#endif // QT_NO_TOOLTIP
+#if QT_CONFIG(tooltip)
+        btnLinkContent->setToolTip(QCoreApplication::translate("frmSocketTcpClientClass", "\351\223\276\346\216\245\345\217\221\351\200\201\345\206\205\345\256\271", nullptr));
+#endif // QT_CONFIG(tooltip)
         btnLinkContent->setText(QString());
-        label_4->setText(QApplication::translate("frmSocketTcpClientClass", "\345\217\221\351\200\201\345\206\205\345\256\271\357\274\232", nullptr));
-#ifndef QT_NO_TOOLTIP
-        txtLinkContent->setToolTip(QApplication::translate("frmSocketTcpClientClass", "\345\205\250\345\261\200\345\217\230\351\207\217QString\347\261\273\345\236\213", nullptr));
-#endif // QT_NO_TOOLTIP
-        chkTcpHexSend->setText(QApplication::translate("frmSocketTcpClientClass", "16\350\277\233\345\210\266\345\217\221\351\200\201", nullptr));
-        label_5->setText(QApplication::translate("frmSocketTcpClientClass", "\347\273\223\346\235\237\347\254\246\357\274\232", nullptr));
-        radioEndNull->setText(QApplication::translate("frmSocketTcpClientClass", "\346\227\240", nullptr));
-        radioEndEnter->setText(QApplication::translate("frmSocketTcpClientClass", "\345\233\236\350\275\246", nullptr));
-        radioEndNewline->setText(QApplication::translate("frmSocketTcpClientClass", "\346\215\242\350\241\214", nullptr));
-        radioEndEnterNewline->setText(QApplication::translate("frmSocketTcpClientClass", "\345\233\236\350\275\246\346\215\242\350\241\214", nullptr));
-        chkSendEnable->setText(QApplication::translate("frmSocketTcpClientClass", "\345\217\221\351\200\201\344\275\277\350\203\275", nullptr));
-        groupC3->setTitle(QApplication::translate("frmSocketTcpClientClass", "\346\216\245\346\224\266\350\256\276\347\275\256", nullptr));
-        chkTcpHexReceive->setText(QApplication::translate("frmSocketTcpClientClass", "16\350\277\233\345\210\266\346\216\245\346\224\266", nullptr));
-        btnTcpClear->setText(QApplication::translate("frmSocketTcpClientClass", "\346\270\205\347\251\272\346\216\245\346\224\266", nullptr));
-        chkReceiveEnable->setText(QApplication::translate("frmSocketTcpClientClass", "\346\216\245\346\224\266\344\275\277\350\203\275", nullptr));
-        tabWidget->setTabText(tabWidget->indexOf(tab), QApplication::translate("frmSocketTcpClientClass", "\345\237\272\346\234\254\350\256\276\347\275\256", nullptr));
+        label_4->setText(QCoreApplication::translate("frmSocketTcpClientClass", "\345\217\221\351\200\201\345\206\205\345\256\271\357\274\232", nullptr));
+#if QT_CONFIG(tooltip)
+        txtLinkContent->setToolTip(QCoreApplication::translate("frmSocketTcpClientClass", "\345\205\250\345\261\200\345\217\230\351\207\217QString\347\261\273\345\236\213", nullptr));
+#endif // QT_CONFIG(tooltip)
+        chkTcpHexSend->setText(QCoreApplication::translate("frmSocketTcpClientClass", "16\350\277\233\345\210\266\345\217\221\351\200\201", nullptr));
+        label_5->setText(QCoreApplication::translate("frmSocketTcpClientClass", "\347\273\223\346\235\237\347\254\246\357\274\232", nullptr));
+        radioEndNull->setText(QCoreApplication::translate("frmSocketTcpClientClass", "\346\227\240", nullptr));
+        radioEndEnter->setText(QCoreApplication::translate("frmSocketTcpClientClass", "\345\233\236\350\275\246", nullptr));
+        radioEndNewline->setText(QCoreApplication::translate("frmSocketTcpClientClass", "\346\215\242\350\241\214", nullptr));
+        radioEndEnterNewline->setText(QCoreApplication::translate("frmSocketTcpClientClass", "\345\233\236\350\275\246\346\215\242\350\241\214", nullptr));
+        chkSendEnable->setText(QCoreApplication::translate("frmSocketTcpClientClass", "\345\217\221\351\200\201\344\275\277\350\203\275", nullptr));
+        groupC3->setTitle(QCoreApplication::translate("frmSocketTcpClientClass", "\346\216\245\346\224\266\350\256\276\347\275\256", nullptr));
+        chkTcpHexReceive->setText(QCoreApplication::translate("frmSocketTcpClientClass", "16\350\277\233\345\210\266\346\216\245\346\224\266", nullptr));
+        btnTcpClear->setText(QCoreApplication::translate("frmSocketTcpClientClass", "\346\270\205\347\251\272\346\216\245\346\224\266", nullptr));
+        chkReceiveEnable->setText(QCoreApplication::translate("frmSocketTcpClientClass", "\346\216\245\346\224\266\344\275\277\350\203\275", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab), QCoreApplication::translate("frmSocketTcpClientClass", "\345\237\272\346\234\254\350\256\276\347\275\256", nullptr));
     } // retranslateUi
 
 };

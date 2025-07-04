@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'frmMeasureCalibration.ui'
 **
-** Created by: Qt User Interface Compiler version 5.12.12
+** Created by: Qt User Interface Compiler version 5.14.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -773,50 +773,50 @@ public:
 
     void retranslateUi(QDialog *frmMeasureCalibrationClass)
     {
-        frmMeasureCalibrationClass->setWindowTitle(QApplication::translate("frmMeasureCalibrationClass", "\346\265\213\351\207\217\346\240\207\345\256\232", nullptr));
-        groupCamera->setTitle(QApplication::translate("frmMeasureCalibrationClass", "\345\233\276\345\203\217\345\257\271\350\261\241", nullptr));
-        label_4->setText(QApplication::translate("frmMeasureCalibrationClass", "\350\276\223\345\205\245\345\233\276\345\203\217\357\274\232", nullptr));
-#ifndef QT_NO_TOOLTIP
-        btnLinkImage->setToolTip(QApplication::translate("frmMeasureCalibrationClass", "\351\223\276\346\216\245\345\233\276\345\203\217", nullptr));
-#endif // QT_NO_TOOLTIP
+        frmMeasureCalibrationClass->setWindowTitle(QCoreApplication::translate("frmMeasureCalibrationClass", "\346\265\213\351\207\217\346\240\207\345\256\232", nullptr));
+        groupCamera->setTitle(QCoreApplication::translate("frmMeasureCalibrationClass", "\345\233\276\345\203\217\345\257\271\350\261\241", nullptr));
+        label_4->setText(QCoreApplication::translate("frmMeasureCalibrationClass", "\350\276\223\345\205\245\345\233\276\345\203\217\357\274\232", nullptr));
+#if QT_CONFIG(tooltip)
+        btnLinkImage->setToolTip(QCoreApplication::translate("frmMeasureCalibrationClass", "\351\223\276\346\216\245\345\233\276\345\203\217", nullptr));
+#endif // QT_CONFIG(tooltip)
         btnLinkImage->setText(QString());
-#ifndef QT_NO_TOOLTIP
-        btnDelLinkImage->setToolTip(QApplication::translate("frmMeasureCalibrationClass", "\345\210\240\351\231\244\345\233\276\345\203\217\351\223\276\346\216\245", nullptr));
-#endif // QT_NO_TOOLTIP
+#if QT_CONFIG(tooltip)
+        btnDelLinkImage->setToolTip(QCoreApplication::translate("frmMeasureCalibrationClass", "\345\210\240\351\231\244\345\233\276\345\203\217\351\223\276\346\216\245", nullptr));
+#endif // QT_CONFIG(tooltip)
         btnDelLinkImage->setText(QString());
-        groupC2->setTitle(QApplication::translate("frmMeasureCalibrationClass", "\345\217\202\346\225\260\350\256\276\347\275\256", nullptr));
-        label_12->setText(QApplication::translate("frmMeasureCalibrationClass", "Y\346\226\271\345\220\221\347\232\204\345\203\217\347\264\240\345\275\223\351\207\217\357\274\232", nullptr));
-        label_9->setText(QApplication::translate("frmMeasureCalibrationClass", "X\346\226\271\345\220\221\347\232\204\345\203\217\347\264\240\345\275\223\351\207\217\357\274\232", nullptr));
-        label_18->setText(QApplication::translate("frmMeasureCalibrationClass", "\345\210\206\345\211\262\346\225\260\351\207\217\357\274\232", nullptr));
-        label_19->setText(QApplication::translate("frmMeasureCalibrationClass", "\345\211\224\351\231\244\350\267\235\347\246\273\357\274\232", nullptr));
-        comboGrayDirection->setItemText(0, QApplication::translate("frmMeasureCalibrationClass", "\347\231\275\345\210\260\351\273\221", nullptr));
-        comboGrayDirection->setItemText(1, QApplication::translate("frmMeasureCalibrationClass", "\351\273\221\345\210\260\347\231\275", nullptr));
+        groupC2->setTitle(QCoreApplication::translate("frmMeasureCalibrationClass", "\345\217\202\346\225\260\350\256\276\347\275\256", nullptr));
+        label_12->setText(QCoreApplication::translate("frmMeasureCalibrationClass", "Y\346\226\271\345\220\221\347\232\204\345\203\217\347\264\240\345\275\223\351\207\217\357\274\232", nullptr));
+        label_9->setText(QCoreApplication::translate("frmMeasureCalibrationClass", "X\346\226\271\345\220\221\347\232\204\345\203\217\347\264\240\345\275\223\351\207\217\357\274\232", nullptr));
+        label_18->setText(QCoreApplication::translate("frmMeasureCalibrationClass", "\345\210\206\345\211\262\346\225\260\351\207\217\357\274\232", nullptr));
+        label_19->setText(QCoreApplication::translate("frmMeasureCalibrationClass", "\345\211\224\351\231\244\350\267\235\347\246\273\357\274\232", nullptr));
+        comboGrayDirection->setItemText(0, QCoreApplication::translate("frmMeasureCalibrationClass", "\347\231\275\345\210\260\351\273\221", nullptr));
+        comboGrayDirection->setItemText(1, QCoreApplication::translate("frmMeasureCalibrationClass", "\351\273\221\345\210\260\347\231\275", nullptr));
 
-        label_14->setText(QApplication::translate("frmMeasureCalibrationClass", "\350\276\271\347\274\230\345\274\272\345\272\246\357\274\232", nullptr));
-        label_10->setText(QApplication::translate("frmMeasureCalibrationClass", "\347\201\260\345\272\246\346\226\271\345\220\221\357\274\232", nullptr));
-        label_22->setText(QApplication::translate("frmMeasureCalibrationClass", "\345\256\236\351\231\205\345\260\272\345\257\270\357\274\232", nullptr));
-        label_23->setText(QApplication::translate("frmMeasureCalibrationClass", "mm", nullptr));
-        comboXYDirection->setItemText(0, QApplication::translate("frmMeasureCalibrationClass", "X\346\226\271\345\220\221\345\203\217\347\264\240", nullptr));
-        comboXYDirection->setItemText(1, QApplication::translate("frmMeasureCalibrationClass", "Y\346\226\271\345\220\221\345\203\217\347\264\240", nullptr));
+        label_14->setText(QCoreApplication::translate("frmMeasureCalibrationClass", "\350\276\271\347\274\230\345\274\272\345\272\246\357\274\232", nullptr));
+        label_10->setText(QCoreApplication::translate("frmMeasureCalibrationClass", "\347\201\260\345\272\246\346\226\271\345\220\221\357\274\232", nullptr));
+        label_22->setText(QCoreApplication::translate("frmMeasureCalibrationClass", "\345\256\236\351\231\205\345\260\272\345\257\270\357\274\232", nullptr));
+        label_23->setText(QCoreApplication::translate("frmMeasureCalibrationClass", "mm", nullptr));
+        comboXYDirection->setItemText(0, QCoreApplication::translate("frmMeasureCalibrationClass", "X\346\226\271\345\220\221\345\203\217\347\264\240", nullptr));
+        comboXYDirection->setItemText(1, QCoreApplication::translate("frmMeasureCalibrationClass", "Y\346\226\271\345\220\221\345\203\217\347\264\240", nullptr));
 
-        label_13->setText(QApplication::translate("frmMeasureCalibrationClass", "\346\265\213\351\207\217\346\226\271\345\220\221\357\274\232", nullptr));
-        comboMode->setItemText(0, QApplication::translate("frmMeasureCalibrationClass", "\346\257\224\344\276\213\346\250\241\345\274\217", nullptr));
-        comboMode->setItemText(1, QApplication::translate("frmMeasureCalibrationClass", "\346\265\213\351\207\217\346\250\241\345\274\217", nullptr));
+        label_13->setText(QCoreApplication::translate("frmMeasureCalibrationClass", "\346\265\213\351\207\217\346\226\271\345\220\221\357\274\232", nullptr));
+        comboMode->setItemText(0, QCoreApplication::translate("frmMeasureCalibrationClass", "\346\257\224\344\276\213\346\250\241\345\274\217", nullptr));
+        comboMode->setItemText(1, QCoreApplication::translate("frmMeasureCalibrationClass", "\346\265\213\351\207\217\346\250\241\345\274\217", nullptr));
 
-        label_11->setText(QApplication::translate("frmMeasureCalibrationClass", "\346\240\207\345\256\232\346\250\241\345\274\217\357\274\232", nullptr));
-        groupC3->setTitle(QApplication::translate("frmMeasureCalibrationClass", "\350\276\223\345\207\272\346\225\260\346\215\256(\345\203\217\347\264\240\345\275\223\351\207\217)", nullptr));
-        tabWidget->setTabText(tabWidget->indexOf(tab), QApplication::translate("frmMeasureCalibrationClass", "\345\237\272\346\234\254\350\256\276\347\275\256", nullptr));
-        groupROI->setTitle(QApplication::translate("frmMeasureCalibrationClass", "ROI\345\257\271\350\261\241", nullptr));
-        checkUseROI->setText(QApplication::translate("frmMeasureCalibrationClass", "\344\275\277\347\224\250ROI", nullptr));
-        comboROIShape->setItemText(0, QApplication::translate("frmMeasureCalibrationClass", "\345\215\241\345\260\272", nullptr));
+        label_11->setText(QCoreApplication::translate("frmMeasureCalibrationClass", "\346\240\207\345\256\232\346\250\241\345\274\217\357\274\232", nullptr));
+        groupC3->setTitle(QCoreApplication::translate("frmMeasureCalibrationClass", "\350\276\223\345\207\272\346\225\260\346\215\256(\345\203\217\347\264\240\345\275\223\351\207\217)", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab), QCoreApplication::translate("frmMeasureCalibrationClass", "\345\237\272\346\234\254\350\256\276\347\275\256", nullptr));
+        groupROI->setTitle(QCoreApplication::translate("frmMeasureCalibrationClass", "ROI\345\257\271\350\261\241", nullptr));
+        checkUseROI->setText(QCoreApplication::translate("frmMeasureCalibrationClass", "\344\275\277\347\224\250ROI", nullptr));
+        comboROIShape->setItemText(0, QCoreApplication::translate("frmMeasureCalibrationClass", "\345\215\241\345\260\272", nullptr));
 
-        btnAddROI->setText(QApplication::translate("frmMeasureCalibrationClass", "\346\267\273\345\212\240", nullptr));
-        btnDeleteROI->setText(QApplication::translate("frmMeasureCalibrationClass", "\345\210\240\351\231\244", nullptr));
-        label_20->setText(QApplication::translate("frmMeasureCalibrationClass", "ROI\345\256\275\345\272\246\357\274\232", nullptr));
-        label_21->setText(QApplication::translate("frmMeasureCalibrationClass", "\344\272\244\345\217\211\347\272\277\351\225\277\345\272\246\357\274\232", nullptr));
-        tabWidget->setTabText(tabWidget->indexOf(tab_2), QApplication::translate("frmMeasureCalibrationClass", "ROI\350\256\276\347\275\256", nullptr));
-        label_3->setText(QApplication::translate("frmMeasureCalibrationClass", "\345\215\225\345\205\203\346\217\217\350\277\260\357\274\232", nullptr));
-        btnExecute->setText(QApplication::translate("frmMeasureCalibrationClass", "\346\211\247\350\241\214", nullptr));
+        btnAddROI->setText(QCoreApplication::translate("frmMeasureCalibrationClass", "\346\267\273\345\212\240", nullptr));
+        btnDeleteROI->setText(QCoreApplication::translate("frmMeasureCalibrationClass", "\345\210\240\351\231\244", nullptr));
+        label_20->setText(QCoreApplication::translate("frmMeasureCalibrationClass", "ROI\345\256\275\345\272\246\357\274\232", nullptr));
+        label_21->setText(QCoreApplication::translate("frmMeasureCalibrationClass", "\344\272\244\345\217\211\347\272\277\351\225\277\345\272\246\357\274\232", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab_2), QCoreApplication::translate("frmMeasureCalibrationClass", "ROI\350\256\276\347\275\256", nullptr));
+        label_3->setText(QCoreApplication::translate("frmMeasureCalibrationClass", "\345\215\225\345\205\203\346\217\217\350\277\260\357\274\232", nullptr));
+        btnExecute->setText(QCoreApplication::translate("frmMeasureCalibrationClass", "\346\211\247\350\241\214", nullptr));
     } // retranslateUi
 
 };

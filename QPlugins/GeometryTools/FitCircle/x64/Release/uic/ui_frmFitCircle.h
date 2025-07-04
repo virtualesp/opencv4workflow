@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'frmFitCircle.ui'
 **
-** Created by: Qt User Interface Compiler version 5.12.12
+** Created by: Qt User Interface Compiler version 5.14.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -309,34 +309,34 @@ public:
 
     void retranslateUi(QDialog *frmFitCircleClass)
     {
-        frmFitCircleClass->setWindowTitle(QApplication::translate("frmFitCircleClass", "\346\213\237\345\220\210\345\234\206", nullptr));
-        groupCamera->setTitle(QApplication::translate("frmFitCircleClass", "\345\233\276\345\203\217\345\257\271\350\261\241", nullptr));
-        label_4->setText(QApplication::translate("frmFitCircleClass", "\350\276\223\345\205\245\345\233\276\345\203\217\357\274\232", nullptr));
-#ifndef QT_NO_TOOLTIP
-        btnLinkImage->setToolTip(QApplication::translate("frmFitCircleClass", "\351\223\276\346\216\245\345\233\276\345\203\217", nullptr));
-#endif // QT_NO_TOOLTIP
+        frmFitCircleClass->setWindowTitle(QCoreApplication::translate("frmFitCircleClass", "\346\213\237\345\220\210\345\234\206", nullptr));
+        groupCamera->setTitle(QCoreApplication::translate("frmFitCircleClass", "\345\233\276\345\203\217\345\257\271\350\261\241", nullptr));
+        label_4->setText(QCoreApplication::translate("frmFitCircleClass", "\350\276\223\345\205\245\345\233\276\345\203\217\357\274\232", nullptr));
+#if QT_CONFIG(tooltip)
+        btnLinkImage->setToolTip(QCoreApplication::translate("frmFitCircleClass", "\351\223\276\346\216\245\345\233\276\345\203\217", nullptr));
+#endif // QT_CONFIG(tooltip)
         btnLinkImage->setText(QString());
-#ifndef QT_NO_TOOLTIP
-        btnDelLinkImage->setToolTip(QApplication::translate("frmFitCircleClass", "\345\210\240\351\231\244\345\233\276\345\203\217\351\223\276\346\216\245", nullptr));
-#endif // QT_NO_TOOLTIP
+#if QT_CONFIG(tooltip)
+        btnDelLinkImage->setToolTip(QCoreApplication::translate("frmFitCircleClass", "\345\210\240\351\231\244\345\233\276\345\203\217\351\223\276\346\216\245", nullptr));
+#endif // QT_CONFIG(tooltip)
         btnDelLinkImage->setText(QString());
-        groupC2->setTitle(QApplication::translate("frmFitCircleClass", "\346\236\204\345\273\272\345\217\202\346\225\260", nullptr));
-        label_5->setText(QApplication::translate("frmFitCircleClass", "\350\275\256\345\273\223\347\202\271\351\233\206\357\274\232", nullptr));
-#ifndef QT_NO_TOOLTIP
-        btnDelLinkContour->setToolTip(QApplication::translate("frmFitCircleClass", "\345\210\240\351\231\244\350\275\256\345\273\223\347\202\271\351\233\206\351\223\276\346\216\245", nullptr));
-#endif // QT_NO_TOOLTIP
+        groupC2->setTitle(QCoreApplication::translate("frmFitCircleClass", "\346\236\204\345\273\272\345\217\202\346\225\260", nullptr));
+        label_5->setText(QCoreApplication::translate("frmFitCircleClass", "\350\275\256\345\273\223\347\202\271\351\233\206\357\274\232", nullptr));
+#if QT_CONFIG(tooltip)
+        btnDelLinkContour->setToolTip(QCoreApplication::translate("frmFitCircleClass", "\345\210\240\351\231\244\350\275\256\345\273\223\347\202\271\351\233\206\351\223\276\346\216\245", nullptr));
+#endif // QT_CONFIG(tooltip)
         btnDelLinkContour->setText(QString());
-#ifndef QT_NO_TOOLTIP
-        btnLinkContour->setToolTip(QApplication::translate("frmFitCircleClass", "\351\223\276\346\216\245\350\275\256\345\273\223\347\202\271\351\233\206", nullptr));
-#endif // QT_NO_TOOLTIP
+#if QT_CONFIG(tooltip)
+        btnLinkContour->setToolTip(QCoreApplication::translate("frmFitCircleClass", "\351\223\276\346\216\245\350\275\256\345\273\223\347\202\271\351\233\206", nullptr));
+#endif // QT_CONFIG(tooltip)
         btnLinkContour->setText(QString());
-#ifndef QT_NO_TOOLTIP
-        txtLinkContour->setToolTip(QApplication::translate("frmFitCircleClass", "vector<cv::Point2f>\347\261\273\345\236\213", nullptr));
-#endif // QT_NO_TOOLTIP
-        groupC3->setTitle(QApplication::translate("frmFitCircleClass", "\350\276\223\345\207\272\346\225\260\346\215\256(\345\234\206\347\232\204\344\270\255\345\277\203\345\235\220\346\240\207\343\200\201\345\215\212\345\276\204)", nullptr));
-        tabWidget->setTabText(tabWidget->indexOf(tab), QApplication::translate("frmFitCircleClass", "\345\237\272\346\234\254\350\256\276\347\275\256", nullptr));
-        label_3->setText(QApplication::translate("frmFitCircleClass", "\345\215\225\345\205\203\346\217\217\350\277\260\357\274\232", nullptr));
-        btnExecute->setText(QApplication::translate("frmFitCircleClass", "\346\211\247\350\241\214", nullptr));
+#if QT_CONFIG(tooltip)
+        txtLinkContour->setToolTip(QCoreApplication::translate("frmFitCircleClass", "vector<cv::Point2f>\347\261\273\345\236\213", nullptr));
+#endif // QT_CONFIG(tooltip)
+        groupC3->setTitle(QCoreApplication::translate("frmFitCircleClass", "\350\276\223\345\207\272\346\225\260\346\215\256(\345\234\206\347\232\204\344\270\255\345\277\203\345\235\220\346\240\207\343\200\201\345\215\212\345\276\204)", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab), QCoreApplication::translate("frmFitCircleClass", "\345\237\272\346\234\254\350\256\276\347\275\256", nullptr));
+        label_3->setText(QCoreApplication::translate("frmFitCircleClass", "\345\215\225\345\205\203\346\217\217\350\277\260\357\274\232", nullptr));
+        btnExecute->setText(QCoreApplication::translate("frmFitCircleClass", "\346\211\247\350\241\214", nullptr));
     } // retranslateUi
 
 };

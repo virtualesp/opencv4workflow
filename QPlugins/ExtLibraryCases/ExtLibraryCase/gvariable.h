@@ -7,7 +7,7 @@
 
 class QToolBase;
 
-class gVariable 
+class gVariable
 {	
 public:		
 	//定义全局变量结构体

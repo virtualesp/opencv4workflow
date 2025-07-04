@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'frmSelectShape.ui'
 **
-** Created by: Qt User Interface Compiler version 5.12.12
+** Created by: Qt User Interface Compiler version 5.14.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -1951,122 +1951,122 @@ public:
 
     void retranslateUi(QDialog *frmSelectShapeClass)
     {
-        frmSelectShapeClass->setWindowTitle(QApplication::translate("frmSelectShapeClass", "\350\275\256\345\273\223\347\211\271\345\276\201\351\200\211\346\213\251", nullptr));
-        groupCamera->setTitle(QApplication::translate("frmSelectShapeClass", "\345\233\276\345\203\217\345\257\271\350\261\241", nullptr));
-        label_4->setText(QApplication::translate("frmSelectShapeClass", "\350\276\223\345\205\245\345\233\276\345\203\217\357\274\232", nullptr));
-#ifndef QT_NO_TOOLTIP
-        btnLinkImage->setToolTip(QApplication::translate("frmSelectShapeClass", "\351\223\276\346\216\245\345\233\276\345\203\217", nullptr));
-#endif // QT_NO_TOOLTIP
+        frmSelectShapeClass->setWindowTitle(QCoreApplication::translate("frmSelectShapeClass", "\350\275\256\345\273\223\347\211\271\345\276\201\351\200\211\346\213\251", nullptr));
+        groupCamera->setTitle(QCoreApplication::translate("frmSelectShapeClass", "\345\233\276\345\203\217\345\257\271\350\261\241", nullptr));
+        label_4->setText(QCoreApplication::translate("frmSelectShapeClass", "\350\276\223\345\205\245\345\233\276\345\203\217\357\274\232", nullptr));
+#if QT_CONFIG(tooltip)
+        btnLinkImage->setToolTip(QCoreApplication::translate("frmSelectShapeClass", "\351\223\276\346\216\245\345\233\276\345\203\217", nullptr));
+#endif // QT_CONFIG(tooltip)
         btnLinkImage->setText(QString());
-#ifndef QT_NO_TOOLTIP
-        btnDelLinkImage->setToolTip(QApplication::translate("frmSelectShapeClass", "\345\210\240\351\231\244\345\233\276\345\203\217\351\223\276\346\216\245", nullptr));
-#endif // QT_NO_TOOLTIP
+#if QT_CONFIG(tooltip)
+        btnDelLinkImage->setToolTip(QCoreApplication::translate("frmSelectShapeClass", "\345\210\240\351\231\244\345\233\276\345\203\217\351\223\276\346\216\245", nullptr));
+#endif // QT_CONFIG(tooltip)
         btnDelLinkImage->setText(QString());
-        groupC->setTitle(QApplication::translate("frmSelectShapeClass", "\350\275\256\345\273\223\345\257\271\350\261\241", nullptr));
-        label_9->setText(QApplication::translate("frmSelectShapeClass", "\350\275\256\345\273\223\347\232\204\346\243\200\347\264\242\346\250\241\345\274\217\357\274\232", nullptr));
-        comboMode->setItemText(0, QApplication::translate("frmSelectShapeClass", "RETR_EXTERNAL", nullptr));
-        comboMode->setItemText(1, QApplication::translate("frmSelectShapeClass", "RETR_LIST", nullptr));
-        comboMode->setItemText(2, QApplication::translate("frmSelectShapeClass", "RETR_CCOMP", nullptr));
-        comboMode->setItemText(3, QApplication::translate("frmSelectShapeClass", "RETR_TREE", nullptr));
+        groupC->setTitle(QCoreApplication::translate("frmSelectShapeClass", "\350\275\256\345\273\223\345\257\271\350\261\241", nullptr));
+        label_9->setText(QCoreApplication::translate("frmSelectShapeClass", "\350\275\256\345\273\223\347\232\204\346\243\200\347\264\242\346\250\241\345\274\217\357\274\232", nullptr));
+        comboMode->setItemText(0, QCoreApplication::translate("frmSelectShapeClass", "RETR_EXTERNAL", nullptr));
+        comboMode->setItemText(1, QCoreApplication::translate("frmSelectShapeClass", "RETR_LIST", nullptr));
+        comboMode->setItemText(2, QCoreApplication::translate("frmSelectShapeClass", "RETR_CCOMP", nullptr));
+        comboMode->setItemText(3, QCoreApplication::translate("frmSelectShapeClass", "RETR_TREE", nullptr));
 
-        label_10->setText(QApplication::translate("frmSelectShapeClass", "\350\275\256\345\273\223\347\232\204\350\277\221\344\274\274\346\226\271\346\263\225\357\274\232", nullptr));
-        comboMethod->setItemText(0, QApplication::translate("frmSelectShapeClass", "CHAIN_APPROX_NONE", nullptr));
-        comboMethod->setItemText(1, QApplication::translate("frmSelectShapeClass", "CHAIN_APPROX_SIMPLE", nullptr));
-        comboMethod->setItemText(2, QApplication::translate("frmSelectShapeClass", "CHAIN_APPROX_TC89_L1", nullptr));
-        comboMethod->setItemText(3, QApplication::translate("frmSelectShapeClass", "CHAIN_APPROX_TC89_KCOS", nullptr));
+        label_10->setText(QCoreApplication::translate("frmSelectShapeClass", "\350\275\256\345\273\223\347\232\204\350\277\221\344\274\274\346\226\271\346\263\225\357\274\232", nullptr));
+        comboMethod->setItemText(0, QCoreApplication::translate("frmSelectShapeClass", "CHAIN_APPROX_NONE", nullptr));
+        comboMethod->setItemText(1, QCoreApplication::translate("frmSelectShapeClass", "CHAIN_APPROX_SIMPLE", nullptr));
+        comboMethod->setItemText(2, QCoreApplication::translate("frmSelectShapeClass", "CHAIN_APPROX_TC89_L1", nullptr));
+        comboMethod->setItemText(3, QCoreApplication::translate("frmSelectShapeClass", "CHAIN_APPROX_TC89_KCOS", nullptr));
 
-        label_11->setText(QApplication::translate("frmSelectShapeClass", "\350\275\256\345\273\223\347\232\204\345\275\242\347\212\266\347\211\271\345\276\201\357\274\232", nullptr));
-        comboCMode->setItemText(0, QApplication::translate("frmSelectShapeClass", "area", nullptr));
-        comboCMode->setItemText(1, QApplication::translate("frmSelectShapeClass", "max_area", nullptr));
-        comboCMode->setItemText(2, QApplication::translate("frmSelectShapeClass", "contlength", nullptr));
-        comboCMode->setItemText(3, QApplication::translate("frmSelectShapeClass", "vertices", nullptr));
-        comboCMode->setItemText(4, QApplication::translate("frmSelectShapeClass", "circle_radius", nullptr));
-        comboCMode->setItemText(5, QApplication::translate("frmSelectShapeClass", "rectangularity", nullptr));
-        comboCMode->setItemText(6, QApplication::translate("frmSelectShapeClass", "inner_width", nullptr));
-        comboCMode->setItemText(7, QApplication::translate("frmSelectShapeClass", "inner_height", nullptr));
-        comboCMode->setItemText(8, QApplication::translate("frmSelectShapeClass", "row", nullptr));
-        comboCMode->setItemText(9, QApplication::translate("frmSelectShapeClass", "column", nullptr));
-        comboCMode->setItemText(10, QApplication::translate("frmSelectShapeClass", "rect2_len1", nullptr));
-        comboCMode->setItemText(11, QApplication::translate("frmSelectShapeClass", "rect2_len2", nullptr));
-        comboCMode->setItemText(12, QApplication::translate("frmSelectShapeClass", "rect2_phi", nullptr));
-        comboCMode->setItemText(13, QApplication::translate("frmSelectShapeClass", "ellipse_lena", nullptr));
-        comboCMode->setItemText(14, QApplication::translate("frmSelectShapeClass", "ellipse_lenb", nullptr));
-        comboCMode->setItemText(15, QApplication::translate("frmSelectShapeClass", "ellipse_phi", nullptr));
+        label_11->setText(QCoreApplication::translate("frmSelectShapeClass", "\350\275\256\345\273\223\347\232\204\345\275\242\347\212\266\347\211\271\345\276\201\357\274\232", nullptr));
+        comboCMode->setItemText(0, QCoreApplication::translate("frmSelectShapeClass", "area", nullptr));
+        comboCMode->setItemText(1, QCoreApplication::translate("frmSelectShapeClass", "max_area", nullptr));
+        comboCMode->setItemText(2, QCoreApplication::translate("frmSelectShapeClass", "contlength", nullptr));
+        comboCMode->setItemText(3, QCoreApplication::translate("frmSelectShapeClass", "vertices", nullptr));
+        comboCMode->setItemText(4, QCoreApplication::translate("frmSelectShapeClass", "circle_radius", nullptr));
+        comboCMode->setItemText(5, QCoreApplication::translate("frmSelectShapeClass", "rectangularity", nullptr));
+        comboCMode->setItemText(6, QCoreApplication::translate("frmSelectShapeClass", "inner_width", nullptr));
+        comboCMode->setItemText(7, QCoreApplication::translate("frmSelectShapeClass", "inner_height", nullptr));
+        comboCMode->setItemText(8, QCoreApplication::translate("frmSelectShapeClass", "row", nullptr));
+        comboCMode->setItemText(9, QCoreApplication::translate("frmSelectShapeClass", "column", nullptr));
+        comboCMode->setItemText(10, QCoreApplication::translate("frmSelectShapeClass", "rect2_len1", nullptr));
+        comboCMode->setItemText(11, QCoreApplication::translate("frmSelectShapeClass", "rect2_len2", nullptr));
+        comboCMode->setItemText(12, QCoreApplication::translate("frmSelectShapeClass", "rect2_phi", nullptr));
+        comboCMode->setItemText(13, QCoreApplication::translate("frmSelectShapeClass", "ellipse_lena", nullptr));
+        comboCMode->setItemText(14, QCoreApplication::translate("frmSelectShapeClass", "ellipse_lenb", nullptr));
+        comboCMode->setItemText(15, QCoreApplication::translate("frmSelectShapeClass", "ellipse_phi", nullptr));
 
-        groupParam->setTitle(QApplication::translate("frmSelectShapeClass", "\350\275\256\345\273\223\351\235\242\347\247\257\345\217\202\346\225\260\350\256\276\347\275\256", nullptr));
-        label_5->setText(QApplication::translate("frmSelectShapeClass", "\346\234\200\345\260\217\351\235\242\347\247\257\357\274\232", nullptr));
-        label_6->setText(QApplication::translate("frmSelectShapeClass", "\346\234\200\345\244\247\351\235\242\347\247\257\357\274\232", nullptr));
-        groupParam_2->setTitle(QApplication::translate("frmSelectShapeClass", "\350\275\256\345\273\223\351\225\277\345\272\246\345\217\202\346\225\260\350\256\276\347\275\256", nullptr));
-        label_7->setText(QApplication::translate("frmSelectShapeClass", "\346\234\200\345\260\217\351\225\277\345\272\246\357\274\232", nullptr));
-        label_8->setText(QApplication::translate("frmSelectShapeClass", "\346\234\200\345\244\247\351\225\277\345\272\246\357\274\232", nullptr));
-        groupParam_3->setTitle(QApplication::translate("frmSelectShapeClass", "\350\275\256\345\273\223\351\241\266\347\202\271\346\225\260\345\217\202\346\225\260\350\256\276\347\275\256", nullptr));
-        label_12->setText(QApplication::translate("frmSelectShapeClass", "\351\241\266\347\202\271\344\270\252\346\225\260\357\274\232", nullptr));
-        label_15->setText(QApplication::translate("frmSelectShapeClass", "\345\207\240\344\275\225\351\200\274\350\277\221\347\263\273\346\225\260\357\274\232", nullptr));
-        groupParam_4->setTitle(QApplication::translate("frmSelectShapeClass", "\350\275\256\345\273\223\345\234\206\345\217\202\346\225\260\350\256\276\347\275\256", nullptr));
-        label_13->setText(QApplication::translate("frmSelectShapeClass", "\345\234\206\346\234\200\345\260\217\345\215\212\345\276\204\357\274\232", nullptr));
-        label_14->setText(QApplication::translate("frmSelectShapeClass", "\345\234\206\346\234\200\345\244\247\345\215\212\345\276\204\357\274\232", nullptr));
-        label_18->setText(QApplication::translate("frmSelectShapeClass", "\346\234\200\345\244\247\345\234\206\345\272\246\357\274\232", nullptr));
-        label_19->setText(QApplication::translate("frmSelectShapeClass", "\346\234\200\345\260\217\345\234\206\345\272\246\357\274\232", nullptr));
-        groupParam_5->setTitle(QApplication::translate("frmSelectShapeClass", "\350\275\256\345\273\223\347\237\251\345\275\242\345\272\246\345\217\202\346\225\260\350\256\276\347\275\256", nullptr));
-        label_20->setText(QApplication::translate("frmSelectShapeClass", "\346\234\200\345\244\247\347\237\251\345\275\242\345\272\246\357\274\232", nullptr));
-        label_21->setText(QApplication::translate("frmSelectShapeClass", "\346\234\200\345\260\217\347\237\251\345\275\242\345\272\246\357\274\232", nullptr));
-        groupParam_6->setTitle(QApplication::translate("frmSelectShapeClass", "\350\275\256\345\273\223\345\244\226\346\216\245\347\237\251\345\275\242\345\256\275\345\272\246\345\217\202\346\225\260\350\256\276\347\275\256", nullptr));
-        label_22->setText(QApplication::translate("frmSelectShapeClass", "\346\234\200\345\260\217\345\256\275\345\272\246\357\274\232", nullptr));
-        label_23->setText(QApplication::translate("frmSelectShapeClass", "\346\234\200\345\244\247\345\256\275\345\272\246\357\274\232", nullptr));
-        groupParam_7->setTitle(QApplication::translate("frmSelectShapeClass", "\350\275\256\345\273\223\345\244\226\346\216\245\347\237\251\345\275\242\351\253\230\345\272\246\345\217\202\346\225\260\350\256\276\347\275\256", nullptr));
-        label_24->setText(QApplication::translate("frmSelectShapeClass", "\346\234\200\345\260\217\351\253\230\345\272\246\357\274\232", nullptr));
-        label_25->setText(QApplication::translate("frmSelectShapeClass", "\346\234\200\345\244\247\351\253\230\345\272\246\357\274\232", nullptr));
-        groupParam_8->setTitle(QApplication::translate("frmSelectShapeClass", "\350\275\256\345\273\223\350\241\214\345\235\220\346\240\207\345\217\202\346\225\260\350\256\276\347\275\256", nullptr));
-        label_26->setText(QApplication::translate("frmSelectShapeClass", "\346\234\200\345\260\217\350\241\214\345\235\220\346\240\207\357\274\232", nullptr));
-        label_27->setText(QApplication::translate("frmSelectShapeClass", "\346\234\200\345\244\247\350\241\214\345\235\220\346\240\207\357\274\232", nullptr));
-        groupParam_9->setTitle(QApplication::translate("frmSelectShapeClass", "\350\275\256\345\273\223\345\210\227\345\235\220\346\240\207\345\217\202\346\225\260\350\256\276\347\275\256", nullptr));
-        label_28->setText(QApplication::translate("frmSelectShapeClass", "\346\234\200\345\260\217\345\210\227\345\235\220\346\240\207\357\274\232", nullptr));
-        label_29->setText(QApplication::translate("frmSelectShapeClass", "\346\234\200\345\244\247\345\210\227\345\235\220\346\240\207\357\274\232", nullptr));
-        groupParam_10->setTitle(QApplication::translate("frmSelectShapeClass", "\350\275\256\345\273\223\346\234\200\345\260\217\345\244\226\346\216\245\347\237\251\345\275\242\347\232\204\344\270\200\345\215\212\351\225\277\345\272\246\345\217\202\346\225\260\350\256\276\347\275\256", nullptr));
-        label_31->setText(QApplication::translate("frmSelectShapeClass", "\346\234\200\345\260\217\345\215\212\351\225\277\357\274\232", nullptr));
-        label_32->setText(QApplication::translate("frmSelectShapeClass", "\346\234\200\345\244\247\345\215\212\351\225\277\357\274\232", nullptr));
-        groupParam_11->setTitle(QApplication::translate("frmSelectShapeClass", "\350\275\256\345\273\223\346\234\200\345\260\217\345\244\226\346\216\245\347\237\251\345\275\242\347\232\204\344\270\200\345\215\212\345\256\275\345\272\246\345\217\202\346\225\260\350\256\276\347\275\256", nullptr));
-        label_33->setText(QApplication::translate("frmSelectShapeClass", "\346\234\200\345\260\217\345\215\212\345\256\275\357\274\232", nullptr));
-        label_34->setText(QApplication::translate("frmSelectShapeClass", "\346\234\200\345\244\247\345\215\212\345\256\275\357\274\232", nullptr));
-        groupParam_12->setTitle(QApplication::translate("frmSelectShapeClass", "\350\275\256\345\273\223\346\234\200\345\260\217\345\244\226\346\216\245\347\237\251\345\275\242\347\232\204\346\226\271\345\220\221\345\217\202\346\225\260\350\256\276\347\275\256", nullptr));
-        label_35->setText(QApplication::translate("frmSelectShapeClass", "\346\234\200\345\244\247\350\247\222\345\272\246\357\274\232", nullptr));
-        label_36->setText(QApplication::translate("frmSelectShapeClass", "\346\234\200\345\260\217\350\247\222\345\272\246\357\274\232", nullptr));
-        groupParam_13->setTitle(QApplication::translate("frmSelectShapeClass", "\350\275\256\345\273\223\346\234\200\345\260\217\345\244\226\346\216\245\346\244\255\345\234\206\347\232\204\351\225\277\345\215\212\350\275\264\345\217\202\346\225\260\350\256\276\347\275\256", nullptr));
-        label_37->setText(QApplication::translate("frmSelectShapeClass", "\346\234\200\345\260\217\351\225\277\345\215\212\350\275\264\357\274\232", nullptr));
-        label_38->setText(QApplication::translate("frmSelectShapeClass", "\346\234\200\345\244\247\351\225\277\345\215\212\350\275\264\357\274\232", nullptr));
-        groupParam_14->setTitle(QApplication::translate("frmSelectShapeClass", "\350\275\256\345\273\223\346\234\200\345\260\217\345\244\226\346\216\245\346\244\255\345\234\206\347\232\204\347\237\255\345\215\212\350\275\264\345\217\202\346\225\260\350\256\276\347\275\256", nullptr));
-        label_39->setText(QApplication::translate("frmSelectShapeClass", "\346\234\200\345\260\217\347\237\255\345\215\212\350\275\264\357\274\232", nullptr));
-        label_40->setText(QApplication::translate("frmSelectShapeClass", "\346\234\200\345\244\247\347\237\255\345\215\212\350\275\264\357\274\232", nullptr));
-        groupParam_15->setTitle(QApplication::translate("frmSelectShapeClass", "\350\275\256\345\273\223\346\234\200\345\260\217\345\244\226\346\216\245\346\244\255\345\234\206\347\232\204\346\226\271\345\220\221\345\217\202\346\225\260\350\256\276\347\275\256", nullptr));
-        label_41->setText(QApplication::translate("frmSelectShapeClass", "\346\234\200\345\244\247\350\247\222\345\272\246\357\274\232", nullptr));
-        label_42->setText(QApplication::translate("frmSelectShapeClass", "\346\234\200\345\260\217\350\247\222\345\272\246\357\274\232", nullptr));
+        groupParam->setTitle(QCoreApplication::translate("frmSelectShapeClass", "\350\275\256\345\273\223\351\235\242\347\247\257\345\217\202\346\225\260\350\256\276\347\275\256", nullptr));
+        label_5->setText(QCoreApplication::translate("frmSelectShapeClass", "\346\234\200\345\260\217\351\235\242\347\247\257\357\274\232", nullptr));
+        label_6->setText(QCoreApplication::translate("frmSelectShapeClass", "\346\234\200\345\244\247\351\235\242\347\247\257\357\274\232", nullptr));
+        groupParam_2->setTitle(QCoreApplication::translate("frmSelectShapeClass", "\350\275\256\345\273\223\351\225\277\345\272\246\345\217\202\346\225\260\350\256\276\347\275\256", nullptr));
+        label_7->setText(QCoreApplication::translate("frmSelectShapeClass", "\346\234\200\345\260\217\351\225\277\345\272\246\357\274\232", nullptr));
+        label_8->setText(QCoreApplication::translate("frmSelectShapeClass", "\346\234\200\345\244\247\351\225\277\345\272\246\357\274\232", nullptr));
+        groupParam_3->setTitle(QCoreApplication::translate("frmSelectShapeClass", "\350\275\256\345\273\223\351\241\266\347\202\271\346\225\260\345\217\202\346\225\260\350\256\276\347\275\256", nullptr));
+        label_12->setText(QCoreApplication::translate("frmSelectShapeClass", "\351\241\266\347\202\271\344\270\252\346\225\260\357\274\232", nullptr));
+        label_15->setText(QCoreApplication::translate("frmSelectShapeClass", "\345\207\240\344\275\225\351\200\274\350\277\221\347\263\273\346\225\260\357\274\232", nullptr));
+        groupParam_4->setTitle(QCoreApplication::translate("frmSelectShapeClass", "\350\275\256\345\273\223\345\234\206\345\217\202\346\225\260\350\256\276\347\275\256", nullptr));
+        label_13->setText(QCoreApplication::translate("frmSelectShapeClass", "\345\234\206\346\234\200\345\260\217\345\215\212\345\276\204\357\274\232", nullptr));
+        label_14->setText(QCoreApplication::translate("frmSelectShapeClass", "\345\234\206\346\234\200\345\244\247\345\215\212\345\276\204\357\274\232", nullptr));
+        label_18->setText(QCoreApplication::translate("frmSelectShapeClass", "\346\234\200\345\244\247\345\234\206\345\272\246\357\274\232", nullptr));
+        label_19->setText(QCoreApplication::translate("frmSelectShapeClass", "\346\234\200\345\260\217\345\234\206\345\272\246\357\274\232", nullptr));
+        groupParam_5->setTitle(QCoreApplication::translate("frmSelectShapeClass", "\350\275\256\345\273\223\347\237\251\345\275\242\345\272\246\345\217\202\346\225\260\350\256\276\347\275\256", nullptr));
+        label_20->setText(QCoreApplication::translate("frmSelectShapeClass", "\346\234\200\345\244\247\347\237\251\345\275\242\345\272\246\357\274\232", nullptr));
+        label_21->setText(QCoreApplication::translate("frmSelectShapeClass", "\346\234\200\345\260\217\347\237\251\345\275\242\345\272\246\357\274\232", nullptr));
+        groupParam_6->setTitle(QCoreApplication::translate("frmSelectShapeClass", "\350\275\256\345\273\223\345\244\226\346\216\245\347\237\251\345\275\242\345\256\275\345\272\246\345\217\202\346\225\260\350\256\276\347\275\256", nullptr));
+        label_22->setText(QCoreApplication::translate("frmSelectShapeClass", "\346\234\200\345\260\217\345\256\275\345\272\246\357\274\232", nullptr));
+        label_23->setText(QCoreApplication::translate("frmSelectShapeClass", "\346\234\200\345\244\247\345\256\275\345\272\246\357\274\232", nullptr));
+        groupParam_7->setTitle(QCoreApplication::translate("frmSelectShapeClass", "\350\275\256\345\273\223\345\244\226\346\216\245\347\237\251\345\275\242\351\253\230\345\272\246\345\217\202\346\225\260\350\256\276\347\275\256", nullptr));
+        label_24->setText(QCoreApplication::translate("frmSelectShapeClass", "\346\234\200\345\260\217\351\253\230\345\272\246\357\274\232", nullptr));
+        label_25->setText(QCoreApplication::translate("frmSelectShapeClass", "\346\234\200\345\244\247\351\253\230\345\272\246\357\274\232", nullptr));
+        groupParam_8->setTitle(QCoreApplication::translate("frmSelectShapeClass", "\350\275\256\345\273\223\350\241\214\345\235\220\346\240\207\345\217\202\346\225\260\350\256\276\347\275\256", nullptr));
+        label_26->setText(QCoreApplication::translate("frmSelectShapeClass", "\346\234\200\345\260\217\350\241\214\345\235\220\346\240\207\357\274\232", nullptr));
+        label_27->setText(QCoreApplication::translate("frmSelectShapeClass", "\346\234\200\345\244\247\350\241\214\345\235\220\346\240\207\357\274\232", nullptr));
+        groupParam_9->setTitle(QCoreApplication::translate("frmSelectShapeClass", "\350\275\256\345\273\223\345\210\227\345\235\220\346\240\207\345\217\202\346\225\260\350\256\276\347\275\256", nullptr));
+        label_28->setText(QCoreApplication::translate("frmSelectShapeClass", "\346\234\200\345\260\217\345\210\227\345\235\220\346\240\207\357\274\232", nullptr));
+        label_29->setText(QCoreApplication::translate("frmSelectShapeClass", "\346\234\200\345\244\247\345\210\227\345\235\220\346\240\207\357\274\232", nullptr));
+        groupParam_10->setTitle(QCoreApplication::translate("frmSelectShapeClass", "\350\275\256\345\273\223\346\234\200\345\260\217\345\244\226\346\216\245\347\237\251\345\275\242\347\232\204\344\270\200\345\215\212\351\225\277\345\272\246\345\217\202\346\225\260\350\256\276\347\275\256", nullptr));
+        label_31->setText(QCoreApplication::translate("frmSelectShapeClass", "\346\234\200\345\260\217\345\215\212\351\225\277\357\274\232", nullptr));
+        label_32->setText(QCoreApplication::translate("frmSelectShapeClass", "\346\234\200\345\244\247\345\215\212\351\225\277\357\274\232", nullptr));
+        groupParam_11->setTitle(QCoreApplication::translate("frmSelectShapeClass", "\350\275\256\345\273\223\346\234\200\345\260\217\345\244\226\346\216\245\347\237\251\345\275\242\347\232\204\344\270\200\345\215\212\345\256\275\345\272\246\345\217\202\346\225\260\350\256\276\347\275\256", nullptr));
+        label_33->setText(QCoreApplication::translate("frmSelectShapeClass", "\346\234\200\345\260\217\345\215\212\345\256\275\357\274\232", nullptr));
+        label_34->setText(QCoreApplication::translate("frmSelectShapeClass", "\346\234\200\345\244\247\345\215\212\345\256\275\357\274\232", nullptr));
+        groupParam_12->setTitle(QCoreApplication::translate("frmSelectShapeClass", "\350\275\256\345\273\223\346\234\200\345\260\217\345\244\226\346\216\245\347\237\251\345\275\242\347\232\204\346\226\271\345\220\221\345\217\202\346\225\260\350\256\276\347\275\256", nullptr));
+        label_35->setText(QCoreApplication::translate("frmSelectShapeClass", "\346\234\200\345\244\247\350\247\222\345\272\246\357\274\232", nullptr));
+        label_36->setText(QCoreApplication::translate("frmSelectShapeClass", "\346\234\200\345\260\217\350\247\222\345\272\246\357\274\232", nullptr));
+        groupParam_13->setTitle(QCoreApplication::translate("frmSelectShapeClass", "\350\275\256\345\273\223\346\234\200\345\260\217\345\244\226\346\216\245\346\244\255\345\234\206\347\232\204\351\225\277\345\215\212\350\275\264\345\217\202\346\225\260\350\256\276\347\275\256", nullptr));
+        label_37->setText(QCoreApplication::translate("frmSelectShapeClass", "\346\234\200\345\260\217\351\225\277\345\215\212\350\275\264\357\274\232", nullptr));
+        label_38->setText(QCoreApplication::translate("frmSelectShapeClass", "\346\234\200\345\244\247\351\225\277\345\215\212\350\275\264\357\274\232", nullptr));
+        groupParam_14->setTitle(QCoreApplication::translate("frmSelectShapeClass", "\350\275\256\345\273\223\346\234\200\345\260\217\345\244\226\346\216\245\346\244\255\345\234\206\347\232\204\347\237\255\345\215\212\350\275\264\345\217\202\346\225\260\350\256\276\347\275\256", nullptr));
+        label_39->setText(QCoreApplication::translate("frmSelectShapeClass", "\346\234\200\345\260\217\347\237\255\345\215\212\350\275\264\357\274\232", nullptr));
+        label_40->setText(QCoreApplication::translate("frmSelectShapeClass", "\346\234\200\345\244\247\347\237\255\345\215\212\350\275\264\357\274\232", nullptr));
+        groupParam_15->setTitle(QCoreApplication::translate("frmSelectShapeClass", "\350\275\256\345\273\223\346\234\200\345\260\217\345\244\226\346\216\245\346\244\255\345\234\206\347\232\204\346\226\271\345\220\221\345\217\202\346\225\260\350\256\276\347\275\256", nullptr));
+        label_41->setText(QCoreApplication::translate("frmSelectShapeClass", "\346\234\200\345\244\247\350\247\222\345\272\246\357\274\232", nullptr));
+        label_42->setText(QCoreApplication::translate("frmSelectShapeClass", "\346\234\200\345\260\217\350\247\222\345\272\246\357\274\232", nullptr));
         QTableWidgetItem *___qtablewidgetitem = tableWidgetType->horizontalHeaderItem(0);
-        ___qtablewidgetitem->setText(QApplication::translate("frmSelectShapeClass", "\345\275\242\347\212\266\347\211\271\345\276\201\347\261\273\345\210\253", nullptr));
-        btnAddType->setText(QApplication::translate("frmSelectShapeClass", "\346\267\273\345\212\240", nullptr));
-        btnDeleteType->setText(QApplication::translate("frmSelectShapeClass", "\345\210\240\351\231\244", nullptr));
-        comboType->setItemText(0, QApplication::translate("frmSelectShapeClass", "and", nullptr));
-        comboType->setItemText(1, QApplication::translate("frmSelectShapeClass", "or", nullptr));
+        ___qtablewidgetitem->setText(QCoreApplication::translate("frmSelectShapeClass", "\345\275\242\347\212\266\347\211\271\345\276\201\347\261\273\345\210\253", nullptr));
+        btnAddType->setText(QCoreApplication::translate("frmSelectShapeClass", "\346\267\273\345\212\240", nullptr));
+        btnDeleteType->setText(QCoreApplication::translate("frmSelectShapeClass", "\345\210\240\351\231\244", nullptr));
+        comboType->setItemText(0, QCoreApplication::translate("frmSelectShapeClass", "and", nullptr));
+        comboType->setItemText(1, QCoreApplication::translate("frmSelectShapeClass", "or", nullptr));
 
-        label_30->setText(QApplication::translate("frmSelectShapeClass", "\350\275\256\345\273\223\347\211\271\345\276\201\347\232\204\351\223\276\346\216\245\347\261\273\345\236\213\357\274\232", nullptr));
-        tabWidget->setTabText(tabWidget->indexOf(tab), QApplication::translate("frmSelectShapeClass", "\345\237\272\346\234\254\350\256\276\347\275\256", nullptr));
-        groupCamera_8->setTitle(QApplication::translate("frmSelectShapeClass", "ROI\345\257\271\350\261\241", nullptr));
-        checkUseROI->setText(QApplication::translate("frmSelectShapeClass", "\344\275\277\347\224\250ROI", nullptr));
-        comboROIShape->setItemText(0, QApplication::translate("frmSelectShapeClass", "\347\237\251\345\275\242", nullptr));
-        comboROIShape->setItemText(1, QApplication::translate("frmSelectShapeClass", "\346\227\213\350\275\254\347\237\251\345\275\242", nullptr));
-        comboROIShape->setItemText(2, QApplication::translate("frmSelectShapeClass", "\345\234\206\345\275\242", nullptr));
-        comboROIShape->setItemText(3, QApplication::translate("frmSelectShapeClass", "\345\244\232\350\276\271\345\275\242", nullptr));
+        label_30->setText(QCoreApplication::translate("frmSelectShapeClass", "\350\275\256\345\273\223\347\211\271\345\276\201\347\232\204\351\223\276\346\216\245\347\261\273\345\236\213\357\274\232", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab), QCoreApplication::translate("frmSelectShapeClass", "\345\237\272\346\234\254\350\256\276\347\275\256", nullptr));
+        groupCamera_8->setTitle(QCoreApplication::translate("frmSelectShapeClass", "ROI\345\257\271\350\261\241", nullptr));
+        checkUseROI->setText(QCoreApplication::translate("frmSelectShapeClass", "\344\275\277\347\224\250ROI", nullptr));
+        comboROIShape->setItemText(0, QCoreApplication::translate("frmSelectShapeClass", "\347\237\251\345\275\242", nullptr));
+        comboROIShape->setItemText(1, QCoreApplication::translate("frmSelectShapeClass", "\346\227\213\350\275\254\347\237\251\345\275\242", nullptr));
+        comboROIShape->setItemText(2, QCoreApplication::translate("frmSelectShapeClass", "\345\234\206\345\275\242", nullptr));
+        comboROIShape->setItemText(3, QCoreApplication::translate("frmSelectShapeClass", "\345\244\232\350\276\271\345\275\242", nullptr));
 
-        btnAddROI->setText(QApplication::translate("frmSelectShapeClass", "\346\267\273\345\212\240", nullptr));
-        btnDeleteROI->setText(QApplication::translate("frmSelectShapeClass", "\345\210\240\351\231\244", nullptr));
-        checkViewROI->setText(QApplication::translate("frmSelectShapeClass", "\346\230\276\347\244\272ROI", nullptr));
-        label_16->setText(QApplication::translate("frmSelectShapeClass", "ROI\345\256\275\345\272\246\357\274\232", nullptr));
-        label_17->setText(QApplication::translate("frmSelectShapeClass", "ROI\351\242\234\350\211\262\357\274\232", nullptr));
+        btnAddROI->setText(QCoreApplication::translate("frmSelectShapeClass", "\346\267\273\345\212\240", nullptr));
+        btnDeleteROI->setText(QCoreApplication::translate("frmSelectShapeClass", "\345\210\240\351\231\244", nullptr));
+        checkViewROI->setText(QCoreApplication::translate("frmSelectShapeClass", "\346\230\276\347\244\272ROI", nullptr));
+        label_16->setText(QCoreApplication::translate("frmSelectShapeClass", "ROI\345\256\275\345\272\246\357\274\232", nullptr));
+        label_17->setText(QCoreApplication::translate("frmSelectShapeClass", "ROI\351\242\234\350\211\262\357\274\232", nullptr));
         btnRoiColor->setText(QString());
-        tabWidget->setTabText(tabWidget->indexOf(tab_2), QApplication::translate("frmSelectShapeClass", "ROI\350\256\276\347\275\256", nullptr));
-        groupC3->setTitle(QApplication::translate("frmSelectShapeClass", "\350\276\223\345\207\272\346\225\260\346\215\256(\350\275\256\345\273\223\347\232\204\344\270\252\346\225\260\343\200\201\351\235\242\347\247\257\343\200\201\351\207\215\345\277\203)", nullptr));
-        tabWidget->setTabText(tabWidget->indexOf(tab_3), QApplication::translate("frmSelectShapeClass", "\350\276\223\345\207\272\346\230\276\347\244\272", nullptr));
-        label_3->setText(QApplication::translate("frmSelectShapeClass", "\345\215\225\345\205\203\346\217\217\350\277\260\357\274\232", nullptr));
-        btnExecute->setText(QApplication::translate("frmSelectShapeClass", "\346\211\247\350\241\214", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab_2), QCoreApplication::translate("frmSelectShapeClass", "ROI\350\256\276\347\275\256", nullptr));
+        groupC3->setTitle(QCoreApplication::translate("frmSelectShapeClass", "\350\276\223\345\207\272\346\225\260\346\215\256(\350\275\256\345\273\223\347\232\204\344\270\252\346\225\260\343\200\201\351\235\242\347\247\257\343\200\201\351\207\215\345\277\203)", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab_3), QCoreApplication::translate("frmSelectShapeClass", "\350\276\223\345\207\272\346\230\276\347\244\272", nullptr));
+        label_3->setText(QCoreApplication::translate("frmSelectShapeClass", "\345\215\225\345\205\203\346\217\217\350\277\260\357\274\232", nullptr));
+        btnExecute->setText(QCoreApplication::translate("frmSelectShapeClass", "\346\211\247\350\241\214", nullptr));
     } // retranslateUi
 
 };

@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'frmExportCsv.ui'
 **
-** Created by: Qt User Interface Compiler version 5.12.12
+** Created by: Qt User Interface Compiler version 5.14.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -548,53 +548,53 @@ public:
 
     void retranslateUi(QDialog *frmExportCsvClass)
     {
-        frmExportCsvClass->setWindowTitle(QApplication::translate("frmExportCsvClass", "\345\257\274\345\207\272CSV", nullptr));
-        label_3->setText(QApplication::translate("frmExportCsvClass", "\345\215\225\345\205\203\346\217\217\350\277\260\357\274\232", nullptr));
-        btnExecute->setText(QApplication::translate("frmExportCsvClass", "\346\211\247\350\241\214", nullptr));
-        groupC1->setTitle(QApplication::translate("frmExportCsvClass", "\346\226\207\346\234\254\346\240\207\351\242\230\345\217\202\346\225\260", nullptr));
-        label_10->setText(QApplication::translate("frmExportCsvClass", "\346\226\207\346\234\254\346\240\207\351\242\230\345\210\227\346\225\260\351\207\217\357\274\232", nullptr));
-        comboType->setItemText(0, QApplication::translate("frmExportCsvClass", "2\345\210\227\346\240\207\351\242\230", nullptr));
-        comboType->setItemText(1, QApplication::translate("frmExportCsvClass", "3\345\210\227\346\240\207\351\242\230", nullptr));
-        comboType->setItemText(2, QApplication::translate("frmExportCsvClass", "4\345\210\227\346\240\207\351\242\230", nullptr));
-        comboType->setItemText(3, QApplication::translate("frmExportCsvClass", "5\345\210\227\346\240\207\351\242\230", nullptr));
-        comboType->setItemText(4, QApplication::translate("frmExportCsvClass", "6\345\210\227\346\240\207\351\242\230", nullptr));
-        comboType->setItemText(5, QApplication::translate("frmExportCsvClass", "7\345\210\227\346\240\207\351\242\230", nullptr));
-        comboType->setItemText(6, QApplication::translate("frmExportCsvClass", "8\345\210\227\346\240\207\351\242\230", nullptr));
-        comboType->setItemText(7, QApplication::translate("frmExportCsvClass", "9\345\210\227\346\240\207\351\242\230", nullptr));
-        comboType->setItemText(8, QApplication::translate("frmExportCsvClass", "10\345\210\227\346\240\207\351\242\230", nullptr));
-        comboType->setItemText(9, QApplication::translate("frmExportCsvClass", "11\345\210\227\346\240\207\351\242\230", nullptr));
-        comboType->setItemText(10, QApplication::translate("frmExportCsvClass", "12\345\210\227\346\240\207\351\242\230", nullptr));
-        comboType->setItemText(11, QApplication::translate("frmExportCsvClass", "13\345\210\227\346\240\207\351\242\230", nullptr));
-        comboType->setItemText(12, QApplication::translate("frmExportCsvClass", "14\345\210\227\346\240\207\351\242\230", nullptr));
-        comboType->setItemText(13, QApplication::translate("frmExportCsvClass", "15\345\210\227\346\240\207\351\242\230", nullptr));
-        comboType->setItemText(14, QApplication::translate("frmExportCsvClass", "16\345\210\227\346\240\207\351\242\230", nullptr));
+        frmExportCsvClass->setWindowTitle(QCoreApplication::translate("frmExportCsvClass", "\345\257\274\345\207\272CSV", nullptr));
+        label_3->setText(QCoreApplication::translate("frmExportCsvClass", "\345\215\225\345\205\203\346\217\217\350\277\260\357\274\232", nullptr));
+        btnExecute->setText(QCoreApplication::translate("frmExportCsvClass", "\346\211\247\350\241\214", nullptr));
+        groupC1->setTitle(QCoreApplication::translate("frmExportCsvClass", "\346\226\207\346\234\254\346\240\207\351\242\230\345\217\202\346\225\260", nullptr));
+        label_10->setText(QCoreApplication::translate("frmExportCsvClass", "\346\226\207\346\234\254\346\240\207\351\242\230\345\210\227\346\225\260\351\207\217\357\274\232", nullptr));
+        comboType->setItemText(0, QCoreApplication::translate("frmExportCsvClass", "2\345\210\227\346\240\207\351\242\230", nullptr));
+        comboType->setItemText(1, QCoreApplication::translate("frmExportCsvClass", "3\345\210\227\346\240\207\351\242\230", nullptr));
+        comboType->setItemText(2, QCoreApplication::translate("frmExportCsvClass", "4\345\210\227\346\240\207\351\242\230", nullptr));
+        comboType->setItemText(3, QCoreApplication::translate("frmExportCsvClass", "5\345\210\227\346\240\207\351\242\230", nullptr));
+        comboType->setItemText(4, QCoreApplication::translate("frmExportCsvClass", "6\345\210\227\346\240\207\351\242\230", nullptr));
+        comboType->setItemText(5, QCoreApplication::translate("frmExportCsvClass", "7\345\210\227\346\240\207\351\242\230", nullptr));
+        comboType->setItemText(6, QCoreApplication::translate("frmExportCsvClass", "8\345\210\227\346\240\207\351\242\230", nullptr));
+        comboType->setItemText(7, QCoreApplication::translate("frmExportCsvClass", "9\345\210\227\346\240\207\351\242\230", nullptr));
+        comboType->setItemText(8, QCoreApplication::translate("frmExportCsvClass", "10\345\210\227\346\240\207\351\242\230", nullptr));
+        comboType->setItemText(9, QCoreApplication::translate("frmExportCsvClass", "11\345\210\227\346\240\207\351\242\230", nullptr));
+        comboType->setItemText(10, QCoreApplication::translate("frmExportCsvClass", "12\345\210\227\346\240\207\351\242\230", nullptr));
+        comboType->setItemText(11, QCoreApplication::translate("frmExportCsvClass", "13\345\210\227\346\240\207\351\242\230", nullptr));
+        comboType->setItemText(12, QCoreApplication::translate("frmExportCsvClass", "14\345\210\227\346\240\207\351\242\230", nullptr));
+        comboType->setItemText(13, QCoreApplication::translate("frmExportCsvClass", "15\345\210\227\346\240\207\351\242\230", nullptr));
+        comboType->setItemText(14, QCoreApplication::translate("frmExportCsvClass", "16\345\210\227\346\240\207\351\242\230", nullptr));
 
-#ifndef QT_NO_TOOLTIP
-        comboType->setToolTip(QApplication::translate("frmExportCsvClass", "\351\273\230\350\256\244\346\227\266\351\227\264\344\270\272\347\254\2541\345\210\227\357\274\214\346\224\271\345\217\230\345\210\227\346\225\260\351\207\217\345\220\216\351\234\200\350\246\201\351\207\215\346\226\260\347\274\226\350\276\221\346\226\207\346\234\254\346\240\207\351\242\230", nullptr));
-#endif // QT_NO_TOOLTIP
-#ifndef QT_NO_TOOLTIP
-        comboTypeBuf->setToolTip(QApplication::translate("frmExportCsvClass", "\351\273\230\350\256\244\346\227\266\351\227\264\344\270\272\347\254\2541\345\210\227", nullptr));
-#endif // QT_NO_TOOLTIP
+#if QT_CONFIG(tooltip)
+        comboType->setToolTip(QCoreApplication::translate("frmExportCsvClass", "\351\273\230\350\256\244\346\227\266\351\227\264\344\270\272\347\254\2541\345\210\227\357\274\214\346\224\271\345\217\230\345\210\227\346\225\260\351\207\217\345\220\216\351\234\200\350\246\201\351\207\215\346\226\260\347\274\226\350\276\221\346\226\207\346\234\254\346\240\207\351\242\230", nullptr));
+#endif // QT_CONFIG(tooltip)
+#if QT_CONFIG(tooltip)
+        comboTypeBuf->setToolTip(QCoreApplication::translate("frmExportCsvClass", "\351\273\230\350\256\244\346\227\266\351\227\264\344\270\272\347\254\2541\345\210\227", nullptr));
+#endif // QT_CONFIG(tooltip)
         txtTypeName->setText(QString());
-        btnWrite->setText(QApplication::translate("frmExportCsvClass", "\345\206\231\345\205\245", nullptr));
-#ifndef QT_NO_TOOLTIP
-        btnStoragePath->setToolTip(QApplication::translate("frmExportCsvClass", "\345\255\230\345\202\250\350\267\257\345\276\204", nullptr));
-#endif // QT_NO_TOOLTIP
+        btnWrite->setText(QCoreApplication::translate("frmExportCsvClass", "\345\206\231\345\205\245", nullptr));
+#if QT_CONFIG(tooltip)
+        btnStoragePath->setToolTip(QCoreApplication::translate("frmExportCsvClass", "\345\255\230\345\202\250\350\267\257\345\276\204", nullptr));
+#endif // QT_CONFIG(tooltip)
         btnStoragePath->setText(QString());
-        label_9->setText(QApplication::translate("frmExportCsvClass", "\345\244\251", nullptr));
-        label_8->setText(QApplication::translate("frmExportCsvClass", "\346\226\207\344\273\266\344\277\235\345\255\230\345\244\251\346\225\260\357\274\232", nullptr));
-        label_5->setText(QApplication::translate("frmExportCsvClass", "\345\255\230\345\202\250\350\267\257\345\276\204\357\274\232", nullptr));
-#ifndef QT_NO_TOOLTIP
+        label_9->setText(QCoreApplication::translate("frmExportCsvClass", "\345\244\251", nullptr));
+        label_8->setText(QCoreApplication::translate("frmExportCsvClass", "\346\226\207\344\273\266\344\277\235\345\255\230\345\244\251\346\225\260\357\274\232", nullptr));
+        label_5->setText(QCoreApplication::translate("frmExportCsvClass", "\345\255\230\345\202\250\350\267\257\345\276\204\357\274\232", nullptr));
+#if QT_CONFIG(tooltip)
         txtStoragePath->setToolTip(QString());
-#endif // QT_NO_TOOLTIP
-        tabWidget->setTabText(tabWidget->indexOf(tab), QApplication::translate("frmExportCsvClass", "\345\237\272\346\234\254\350\256\276\347\275\256", nullptr));
+#endif // QT_CONFIG(tooltip)
+        tabWidget->setTabText(tabWidget->indexOf(tab), QCoreApplication::translate("frmExportCsvClass", "\345\237\272\346\234\254\350\256\276\347\275\256", nullptr));
         QTableWidgetItem *___qtablewidgetitem = tableWidgetContent->horizontalHeaderItem(0);
-        ___qtablewidgetitem->setText(QApplication::translate("frmExportCsvClass", "\346\226\207\346\234\254\345\220\204\345\210\227\345\206\205\345\256\271", nullptr));
-        btnAddContent->setText(QApplication::translate("frmExportCsvClass", "\346\267\273\345\212\240", nullptr));
-        btnDeleteContent->setText(QApplication::translate("frmExportCsvClass", "\345\210\240\351\231\244", nullptr));
-        btnMoveUp->setText(QApplication::translate("frmExportCsvClass", "\344\270\212\347\247\273", nullptr));
-        btnMoveDown->setText(QApplication::translate("frmExportCsvClass", "\344\270\213\347\247\273", nullptr));
-        tabWidget->setTabText(tabWidget->indexOf(tab_2), QApplication::translate("frmExportCsvClass", "\345\206\205\345\256\271\350\256\276\347\275\256", nullptr));
+        ___qtablewidgetitem->setText(QCoreApplication::translate("frmExportCsvClass", "\346\226\207\346\234\254\345\220\204\345\210\227\345\206\205\345\256\271", nullptr));
+        btnAddContent->setText(QCoreApplication::translate("frmExportCsvClass", "\346\267\273\345\212\240", nullptr));
+        btnDeleteContent->setText(QCoreApplication::translate("frmExportCsvClass", "\345\210\240\351\231\244", nullptr));
+        btnMoveUp->setText(QCoreApplication::translate("frmExportCsvClass", "\344\270\212\347\247\273", nullptr));
+        btnMoveDown->setText(QCoreApplication::translate("frmExportCsvClass", "\344\270\213\347\247\273", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab_2), QCoreApplication::translate("frmExportCsvClass", "\345\206\205\345\256\271\350\256\276\347\275\256", nullptr));
     } // retranslateUi
 
 };

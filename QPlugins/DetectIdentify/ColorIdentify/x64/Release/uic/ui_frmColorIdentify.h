@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'frmColorIdentify.ui'
 **
-** Created by: Qt User Interface Compiler version 5.12.12
+** Created by: Qt User Interface Compiler version 5.14.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -552,48 +552,48 @@ public:
 
     void retranslateUi(QDialog *frmColorIdentifyClass)
     {
-        frmColorIdentifyClass->setWindowTitle(QApplication::translate("frmColorIdentifyClass", "\351\242\234\350\211\262\350\257\206\345\210\253", nullptr));
-        groupCamera->setTitle(QApplication::translate("frmColorIdentifyClass", "\345\233\276\345\203\217\345\257\271\350\261\241", nullptr));
-        label_4->setText(QApplication::translate("frmColorIdentifyClass", "\350\276\223\345\205\245\345\233\276\345\203\217\357\274\232", nullptr));
-#ifndef QT_NO_TOOLTIP
-        btnLinkImage->setToolTip(QApplication::translate("frmColorIdentifyClass", "\351\223\276\346\216\245\345\233\276\345\203\217", nullptr));
-#endif // QT_NO_TOOLTIP
+        frmColorIdentifyClass->setWindowTitle(QCoreApplication::translate("frmColorIdentifyClass", "\351\242\234\350\211\262\350\257\206\345\210\253", nullptr));
+        groupCamera->setTitle(QCoreApplication::translate("frmColorIdentifyClass", "\345\233\276\345\203\217\345\257\271\350\261\241", nullptr));
+        label_4->setText(QCoreApplication::translate("frmColorIdentifyClass", "\350\276\223\345\205\245\345\233\276\345\203\217\357\274\232", nullptr));
+#if QT_CONFIG(tooltip)
+        btnLinkImage->setToolTip(QCoreApplication::translate("frmColorIdentifyClass", "\351\223\276\346\216\245\345\233\276\345\203\217", nullptr));
+#endif // QT_CONFIG(tooltip)
         btnLinkImage->setText(QString());
-#ifndef QT_NO_TOOLTIP
-        btnDelLinkImage->setToolTip(QApplication::translate("frmColorIdentifyClass", "\345\210\240\351\231\244\345\233\276\345\203\217\351\223\276\346\216\245", nullptr));
-#endif // QT_NO_TOOLTIP
+#if QT_CONFIG(tooltip)
+        btnDelLinkImage->setToolTip(QCoreApplication::translate("frmColorIdentifyClass", "\345\210\240\351\231\244\345\233\276\345\203\217\351\223\276\346\216\245", nullptr));
+#endif // QT_CONFIG(tooltip)
         btnDelLinkImage->setText(QString());
-        checkStandardImage->setText(QApplication::translate("frmColorIdentifyClass", "\346\240\207\345\207\206\345\233\276\345\203\217(\345\201\232\346\240\207\345\207\206\346\227\266\345\213\276\351\200\211)", nullptr));
-        groupCamera_6->setTitle(QApplication::translate("frmColorIdentifyClass", "\351\242\234\350\211\262\345\217\202\346\225\260", nullptr));
-        label_11->setText(QApplication::translate("frmColorIdentifyClass", "\346\234\200\345\260\217\351\242\234\350\211\262\347\233\270\344\274\274\345\272\246\357\274\232", nullptr));
-        label_12->setText(QApplication::translate("frmColorIdentifyClass", "S\351\200\232\351\201\223\351\242\234\350\211\262\346\234\200\345\244\247\345\200\274\357\274\232", nullptr));
-        label_13->setText(QApplication::translate("frmColorIdentifyClass", "H\351\200\232\351\201\223\351\242\234\350\211\262\346\234\200\345\244\247\345\200\274\357\274\232", nullptr));
-        tabWidget->setTabText(tabWidget->indexOf(tab), QApplication::translate("frmColorIdentifyClass", "\345\237\272\346\234\254\350\256\276\347\275\256", nullptr));
-        groupCamera_8->setTitle(QApplication::translate("frmColorIdentifyClass", "ROI\345\257\271\350\261\241", nullptr));
-        checkUseROI->setText(QApplication::translate("frmColorIdentifyClass", "\344\275\277\347\224\250ROI", nullptr));
-        comboROIShape->setItemText(0, QApplication::translate("frmColorIdentifyClass", "\347\237\251\345\275\242", nullptr));
+        checkStandardImage->setText(QCoreApplication::translate("frmColorIdentifyClass", "\346\240\207\345\207\206\345\233\276\345\203\217(\345\201\232\346\240\207\345\207\206\346\227\266\345\213\276\351\200\211)", nullptr));
+        groupCamera_6->setTitle(QCoreApplication::translate("frmColorIdentifyClass", "\351\242\234\350\211\262\345\217\202\346\225\260", nullptr));
+        label_11->setText(QCoreApplication::translate("frmColorIdentifyClass", "\346\234\200\345\260\217\351\242\234\350\211\262\347\233\270\344\274\274\345\272\246\357\274\232", nullptr));
+        label_12->setText(QCoreApplication::translate("frmColorIdentifyClass", "S\351\200\232\351\201\223\351\242\234\350\211\262\346\234\200\345\244\247\345\200\274\357\274\232", nullptr));
+        label_13->setText(QCoreApplication::translate("frmColorIdentifyClass", "H\351\200\232\351\201\223\351\242\234\350\211\262\346\234\200\345\244\247\345\200\274\357\274\232", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab), QCoreApplication::translate("frmColorIdentifyClass", "\345\237\272\346\234\254\350\256\276\347\275\256", nullptr));
+        groupCamera_8->setTitle(QCoreApplication::translate("frmColorIdentifyClass", "ROI\345\257\271\350\261\241", nullptr));
+        checkUseROI->setText(QCoreApplication::translate("frmColorIdentifyClass", "\344\275\277\347\224\250ROI", nullptr));
+        comboROIShape->setItemText(0, QCoreApplication::translate("frmColorIdentifyClass", "\347\237\251\345\275\242", nullptr));
 
-        btnAddROI->setText(QApplication::translate("frmColorIdentifyClass", "\346\267\273\345\212\240", nullptr));
-        btnDeleteROI->setText(QApplication::translate("frmColorIdentifyClass", "\345\210\240\351\231\244", nullptr));
-        checkViewROI->setText(QApplication::translate("frmColorIdentifyClass", "\346\230\276\347\244\272ROI", nullptr));
-        label_16->setText(QApplication::translate("frmColorIdentifyClass", "ROI\345\256\275\345\272\246\357\274\232", nullptr));
-        label_17->setText(QApplication::translate("frmColorIdentifyClass", "ROI\351\242\234\350\211\262\357\274\232", nullptr));
+        btnAddROI->setText(QCoreApplication::translate("frmColorIdentifyClass", "\346\267\273\345\212\240", nullptr));
+        btnDeleteROI->setText(QCoreApplication::translate("frmColorIdentifyClass", "\345\210\240\351\231\244", nullptr));
+        checkViewROI->setText(QCoreApplication::translate("frmColorIdentifyClass", "\346\230\276\347\244\272ROI", nullptr));
+        label_16->setText(QCoreApplication::translate("frmColorIdentifyClass", "ROI\345\256\275\345\272\246\357\274\232", nullptr));
+        label_17->setText(QCoreApplication::translate("frmColorIdentifyClass", "ROI\351\242\234\350\211\262\357\274\232", nullptr));
         btnRoiColor->setText(QString());
-        checkUseFollow->setText(QApplication::translate("frmColorIdentifyClass", "\344\275\215\347\275\256\350\267\237\351\232\217", nullptr));
-#ifndef QT_NO_TOOLTIP
-        txtLinkFollow->setToolTip(QApplication::translate("frmColorIdentifyClass", "\345\214\271\351\205\215\345\237\272\345\207\206\344\270\255\345\277\203", nullptr));
-#endif // QT_NO_TOOLTIP
-#ifndef QT_NO_TOOLTIP
-        btnDelLinkFollow->setToolTip(QApplication::translate("frmColorIdentifyClass", "\345\210\240\351\231\244\344\275\215\347\275\256\350\267\237\351\232\217\351\223\276\346\216\245", nullptr));
-#endif // QT_NO_TOOLTIP
+        checkUseFollow->setText(QCoreApplication::translate("frmColorIdentifyClass", "\344\275\215\347\275\256\350\267\237\351\232\217", nullptr));
+#if QT_CONFIG(tooltip)
+        txtLinkFollow->setToolTip(QCoreApplication::translate("frmColorIdentifyClass", "\345\214\271\351\205\215\345\237\272\345\207\206\344\270\255\345\277\203", nullptr));
+#endif // QT_CONFIG(tooltip)
+#if QT_CONFIG(tooltip)
+        btnDelLinkFollow->setToolTip(QCoreApplication::translate("frmColorIdentifyClass", "\345\210\240\351\231\244\344\275\215\347\275\256\350\267\237\351\232\217\351\223\276\346\216\245", nullptr));
+#endif // QT_CONFIG(tooltip)
         btnDelLinkFollow->setText(QString());
-#ifndef QT_NO_TOOLTIP
-        btnLinkFollow->setToolTip(QApplication::translate("frmColorIdentifyClass", "\351\223\276\346\216\245\344\275\215\347\275\256\350\267\237\351\232\217", nullptr));
-#endif // QT_NO_TOOLTIP
+#if QT_CONFIG(tooltip)
+        btnLinkFollow->setToolTip(QCoreApplication::translate("frmColorIdentifyClass", "\351\223\276\346\216\245\344\275\215\347\275\256\350\267\237\351\232\217", nullptr));
+#endif // QT_CONFIG(tooltip)
         btnLinkFollow->setText(QString());
-        tabWidget->setTabText(tabWidget->indexOf(tab_2), QApplication::translate("frmColorIdentifyClass", "ROI\350\256\276\347\275\256", nullptr));
-        label_3->setText(QApplication::translate("frmColorIdentifyClass", "\345\215\225\345\205\203\346\217\217\350\277\260\357\274\232", nullptr));
-        btnExecute->setText(QApplication::translate("frmColorIdentifyClass", "\346\211\247\350\241\214", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab_2), QCoreApplication::translate("frmColorIdentifyClass", "ROI\350\256\276\347\275\256", nullptr));
+        label_3->setText(QCoreApplication::translate("frmColorIdentifyClass", "\345\215\225\345\205\203\346\217\217\350\277\260\357\274\232", nullptr));
+        btnExecute->setText(QCoreApplication::translate("frmColorIdentifyClass", "\346\211\247\350\241\214", nullptr));
     } // retranslateUi
 
 };

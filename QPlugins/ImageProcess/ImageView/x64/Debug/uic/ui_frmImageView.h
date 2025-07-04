@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'frmImageView.ui'
 **
-** Created by: Qt User Interface Compiler version 5.12.12
+** Created by: Qt User Interface Compiler version 5.14.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -993,95 +993,95 @@ public:
 
     void retranslateUi(QDialog *frmImageViewClass)
     {
-        frmImageViewClass->setWindowTitle(QApplication::translate("frmImageViewClass", "\345\233\276\345\203\217\346\230\276\347\244\272", nullptr));
-        label_3->setText(QApplication::translate("frmImageViewClass", "\345\215\225\345\205\203\346\217\217\350\277\260\357\274\232", nullptr));
-        btnExecute->setText(QApplication::translate("frmImageViewClass", "\346\211\247\350\241\214", nullptr));
-        groupC1->setTitle(QApplication::translate("frmImageViewClass", "\345\233\276\345\203\217\345\257\271\350\261\241", nullptr));
-        label_4->setText(QApplication::translate("frmImageViewClass", "\350\276\223\345\205\245\345\233\276\345\203\217\357\274\232", nullptr));
-#ifndef QT_NO_TOOLTIP
-        btnLinkImage->setToolTip(QApplication::translate("frmImageViewClass", "\351\223\276\346\216\245\345\233\276\345\203\217", nullptr));
-#endif // QT_NO_TOOLTIP
+        frmImageViewClass->setWindowTitle(QCoreApplication::translate("frmImageViewClass", "\345\233\276\345\203\217\346\230\276\347\244\272", nullptr));
+        label_3->setText(QCoreApplication::translate("frmImageViewClass", "\345\215\225\345\205\203\346\217\217\350\277\260\357\274\232", nullptr));
+        btnExecute->setText(QCoreApplication::translate("frmImageViewClass", "\346\211\247\350\241\214", nullptr));
+        groupC1->setTitle(QCoreApplication::translate("frmImageViewClass", "\345\233\276\345\203\217\345\257\271\350\261\241", nullptr));
+        label_4->setText(QCoreApplication::translate("frmImageViewClass", "\350\276\223\345\205\245\345\233\276\345\203\217\357\274\232", nullptr));
+#if QT_CONFIG(tooltip)
+        btnLinkImage->setToolTip(QCoreApplication::translate("frmImageViewClass", "\351\223\276\346\216\245\345\233\276\345\203\217", nullptr));
+#endif // QT_CONFIG(tooltip)
         btnLinkImage->setText(QString());
-#ifndef QT_NO_TOOLTIP
-        btnDelLinkImage->setToolTip(QApplication::translate("frmImageViewClass", "\345\210\240\351\231\244\345\233\276\345\203\217\351\223\276\346\216\245", nullptr));
-#endif // QT_NO_TOOLTIP
+#if QT_CONFIG(tooltip)
+        btnDelLinkImage->setToolTip(QCoreApplication::translate("frmImageViewClass", "\345\210\240\351\231\244\345\233\276\345\203\217\351\223\276\346\216\245", nullptr));
+#endif // QT_CONFIG(tooltip)
         btnDelLinkImage->setText(QString());
-        comboScreenNum->setItemText(0, QApplication::translate("frmImageViewClass", "\346\227\240", nullptr));
-        comboScreenNum->setItemText(1, QApplication::translate("frmImageViewClass", "1\345\217\267\347\252\227\344\275\223\346\230\276\347\244\272", nullptr));
-        comboScreenNum->setItemText(2, QApplication::translate("frmImageViewClass", "2\345\217\267\347\252\227\344\275\223\346\230\276\347\244\272", nullptr));
-        comboScreenNum->setItemText(3, QApplication::translate("frmImageViewClass", "3\345\217\267\347\252\227\344\275\223\346\230\276\347\244\272", nullptr));
-        comboScreenNum->setItemText(4, QApplication::translate("frmImageViewClass", "4\345\217\267\347\252\227\344\275\223\346\230\276\347\244\272", nullptr));
-        comboScreenNum->setItemText(5, QApplication::translate("frmImageViewClass", "5\345\217\267\347\252\227\344\275\223\346\230\276\347\244\272", nullptr));
-        comboScreenNum->setItemText(6, QApplication::translate("frmImageViewClass", "6\345\217\267\347\252\227\344\275\223\346\230\276\347\244\272", nullptr));
-        comboScreenNum->setItemText(7, QApplication::translate("frmImageViewClass", "7\345\217\267\347\252\227\344\275\223\346\230\276\347\244\272", nullptr));
-        comboScreenNum->setItemText(8, QApplication::translate("frmImageViewClass", "8\345\217\267\347\252\227\344\275\223\346\230\276\347\244\272", nullptr));
-        comboScreenNum->setItemText(9, QApplication::translate("frmImageViewClass", "9\345\217\267\347\252\227\344\275\223\346\230\276\347\244\272", nullptr));
+        comboScreenNum->setItemText(0, QCoreApplication::translate("frmImageViewClass", "\346\227\240", nullptr));
+        comboScreenNum->setItemText(1, QCoreApplication::translate("frmImageViewClass", "1\345\217\267\347\252\227\344\275\223\346\230\276\347\244\272", nullptr));
+        comboScreenNum->setItemText(2, QCoreApplication::translate("frmImageViewClass", "2\345\217\267\347\252\227\344\275\223\346\230\276\347\244\272", nullptr));
+        comboScreenNum->setItemText(3, QCoreApplication::translate("frmImageViewClass", "3\345\217\267\347\252\227\344\275\223\346\230\276\347\244\272", nullptr));
+        comboScreenNum->setItemText(4, QCoreApplication::translate("frmImageViewClass", "4\345\217\267\347\252\227\344\275\223\346\230\276\347\244\272", nullptr));
+        comboScreenNum->setItemText(5, QCoreApplication::translate("frmImageViewClass", "5\345\217\267\347\252\227\344\275\223\346\230\276\347\244\272", nullptr));
+        comboScreenNum->setItemText(6, QCoreApplication::translate("frmImageViewClass", "6\345\217\267\347\252\227\344\275\223\346\230\276\347\244\272", nullptr));
+        comboScreenNum->setItemText(7, QCoreApplication::translate("frmImageViewClass", "7\345\217\267\347\252\227\344\275\223\346\230\276\347\244\272", nullptr));
+        comboScreenNum->setItemText(8, QCoreApplication::translate("frmImageViewClass", "8\345\217\267\347\252\227\344\275\223\346\230\276\347\244\272", nullptr));
+        comboScreenNum->setItemText(9, QCoreApplication::translate("frmImageViewClass", "9\345\217\267\347\252\227\344\275\223\346\230\276\347\244\272", nullptr));
 
-        label_5->setText(QApplication::translate("frmImageViewClass", "\347\252\227\344\275\223\347\274\226\345\217\267\357\274\232", nullptr));
-        groupC2->setTitle(QApplication::translate("frmImageViewClass", "\350\275\256\345\273\223\345\257\271\350\261\241", nullptr));
-        label_7->setText(QApplication::translate("frmImageViewClass", "\345\257\271\350\261\241\351\242\234\350\211\262\357\274\232", nullptr));
-        label_8->setText(QApplication::translate("frmImageViewClass", "\350\275\256\345\273\223\345\256\275\345\272\246\357\274\232", nullptr));
+        label_5->setText(QCoreApplication::translate("frmImageViewClass", "\347\252\227\344\275\223\347\274\226\345\217\267\357\274\232", nullptr));
+        groupC2->setTitle(QCoreApplication::translate("frmImageViewClass", "\350\275\256\345\273\223\345\257\271\350\261\241", nullptr));
+        label_7->setText(QCoreApplication::translate("frmImageViewClass", "\345\257\271\350\261\241\351\242\234\350\211\262\357\274\232", nullptr));
+        label_8->setText(QCoreApplication::translate("frmImageViewClass", "\350\275\256\345\273\223\345\256\275\345\272\246\357\274\232", nullptr));
         QTableWidgetItem *___qtablewidgetitem = tableWidgetContour->horizontalHeaderItem(0);
-        ___qtablewidgetitem->setText(QApplication::translate("frmImageViewClass", "\350\275\256\345\273\223\351\223\276\346\216\245\345\234\260\345\235\200", nullptr));
-        btnAddContour->setText(QApplication::translate("frmImageViewClass", "\346\267\273\345\212\240", nullptr));
-        btnDeleteContour->setText(QApplication::translate("frmImageViewClass", "\345\210\240\351\231\244", nullptr));
+        ___qtablewidgetitem->setText(QCoreApplication::translate("frmImageViewClass", "\350\275\256\345\273\223\351\223\276\346\216\245\345\234\260\345\235\200", nullptr));
+        btnAddContour->setText(QCoreApplication::translate("frmImageViewClass", "\346\267\273\345\212\240", nullptr));
+        btnDeleteContour->setText(QCoreApplication::translate("frmImageViewClass", "\345\210\240\351\231\244", nullptr));
         btnColor->setText(QString());
-        checkViewContour->setText(QApplication::translate("frmImageViewClass", "\346\230\276\347\244\272\350\275\256\345\273\223\345\257\271\350\261\241", nullptr));
-        checkViewContourC->setText(QApplication::translate("frmImageViewClass", "\346\230\276\347\244\272\350\275\256\345\273\223\344\270\255\345\277\203\345\205\211\346\240\207", nullptr));
-        label_9->setText(QApplication::translate("frmImageViewClass", "\345\205\211\346\240\207\345\244\247\345\260\217\357\274\232", nullptr));
-        tabWidget->setTabText(tabWidget->indexOf(tab), QApplication::translate("frmImageViewClass", "\345\233\276\345\203\217\350\256\276\347\275\256", nullptr));
-        groupC3->setTitle(QApplication::translate("frmImageViewClass", "\346\226\207\346\234\254\345\257\271\350\261\241", nullptr));
+        checkViewContour->setText(QCoreApplication::translate("frmImageViewClass", "\346\230\276\347\244\272\350\275\256\345\273\223\345\257\271\350\261\241", nullptr));
+        checkViewContourC->setText(QCoreApplication::translate("frmImageViewClass", "\346\230\276\347\244\272\350\275\256\345\273\223\344\270\255\345\277\203\345\205\211\346\240\207", nullptr));
+        label_9->setText(QCoreApplication::translate("frmImageViewClass", "\345\205\211\346\240\207\345\244\247\345\260\217\357\274\232", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab), QCoreApplication::translate("frmImageViewClass", "\345\233\276\345\203\217\350\256\276\347\275\256", nullptr));
+        groupC3->setTitle(QCoreApplication::translate("frmImageViewClass", "\346\226\207\346\234\254\345\257\271\350\261\241", nullptr));
         QTableWidgetItem *___qtablewidgetitem1 = tableWidgetText->horizontalHeaderItem(0);
-        ___qtablewidgetitem1->setText(QApplication::translate("frmImageViewClass", "\346\226\207\346\234\254\351\223\276\346\216\245\345\234\260\345\235\200", nullptr));
-        btnAddText->setText(QApplication::translate("frmImageViewClass", "\346\267\273\345\212\240", nullptr));
-        btnDeleteText->setText(QApplication::translate("frmImageViewClass", "\345\210\240\351\231\244", nullptr));
-        label_6->setText(QApplication::translate("frmImageViewClass", "\346\226\207\345\255\227\345\244\247\345\260\217\357\274\232", nullptr));
-        checkBoldFont->setText(QApplication::translate("frmImageViewClass", "\345\255\227\344\275\223\345\212\240\347\262\227", nullptr));
-        checkViewText->setText(QApplication::translate("frmImageViewClass", "\346\230\276\347\244\272\346\226\207\346\234\254\345\257\271\350\261\241", nullptr));
-        groupCamera_4->setTitle(QApplication::translate("frmImageViewClass", "\346\230\276\347\244\272\345\206\205\345\256\271\350\256\276\347\275\256", nullptr));
-        label_10->setText(QApplication::translate("frmImageViewClass", "\346\230\276\347\244\272\344\275\215\347\275\256\357\274\232", nullptr));
+        ___qtablewidgetitem1->setText(QCoreApplication::translate("frmImageViewClass", "\346\226\207\346\234\254\351\223\276\346\216\245\345\234\260\345\235\200", nullptr));
+        btnAddText->setText(QCoreApplication::translate("frmImageViewClass", "\346\267\273\345\212\240", nullptr));
+        btnDeleteText->setText(QCoreApplication::translate("frmImageViewClass", "\345\210\240\351\231\244", nullptr));
+        label_6->setText(QCoreApplication::translate("frmImageViewClass", "\346\226\207\345\255\227\345\244\247\345\260\217\357\274\232", nullptr));
+        checkBoldFont->setText(QCoreApplication::translate("frmImageViewClass", "\345\255\227\344\275\223\345\212\240\347\262\227", nullptr));
+        checkViewText->setText(QCoreApplication::translate("frmImageViewClass", "\346\230\276\347\244\272\346\226\207\346\234\254\345\257\271\350\261\241", nullptr));
+        groupCamera_4->setTitle(QCoreApplication::translate("frmImageViewClass", "\346\230\276\347\244\272\345\206\205\345\256\271\350\256\276\347\275\256", nullptr));
+        label_10->setText(QCoreApplication::translate("frmImageViewClass", "\346\230\276\347\244\272\344\275\215\347\275\256\357\274\232", nullptr));
         btnOkColor->setText(QString());
-        label_12->setText(QApplication::translate("frmImageViewClass", "\347\212\266\346\200\201\351\223\276\346\216\245\357\274\232", nullptr));
-        label_13->setText(QApplication::translate("frmImageViewClass", "\345\206\205\345\256\271\345\211\215\347\274\200\357\274\232", nullptr));
-        label_14->setText(QApplication::translate("frmImageViewClass", "\346\230\276\347\244\272\345\206\205\345\256\271\357\274\232", nullptr));
-#ifndef QT_NO_TOOLTIP
-        txtPos_XY->setToolTip(QApplication::translate("frmImageViewClass", "\345\205\250\345\261\200\345\217\230\351\207\217QPoint\347\261\273\345\236\213", nullptr));
-#endif // QT_NO_TOOLTIP
+        label_12->setText(QCoreApplication::translate("frmImageViewClass", "\347\212\266\346\200\201\351\223\276\346\216\245\357\274\232", nullptr));
+        label_13->setText(QCoreApplication::translate("frmImageViewClass", "\345\206\205\345\256\271\345\211\215\347\274\200\357\274\232", nullptr));
+        label_14->setText(QCoreApplication::translate("frmImageViewClass", "\346\230\276\347\244\272\345\206\205\345\256\271\357\274\232", nullptr));
+#if QT_CONFIG(tooltip)
+        txtPos_XY->setToolTip(QCoreApplication::translate("frmImageViewClass", "\345\205\250\345\261\200\345\217\230\351\207\217QPoint\347\261\273\345\236\213", nullptr));
+#endif // QT_CONFIG(tooltip)
         txtPos_XY->setText(QString());
-        label_16->setText(QApplication::translate("frmImageViewClass", "OK\351\242\234\350\211\262\357\274\232", nullptr));
-        label_17->setText(QApplication::translate("frmImageViewClass", "NG\351\242\234\350\211\262\357\274\232", nullptr));
+        label_16->setText(QCoreApplication::translate("frmImageViewClass", "OK\351\242\234\350\211\262\357\274\232", nullptr));
+        label_17->setText(QCoreApplication::translate("frmImageViewClass", "NG\351\242\234\350\211\262\357\274\232", nullptr));
         btnNgColor->setText(QString());
-#ifndef QT_NO_TOOLTIP
+#if QT_CONFIG(tooltip)
         txtState->setToolTip(QString());
-#endif // QT_NO_TOOLTIP
-#ifndef QT_NO_TOOLTIP
-        btnLinkState->setToolTip(QApplication::translate("frmImageViewClass", "\351\223\276\346\216\245\347\212\266\346\200\201", nullptr));
-#endif // QT_NO_TOOLTIP
+#endif // QT_CONFIG(tooltip)
+#if QT_CONFIG(tooltip)
+        btnLinkState->setToolTip(QCoreApplication::translate("frmImageViewClass", "\351\223\276\346\216\245\347\212\266\346\200\201", nullptr));
+#endif // QT_CONFIG(tooltip)
         btnLinkState->setText(QString());
-#ifndef QT_NO_TOOLTIP
-        btnDelLinkState->setToolTip(QApplication::translate("frmImageViewClass", "\345\210\240\351\231\244\347\212\266\346\200\201\351\223\276\346\216\245", nullptr));
-#endif // QT_NO_TOOLTIP
+#if QT_CONFIG(tooltip)
+        btnDelLinkState->setToolTip(QCoreApplication::translate("frmImageViewClass", "\345\210\240\351\231\244\347\212\266\346\200\201\351\223\276\346\216\245", nullptr));
+#endif // QT_CONFIG(tooltip)
         btnDelLinkState->setText(QString());
-#ifndef QT_NO_TOOLTIP
-        btnLinkContent->setToolTip(QApplication::translate("frmImageViewClass", "\351\223\276\346\216\245\345\206\205\345\256\271", nullptr));
-#endif // QT_NO_TOOLTIP
+#if QT_CONFIG(tooltip)
+        btnLinkContent->setToolTip(QCoreApplication::translate("frmImageViewClass", "\351\223\276\346\216\245\345\206\205\345\256\271", nullptr));
+#endif // QT_CONFIG(tooltip)
         btnLinkContent->setText(QString());
-#ifndef QT_NO_TOOLTIP
-        btnDelLinkContent->setToolTip(QApplication::translate("frmImageViewClass", "\345\210\240\351\231\244\345\206\205\345\256\271\351\223\276\346\216\245", nullptr));
-#endif // QT_NO_TOOLTIP
+#if QT_CONFIG(tooltip)
+        btnDelLinkContent->setToolTip(QCoreApplication::translate("frmImageViewClass", "\345\210\240\351\231\244\345\206\205\345\256\271\351\223\276\346\216\245", nullptr));
+#endif // QT_CONFIG(tooltip)
         btnDelLinkContent->setText(QString());
-#ifndef QT_NO_TOOLTIP
-        btnLinkPos_XY->setToolTip(QApplication::translate("frmImageViewClass", "\351\223\276\346\216\245\346\230\276\347\244\272\344\275\215\347\275\256", nullptr));
-#endif // QT_NO_TOOLTIP
+#if QT_CONFIG(tooltip)
+        btnLinkPos_XY->setToolTip(QCoreApplication::translate("frmImageViewClass", "\351\223\276\346\216\245\346\230\276\347\244\272\344\275\215\347\275\256", nullptr));
+#endif // QT_CONFIG(tooltip)
         btnLinkPos_XY->setText(QString());
-#ifndef QT_NO_TOOLTIP
-        btnDelLinkPos_XY->setToolTip(QApplication::translate("frmImageViewClass", "\345\210\240\351\231\244\346\230\276\347\244\272\344\275\215\347\275\256\351\223\276\346\216\245", nullptr));
-#endif // QT_NO_TOOLTIP
+#if QT_CONFIG(tooltip)
+        btnDelLinkPos_XY->setToolTip(QCoreApplication::translate("frmImageViewClass", "\345\210\240\351\231\244\346\230\276\347\244\272\344\275\215\347\275\256\351\223\276\346\216\245", nullptr));
+#endif // QT_CONFIG(tooltip)
         btnDelLinkPos_XY->setText(QString());
-        btnBack->setText(QApplication::translate("frmImageViewClass", "\344\270\212\344\270\200\351\241\265", nullptr));
+        btnBack->setText(QCoreApplication::translate("frmImageViewClass", "\344\270\212\344\270\200\351\241\265", nullptr));
         label->setText(QString());
-        btnSave->setText(QApplication::translate("frmImageViewClass", "\345\217\202\346\225\260\344\277\235\345\255\230", nullptr));
-        tabWidget->setTabText(tabWidget->indexOf(tab_2), QApplication::translate("frmImageViewClass", "\346\226\207\346\234\254\350\256\276\347\275\256", nullptr));
+        btnSave->setText(QCoreApplication::translate("frmImageViewClass", "\345\217\202\346\225\260\344\277\235\345\255\230", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab_2), QCoreApplication::translate("frmImageViewClass", "\346\226\207\346\234\254\350\256\276\347\275\256", nullptr));
     } // retranslateUi
 
 };

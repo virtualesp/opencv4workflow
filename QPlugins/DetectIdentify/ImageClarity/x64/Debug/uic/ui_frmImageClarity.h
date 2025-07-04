@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'frmImageClarity.ui'
 **
-** Created by: Qt User Interface Compiler version 5.12.12
+** Created by: Qt User Interface Compiler version 5.14.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -251,20 +251,20 @@ public:
 
     void retranslateUi(QDialog *frmImageClarityClass)
     {
-        frmImageClarityClass->setWindowTitle(QApplication::translate("frmImageClarityClass", "\345\233\276\345\203\217\346\270\205\346\231\260\345\272\246", nullptr));
-        label_3->setText(QApplication::translate("frmImageClarityClass", "\345\215\225\345\205\203\346\217\217\350\277\260\357\274\232", nullptr));
-        btnExecute->setText(QApplication::translate("frmImageClarityClass", "\346\211\247\350\241\214", nullptr));
-        groupCamera->setTitle(QApplication::translate("frmImageClarityClass", "\345\233\276\345\203\217\345\257\271\350\261\241", nullptr));
-        btnSelectPath->setText(QApplication::translate("frmImageClarityClass", "\350\267\257\345\276\204\351\200\211\346\213\251", nullptr));
-        label_2->setText(QApplication::translate("frmImageClarityClass", "\346\226\207\344\273\266\345\244\271\350\267\257\345\276\204\357\274\232", nullptr));
+        frmImageClarityClass->setWindowTitle(QCoreApplication::translate("frmImageClarityClass", "\345\233\276\345\203\217\346\270\205\346\231\260\345\272\246", nullptr));
+        label_3->setText(QCoreApplication::translate("frmImageClarityClass", "\345\215\225\345\205\203\346\217\217\350\277\260\357\274\232", nullptr));
+        btnExecute->setText(QCoreApplication::translate("frmImageClarityClass", "\346\211\247\350\241\214", nullptr));
+        groupCamera->setTitle(QCoreApplication::translate("frmImageClarityClass", "\345\233\276\345\203\217\345\257\271\350\261\241", nullptr));
+        btnSelectPath->setText(QCoreApplication::translate("frmImageClarityClass", "\350\267\257\345\276\204\351\200\211\346\213\251", nullptr));
+        label_2->setText(QCoreApplication::translate("frmImageClarityClass", "\346\226\207\344\273\266\345\244\271\350\267\257\345\276\204\357\274\232", nullptr));
         txtFolderPath->setText(QString());
-        groupCamera_2->setTitle(QApplication::translate("frmImageClarityClass", "\346\270\205\346\231\260\345\272\246\345\217\202\346\225\260", nullptr));
-        label_4->setText(QApplication::translate("frmImageClarityClass", "\346\270\205\346\231\260\345\272\246\347\256\227\346\263\225\357\274\232", nullptr));
-        comboClarity->setItemText(0, QApplication::translate("frmImageClarityClass", "Tenengrad\346\242\257\345\272\246\347\256\227\346\263\225", nullptr));
-        comboClarity->setItemText(1, QApplication::translate("frmImageClarityClass", "Laplacian\346\242\257\345\272\246\347\256\227\346\263\225", nullptr));
-        comboClarity->setItemText(2, QApplication::translate("frmImageClarityClass", "SMD\347\201\260\345\272\246\345\267\256\345\210\206\347\273\235\345\257\271\345\200\274\344\271\213\345\222\214\347\256\227\346\263\225", nullptr));
+        groupCamera_2->setTitle(QCoreApplication::translate("frmImageClarityClass", "\346\270\205\346\231\260\345\272\246\345\217\202\346\225\260", nullptr));
+        label_4->setText(QCoreApplication::translate("frmImageClarityClass", "\346\270\205\346\231\260\345\272\246\347\256\227\346\263\225\357\274\232", nullptr));
+        comboClarity->setItemText(0, QCoreApplication::translate("frmImageClarityClass", "Tenengrad\346\242\257\345\272\246\347\256\227\346\263\225", nullptr));
+        comboClarity->setItemText(1, QCoreApplication::translate("frmImageClarityClass", "Laplacian\346\242\257\345\272\246\347\256\227\346\263\225", nullptr));
+        comboClarity->setItemText(2, QCoreApplication::translate("frmImageClarityClass", "SMD\347\201\260\345\272\246\345\267\256\345\210\206\347\273\235\345\257\271\345\200\274\344\271\213\345\222\214\347\256\227\346\263\225", nullptr));
 
-        tabWidget->setTabText(tabWidget->indexOf(tab), QApplication::translate("frmImageClarityClass", "\345\237\272\346\234\254\350\256\276\347\275\256", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab), QCoreApplication::translate("frmImageClarityClass", "\345\237\272\346\234\254\350\256\276\347\275\256", nullptr));
     } // retranslateUi
 
 };

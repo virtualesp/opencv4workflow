@@ -1340,6 +1340,15 @@ void QtWidgetsSaveLoad::saveToolParam(int index, QString tool_name, QVariant var
 		wi_dataList.fileModelName = init_data.fileModelName;
 		dataShapeMatchList[index].append(wi_dataList);
 	}
+	else if (tool_name == "YoloV13")
+	{
+		InitImageSourceData init_data;
+		init_data = var.value<InitImageSourceData>();
+		WidgetInfo wi_dataList;
+		wi_dataList.camera_index = init_data.camera_index;
+		wi_dataList.g_camera = init_data.g_camera;
+		dataImageSourceList[index].append(wi_dataList);
+	}
 }
 
 void QtWidgetsSaveLoad::saveToolParam2(int index, QString tool_name, QVariant var)
@@ -2841,6 +2850,18 @@ void  QtWidgetsSaveLoad::loadFromFileFirst()
 						InitSocketTcpServerData init_data;
 						init_data.server_index = dataSocketTcpServerList[m].at(socket_tcp_server_count).server_index;
 						init_data.server_tools = dataSocketTcpServerList[m].at(socket_tcp_server_count).server_tools;
+						QVariant var = QVariant::fromValue(init_data);
+						QConfig::ToolBase[m]->m_Tools[n].PublicToolDlg->InitSetToolData(var);
+					}
+				}
+				else if (str_name_buf == "YoloV13")
+				{
+					++image_source_count;
+					for (int s = 0; s < dataImageSourceList[m].size(); s++)
+					{
+						InitImageSourceData init_data;
+						init_data.camera_index = dataImageSourceList[m].at(image_source_count).camera_index;
+						init_data.g_camera = dataImageSourceList[m].at(image_source_count).g_camera;
 						QVariant var = QVariant::fromValue(init_data);
 						QConfig::ToolBase[m]->m_Tools[n].PublicToolDlg->InitSetToolData(var);
 					}

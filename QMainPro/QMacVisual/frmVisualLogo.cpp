@@ -39,7 +39,7 @@ void frmVisualLogo::form_statues()
 	dataVar::fProItemTab = new frmProItemTab();		
 	MainWidget *w = new MainWidget();
 	dataVar::m_pWindow->slot_OpenProjectParam();  //初始化时打开项目
-	w->setLogo(":/Bitmaps/pro.png", "QMacVisual");	
+	w->setLogo(":/Bitmaps/pro.png", "opencv视觉检测系统 By:清清");	
 	w->setEnabelHeadMove(true);
 	w->setLogDockWidget(dataVar::fLog);
 	w->setCenterWidget(dataVar::fImageView);

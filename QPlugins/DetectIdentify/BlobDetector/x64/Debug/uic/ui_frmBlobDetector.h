@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'frmBlobDetector.ui'
 **
-** Created by: Qt User Interface Compiler version 5.12.12
+** Created by: Qt User Interface Compiler version 5.14.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -927,59 +927,59 @@ public:
 
     void retranslateUi(QDialog *frmBlobDetectorClass)
     {
-        frmBlobDetectorClass->setWindowTitle(QApplication::translate("frmBlobDetectorClass", "\346\226\221\347\202\271\345\210\206\346\236\220", nullptr));
-        label_3->setText(QApplication::translate("frmBlobDetectorClass", "\345\215\225\345\205\203\346\217\217\350\277\260\357\274\232", nullptr));
-        btnExecute->setText(QApplication::translate("frmBlobDetectorClass", "\346\211\247\350\241\214", nullptr));
-        groupCamera->setTitle(QApplication::translate("frmBlobDetectorClass", "\345\233\276\345\203\217\345\257\271\350\261\241", nullptr));
-        label_4->setText(QApplication::translate("frmBlobDetectorClass", "\350\276\223\345\205\245\345\233\276\345\203\217\357\274\232", nullptr));
-#ifndef QT_NO_TOOLTIP
-        btnLinkImage->setToolTip(QApplication::translate("frmBlobDetectorClass", "\351\223\276\346\216\245\345\233\276\345\203\217", nullptr));
-#endif // QT_NO_TOOLTIP
+        frmBlobDetectorClass->setWindowTitle(QCoreApplication::translate("frmBlobDetectorClass", "\346\226\221\347\202\271\345\210\206\346\236\220", nullptr));
+        label_3->setText(QCoreApplication::translate("frmBlobDetectorClass", "\345\215\225\345\205\203\346\217\217\350\277\260\357\274\232", nullptr));
+        btnExecute->setText(QCoreApplication::translate("frmBlobDetectorClass", "\346\211\247\350\241\214", nullptr));
+        groupCamera->setTitle(QCoreApplication::translate("frmBlobDetectorClass", "\345\233\276\345\203\217\345\257\271\350\261\241", nullptr));
+        label_4->setText(QCoreApplication::translate("frmBlobDetectorClass", "\350\276\223\345\205\245\345\233\276\345\203\217\357\274\232", nullptr));
+#if QT_CONFIG(tooltip)
+        btnLinkImage->setToolTip(QCoreApplication::translate("frmBlobDetectorClass", "\351\223\276\346\216\245\345\233\276\345\203\217", nullptr));
+#endif // QT_CONFIG(tooltip)
         btnLinkImage->setText(QString());
-#ifndef QT_NO_TOOLTIP
-        btnDelLinkImage->setToolTip(QApplication::translate("frmBlobDetectorClass", "\345\210\240\351\231\244\345\233\276\345\203\217\351\223\276\346\216\245", nullptr));
-#endif // QT_NO_TOOLTIP
+#if QT_CONFIG(tooltip)
+        btnDelLinkImage->setToolTip(QCoreApplication::translate("frmBlobDetectorClass", "\345\210\240\351\231\244\345\233\276\345\203\217\351\223\276\346\216\245", nullptr));
+#endif // QT_CONFIG(tooltip)
         btnDelLinkImage->setText(QString());
-        groupCamera_2->setTitle(QApplication::translate("frmBlobDetectorClass", "\346\243\200\346\265\213\346\235\241\344\273\266", nullptr));
-        checkArea->setText(QApplication::translate("frmBlobDetectorClass", "\351\235\242\347\247\257", nullptr));
-        checkGrayscale->setText(QApplication::translate("frmBlobDetectorClass", "\347\201\260\345\272\246\345\200\274", nullptr));
-        checkCircularity->setText(QApplication::translate("frmBlobDetectorClass", "\345\234\206\345\272\246", nullptr));
-        checkConvexity->setText(QApplication::translate("frmBlobDetectorClass", "\345\207\270\345\272\246", nullptr));
-        checkInertia->setText(QApplication::translate("frmBlobDetectorClass", "\346\203\257\346\200\247", nullptr));
-        groupCamera_3->setTitle(QApplication::translate("frmBlobDetectorClass", "\351\235\242\347\247\257", nullptr));
-        label_5->setText(QApplication::translate("frmBlobDetectorClass", "\346\234\200\345\260\217\351\235\242\347\247\257\357\274\232", nullptr));
-        label_6->setText(QApplication::translate("frmBlobDetectorClass", "\346\234\200\345\244\247\351\235\242\347\247\257\357\274\232", nullptr));
-        groupCamera_4->setTitle(QApplication::translate("frmBlobDetectorClass", "\347\201\260\345\272\246\345\200\274", nullptr));
-        label_7->setText(QApplication::translate("frmBlobDetectorClass", "\346\234\200\345\260\217\351\230\210\345\200\274\357\274\232", nullptr));
-        label_8->setText(QApplication::translate("frmBlobDetectorClass", "\346\234\200\345\244\247\351\230\210\345\200\274\357\274\232", nullptr));
-        label_15->setText(QApplication::translate("frmBlobDetectorClass", "\351\242\234\350\211\262\357\274\232", nullptr));
-        comboColor->setItemText(0, QApplication::translate("frmBlobDetectorClass", "\351\273\221\350\211\262", nullptr));
-        comboColor->setItemText(1, QApplication::translate("frmBlobDetectorClass", "\347\231\275\350\211\262", nullptr));
+        groupCamera_2->setTitle(QCoreApplication::translate("frmBlobDetectorClass", "\346\243\200\346\265\213\346\235\241\344\273\266", nullptr));
+        checkArea->setText(QCoreApplication::translate("frmBlobDetectorClass", "\351\235\242\347\247\257", nullptr));
+        checkGrayscale->setText(QCoreApplication::translate("frmBlobDetectorClass", "\347\201\260\345\272\246\345\200\274", nullptr));
+        checkCircularity->setText(QCoreApplication::translate("frmBlobDetectorClass", "\345\234\206\345\272\246", nullptr));
+        checkConvexity->setText(QCoreApplication::translate("frmBlobDetectorClass", "\345\207\270\345\272\246", nullptr));
+        checkInertia->setText(QCoreApplication::translate("frmBlobDetectorClass", "\346\203\257\346\200\247", nullptr));
+        groupCamera_3->setTitle(QCoreApplication::translate("frmBlobDetectorClass", "\351\235\242\347\247\257", nullptr));
+        label_5->setText(QCoreApplication::translate("frmBlobDetectorClass", "\346\234\200\345\260\217\351\235\242\347\247\257\357\274\232", nullptr));
+        label_6->setText(QCoreApplication::translate("frmBlobDetectorClass", "\346\234\200\345\244\247\351\235\242\347\247\257\357\274\232", nullptr));
+        groupCamera_4->setTitle(QCoreApplication::translate("frmBlobDetectorClass", "\347\201\260\345\272\246\345\200\274", nullptr));
+        label_7->setText(QCoreApplication::translate("frmBlobDetectorClass", "\346\234\200\345\260\217\351\230\210\345\200\274\357\274\232", nullptr));
+        label_8->setText(QCoreApplication::translate("frmBlobDetectorClass", "\346\234\200\345\244\247\351\230\210\345\200\274\357\274\232", nullptr));
+        label_15->setText(QCoreApplication::translate("frmBlobDetectorClass", "\351\242\234\350\211\262\357\274\232", nullptr));
+        comboColor->setItemText(0, QCoreApplication::translate("frmBlobDetectorClass", "\351\273\221\350\211\262", nullptr));
+        comboColor->setItemText(1, QCoreApplication::translate("frmBlobDetectorClass", "\347\231\275\350\211\262", nullptr));
 
-        groupCamera_5->setTitle(QApplication::translate("frmBlobDetectorClass", "\345\234\206\345\272\246", nullptr));
-        label_9->setText(QApplication::translate("frmBlobDetectorClass", "\346\234\200\345\260\217\345\234\206\345\272\246\357\274\232", nullptr));
-        label_10->setText(QApplication::translate("frmBlobDetectorClass", "\346\234\200\345\244\247\345\234\206\345\272\246\357\274\232", nullptr));
-        groupCamera_6->setTitle(QApplication::translate("frmBlobDetectorClass", "\345\207\270\345\272\246", nullptr));
-        label_11->setText(QApplication::translate("frmBlobDetectorClass", "\346\234\200\345\260\217\345\207\270\345\272\246\357\274\232", nullptr));
-        label_12->setText(QApplication::translate("frmBlobDetectorClass", "\346\234\200\345\244\247\345\207\270\345\272\246\357\274\232", nullptr));
-        groupCamera_7->setTitle(QApplication::translate("frmBlobDetectorClass", "\346\203\257\346\200\247", nullptr));
-        label_13->setText(QApplication::translate("frmBlobDetectorClass", "\346\234\200\345\260\217\346\203\257\346\200\247\357\274\232", nullptr));
-        label_14->setText(QApplication::translate("frmBlobDetectorClass", "\346\234\200\345\244\247\346\203\257\346\200\247\357\274\232", nullptr));
-        tabWidget->setTabText(tabWidget->indexOf(tab), QApplication::translate("frmBlobDetectorClass", "\345\237\272\346\234\254\350\256\276\347\275\256", nullptr));
-        groupCamera_8->setTitle(QApplication::translate("frmBlobDetectorClass", "ROI\345\257\271\350\261\241", nullptr));
-        checkUseROI->setText(QApplication::translate("frmBlobDetectorClass", "\344\275\277\347\224\250ROI", nullptr));
-        comboROIShape->setItemText(0, QApplication::translate("frmBlobDetectorClass", "\347\237\251\345\275\242", nullptr));
-        comboROIShape->setItemText(1, QApplication::translate("frmBlobDetectorClass", "\346\227\213\350\275\254\347\237\251\345\275\242", nullptr));
-        comboROIShape->setItemText(2, QApplication::translate("frmBlobDetectorClass", "\345\234\206\345\275\242", nullptr));
-        comboROIShape->setItemText(3, QApplication::translate("frmBlobDetectorClass", "\345\244\232\350\276\271\345\275\242", nullptr));
+        groupCamera_5->setTitle(QCoreApplication::translate("frmBlobDetectorClass", "\345\234\206\345\272\246", nullptr));
+        label_9->setText(QCoreApplication::translate("frmBlobDetectorClass", "\346\234\200\345\260\217\345\234\206\345\272\246\357\274\232", nullptr));
+        label_10->setText(QCoreApplication::translate("frmBlobDetectorClass", "\346\234\200\345\244\247\345\234\206\345\272\246\357\274\232", nullptr));
+        groupCamera_6->setTitle(QCoreApplication::translate("frmBlobDetectorClass", "\345\207\270\345\272\246", nullptr));
+        label_11->setText(QCoreApplication::translate("frmBlobDetectorClass", "\346\234\200\345\260\217\345\207\270\345\272\246\357\274\232", nullptr));
+        label_12->setText(QCoreApplication::translate("frmBlobDetectorClass", "\346\234\200\345\244\247\345\207\270\345\272\246\357\274\232", nullptr));
+        groupCamera_7->setTitle(QCoreApplication::translate("frmBlobDetectorClass", "\346\203\257\346\200\247", nullptr));
+        label_13->setText(QCoreApplication::translate("frmBlobDetectorClass", "\346\234\200\345\260\217\346\203\257\346\200\247\357\274\232", nullptr));
+        label_14->setText(QCoreApplication::translate("frmBlobDetectorClass", "\346\234\200\345\244\247\346\203\257\346\200\247\357\274\232", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab), QCoreApplication::translate("frmBlobDetectorClass", "\345\237\272\346\234\254\350\256\276\347\275\256", nullptr));
+        groupCamera_8->setTitle(QCoreApplication::translate("frmBlobDetectorClass", "ROI\345\257\271\350\261\241", nullptr));
+        checkUseROI->setText(QCoreApplication::translate("frmBlobDetectorClass", "\344\275\277\347\224\250ROI", nullptr));
+        comboROIShape->setItemText(0, QCoreApplication::translate("frmBlobDetectorClass", "\347\237\251\345\275\242", nullptr));
+        comboROIShape->setItemText(1, QCoreApplication::translate("frmBlobDetectorClass", "\346\227\213\350\275\254\347\237\251\345\275\242", nullptr));
+        comboROIShape->setItemText(2, QCoreApplication::translate("frmBlobDetectorClass", "\345\234\206\345\275\242", nullptr));
+        comboROIShape->setItemText(3, QCoreApplication::translate("frmBlobDetectorClass", "\345\244\232\350\276\271\345\275\242", nullptr));
 
-        btnAddROI->setText(QApplication::translate("frmBlobDetectorClass", "\346\267\273\345\212\240", nullptr));
-        btnDeleteROI->setText(QApplication::translate("frmBlobDetectorClass", "\345\210\240\351\231\244", nullptr));
-        checkViewROI->setText(QApplication::translate("frmBlobDetectorClass", "\346\230\276\347\244\272ROI", nullptr));
-        label_16->setText(QApplication::translate("frmBlobDetectorClass", "ROI\345\256\275\345\272\246\357\274\232", nullptr));
-        label_17->setText(QApplication::translate("frmBlobDetectorClass", "ROI\351\242\234\350\211\262\357\274\232", nullptr));
+        btnAddROI->setText(QCoreApplication::translate("frmBlobDetectorClass", "\346\267\273\345\212\240", nullptr));
+        btnDeleteROI->setText(QCoreApplication::translate("frmBlobDetectorClass", "\345\210\240\351\231\244", nullptr));
+        checkViewROI->setText(QCoreApplication::translate("frmBlobDetectorClass", "\346\230\276\347\244\272ROI", nullptr));
+        label_16->setText(QCoreApplication::translate("frmBlobDetectorClass", "ROI\345\256\275\345\272\246\357\274\232", nullptr));
+        label_17->setText(QCoreApplication::translate("frmBlobDetectorClass", "ROI\351\242\234\350\211\262\357\274\232", nullptr));
         btnRoiColor->setText(QString());
-        tabWidget->setTabText(tabWidget->indexOf(tab_2), QApplication::translate("frmBlobDetectorClass", "ROI\350\256\276\347\275\256", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab_2), QCoreApplication::translate("frmBlobDetectorClass", "ROI\350\256\276\347\275\256", nullptr));
     } // retranslateUi
 
 };

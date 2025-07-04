@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'frmFlatness.ui'
 **
-** Created by: Qt User Interface Compiler version 5.12.12
+** Created by: Qt User Interface Compiler version 5.14.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -384,62 +384,62 @@ public:
 
     void retranslateUi(QDialog *frmFlatnessClass)
     {
-        frmFlatnessClass->setWindowTitle(QApplication::translate("frmFlatnessClass", "\346\213\237\345\220\210\345\271\263\351\235\242/\350\256\241\347\256\227\347\202\271\345\210\260\345\271\263\351\235\242\350\267\235\347\246\273", nullptr));
-        label_3->setText(QApplication::translate("frmFlatnessClass", "\345\215\225\345\205\203\346\217\217\350\277\260\357\274\232", nullptr));
-        btnExecute->setText(QApplication::translate("frmFlatnessClass", "\346\211\247\350\241\214", nullptr));
-        groupCamera->setTitle(QApplication::translate("frmFlatnessClass", "\346\213\237\345\220\210\345\271\263\351\235\242", nullptr));
-        label_4->setText(QApplication::translate("frmFlatnessClass", "\350\276\223\345\205\245\347\202\271\351\233\206X\357\274\232", nullptr));
-#ifndef QT_NO_TOOLTIP
-        txtLinkPointsX->setToolTip(QApplication::translate("frmFlatnessClass", "\345\205\250\345\261\200\345\217\230\351\207\217double[]\347\261\273\345\236\213", nullptr));
-#endif // QT_NO_TOOLTIP
-#ifndef QT_NO_TOOLTIP
-        btnLinkPointsX->setToolTip(QApplication::translate("frmFlatnessClass", "\351\223\276\346\216\245\350\276\223\345\205\245\347\202\271\351\233\206X", nullptr));
-#endif // QT_NO_TOOLTIP
+        frmFlatnessClass->setWindowTitle(QCoreApplication::translate("frmFlatnessClass", "\346\213\237\345\220\210\345\271\263\351\235\242/\350\256\241\347\256\227\347\202\271\345\210\260\345\271\263\351\235\242\350\267\235\347\246\273", nullptr));
+        label_3->setText(QCoreApplication::translate("frmFlatnessClass", "\345\215\225\345\205\203\346\217\217\350\277\260\357\274\232", nullptr));
+        btnExecute->setText(QCoreApplication::translate("frmFlatnessClass", "\346\211\247\350\241\214", nullptr));
+        groupCamera->setTitle(QCoreApplication::translate("frmFlatnessClass", "\346\213\237\345\220\210\345\271\263\351\235\242", nullptr));
+        label_4->setText(QCoreApplication::translate("frmFlatnessClass", "\350\276\223\345\205\245\347\202\271\351\233\206X\357\274\232", nullptr));
+#if QT_CONFIG(tooltip)
+        txtLinkPointsX->setToolTip(QCoreApplication::translate("frmFlatnessClass", "\345\205\250\345\261\200\345\217\230\351\207\217double[]\347\261\273\345\236\213", nullptr));
+#endif // QT_CONFIG(tooltip)
+#if QT_CONFIG(tooltip)
+        btnLinkPointsX->setToolTip(QCoreApplication::translate("frmFlatnessClass", "\351\223\276\346\216\245\350\276\223\345\205\245\347\202\271\351\233\206X", nullptr));
+#endif // QT_CONFIG(tooltip)
         btnLinkPointsX->setText(QString());
-#ifndef QT_NO_TOOLTIP
-        btnDelLinkPointsX->setToolTip(QApplication::translate("frmFlatnessClass", "\345\210\240\351\231\244\350\276\223\345\205\245\347\202\271\351\233\206X\351\223\276\346\216\245", nullptr));
-#endif // QT_NO_TOOLTIP
+#if QT_CONFIG(tooltip)
+        btnDelLinkPointsX->setToolTip(QCoreApplication::translate("frmFlatnessClass", "\345\210\240\351\231\244\350\276\223\345\205\245\347\202\271\351\233\206X\351\223\276\346\216\245", nullptr));
+#endif // QT_CONFIG(tooltip)
         btnDelLinkPointsX->setText(QString());
-#ifndef QT_NO_TOOLTIP
-        btnLinkPointsY->setToolTip(QApplication::translate("frmFlatnessClass", "\351\223\276\346\216\245\350\276\223\345\205\245\347\202\271\351\233\206Y", nullptr));
-#endif // QT_NO_TOOLTIP
+#if QT_CONFIG(tooltip)
+        btnLinkPointsY->setToolTip(QCoreApplication::translate("frmFlatnessClass", "\351\223\276\346\216\245\350\276\223\345\205\245\347\202\271\351\233\206Y", nullptr));
+#endif // QT_CONFIG(tooltip)
         btnLinkPointsY->setText(QString());
-#ifndef QT_NO_TOOLTIP
-        btnDelLinkPointsY->setToolTip(QApplication::translate("frmFlatnessClass", "\345\210\240\351\231\244\350\276\223\345\205\245\347\202\271\351\233\206Y\351\223\276\346\216\245", nullptr));
-#endif // QT_NO_TOOLTIP
+#if QT_CONFIG(tooltip)
+        btnDelLinkPointsY->setToolTip(QCoreApplication::translate("frmFlatnessClass", "\345\210\240\351\231\244\350\276\223\345\205\245\347\202\271\351\233\206Y\351\223\276\346\216\245", nullptr));
+#endif // QT_CONFIG(tooltip)
         btnDelLinkPointsY->setText(QString());
-#ifndef QT_NO_TOOLTIP
-        txtLinkPointsY->setToolTip(QApplication::translate("frmFlatnessClass", "\345\205\250\345\261\200\345\217\230\351\207\217double[]\347\261\273\345\236\213", nullptr));
-#endif // QT_NO_TOOLTIP
-        label_5->setText(QApplication::translate("frmFlatnessClass", "\350\276\223\345\205\245\347\202\271\351\233\206Y\357\274\232", nullptr));
-        label_6->setText(QApplication::translate("frmFlatnessClass", "\350\276\223\345\205\245\347\202\271\351\233\206Z\357\274\232", nullptr));
-#ifndef QT_NO_TOOLTIP
-        txtLinkPointsZ->setToolTip(QApplication::translate("frmFlatnessClass", "\345\205\250\345\261\200\345\217\230\351\207\217double[]\347\261\273\345\236\213", nullptr));
-#endif // QT_NO_TOOLTIP
-#ifndef QT_NO_TOOLTIP
-        btnDelLinkPointsZ->setToolTip(QApplication::translate("frmFlatnessClass", "\345\210\240\351\231\244\350\276\223\345\205\245\347\202\271\351\233\206Z\351\223\276\346\216\245", nullptr));
-#endif // QT_NO_TOOLTIP
+#if QT_CONFIG(tooltip)
+        txtLinkPointsY->setToolTip(QCoreApplication::translate("frmFlatnessClass", "\345\205\250\345\261\200\345\217\230\351\207\217double[]\347\261\273\345\236\213", nullptr));
+#endif // QT_CONFIG(tooltip)
+        label_5->setText(QCoreApplication::translate("frmFlatnessClass", "\350\276\223\345\205\245\347\202\271\351\233\206Y\357\274\232", nullptr));
+        label_6->setText(QCoreApplication::translate("frmFlatnessClass", "\350\276\223\345\205\245\347\202\271\351\233\206Z\357\274\232", nullptr));
+#if QT_CONFIG(tooltip)
+        txtLinkPointsZ->setToolTip(QCoreApplication::translate("frmFlatnessClass", "\345\205\250\345\261\200\345\217\230\351\207\217double[]\347\261\273\345\236\213", nullptr));
+#endif // QT_CONFIG(tooltip)
+#if QT_CONFIG(tooltip)
+        btnDelLinkPointsZ->setToolTip(QCoreApplication::translate("frmFlatnessClass", "\345\210\240\351\231\244\350\276\223\345\205\245\347\202\271\351\233\206Z\351\223\276\346\216\245", nullptr));
+#endif // QT_CONFIG(tooltip)
         btnDelLinkPointsZ->setText(QString());
-#ifndef QT_NO_TOOLTIP
-        btnLinkPointsZ->setToolTip(QApplication::translate("frmFlatnessClass", "\351\223\276\346\216\245\350\276\223\345\205\245\347\202\271\351\233\206Z", nullptr));
-#endif // QT_NO_TOOLTIP
+#if QT_CONFIG(tooltip)
+        btnLinkPointsZ->setToolTip(QCoreApplication::translate("frmFlatnessClass", "\351\223\276\346\216\245\350\276\223\345\205\245\347\202\271\351\233\206Z", nullptr));
+#endif // QT_CONFIG(tooltip)
         btnLinkPointsZ->setText(QString());
-        groupCamera_2->setTitle(QApplication::translate("frmFlatnessClass", "\350\256\241\347\256\227\347\202\271\345\210\260\345\271\263\351\235\242\350\267\235\347\246\273", nullptr));
-        label_7->setText(QApplication::translate("frmFlatnessClass", "\344\270\211\347\273\264\350\276\223\345\205\245\347\202\271\357\274\232", nullptr));
-#ifndef QT_NO_TOOLTIP
-        txtLink3DPoint->setToolTip(QApplication::translate("frmFlatnessClass", "\345\205\250\345\261\200\345\217\230\351\207\217cv::Point3d\347\261\273\345\236\213", nullptr));
-#endif // QT_NO_TOOLTIP
-#ifndef QT_NO_TOOLTIP
-        btnLink3DPoint->setToolTip(QApplication::translate("frmFlatnessClass", "\351\223\276\346\216\245\344\270\211\347\273\264\350\276\223\345\205\245\347\202\271", nullptr));
-#endif // QT_NO_TOOLTIP
+        groupCamera_2->setTitle(QCoreApplication::translate("frmFlatnessClass", "\350\256\241\347\256\227\347\202\271\345\210\260\345\271\263\351\235\242\350\267\235\347\246\273", nullptr));
+        label_7->setText(QCoreApplication::translate("frmFlatnessClass", "\344\270\211\347\273\264\350\276\223\345\205\245\347\202\271\357\274\232", nullptr));
+#if QT_CONFIG(tooltip)
+        txtLink3DPoint->setToolTip(QCoreApplication::translate("frmFlatnessClass", "\345\205\250\345\261\200\345\217\230\351\207\217cv::Point3d\347\261\273\345\236\213", nullptr));
+#endif // QT_CONFIG(tooltip)
+#if QT_CONFIG(tooltip)
+        btnLink3DPoint->setToolTip(QCoreApplication::translate("frmFlatnessClass", "\351\223\276\346\216\245\344\270\211\347\273\264\350\276\223\345\205\245\347\202\271", nullptr));
+#endif // QT_CONFIG(tooltip)
         btnLink3DPoint->setText(QString());
-#ifndef QT_NO_TOOLTIP
-        btnDelLink3DPoint->setToolTip(QApplication::translate("frmFlatnessClass", "\345\210\240\351\231\244\344\270\211\347\273\264\350\276\223\345\205\245\347\202\271\351\223\276\346\216\245", nullptr));
-#endif // QT_NO_TOOLTIP
+#if QT_CONFIG(tooltip)
+        btnDelLink3DPoint->setToolTip(QCoreApplication::translate("frmFlatnessClass", "\345\210\240\351\231\244\344\270\211\347\273\264\350\276\223\345\205\245\347\202\271\351\223\276\346\216\245", nullptr));
+#endif // QT_CONFIG(tooltip)
         btnDelLink3DPoint->setText(QString());
-        checkDist->setText(QApplication::translate("frmFlatnessClass", "\350\256\241\347\256\227\347\202\271\345\210\260\345\271\263\351\235\242\350\267\235\347\246\273", nullptr));
-        groupC3->setTitle(QApplication::translate("frmFlatnessClass", "\350\276\223\345\207\272\346\225\260\346\215\256(A\343\200\201B\343\200\201C\343\200\201D\343\200\201Distance)", nullptr));
-        tabWidget->setTabText(tabWidget->indexOf(tab), QApplication::translate("frmFlatnessClass", "\345\237\272\346\234\254\350\256\276\347\275\256", nullptr));
+        checkDist->setText(QCoreApplication::translate("frmFlatnessClass", "\350\256\241\347\256\227\347\202\271\345\210\260\345\271\263\351\235\242\350\267\235\347\246\273", nullptr));
+        groupC3->setTitle(QCoreApplication::translate("frmFlatnessClass", "\350\276\223\345\207\272\346\225\260\346\215\256(A\343\200\201B\343\200\201C\343\200\201D\343\200\201Distance)", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab), QCoreApplication::translate("frmFlatnessClass", "\345\237\272\346\234\254\350\256\276\347\275\256", nullptr));
     } // retranslateUi
 
 };

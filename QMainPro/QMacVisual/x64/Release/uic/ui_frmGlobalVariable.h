@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'frmGlobalVariable.ui'
 **
-** Created by: Qt User Interface Compiler version 5.12.12
+** Created by: Qt User Interface Compiler version 5.14.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -324,33 +324,33 @@ public:
 
     void retranslateUi(QDialog *frmGlobalVariableClass)
     {
-        frmGlobalVariableClass->setWindowTitle(QApplication::translate("frmGlobalVariableClass", "\345\205\250\345\261\200\345\217\230\351\207\217", nullptr));
-        label->setText(QApplication::translate("frmGlobalVariableClass", "\347\261\273\345\236\213\357\274\232", nullptr));
-        comboType->setItemText(0, QApplication::translate("frmGlobalVariableClass", "Int", nullptr));
-        comboType->setItemText(1, QApplication::translate("frmGlobalVariableClass", "Double", nullptr));
-        comboType->setItemText(2, QApplication::translate("frmGlobalVariableClass", "QString", nullptr));
-        comboType->setItemText(3, QApplication::translate("frmGlobalVariableClass", "Bool", nullptr));
-        comboType->setItemText(4, QApplication::translate("frmGlobalVariableClass", "QPoint", nullptr));
-        comboType->setItemText(5, QApplication::translate("frmGlobalVariableClass", "QPointF", nullptr));
-        comboType->setItemText(6, QApplication::translate("frmGlobalVariableClass", "cv::Point", nullptr));
-        comboType->setItemText(7, QApplication::translate("frmGlobalVariableClass", "cv::Point2f", nullptr));
-        comboType->setItemText(8, QApplication::translate("frmGlobalVariableClass", "cv::Point3f", nullptr));
-        comboType->setItemText(9, QApplication::translate("frmGlobalVariableClass", "cv::Point3d", nullptr));
-        comboType->setItemText(10, QApplication::translate("frmGlobalVariableClass", "Float[]", nullptr));
-        comboType->setItemText(11, QApplication::translate("frmGlobalVariableClass", "Double[]", nullptr));
+        frmGlobalVariableClass->setWindowTitle(QCoreApplication::translate("frmGlobalVariableClass", "\345\205\250\345\261\200\345\217\230\351\207\217", nullptr));
+        label->setText(QCoreApplication::translate("frmGlobalVariableClass", "\347\261\273\345\236\213\357\274\232", nullptr));
+        comboType->setItemText(0, QCoreApplication::translate("frmGlobalVariableClass", "Int", nullptr));
+        comboType->setItemText(1, QCoreApplication::translate("frmGlobalVariableClass", "Double", nullptr));
+        comboType->setItemText(2, QCoreApplication::translate("frmGlobalVariableClass", "QString", nullptr));
+        comboType->setItemText(3, QCoreApplication::translate("frmGlobalVariableClass", "Bool", nullptr));
+        comboType->setItemText(4, QCoreApplication::translate("frmGlobalVariableClass", "QPoint", nullptr));
+        comboType->setItemText(5, QCoreApplication::translate("frmGlobalVariableClass", "QPointF", nullptr));
+        comboType->setItemText(6, QCoreApplication::translate("frmGlobalVariableClass", "cv::Point", nullptr));
+        comboType->setItemText(7, QCoreApplication::translate("frmGlobalVariableClass", "cv::Point2f", nullptr));
+        comboType->setItemText(8, QCoreApplication::translate("frmGlobalVariableClass", "cv::Point3f", nullptr));
+        comboType->setItemText(9, QCoreApplication::translate("frmGlobalVariableClass", "cv::Point3d", nullptr));
+        comboType->setItemText(10, QCoreApplication::translate("frmGlobalVariableClass", "Float[]", nullptr));
+        comboType->setItemText(11, QCoreApplication::translate("frmGlobalVariableClass", "Double[]", nullptr));
 
-        btnAdd->setText(QApplication::translate("frmGlobalVariableClass", "\346\267\273\345\212\240", nullptr));
-        btnDelete->setText(QApplication::translate("frmGlobalVariableClass", "\345\210\240\351\231\244", nullptr));
-        btnMoveUp->setText(QApplication::translate("frmGlobalVariableClass", "\344\270\212\347\247\273", nullptr));
-        btnMoveDown->setText(QApplication::translate("frmGlobalVariableClass", "\344\270\213\347\247\273", nullptr));
+        btnAdd->setText(QCoreApplication::translate("frmGlobalVariableClass", "\346\267\273\345\212\240", nullptr));
+        btnDelete->setText(QCoreApplication::translate("frmGlobalVariableClass", "\345\210\240\351\231\244", nullptr));
+        btnMoveUp->setText(QCoreApplication::translate("frmGlobalVariableClass", "\344\270\212\347\247\273", nullptr));
+        btnMoveDown->setText(QCoreApplication::translate("frmGlobalVariableClass", "\344\270\213\347\247\273", nullptr));
         QTableWidgetItem *___qtablewidgetitem = tableWidget->horizontalHeaderItem(0);
-        ___qtablewidgetitem->setText(QApplication::translate("frmGlobalVariableClass", "\347\261\273\345\236\213", nullptr));
+        ___qtablewidgetitem->setText(QCoreApplication::translate("frmGlobalVariableClass", "\347\261\273\345\236\213", nullptr));
         QTableWidgetItem *___qtablewidgetitem1 = tableWidget->horizontalHeaderItem(1);
-        ___qtablewidgetitem1->setText(QApplication::translate("frmGlobalVariableClass", "\345\217\230\351\207\217\345\220\215\347\247\260", nullptr));
+        ___qtablewidgetitem1->setText(QCoreApplication::translate("frmGlobalVariableClass", "\345\217\230\351\207\217\345\220\215\347\247\260", nullptr));
         QTableWidgetItem *___qtablewidgetitem2 = tableWidget->horizontalHeaderItem(2);
-        ___qtablewidgetitem2->setText(QApplication::translate("frmGlobalVariableClass", "\345\217\230\351\207\217\345\200\274", nullptr));
+        ___qtablewidgetitem2->setText(QCoreApplication::translate("frmGlobalVariableClass", "\345\217\230\351\207\217\345\200\274", nullptr));
         QTableWidgetItem *___qtablewidgetitem3 = tableWidget->horizontalHeaderItem(3);
-        ___qtablewidgetitem3->setText(QApplication::translate("frmGlobalVariableClass", "\345\244\207\346\263\250", nullptr));
+        ___qtablewidgetitem3->setText(QCoreApplication::translate("frmGlobalVariableClass", "\345\244\207\346\263\250", nullptr));
     } // retranslateUi
 
 };

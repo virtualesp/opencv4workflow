@@ -1,138 +1,69 @@
-﻿  uic frmAbout.ui
-  uic frmCameraSetUp.ui
-  uic frmGlobalVariable.ui
-  uic frmImageLayout.ui
-  uic frmImageView.ui
-  uic frmInstrumentation.ui
-  uic frmLink.ui
-  uic frmLogin.ui
-  uic frmPermis.ui
-  uic frmProcessSetUp.ui
-  uic frmProItemTab.ui
-  uic frmQuit.ui
-  uic frmRegister.ui
-  uic frmSystemSetUp.ui
-  uic frmToolsTree.ui
-  uic frmLog.ui
-  rcc res.qrc
-  moc savelog.h
-  moc Toolnterface.h
-  moc showcpumemory.h
-  moc frmLog.h
-  moc clogmodel.h
-  moc basemainwindow.h
-  moc cmysplashscreen.h
-  moc autoThread.h
-  moc frmLogin.h
-  moc dockwidget.h
-  moc headwidget.h
-  moc frmAbout.h
-  moc frmImageView.h
-  moc FlowListWidget.h
-  moc GlobalVariable.h
-  moc frmToolsTree.h
+﻿  moc GlobalVariable.h
   moc frmProItemTab.h
-  moc frmPermis.h
-  moc mainwidget.h
-  moc mainwindow.h
-  moc mytitlebar.h
-  moc frmProcessSetUp.h
-  moc frmSystemSetUp.h
-  moc frmImageLayout.h
-  moc frmGlobalVariable.h
-  moc frmCameraSetUp.h
-  moc frmInstrumentation.h
-  moc frmQuit.h
-  moc frmLink.h
-  moc ipaddress.h
-  moc manualThread.h
-  moc QGraphicsViews.h
-  moc QToolBase.h
-  moc qttreewidget.h
-  moc QRoundProgressBar.h
-  moc frmVisualLogo.h
-  moc frmRegister.h
-  autoThread.cpp
-  basemainwindow.cpp
-  clogmodel.cpp
-  cmysplashscreen.cpp
-  dockwidget.cpp
   FlowListWidget.cpp
-  frmAbout.cpp
+  GlobalVariable.cpp
+  QGraphicsViews.cpp
+  QToolBase.cpp
+  QtWidgetsSaveLoad.cpp
+  autoThread.cpp
+G:\QMacVisual(CV3)(25000)\QMacVisual(CV3)2022.9.21(25000)\QMacVisual(CV3)\QMainPro\QMacVisual\CommTools\Camera\MindVision\Include\CameraApi.h(5210,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 QToolBase.cpp)
+G:\QMacVisual(CV3)(25000)\QMacVisual(CV3)2022.9.21(25000)\QMacVisual(CV3)\QMainPro\QMacVisual\CommTools\Camera\MindVision\Include\CameraApi.h(5210,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 GlobalVariable.cpp)
+G:\QMacVisual(CV3)(25000)\QMacVisual(CV3)2022.9.21(25000)\QMacVisual(CV3)\QMainPro\QMacVisual\CommTools\Camera\MindVision\Include\CameraApi.h(5210,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 FlowListWidget.cpp)
+G:\QMacVisual(CV3)(25000)\QMacVisual(CV3)2022.9.21(25000)\QMacVisual(CV3)\QMainPro\QMacVisual\CommTools\Camera\MindVision\Include\CameraApi.h(5210,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 QGraphicsViews.cpp)
+G:\QMacVisual(CV3)(25000)\QMacVisual(CV3)2022.9.21(25000)\QMacVisual(CV3)\QMainPro\QMacVisual\CommTools\Camera\MindVision\Include\CameraApi.h(5210,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 autoThread.cpp)
+G:\QMacVisual(CV3)(25000)\QMacVisual(CV3)2022.9.21(25000)\QMacVisual(CV3)\QMainPro\QMacVisual\CommTools\Camera\MindVision\Include\CameraApi.h(5210,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 QtWidgetsSaveLoad.cpp)
+  cmysplashscreen.cpp
+  datavar.cpp
   frmCameraSetUp.cpp
   frmGlobalVariable.cpp
   frmImageLayout.cpp
+G:\QMacVisual(CV3)(25000)\QMacVisual(CV3)2022.9.21(25000)\QMacVisual(CV3)\QMainPro\QMacVisual\CommTools\Camera\MindVision\Include\CameraApi.h(5210,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 cmysplashscreen.cpp)
+G:\QMacVisual(CV3)(25000)\QMacVisual(CV3)2022.9.21(25000)\QMacVisual(CV3)\QMainPro\QMacVisual\CommTools\Camera\MindVision\Include\CameraApi.h(5210,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 datavar.cpp)
   frmImageView.cpp
+G:\QMacVisual(CV3)(25000)\QMacVisual(CV3)2022.9.21(25000)\QMacVisual(CV3)\QMainPro\QMacVisual\CommTools\Camera\MindVision\Include\CameraApi.h(5210,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 frmCameraSetUp.cpp)
+G:\QMacVisual(CV3)(25000)\QMacVisual(CV3)2022.9.21(25000)\QMacVisual(CV3)\QMainPro\QMacVisual\CommTools\Camera\MindVision\Include\CameraApi.h(5210,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 frmGlobalVariable.cpp)
+G:\QMacVisual(CV3)(25000)\QMacVisual(CV3)2022.9.21(25000)\QMacVisual(CV3)\QMainPro\QMacVisual\CommTools\Camera\MindVision\Include\CameraApi.h(5210,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 frmImageLayout.cpp)
   frmInstrumentation.cpp
   frmLink.cpp
-  frmLogin.cpp
   frmLog.cpp
+G:\QMacVisual(CV3)(25000)\QMacVisual(CV3)2022.9.21(25000)\QMacVisual(CV3)\QMainPro\QMacVisual\CommTools\Camera\MindVision\Include\CameraApi.h(5210,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 frmImageView.cpp)
+  frmLogin.cpp
+G:\QMacVisual(CV3)(25000)\QMacVisual(CV3)2022.9.21(25000)\QMacVisual(CV3)\QMainPro\QMacVisual\CommTools\Camera\MindVision\Include\CameraApi.h(5210,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 frmInstrumentation.cpp)
   frmPermis.cpp
-  frmProcessSetUp.cpp
   frmProItemTab.cpp
+G:\QMacVisual(CV3)(25000)\QMacVisual(CV3)2022.9.21(25000)\QMacVisual(CV3)\QMainPro\QMacVisual\CommTools\Camera\MindVision\Include\CameraApi.h(5210,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 frmLink.cpp)
+G:\QMacVisual(CV3)(25000)\QMacVisual(CV3)2022.9.21(25000)\QMacVisual(CV3)\QMainPro\QMacVisual\CommTools\Camera\MindVision\Include\CameraApi.h(5210,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 frmLog.cpp)
+G:\QMacVisual(CV3)(25000)\QMacVisual(CV3)2022.9.21(25000)\QMacVisual(CV3)\QMainPro\QMacVisual\CommTools\Camera\MindVision\Include\CameraApi.h(5210,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 frmLogin.cpp)
+G:\QMacVisual(CV3)(25000)\QMacVisual(CV3)2022.9.21(25000)\QMacVisual(CV3)\QMainPro\QMacVisual\CommTools\Camera\MindVision\Include\CameraApi.h(5210,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 frmPermis.cpp)
+  frmProcessSetUp.cpp
+G:\QMacVisual(CV3)(25000)\QMacVisual(CV3)2022.9.21(25000)\QMacVisual(CV3)\QMainPro\QMacVisual\CommTools\Camera\MindVision\Include\CameraApi.h(5210,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 frmProItemTab.cpp)
   frmQuit.cpp
-  frmSystemSetUp.cpp
-  frmToolsTree.cpp
-  GlobalVariable.cpp
-  gvariable.cpp
-  ipaddress.cpp
-  manualThread.cpp
-  mytitlebar.cpp
-  QGraphicsViews.cpp
-  QRoundProgressBar.cpp
-  QToolBase.cpp
-  qttreewidget.cpp
-  QtWidgetsSaveLoad.cpp
-  FolderOperation.cpp
-  SoftKey.cpp
-  SQLite.cpp
-  XML.cpp
-  savelog.cpp
-  showcpumemory.cpp
-  Toolnterface.cpp
-  datavar.cpp
+G:\QMacVisual(CV3)(25000)\QMacVisual(CV3)2022.9.21(25000)\QMacVisual(CV3)\QMainPro\QMacVisual\frmProItemTab.cpp(2996,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+G:\QMacVisual(CV3)(25000)\QMacVisual(CV3)2022.9.21(25000)\QMacVisual(CV3)\QMainPro\QMacVisual\frmProItemTab.cpp(3598,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
   frmRegister.cpp
+  frmSystemSetUp.cpp
+G:\QMacVisual(CV3)(25000)\QMacVisual(CV3)2022.9.21(25000)\QMacVisual(CV3)\QMainPro\QMacVisual\CommTools\Camera\MindVision\Include\CameraApi.h(5210,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 frmProcessSetUp.cpp)
+G:\QMacVisual(CV3)(25000)\QMacVisual(CV3)2022.9.21(25000)\QMacVisual(CV3)\QMainPro\QMacVisual\CommTools\Camera\MindVision\Include\CameraApi.h(5210,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 frmQuit.cpp)
+G:\QMacVisual(CV3)(25000)\QMacVisual(CV3)2022.9.21(25000)\QMacVisual(CV3)\QMainPro\QMacVisual\CommTools\Camera\MindVision\Include\CameraApi.h(5210,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 frmRegister.cpp)
+G:\QMacVisual(CV3)(25000)\QMacVisual(CV3)2022.9.21(25000)\QMacVisual(CV3)\QMainPro\QMacVisual\CommTools\Camera\MindVision\Include\CameraApi.h(5210,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 frmSystemSetUp.cpp)
+  frmToolsTree.cpp
   frmVisualLogo.cpp
   headwidget.cpp
   mainwidget.cpp
   mainwindow.cpp
-  main.cpp
-  qrc_res.cpp
-  moc_savelog.cpp
-  moc_Toolnterface.cpp
-  moc_showcpumemory.cpp
-  moc_frmLog.cpp
-  moc_clogmodel.cpp
-  moc_basemainwindow.cpp
-  moc_cmysplashscreen.cpp
-  moc_autoThread.cpp
-  moc_frmLogin.cpp
-  moc_dockwidget.cpp
-  moc_headwidget.cpp
-  moc_frmAbout.cpp
-  moc_frmImageView.cpp
-  moc_FlowListWidget.cpp
+G:\QMacVisual(CV3)(25000)\QMacVisual(CV3)2022.9.21(25000)\QMacVisual(CV3)\QMainPro\QMacVisual\CommTools\Camera\MindVision\Include\CameraApi.h(5210,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 frmToolsTree.cpp)
+G:\QMacVisual(CV3)(25000)\QMacVisual(CV3)2022.9.21(25000)\QMacVisual(CV3)\QMainPro\QMacVisual\CommTools\Camera\MindVision\Include\CameraApi.h(5210,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 frmVisualLogo.cpp)
+  manualThread.cpp
+G:\QMacVisual(CV3)(25000)\QMacVisual(CV3)2022.9.21(25000)\QMacVisual(CV3)\QMainPro\QMacVisual\CommTools\Camera\MindVision\Include\CameraApi.h(5210,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 headwidget.cpp)
+G:\QMacVisual(CV3)(25000)\QMacVisual(CV3)2022.9.21(25000)\QMacVisual(CV3)\QMainPro\QMacVisual\CommTools\Camera\MindVision\Include\CameraApi.h(5210,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 mainwindow.cpp)
+G:\QMacVisual(CV3)(25000)\QMacVisual(CV3)2022.9.21(25000)\QMacVisual(CV3)\QMainPro\QMacVisual\CommTools\Camera\MindVision\Include\CameraApi.h(5210,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 mainwidget.cpp)
+  showcpumemory.cpp
+G:\QMacVisual(CV3)(25000)\QMacVisual(CV3)2022.9.21(25000)\QMacVisual(CV3)\QMainPro\QMacVisual\CommTools\Camera\MindVision\Include\CameraApi.h(5210,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 manualThread.cpp)
+G:\QMacVisual(CV3)(25000)\QMacVisual(CV3)2022.9.21(25000)\QMacVisual(CV3)\QMainPro\QMacVisual\CommTools\Camera\MindVision\Include\CameraApi.h(5210,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 showcpumemory.cpp)
   moc_GlobalVariable.cpp
-  moc_frmToolsTree.cpp
   moc_frmProItemTab.cpp
-  moc_frmPermis.cpp
   moc_mainwidget.cpp
-  moc_mainwindow.cpp
-  moc_mytitlebar.cpp
-  moc_frmProcessSetUp.cpp
-  moc_frmSystemSetUp.cpp
-  moc_frmImageLayout.cpp
-  moc_frmGlobalVariable.cpp
-  moc_frmCameraSetUp.cpp
-  moc_frmInstrumentation.cpp
-  moc_frmQuit.cpp
-  moc_frmLink.cpp
-  moc_ipaddress.cpp
-  moc_manualThread.cpp
-  moc_QGraphicsViews.cpp
-  moc_QToolBase.cpp
-  moc_qttreewidget.cpp
-  moc_QRoundProgressBar.cpp
-  moc_frmVisualLogo.cpp
-  moc_frmRegister.cpp
-  QMacVisual.vcxproj -> G:\QMacVisual(CV3)2022.9.21(25000)\QMacVisual(CV3)\QSoftExe\Release\QMacVisual.exe
+G:\QMacVisual(CV3)(25000)\QMacVisual(CV3)2022.9.21(25000)\QMacVisual(CV3)\QMainPro\QMacVisual\CommTools\Camera\MindVision\Include\CameraApi.h(5210,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 x64\Release\moc\moc_GlobalVariable.cpp)
+G:\QMacVisual(CV3)(25000)\QMacVisual(CV3)2022.9.21(25000)\QMacVisual(CV3)\QMainPro\QMacVisual\CommTools\Camera\MindVision\Include\CameraApi.h(5210,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 x64\Release\moc\moc_frmProItemTab.cpp)
+G:\QMacVisual(CV3)(25000)\QMacVisual(CV3)2022.9.21(25000)\QMacVisual(CV3)\QMainPro\QMacVisual\CommTools\Camera\MindVision\Include\CameraApi.h(5210,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 x64\Release\moc\moc_mainwidget.cpp)
+  QMacVisual.vcxproj -> G:\QMacVisual(CV3)(25000)\QMacVisual(CV3)2022.9.21(25000)\QMacVisual(CV3)\QSoftExe\Release\QMacVisual.exe

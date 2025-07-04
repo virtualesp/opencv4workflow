@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'frmSystemSetUp.ui'
 **
-** Created by: Qt User Interface Compiler version 5.12.12
+** Created by: Qt User Interface Compiler version 5.14.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -232,15 +232,15 @@ public:
 
     void retranslateUi(QWidget *frmSystemSetUpClass)
     {
-        frmSystemSetUpClass->setWindowTitle(QApplication::translate("frmSystemSetUpClass", "QMacVisual", nullptr));
-        checkProgramSelfStart->setText(QApplication::translate("frmSystemSetUpClass", "\345\274\200\346\234\272\350\207\252\345\220\257\345\212\250", nullptr));
-        checkProcessSelfStart->setText(QApplication::translate("frmSystemSetUpClass", "\345\220\257\345\212\250\345\220\216\346\265\201\347\250\213\350\207\252\345\212\250\345\274\200\345\247\213\346\211\247\350\241\214", nullptr));
-        checkSignOutTime->setText(QApplication::translate("frmSystemSetUpClass", "\347\250\213\345\272\217\346\227\240\346\223\215\344\275\234\350\207\252\345\212\250\347\231\273\345\207\272\346\227\266\351\227\264\357\274\232", nullptr));
-        label->setText(QApplication::translate("frmSystemSetUpClass", "\345\210\206\351\222\237", nullptr));
-        tabWidget->setTabText(tabWidget->indexOf(tab), QApplication::translate("frmSystemSetUpClass", "\345\237\272\346\234\254\350\256\276\347\275\256", nullptr));
-        label_2->setText(QApplication::translate("frmSystemSetUpClass", "\346\227\245\345\277\227\344\277\235\345\255\230\345\244\251\346\225\260\357\274\232", nullptr));
-        label_3->setText(QApplication::translate("frmSystemSetUpClass", "\345\244\251", nullptr));
-        tabWidget->setTabText(tabWidget->indexOf(tab_2), QApplication::translate("frmSystemSetUpClass", "\346\227\245\345\277\227\350\256\276\347\275\256", nullptr));
+        frmSystemSetUpClass->setWindowTitle(QCoreApplication::translate("frmSystemSetUpClass", "QMacVisual", nullptr));
+        checkProgramSelfStart->setText(QCoreApplication::translate("frmSystemSetUpClass", "\345\274\200\346\234\272\350\207\252\345\220\257\345\212\250", nullptr));
+        checkProcessSelfStart->setText(QCoreApplication::translate("frmSystemSetUpClass", "\345\220\257\345\212\250\345\220\216\346\265\201\347\250\213\350\207\252\345\212\250\345\274\200\345\247\213\346\211\247\350\241\214", nullptr));
+        checkSignOutTime->setText(QCoreApplication::translate("frmSystemSetUpClass", "\347\250\213\345\272\217\346\227\240\346\223\215\344\275\234\350\207\252\345\212\250\347\231\273\345\207\272\346\227\266\351\227\264\357\274\232", nullptr));
+        label->setText(QCoreApplication::translate("frmSystemSetUpClass", "\345\210\206\351\222\237", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab), QCoreApplication::translate("frmSystemSetUpClass", "\345\237\272\346\234\254\350\256\276\347\275\256", nullptr));
+        label_2->setText(QCoreApplication::translate("frmSystemSetUpClass", "\346\227\245\345\277\227\344\277\235\345\255\230\345\244\251\346\225\260\357\274\232", nullptr));
+        label_3->setText(QCoreApplication::translate("frmSystemSetUpClass", "\345\244\251", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab_2), QCoreApplication::translate("frmSystemSetUpClass", "\346\227\245\345\277\227\350\256\276\347\275\256", nullptr));
     } // retranslateUi
 
 };

@@ -1,18 +1,19 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'frmSerialPort.h'
 **
-** Created by: The Qt Meta Object Compiler version 67 (Qt 5.12.12)
+** Created by: The Qt Meta Object Compiler version 67 (Qt 5.14.2)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
 
+#include <memory>
 #include "../../../frmSerialPort.h"
 #include <QtCore/qbytearray.h>
 #include <QtCore/qmetatype.h>
 #if !defined(Q_MOC_OUTPUT_REVISION)
 #error "The header file 'frmSerialPort.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 67
-#error "This file was generated using the moc from 5.12.12. It"
+#error "This file was generated using the moc from 5.14.2. It"
 #error "cannot be used with the include files from this version of Qt."
 #error "(The moc has changed too much.)"
 #endif
@@ -167,7 +168,7 @@ void frmSerialPort::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _i
 }
 
 QT_INIT_METAOBJECT const QMetaObject frmSerialPort::staticMetaObject = { {
-    &Toolnterface::staticMetaObject,
+    QMetaObject::SuperData::link<Toolnterface::staticMetaObject>(),
     qt_meta_stringdata_frmSerialPort.data,
     qt_meta_data_frmSerialPort,
     qt_static_metacall,
@@ -209,14 +210,14 @@ int frmSerialPort::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 // SIGNAL 0
 void frmSerialPort::sig_SendMsg(QString _t1)
 {
-    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
+    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))) };
     QMetaObject::activate(this, &staticMetaObject, 0, _a);
 }
 
 // SIGNAL 1
 void frmSerialPort::sig_SMsg(QString _t1)
 {
-    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
+    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))) };
     QMetaObject::activate(this, &staticMetaObject, 1, _a);
 }
 

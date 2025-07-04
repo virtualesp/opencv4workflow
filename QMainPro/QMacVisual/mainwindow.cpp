@@ -1259,6 +1259,11 @@ void MainWindow::slot_SaveProjectParam(int mode)
 							QVariant var = QConfig::ToolBase[m]->m_Tools[n].PublicToolDlg->InitGetToolData();
 							dataVar::qtWidgetsSaveLoad->saveToolParam3(tool_count_buf, str_name_buf, var);
 						}
+						else if (str_name_buf == "YoloV13")
+						{
+							QVariant var = QConfig::ToolBase[m]->m_Tools[n].PublicToolDlg->InitGetToolData();
+							dataVar::qtWidgetsSaveLoad->saveToolParam(tool_count_buf, str_name_buf, var);
+						}
 						break;
 					}
 				}

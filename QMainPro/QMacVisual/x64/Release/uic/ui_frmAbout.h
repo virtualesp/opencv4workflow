@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'frmAbout.ui'
 **
-** Created by: Qt User Interface Compiler version 5.12.12
+** Created by: Qt User Interface Compiler version 5.14.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -164,11 +164,11 @@ public:
 
     void retranslateUi(QWidget *frmAboutClass)
     {
-        frmAboutClass->setWindowTitle(QApplication::translate("frmAboutClass", "QMacVisual", nullptr));
-        label->setText(QApplication::translate("frmAboutClass", "MachineVisionSystem", nullptr));
-        label_3->setText(QApplication::translate("frmAboutClass", " Copyright(c) MacV All Rights Reserved.", nullptr));
-        label_2->setText(QApplication::translate("frmAboutClass", " Main Program Version\357\274\2321.0.0.0", nullptr));
-        label_5->setText(QApplication::translate("frmAboutClass", " Email : 115296300@qq.com", nullptr));
+        frmAboutClass->setWindowTitle(QCoreApplication::translate("frmAboutClass", "QMacVisual", nullptr));
+        label->setText(QCoreApplication::translate("frmAboutClass", "MachineVisionSystem", nullptr));
+        label_3->setText(QCoreApplication::translate("frmAboutClass", " Copyright(c) MacV All Rights Reserved.", nullptr));
+        label_2->setText(QCoreApplication::translate("frmAboutClass", " Main Program Version\357\274\2321.0.0.0", nullptr));
+        label_5->setText(QCoreApplication::translate("frmAboutClass", "<html><head/><body><p> Email : 290828340@qq.com</p></body></html>", nullptr));
         label_4->setText(QString());
     } // retranslateUi
 

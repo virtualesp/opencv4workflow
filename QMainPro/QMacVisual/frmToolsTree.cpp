@@ -122,6 +122,12 @@ void frmToolsTree::ToolsTreeWidgetInit()
 	toolPair.second = ToolNameList;
 	ToolNamesVec.push_back(toolPair);
 	ToolNameList.clear();
+	//YoloV13
+	LoadPlugins("目标检测");  //加载YoloV13目标检测	
+	toolPair.first = "目标检测";
+	toolPair.second = ToolNameList;
+	ToolNamesVec.push_back(toolPair);
+	ToolNameList.clear();
 	//循环处理图标	
 	for (int i = 0; i < ToolNamesVec.size(); i++)
 	{
@@ -167,6 +173,13 @@ int frmToolsTree::LoadPlugins(QString str)
 				PopulateTree(str, plugin, treeInterface);
 			}
 		}
+		else {
+			//std::cout << "加载插件失败:" << pluginLoader.errorString() << "\n" << std::endl; // 关键：打印错误详情
+			const QString errorStr = pluginLoader.errorString();
+			/*printf("加载插件失败:", errorStr);*/
+			qDebug() << "加载插件失败:" << pluginLoader.errorString();
+		}
+
 	}
 	return count;
 }
@@ -180,7 +193,8 @@ void frmToolsTree::PopulateTree(QString str, QObject* pluginInterface, MainInter
 {
 	try
 	{
-		if (i->information() == str)
+		QString info = i->information();
+		if (info == str)
 		{
 			ToolNameList.push_back(i->name());
 		}
@@ -251,5 +265,6 @@ QString frmToolsTree::GetIconName(QString Name)
 	if (Name.contains("通用I/O")) IconName = ":/res/ico/general_io.png";
 	if (Name.contains("延时")) IconName = ":/res/ico/delay.png";	
 	if (Name.contains("导出CSV")) IconName = ":/res/ico/export_csv.png";
+	if (Name.contains("YoloV13")) IconName = ":/res/ico/classifier.png";
 	return IconName;
 }

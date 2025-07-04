@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'frmScriptEdit.ui'
 **
-** Created by: Qt User Interface Compiler version 5.12.12
+** Created by: Qt User Interface Compiler version 5.14.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -519,9 +519,9 @@ public:
 
     void retranslateUi(QDialog *frmScriptEditClass)
     {
-        frmScriptEditClass->setWindowTitle(QApplication::translate("frmScriptEditClass", "\350\204\232\346\234\254\347\274\226\350\276\221", nullptr));
-        groupBox->setTitle(QApplication::translate("frmScriptEditClass", "\350\204\232\346\234\254\347\244\272\344\276\213", nullptr));
-        plainTextExample->setPlainText(QApplication::translate("frmScriptEditClass", "//\347\244\272\344\276\2131\n"
+        frmScriptEditClass->setWindowTitle(QCoreApplication::translate("frmScriptEditClass", "\350\204\232\346\234\254\347\274\226\350\276\221", nullptr));
+        groupBox->setTitle(QCoreApplication::translate("frmScriptEditClass", "\350\204\232\346\234\254\347\244\272\344\276\213", nullptr));
+        plainTextExample->setPlainText(QCoreApplication::translate("frmScriptEditClass", "//\347\244\272\344\276\2131\n"
 "var state = true;\n"
 "if (state == true)\n"
 "{\n"
@@ -593,19 +593,19 @@ public:
 "var plc = GetFlowToolValue(\"PLC\351\200\232\344\277\241.\345\257\204\345\255\230\345\231\250\350\257\273\345\217\226\346\225\260\346\215\256\");\n"
 "var data = ConvertToArrayInt(plc, 0);  //0\350\241\250\347\244\272\350\216\267\345\217\226\346\225\260\347\273\204\347\264\242\345\274\2250\344\275\215\347\275\256\347\232\204\345\200\274\n"
 "", nullptr));
-        groupC3->setTitle(QApplication::translate("frmScriptEditClass", "\347\274\226\350\257\221\344\277\241\346\201\257", nullptr));
+        groupC3->setTitle(QCoreApplication::translate("frmScriptEditClass", "\347\274\226\350\257\221\344\277\241\346\201\257", nullptr));
         QTableWidgetItem *___qtablewidgetitem = tableWidget->horizontalHeaderItem(0);
-        ___qtablewidgetitem->setText(QApplication::translate("frmScriptEditClass", "\347\274\226\345\217\267", nullptr));
+        ___qtablewidgetitem->setText(QCoreApplication::translate("frmScriptEditClass", "\347\274\226\345\217\267", nullptr));
         QTableWidgetItem *___qtablewidgetitem1 = tableWidget->horizontalHeaderItem(1);
-        ___qtablewidgetitem1->setText(QApplication::translate("frmScriptEditClass", "\345\217\230\351\207\217\345\220\215\347\247\260", nullptr));
+        ___qtablewidgetitem1->setText(QCoreApplication::translate("frmScriptEditClass", "\345\217\230\351\207\217\345\220\215\347\247\260", nullptr));
         QTableWidgetItem *___qtablewidgetitem2 = tableWidget->horizontalHeaderItem(2);
-        ___qtablewidgetitem2->setText(QApplication::translate("frmScriptEditClass", "\345\217\230\351\207\217\345\200\274", nullptr));
+        ___qtablewidgetitem2->setText(QCoreApplication::translate("frmScriptEditClass", "\345\217\230\351\207\217\345\200\274", nullptr));
         QTableWidgetItem *___qtablewidgetitem3 = tableWidget->horizontalHeaderItem(3);
-        ___qtablewidgetitem3->setText(QApplication::translate("frmScriptEditClass", "\345\217\230\351\207\217\347\261\273\345\236\213", nullptr));
-        tabWidget->setTabText(tabWidget->indexOf(tab), QApplication::translate("frmScriptEditClass", "\345\237\272\346\234\254\350\256\276\347\275\256", nullptr));
-        label_3->setText(QApplication::translate("frmScriptEditClass", "\345\215\225\345\205\203\346\217\217\350\277\260\357\274\232", nullptr));
-        btnCompile->setText(QApplication::translate("frmScriptEditClass", "\347\274\226\350\257\221", nullptr));
-        btnExecute->setText(QApplication::translate("frmScriptEditClass", "\346\211\247\350\241\214", nullptr));
+        ___qtablewidgetitem3->setText(QCoreApplication::translate("frmScriptEditClass", "\345\217\230\351\207\217\347\261\273\345\236\213", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab), QCoreApplication::translate("frmScriptEditClass", "\345\237\272\346\234\254\350\256\276\347\275\256", nullptr));
+        label_3->setText(QCoreApplication::translate("frmScriptEditClass", "\345\215\225\345\205\203\346\217\217\350\277\260\357\274\232", nullptr));
+        btnCompile->setText(QCoreApplication::translate("frmScriptEditClass", "\347\274\226\350\257\221", nullptr));
+        btnExecute->setText(QCoreApplication::translate("frmScriptEditClass", "\346\211\247\350\241\214", nullptr));
     } // retranslateUi
 
 };

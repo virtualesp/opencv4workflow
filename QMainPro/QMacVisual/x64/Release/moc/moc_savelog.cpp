@@ -1,18 +1,19 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'savelog.h'
 **
-** Created by: The Qt Meta Object Compiler version 67 (Qt 5.12.12)
+** Created by: The Qt Meta Object Compiler version 67 (Qt 5.14.2)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
 
+#include <memory>
 #include "../../../savelog.h"
 #include <QtCore/qbytearray.h>
 #include <QtCore/qmetatype.h>
 #if !defined(Q_MOC_OUTPUT_REVISION)
 #error "The header file 'savelog.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 67
-#error "This file was generated using the moc from 5.12.12. It"
+#error "This file was generated using the moc from 5.14.2. It"
 #error "cannot be used with the include files from this version of Qt."
 #error "(The moc has changed too much.)"
 #endif
@@ -151,7 +152,7 @@ void SaveLog::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, voi
 }
 
 QT_INIT_METAOBJECT const QMetaObject SaveLog::staticMetaObject = { {
-    &QObject::staticMetaObject,
+    QMetaObject::SuperData::link<QObject::staticMetaObject>(),
     qt_meta_stringdata_SaveLog.data,
     qt_meta_data_SaveLog,
     qt_static_metacall,
@@ -193,7 +194,7 @@ int SaveLog::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 // SIGNAL 0
 void SaveLog::send(const QString & _t1)
 {
-    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
+    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))) };
     QMetaObject::activate(this, &staticMetaObject, 0, _a);
 }
 struct qt_meta_stringdata_SendLog_t {
@@ -270,7 +271,7 @@ void SendLog::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, voi
 }
 
 QT_INIT_METAOBJECT const QMetaObject SendLog::staticMetaObject = { {
-    &QObject::staticMetaObject,
+    QMetaObject::SuperData::link<QObject::staticMetaObject>(),
     qt_meta_stringdata_SendLog.data,
     qt_meta_data_SendLog,
     qt_static_metacall,

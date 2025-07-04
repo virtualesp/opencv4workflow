@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'frmLog.ui'
 **
-** Created by: Qt User Interface Compiler version 5.12.12
+** Created by: Qt User Interface Compiler version 5.14.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -160,10 +160,10 @@ public:
 
     void retranslateUi(QWidget *frmLogClass)
     {
-        frmLogClass->setWindowTitle(QApplication::translate("frmLogClass", "Form", nullptr));
-        btnInfo->setText(QApplication::translate("frmLogClass", "\346\217\220\347\244\272(0)", nullptr));
-        btnWarn->setText(QApplication::translate("frmLogClass", "\350\255\246\345\221\212(0)", nullptr));
-        btnError->setText(QApplication::translate("frmLogClass", "\351\224\231\350\257\257(0)", nullptr));
+        frmLogClass->setWindowTitle(QCoreApplication::translate("frmLogClass", "Form", nullptr));
+        btnInfo->setText(QCoreApplication::translate("frmLogClass", "\346\217\220\347\244\272(0)", nullptr));
+        btnWarn->setText(QCoreApplication::translate("frmLogClass", "\350\255\246\345\221\212(0)", nullptr));
+        btnError->setText(QCoreApplication::translate("frmLogClass", "\351\224\231\350\257\257(0)", nullptr));
         label->setText(QString());
     } // retranslateUi
 

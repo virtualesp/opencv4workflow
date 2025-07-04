@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'frmPermis.ui'
 **
-** Created by: Qt User Interface Compiler version 5.12.12
+** Created by: Qt User Interface Compiler version 5.14.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -323,16 +323,16 @@ public:
 
     void retranslateUi(QWidget *frmPermisClass)
     {
-        frmPermisClass->setWindowTitle(QApplication::translate("frmPermisClass", "QMacVisual", nullptr));
-        groupBox_2->setTitle(QApplication::translate("frmPermisClass", "\347\276\244\347\273\204\347\256\241\347\220\206", nullptr));
-        btnDelete->setText(QApplication::translate("frmPermisClass", "\345\210\240\351\231\244", nullptr));
-        label_7->setText(QApplication::translate("frmPermisClass", "\347\224\250\346\210\267\345\257\206\347\240\201:", nullptr));
+        frmPermisClass->setWindowTitle(QCoreApplication::translate("frmPermisClass", "QMacVisual", nullptr));
+        groupBox_2->setTitle(QCoreApplication::translate("frmPermisClass", "\347\276\244\347\273\204\347\256\241\347\220\206", nullptr));
+        btnDelete->setText(QCoreApplication::translate("frmPermisClass", "\345\210\240\351\231\244", nullptr));
+        label_7->setText(QCoreApplication::translate("frmPermisClass", "\347\224\250\346\210\267\345\257\206\347\240\201:", nullptr));
         txtUserPW->setText(QString());
-        label_8->setText(QApplication::translate("frmPermisClass", "\347\224\250\346\210\267\345\220\215\347\247\260:", nullptr));
-        btnAdd->setText(QApplication::translate("frmPermisClass", "\346\267\273\345\212\240", nullptr));
+        label_8->setText(QCoreApplication::translate("frmPermisClass", "\347\224\250\346\210\267\345\220\215\347\247\260:", nullptr));
+        btnAdd->setText(QCoreApplication::translate("frmPermisClass", "\346\267\273\345\212\240", nullptr));
         label->setText(QString());
-        groupQuery->setTitle(QApplication::translate("frmPermisClass", "\347\224\250\346\210\267\346\237\245\350\257\242", nullptr));
-        btnQuery->setText(QApplication::translate("frmPermisClass", "\346\237\245\350\257\242", nullptr));
+        groupQuery->setTitle(QCoreApplication::translate("frmPermisClass", "\347\224\250\346\210\267\346\237\245\350\257\242", nullptr));
+        btnQuery->setText(QCoreApplication::translate("frmPermisClass", "\346\237\245\350\257\242", nullptr));
     } // retranslateUi
 
 };

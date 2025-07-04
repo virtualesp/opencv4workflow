@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'frmImageSplice.ui'
 **
-** Created by: Qt User Interface Compiler version 5.12.12
+** Created by: Qt User Interface Compiler version 5.14.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -371,20 +371,20 @@ public:
 
     void retranslateUi(QDialog *frmImageSpliceClass)
     {
-        frmImageSpliceClass->setWindowTitle(QApplication::translate("frmImageSpliceClass", "\345\233\276\345\203\217\346\213\274\346\216\245", nullptr));
-        groupCamera->setTitle(QApplication::translate("frmImageSpliceClass", "\345\233\276\345\203\217\345\257\271\350\261\241", nullptr));
+        frmImageSpliceClass->setWindowTitle(QCoreApplication::translate("frmImageSpliceClass", "\345\233\276\345\203\217\346\213\274\346\216\245", nullptr));
+        groupCamera->setTitle(QCoreApplication::translate("frmImageSpliceClass", "\345\233\276\345\203\217\345\257\271\350\261\241", nullptr));
         QTableWidgetItem *___qtablewidgetitem = tableWidgetImage->horizontalHeaderItem(0);
-        ___qtablewidgetitem->setText(QApplication::translate("frmImageSpliceClass", "\345\233\276\345\203\217\351\223\276\346\216\245\345\234\260\345\235\200", nullptr));
-        btnAddImage->setText(QApplication::translate("frmImageSpliceClass", "\346\267\273\345\212\240", nullptr));
-        btnDeleteImage->setText(QApplication::translate("frmImageSpliceClass", "\345\210\240\351\231\244", nullptr));
-        groupCamera_2->setTitle(QApplication::translate("frmImageSpliceClass", "\346\213\274\346\216\245\345\217\202\346\225\260", nullptr));
-#ifndef QT_NO_TOOLTIP
-        spinRegistrationResol->setToolTip(QApplication::translate("frmImageSpliceClass", "\345\200\274\350\266\212\345\260\217\346\213\274\346\216\245\351\200\237\345\272\246\350\266\212\345\277\253\357\274\214\344\275\206\345\214\271\351\205\215\347\202\271\345\217\230\345\260\221", nullptr));
-#endif // QT_NO_TOOLTIP
-        label_9->setText(QApplication::translate("frmImageSpliceClass", "\351\205\215\345\207\206\345\210\206\350\276\250\347\216\207\357\274\232", nullptr));
-        tabWidget->setTabText(tabWidget->indexOf(tab), QApplication::translate("frmImageSpliceClass", "\345\237\272\346\234\254\350\256\276\347\275\256", nullptr));
-        label_3->setText(QApplication::translate("frmImageSpliceClass", "\345\215\225\345\205\203\346\217\217\350\277\260\357\274\232", nullptr));
-        btnExecute->setText(QApplication::translate("frmImageSpliceClass", "\346\211\247\350\241\214", nullptr));
+        ___qtablewidgetitem->setText(QCoreApplication::translate("frmImageSpliceClass", "\345\233\276\345\203\217\351\223\276\346\216\245\345\234\260\345\235\200", nullptr));
+        btnAddImage->setText(QCoreApplication::translate("frmImageSpliceClass", "\346\267\273\345\212\240", nullptr));
+        btnDeleteImage->setText(QCoreApplication::translate("frmImageSpliceClass", "\345\210\240\351\231\244", nullptr));
+        groupCamera_2->setTitle(QCoreApplication::translate("frmImageSpliceClass", "\346\213\274\346\216\245\345\217\202\346\225\260", nullptr));
+#if QT_CONFIG(tooltip)
+        spinRegistrationResol->setToolTip(QCoreApplication::translate("frmImageSpliceClass", "\345\200\274\350\266\212\345\260\217\346\213\274\346\216\245\351\200\237\345\272\246\350\266\212\345\277\253\357\274\214\344\275\206\345\214\271\351\205\215\347\202\271\345\217\230\345\260\221", nullptr));
+#endif // QT_CONFIG(tooltip)
+        label_9->setText(QCoreApplication::translate("frmImageSpliceClass", "\351\205\215\345\207\206\345\210\206\350\276\250\347\216\207\357\274\232", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab), QCoreApplication::translate("frmImageSpliceClass", "\345\237\272\346\234\254\350\256\276\347\275\256", nullptr));
+        label_3->setText(QCoreApplication::translate("frmImageSpliceClass", "\345\215\225\345\205\203\346\217\217\350\277\260\357\274\232", nullptr));
+        btnExecute->setText(QCoreApplication::translate("frmImageSpliceClass", "\346\211\247\350\241\214", nullptr));
     } // retranslateUi
 
 };

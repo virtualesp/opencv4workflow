@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'frmLinearCalculation.ui'
 **
-** Created by: Qt User Interface Compiler version 5.12.12
+** Created by: Qt User Interface Compiler version 5.14.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -663,138 +663,138 @@ public:
 
     void retranslateUi(QDialog *frmLinearCalculationClass)
     {
-        frmLinearCalculationClass->setWindowTitle(QApplication::translate("frmLinearCalculationClass", "\347\272\277\346\200\247\350\256\241\347\256\227", nullptr));
-        label_3->setText(QApplication::translate("frmLinearCalculationClass", "\345\215\225\345\205\203\346\217\217\350\277\260\357\274\232", nullptr));
-        btnExecute->setText(QApplication::translate("frmLinearCalculationClass", "\346\211\247\350\241\214", nullptr));
-        groupC1->setTitle(QApplication::translate("frmLinearCalculationClass", "\350\276\223\345\205\245\345\257\271\350\261\241", nullptr));
-#ifndef QT_NO_TOOLTIP
-        txtLinkERTCalib->setToolTip(QApplication::translate("frmLinearCalculationClass", "N\347\202\271\346\240\207\345\256\232\345\217\202\346\225\260", nullptr));
-#endif // QT_NO_TOOLTIP
-#ifndef QT_NO_TOOLTIP
-        btnLinkERTCalib->setToolTip(QApplication::translate("frmLinearCalculationClass", "\351\223\276\346\216\245N\347\202\271\346\240\207\345\256\232", nullptr));
-#endif // QT_NO_TOOLTIP
+        frmLinearCalculationClass->setWindowTitle(QCoreApplication::translate("frmLinearCalculationClass", "\347\272\277\346\200\247\350\256\241\347\256\227", nullptr));
+        label_3->setText(QCoreApplication::translate("frmLinearCalculationClass", "\345\215\225\345\205\203\346\217\217\350\277\260\357\274\232", nullptr));
+        btnExecute->setText(QCoreApplication::translate("frmLinearCalculationClass", "\346\211\247\350\241\214", nullptr));
+        groupC1->setTitle(QCoreApplication::translate("frmLinearCalculationClass", "\350\276\223\345\205\245\345\257\271\350\261\241", nullptr));
+#if QT_CONFIG(tooltip)
+        txtLinkERTCalib->setToolTip(QCoreApplication::translate("frmLinearCalculationClass", "N\347\202\271\346\240\207\345\256\232\345\217\202\346\225\260", nullptr));
+#endif // QT_CONFIG(tooltip)
+#if QT_CONFIG(tooltip)
+        btnLinkERTCalib->setToolTip(QCoreApplication::translate("frmLinearCalculationClass", "\351\223\276\346\216\245N\347\202\271\346\240\207\345\256\232", nullptr));
+#endif // QT_CONFIG(tooltip)
         btnLinkERTCalib->setText(QString());
-#ifndef QT_NO_TOOLTIP
-        btnDelLinkERTCalib->setToolTip(QApplication::translate("frmLinearCalculationClass", "\345\210\240\351\231\244N\347\202\271\346\240\207\345\256\232\351\223\276\346\216\245", nullptr));
-#endif // QT_NO_TOOLTIP
+#if QT_CONFIG(tooltip)
+        btnDelLinkERTCalib->setToolTip(QCoreApplication::translate("frmLinearCalculationClass", "\345\210\240\351\231\244N\347\202\271\346\240\207\345\256\232\351\223\276\346\216\245", nullptr));
+#endif // QT_CONFIG(tooltip)
         btnDelLinkERTCalib->setText(QString());
-        checkUseERTCalib->setText(QApplication::translate("frmLinearCalculationClass", "\344\275\277\347\224\250N\347\202\271\346\240\207\345\256\232", nullptr));
-        label_5->setText(QApplication::translate("frmLinearCalculationClass", "\347\272\277\346\200\247\350\256\241\347\256\227\346\226\271\346\263\225\357\274\232", nullptr));
-        comboMethod->setItemText(0, QApplication::translate("frmLinearCalculationClass", "\350\256\241\347\256\227Robot\347\247\273\345\212\250\351\207\217(\344\275\277\347\224\250\346\227\213\350\275\254\344\270\255\345\277\203)", nullptr));
-        comboMethod->setItemText(1, QApplication::translate("frmLinearCalculationClass", "\350\256\241\347\256\227Robot\347\247\273\345\212\250\351\207\217(\344\270\215\344\275\277\347\224\250\346\227\213\350\275\254\344\270\255\345\277\203)", nullptr));
-        comboMethod->setItemText(2, QApplication::translate("frmLinearCalculationClass", "\345\233\276\345\203\217\345\235\220\346\240\207\347\263\273\347\273\237 --> \344\270\226\347\225\214\345\235\220\346\240\207\347\263\273\347\273\237", nullptr));
+        checkUseERTCalib->setText(QCoreApplication::translate("frmLinearCalculationClass", "\344\275\277\347\224\250N\347\202\271\346\240\207\345\256\232", nullptr));
+        label_5->setText(QCoreApplication::translate("frmLinearCalculationClass", "\347\272\277\346\200\247\350\256\241\347\256\227\346\226\271\346\263\225\357\274\232", nullptr));
+        comboMethod->setItemText(0, QCoreApplication::translate("frmLinearCalculationClass", "\350\256\241\347\256\227Robot\347\247\273\345\212\250\351\207\217(\344\275\277\347\224\250\346\227\213\350\275\254\344\270\255\345\277\203)", nullptr));
+        comboMethod->setItemText(1, QCoreApplication::translate("frmLinearCalculationClass", "\350\256\241\347\256\227Robot\347\247\273\345\212\250\351\207\217(\344\270\215\344\275\277\347\224\250\346\227\213\350\275\254\344\270\255\345\277\203)", nullptr));
+        comboMethod->setItemText(2, QCoreApplication::translate("frmLinearCalculationClass", "\345\233\276\345\203\217\345\235\220\346\240\207\347\263\273\347\273\237 --> \344\270\226\347\225\214\345\235\220\346\240\207\347\263\273\347\273\237", nullptr));
 
-#ifndef QT_NO_TOOLTIP
-        btnDelLinkDatumPoint->setToolTip(QApplication::translate("frmLinearCalculationClass", "\345\210\240\351\231\244\345\237\272\345\207\206\347\202\271\351\223\276\346\216\245", nullptr));
-#endif // QT_NO_TOOLTIP
+#if QT_CONFIG(tooltip)
+        btnDelLinkDatumPoint->setToolTip(QCoreApplication::translate("frmLinearCalculationClass", "\345\210\240\351\231\244\345\237\272\345\207\206\347\202\271\351\223\276\346\216\245", nullptr));
+#endif // QT_CONFIG(tooltip)
         btnDelLinkDatumPoint->setText(QString());
-        label_8->setText(QApplication::translate("frmLinearCalculationClass", "\346\227\213\350\275\254\344\270\255\345\277\203\357\274\232", nullptr));
-        label_9->setText(QApplication::translate("frmLinearCalculationClass", "\345\237\272\345\207\206\347\202\271\357\274\232", nullptr));
-#ifndef QT_NO_TOOLTIP
-        txtLinkRotateCenter->setToolTip(QApplication::translate("frmLinearCalculationClass", "cv::Point2f\347\261\273\345\236\213", nullptr));
-#endif // QT_NO_TOOLTIP
-#ifndef QT_NO_TOOLTIP
-        txtLinkDatumPoint->setToolTip(QApplication::translate("frmLinearCalculationClass", "cv::Point2f\347\261\273\345\236\213--\346\240\207\345\207\206\345\267\245\344\273\266(Mark)\345\235\220\346\240\207\347\202\271", nullptr));
-#endif // QT_NO_TOOLTIP
-#ifndef QT_NO_TOOLTIP
-        btnLinkDatumPoint->setToolTip(QApplication::translate("frmLinearCalculationClass", "\351\223\276\346\216\245\345\237\272\345\207\206\347\202\271", nullptr));
-#endif // QT_NO_TOOLTIP
+        label_8->setText(QCoreApplication::translate("frmLinearCalculationClass", "\346\227\213\350\275\254\344\270\255\345\277\203\357\274\232", nullptr));
+        label_9->setText(QCoreApplication::translate("frmLinearCalculationClass", "\345\237\272\345\207\206\347\202\271\357\274\232", nullptr));
+#if QT_CONFIG(tooltip)
+        txtLinkRotateCenter->setToolTip(QCoreApplication::translate("frmLinearCalculationClass", "cv::Point2f\347\261\273\345\236\213", nullptr));
+#endif // QT_CONFIG(tooltip)
+#if QT_CONFIG(tooltip)
+        txtLinkDatumPoint->setToolTip(QCoreApplication::translate("frmLinearCalculationClass", "cv::Point2f\347\261\273\345\236\213--\346\240\207\345\207\206\345\267\245\344\273\266(Mark)\345\235\220\346\240\207\347\202\271", nullptr));
+#endif // QT_CONFIG(tooltip)
+#if QT_CONFIG(tooltip)
+        btnLinkDatumPoint->setToolTip(QCoreApplication::translate("frmLinearCalculationClass", "\351\223\276\346\216\245\345\237\272\345\207\206\347\202\271", nullptr));
+#endif // QT_CONFIG(tooltip)
         btnLinkDatumPoint->setText(QString());
-#ifndef QT_NO_TOOLTIP
-        btnLinkRotateCenter->setToolTip(QApplication::translate("frmLinearCalculationClass", "\351\223\276\346\216\245\346\227\213\350\275\254\344\270\255\345\277\203", nullptr));
-#endif // QT_NO_TOOLTIP
+#if QT_CONFIG(tooltip)
+        btnLinkRotateCenter->setToolTip(QCoreApplication::translate("frmLinearCalculationClass", "\351\223\276\346\216\245\346\227\213\350\275\254\344\270\255\345\277\203", nullptr));
+#endif // QT_CONFIG(tooltip)
         btnLinkRotateCenter->setText(QString());
-#ifndef QT_NO_TOOLTIP
-        btnDelLinkRotateCenter->setToolTip(QApplication::translate("frmLinearCalculationClass", "\345\210\240\351\231\244\346\227\213\350\275\254\344\270\255\345\277\203\351\223\276\346\216\245", nullptr));
-#endif // QT_NO_TOOLTIP
+#if QT_CONFIG(tooltip)
+        btnDelLinkRotateCenter->setToolTip(QCoreApplication::translate("frmLinearCalculationClass", "\345\210\240\351\231\244\346\227\213\350\275\254\344\270\255\345\277\203\351\223\276\346\216\245", nullptr));
+#endif // QT_CONFIG(tooltip)
         btnDelLinkRotateCenter->setText(QString());
-#ifndef QT_NO_TOOLTIP
-        btnLinkCurrentPoint->setToolTip(QApplication::translate("frmLinearCalculationClass", "\351\223\276\346\216\245\345\275\223\345\211\215\347\202\271", nullptr));
-#endif // QT_NO_TOOLTIP
+#if QT_CONFIG(tooltip)
+        btnLinkCurrentPoint->setToolTip(QCoreApplication::translate("frmLinearCalculationClass", "\351\223\276\346\216\245\345\275\223\345\211\215\347\202\271", nullptr));
+#endif // QT_CONFIG(tooltip)
         btnLinkCurrentPoint->setText(QString());
-#ifndef QT_NO_TOOLTIP
-        btnLinkRotateAngle->setToolTip(QApplication::translate("frmLinearCalculationClass", "\351\223\276\346\216\245\346\227\213\350\275\254\350\247\222\345\272\246", nullptr));
-#endif // QT_NO_TOOLTIP
+#if QT_CONFIG(tooltip)
+        btnLinkRotateAngle->setToolTip(QCoreApplication::translate("frmLinearCalculationClass", "\351\223\276\346\216\245\346\227\213\350\275\254\350\247\222\345\272\246", nullptr));
+#endif // QT_CONFIG(tooltip)
         btnLinkRotateAngle->setText(QString());
-        label_10->setText(QApplication::translate("frmLinearCalculationClass", "\346\227\213\350\275\254\350\247\222\345\272\246\357\274\232", nullptr));
-#ifndef QT_NO_TOOLTIP
-        btnDelLinkRotateAngle->setToolTip(QApplication::translate("frmLinearCalculationClass", "\345\210\240\351\231\244\346\227\213\350\275\254\350\247\222\345\272\246\351\223\276\346\216\245", nullptr));
-#endif // QT_NO_TOOLTIP
+        label_10->setText(QCoreApplication::translate("frmLinearCalculationClass", "\346\227\213\350\275\254\350\247\222\345\272\246\357\274\232", nullptr));
+#if QT_CONFIG(tooltip)
+        btnDelLinkRotateAngle->setToolTip(QCoreApplication::translate("frmLinearCalculationClass", "\345\210\240\351\231\244\346\227\213\350\275\254\350\247\222\345\272\246\351\223\276\346\216\245", nullptr));
+#endif // QT_CONFIG(tooltip)
         btnDelLinkRotateAngle->setText(QString());
-#ifndef QT_NO_TOOLTIP
-        txtLinkCurrentPoint->setToolTip(QApplication::translate("frmLinearCalculationClass", "cv::Point2f\347\261\273\345\236\213--\345\267\245\344\273\266\347\247\273\345\212\250\345\220\216\346\226\260\347\232\204(Mark)\345\235\220\346\240\207\347\202\271", nullptr));
-#endif // QT_NO_TOOLTIP
-        label_11->setText(QApplication::translate("frmLinearCalculationClass", "\345\275\223\345\211\215\347\202\271\357\274\232", nullptr));
-#ifndef QT_NO_TOOLTIP
-        btnDelLinkCurrentPoint->setToolTip(QApplication::translate("frmLinearCalculationClass", "\345\210\240\351\231\244\345\275\223\345\211\215\347\202\271\351\223\276\346\216\245", nullptr));
-#endif // QT_NO_TOOLTIP
+#if QT_CONFIG(tooltip)
+        txtLinkCurrentPoint->setToolTip(QCoreApplication::translate("frmLinearCalculationClass", "cv::Point2f\347\261\273\345\236\213--\345\267\245\344\273\266\347\247\273\345\212\250\345\220\216\346\226\260\347\232\204(Mark)\345\235\220\346\240\207\347\202\271", nullptr));
+#endif // QT_CONFIG(tooltip)
+        label_11->setText(QCoreApplication::translate("frmLinearCalculationClass", "\345\275\223\345\211\215\347\202\271\357\274\232", nullptr));
+#if QT_CONFIG(tooltip)
+        btnDelLinkCurrentPoint->setToolTip(QCoreApplication::translate("frmLinearCalculationClass", "\345\210\240\351\231\244\345\275\223\345\211\215\347\202\271\351\223\276\346\216\245", nullptr));
+#endif // QT_CONFIG(tooltip)
         btnDelLinkCurrentPoint->setText(QString());
-#ifndef QT_NO_TOOLTIP
-        txtLinkRotateAngle->setToolTip(QApplication::translate("frmLinearCalculationClass", "Double\347\261\273\345\236\213", nullptr));
-#endif // QT_NO_TOOLTIP
-#ifndef QT_NO_TOOLTIP
-        btnDelLinkDatumPoint2->setToolTip(QApplication::translate("frmLinearCalculationClass", "\345\210\240\351\231\244\345\237\272\345\207\206\347\202\2712\351\223\276\346\216\245", nullptr));
-#endif // QT_NO_TOOLTIP
+#if QT_CONFIG(tooltip)
+        txtLinkRotateAngle->setToolTip(QCoreApplication::translate("frmLinearCalculationClass", "Double\347\261\273\345\236\213", nullptr));
+#endif // QT_CONFIG(tooltip)
+#if QT_CONFIG(tooltip)
+        btnDelLinkDatumPoint2->setToolTip(QCoreApplication::translate("frmLinearCalculationClass", "\345\210\240\351\231\244\345\237\272\345\207\206\347\202\2712\351\223\276\346\216\245", nullptr));
+#endif // QT_CONFIG(tooltip)
         btnDelLinkDatumPoint2->setText(QString());
-        label_12->setText(QApplication::translate("frmLinearCalculationClass", "\345\237\272\345\207\206\347\202\2711\357\274\232", nullptr));
-        label_13->setText(QApplication::translate("frmLinearCalculationClass", "\345\237\272\345\207\206\347\202\2712\357\274\232", nullptr));
-#ifndef QT_NO_TOOLTIP
-        txtLinkDatumPoint1->setToolTip(QApplication::translate("frmLinearCalculationClass", "cv::Point2f\347\261\273\345\236\213--\346\240\207\345\207\206\345\267\245\344\273\266(Mark)\345\235\220\346\240\207\347\202\271", nullptr));
-#endif // QT_NO_TOOLTIP
-#ifndef QT_NO_TOOLTIP
-        txtLinkDatumPoint2->setToolTip(QApplication::translate("frmLinearCalculationClass", "cv::Point2f\347\261\273\345\236\213--\346\240\207\345\207\206\345\267\245\344\273\266(Mark)\347\273\225\346\227\213\350\275\254\344\270\255\345\277\203\346\227\213\350\275\254\345\220\216\347\232\204\345\235\220\346\240\207\347\202\271", nullptr));
-#endif // QT_NO_TOOLTIP
-#ifndef QT_NO_TOOLTIP
-        btnLinkDatumPoint2->setToolTip(QApplication::translate("frmLinearCalculationClass", "\351\223\276\346\216\245\345\237\272\345\207\206\347\202\2712", nullptr));
-#endif // QT_NO_TOOLTIP
+        label_12->setText(QCoreApplication::translate("frmLinearCalculationClass", "\345\237\272\345\207\206\347\202\2711\357\274\232", nullptr));
+        label_13->setText(QCoreApplication::translate("frmLinearCalculationClass", "\345\237\272\345\207\206\347\202\2712\357\274\232", nullptr));
+#if QT_CONFIG(tooltip)
+        txtLinkDatumPoint1->setToolTip(QCoreApplication::translate("frmLinearCalculationClass", "cv::Point2f\347\261\273\345\236\213--\346\240\207\345\207\206\345\267\245\344\273\266(Mark)\345\235\220\346\240\207\347\202\271", nullptr));
+#endif // QT_CONFIG(tooltip)
+#if QT_CONFIG(tooltip)
+        txtLinkDatumPoint2->setToolTip(QCoreApplication::translate("frmLinearCalculationClass", "cv::Point2f\347\261\273\345\236\213--\346\240\207\345\207\206\345\267\245\344\273\266(Mark)\347\273\225\346\227\213\350\275\254\344\270\255\345\277\203\346\227\213\350\275\254\345\220\216\347\232\204\345\235\220\346\240\207\347\202\271", nullptr));
+#endif // QT_CONFIG(tooltip)
+#if QT_CONFIG(tooltip)
+        btnLinkDatumPoint2->setToolTip(QCoreApplication::translate("frmLinearCalculationClass", "\351\223\276\346\216\245\345\237\272\345\207\206\347\202\2712", nullptr));
+#endif // QT_CONFIG(tooltip)
         btnLinkDatumPoint2->setText(QString());
-#ifndef QT_NO_TOOLTIP
-        btnLinkDatumPoint1->setToolTip(QApplication::translate("frmLinearCalculationClass", "\351\223\276\346\216\245\345\237\272\345\207\206\347\202\2711", nullptr));
-#endif // QT_NO_TOOLTIP
+#if QT_CONFIG(tooltip)
+        btnLinkDatumPoint1->setToolTip(QCoreApplication::translate("frmLinearCalculationClass", "\351\223\276\346\216\245\345\237\272\345\207\206\347\202\2711", nullptr));
+#endif // QT_CONFIG(tooltip)
         btnLinkDatumPoint1->setText(QString());
-#ifndef QT_NO_TOOLTIP
-        btnDelLinkDatumPoint1->setToolTip(QApplication::translate("frmLinearCalculationClass", "\345\210\240\351\231\244\345\237\272\345\207\206\347\202\2711\351\223\276\346\216\245", nullptr));
-#endif // QT_NO_TOOLTIP
+#if QT_CONFIG(tooltip)
+        btnDelLinkDatumPoint1->setToolTip(QCoreApplication::translate("frmLinearCalculationClass", "\345\210\240\351\231\244\345\237\272\345\207\206\347\202\2711\351\223\276\346\216\245", nullptr));
+#endif // QT_CONFIG(tooltip)
         btnDelLinkDatumPoint1->setText(QString());
-#ifndef QT_NO_TOOLTIP
-        btnLinkCurrentPoint1->setToolTip(QApplication::translate("frmLinearCalculationClass", "\351\223\276\346\216\245\345\275\223\345\211\215\347\202\271", nullptr));
-#endif // QT_NO_TOOLTIP
+#if QT_CONFIG(tooltip)
+        btnLinkCurrentPoint1->setToolTip(QCoreApplication::translate("frmLinearCalculationClass", "\351\223\276\346\216\245\345\275\223\345\211\215\347\202\271", nullptr));
+#endif // QT_CONFIG(tooltip)
         btnLinkCurrentPoint1->setText(QString());
-#ifndef QT_NO_TOOLTIP
-        btnLinkRotateAngle1->setToolTip(QApplication::translate("frmLinearCalculationClass", "\351\223\276\346\216\245\346\227\213\350\275\254\350\247\222\345\272\246", nullptr));
-#endif // QT_NO_TOOLTIP
+#if QT_CONFIG(tooltip)
+        btnLinkRotateAngle1->setToolTip(QCoreApplication::translate("frmLinearCalculationClass", "\351\223\276\346\216\245\346\227\213\350\275\254\350\247\222\345\272\246", nullptr));
+#endif // QT_CONFIG(tooltip)
         btnLinkRotateAngle1->setText(QString());
-        label_14->setText(QApplication::translate("frmLinearCalculationClass", "\346\227\213\350\275\254\350\247\222\345\272\246\357\274\232", nullptr));
-#ifndef QT_NO_TOOLTIP
-        btnDelLinkRotateAngle1->setToolTip(QApplication::translate("frmLinearCalculationClass", "\345\210\240\351\231\244\346\227\213\350\275\254\350\247\222\345\272\246\351\223\276\346\216\245", nullptr));
-#endif // QT_NO_TOOLTIP
+        label_14->setText(QCoreApplication::translate("frmLinearCalculationClass", "\346\227\213\350\275\254\350\247\222\345\272\246\357\274\232", nullptr));
+#if QT_CONFIG(tooltip)
+        btnDelLinkRotateAngle1->setToolTip(QCoreApplication::translate("frmLinearCalculationClass", "\345\210\240\351\231\244\346\227\213\350\275\254\350\247\222\345\272\246\351\223\276\346\216\245", nullptr));
+#endif // QT_CONFIG(tooltip)
         btnDelLinkRotateAngle1->setText(QString());
-#ifndef QT_NO_TOOLTIP
-        txtLinkCurrentPoint1->setToolTip(QApplication::translate("frmLinearCalculationClass", "cv::Point2f\347\261\273\345\236\213--\345\267\245\344\273\266\347\247\273\345\212\250\345\220\216\346\226\260\347\232\204(Mark)\345\235\220\346\240\207\347\202\271", nullptr));
-#endif // QT_NO_TOOLTIP
-        label_15->setText(QApplication::translate("frmLinearCalculationClass", "\345\275\223\345\211\215\347\202\271\357\274\232", nullptr));
-#ifndef QT_NO_TOOLTIP
-        btnDelLinkCurrentPoint1->setToolTip(QApplication::translate("frmLinearCalculationClass", "\345\210\240\351\231\244\345\275\223\345\211\215\347\202\271\351\223\276\346\216\245", nullptr));
-#endif // QT_NO_TOOLTIP
+#if QT_CONFIG(tooltip)
+        txtLinkCurrentPoint1->setToolTip(QCoreApplication::translate("frmLinearCalculationClass", "cv::Point2f\347\261\273\345\236\213--\345\267\245\344\273\266\347\247\273\345\212\250\345\220\216\346\226\260\347\232\204(Mark)\345\235\220\346\240\207\347\202\271", nullptr));
+#endif // QT_CONFIG(tooltip)
+        label_15->setText(QCoreApplication::translate("frmLinearCalculationClass", "\345\275\223\345\211\215\347\202\271\357\274\232", nullptr));
+#if QT_CONFIG(tooltip)
+        btnDelLinkCurrentPoint1->setToolTip(QCoreApplication::translate("frmLinearCalculationClass", "\345\210\240\351\231\244\345\275\223\345\211\215\347\202\271\351\223\276\346\216\245", nullptr));
+#endif // QT_CONFIG(tooltip)
         btnDelLinkCurrentPoint1->setText(QString());
-#ifndef QT_NO_TOOLTIP
-        txtLinkRotateAngle1->setToolTip(QApplication::translate("frmLinearCalculationClass", "Double\347\261\273\345\236\213", nullptr));
-#endif // QT_NO_TOOLTIP
-#ifndef QT_NO_TOOLTIP
-        btnDelLinkImagePoint->setToolTip(QApplication::translate("frmLinearCalculationClass", "\345\210\240\351\231\244\345\233\276\345\203\217\345\235\220\346\240\207\347\202\271\351\223\276\346\216\245", nullptr));
-#endif // QT_NO_TOOLTIP
+#if QT_CONFIG(tooltip)
+        txtLinkRotateAngle1->setToolTip(QCoreApplication::translate("frmLinearCalculationClass", "Double\347\261\273\345\236\213", nullptr));
+#endif // QT_CONFIG(tooltip)
+#if QT_CONFIG(tooltip)
+        btnDelLinkImagePoint->setToolTip(QCoreApplication::translate("frmLinearCalculationClass", "\345\210\240\351\231\244\345\233\276\345\203\217\345\235\220\346\240\207\347\202\271\351\223\276\346\216\245", nullptr));
+#endif // QT_CONFIG(tooltip)
         btnDelLinkImagePoint->setText(QString());
-        label_17->setText(QApplication::translate("frmLinearCalculationClass", "\345\233\276\345\203\217\345\235\220\346\240\207\347\202\271\357\274\232", nullptr));
-#ifndef QT_NO_TOOLTIP
-        txtLinkImagePoint->setToolTip(QApplication::translate("frmLinearCalculationClass", "cv::Point2f\347\261\273\345\236\213", nullptr));
-#endif // QT_NO_TOOLTIP
-#ifndef QT_NO_TOOLTIP
-        btnLinkImagePoint->setToolTip(QApplication::translate("frmLinearCalculationClass", "\351\223\276\346\216\245\345\233\276\345\203\217\345\235\220\346\240\207\347\202\271", nullptr));
-#endif // QT_NO_TOOLTIP
+        label_17->setText(QCoreApplication::translate("frmLinearCalculationClass", "\345\233\276\345\203\217\345\235\220\346\240\207\347\202\271\357\274\232", nullptr));
+#if QT_CONFIG(tooltip)
+        txtLinkImagePoint->setToolTip(QCoreApplication::translate("frmLinearCalculationClass", "cv::Point2f\347\261\273\345\236\213", nullptr));
+#endif // QT_CONFIG(tooltip)
+#if QT_CONFIG(tooltip)
+        btnLinkImagePoint->setToolTip(QCoreApplication::translate("frmLinearCalculationClass", "\351\223\276\346\216\245\345\233\276\345\203\217\345\235\220\346\240\207\347\202\271", nullptr));
+#endif // QT_CONFIG(tooltip)
         btnLinkImagePoint->setText(QString());
-        tabWidget->setTabText(tabWidget->indexOf(tab), QApplication::translate("frmLinearCalculationClass", "\345\237\272\346\234\254\350\256\276\347\275\256", nullptr));
-        groupC2->setTitle(QApplication::translate("frmLinearCalculationClass", "\350\276\223\345\207\272\346\225\260\346\215\256", nullptr));
-        tabWidget->setTabText(tabWidget->indexOf(tab_2), QApplication::translate("frmLinearCalculationClass", "\350\276\223\345\207\272\346\230\276\347\244\272", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab), QCoreApplication::translate("frmLinearCalculationClass", "\345\237\272\346\234\254\350\256\276\347\275\256", nullptr));
+        groupC2->setTitle(QCoreApplication::translate("frmLinearCalculationClass", "\350\276\223\345\207\272\346\225\260\346\215\256", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab_2), QCoreApplication::translate("frmLinearCalculationClass", "\350\276\223\345\207\272\346\230\276\347\244\272", nullptr));
     } // retranslateUi
 
 };

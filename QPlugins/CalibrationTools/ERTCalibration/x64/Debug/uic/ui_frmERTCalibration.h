@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'frmERTCalibration.ui'
 **
-** Created by: Qt User Interface Compiler version 5.12.12
+** Created by: Qt User Interface Compiler version 5.14.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -2509,80 +2509,80 @@ public:
 
     void retranslateUi(QDialog *frmERTCalibrationClass)
     {
-        frmERTCalibrationClass->setWindowTitle(QApplication::translate("frmERTCalibrationClass", "N\347\202\271\346\240\207\345\256\232", nullptr));
-        label_3->setText(QApplication::translate("frmERTCalibrationClass", "\345\215\225\345\205\203\346\217\217\350\277\260\357\274\232", nullptr));
-        btnExecute->setText(QApplication::translate("frmERTCalibrationClass", "\346\211\247\350\241\214", nullptr));
-        groupCamera->setTitle(QApplication::translate("frmERTCalibrationClass", "\345\233\276\345\203\217\345\257\271\350\261\241", nullptr));
-        label_4->setText(QApplication::translate("frmERTCalibrationClass", "\350\276\223\345\205\245\345\233\276\345\203\217\357\274\232", nullptr));
-#ifndef QT_NO_TOOLTIP
-        btnLinkImage->setToolTip(QApplication::translate("frmERTCalibrationClass", "\351\223\276\346\216\245\345\233\276\345\203\217", nullptr));
-#endif // QT_NO_TOOLTIP
+        frmERTCalibrationClass->setWindowTitle(QCoreApplication::translate("frmERTCalibrationClass", "N\347\202\271\346\240\207\345\256\232", nullptr));
+        label_3->setText(QCoreApplication::translate("frmERTCalibrationClass", "\345\215\225\345\205\203\346\217\217\350\277\260\357\274\232", nullptr));
+        btnExecute->setText(QCoreApplication::translate("frmERTCalibrationClass", "\346\211\247\350\241\214", nullptr));
+        groupCamera->setTitle(QCoreApplication::translate("frmERTCalibrationClass", "\345\233\276\345\203\217\345\257\271\350\261\241", nullptr));
+        label_4->setText(QCoreApplication::translate("frmERTCalibrationClass", "\350\276\223\345\205\245\345\233\276\345\203\217\357\274\232", nullptr));
+#if QT_CONFIG(tooltip)
+        btnLinkImage->setToolTip(QCoreApplication::translate("frmERTCalibrationClass", "\351\223\276\346\216\245\345\233\276\345\203\217", nullptr));
+#endif // QT_CONFIG(tooltip)
         btnLinkImage->setText(QString());
-#ifndef QT_NO_TOOLTIP
-        btnDelLinkImage->setToolTip(QApplication::translate("frmERTCalibrationClass", "\345\210\240\351\231\244\345\233\276\345\203\217\351\223\276\346\216\245", nullptr));
-#endif // QT_NO_TOOLTIP
+#if QT_CONFIG(tooltip)
+        btnDelLinkImage->setToolTip(QCoreApplication::translate("frmERTCalibrationClass", "\345\210\240\351\231\244\345\233\276\345\203\217\351\223\276\346\216\245", nullptr));
+#endif // QT_CONFIG(tooltip)
         btnDelLinkImage->setText(QString());
-        groupC2->setTitle(QApplication::translate("frmERTCalibrationClass", "\344\271\235\347\202\271\346\240\207\345\256\232\347\244\272\346\204\217\345\233\276", nullptr));
+        groupC2->setTitle(QCoreApplication::translate("frmERTCalibrationClass", "\344\271\235\347\202\271\346\240\207\345\256\232\347\244\272\346\204\217\345\233\276", nullptr));
         lblImg1->setText(QString());
-        groupC3->setTitle(QApplication::translate("frmERTCalibrationClass", "\346\227\213\350\275\254\344\270\255\345\277\203\346\240\207\345\256\232\347\244\272\346\204\217\345\233\276", nullptr));
+        groupC3->setTitle(QCoreApplication::translate("frmERTCalibrationClass", "\346\227\213\350\275\254\344\270\255\345\277\203\346\240\207\345\256\232\347\244\272\346\204\217\345\233\276", nullptr));
         lblImg2->setText(QString());
-        tabWidget->setTabText(tabWidget->indexOf(tab), QApplication::translate("frmERTCalibrationClass", "\345\237\272\346\234\254\350\256\276\347\275\256", nullptr));
-        groupC5->setTitle(QApplication::translate("frmERTCalibrationClass", "ROI\345\257\271\350\261\241", nullptr));
-        checkUseROI->setText(QApplication::translate("frmERTCalibrationClass", "\344\275\277\347\224\250ROI", nullptr));
-        comboROIShape->setItemText(0, QApplication::translate("frmERTCalibrationClass", "\345\234\206\347\216\257", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab), QCoreApplication::translate("frmERTCalibrationClass", "\345\237\272\346\234\254\350\256\276\347\275\256", nullptr));
+        groupC5->setTitle(QCoreApplication::translate("frmERTCalibrationClass", "ROI\345\257\271\350\261\241", nullptr));
+        checkUseROI->setText(QCoreApplication::translate("frmERTCalibrationClass", "\344\275\277\347\224\250ROI", nullptr));
+        comboROIShape->setItemText(0, QCoreApplication::translate("frmERTCalibrationClass", "\345\234\206\347\216\257", nullptr));
 
-        btnAddROI->setText(QApplication::translate("frmERTCalibrationClass", "\346\267\273\345\212\240", nullptr));
-        btnDeleteROI->setText(QApplication::translate("frmERTCalibrationClass", "\345\210\240\351\231\244", nullptr));
-        label_20->setText(QApplication::translate("frmERTCalibrationClass", "ROI\345\256\275\345\272\246\357\274\232", nullptr));
-        label_18->setText(QApplication::translate("frmERTCalibrationClass", "\344\272\244\345\217\211\347\272\277\351\225\277\345\272\246\357\274\232", nullptr));
-        btnGetCenter->setText(QApplication::translate("frmERTCalibrationClass", "\350\216\267\345\217\226\345\234\206\345\277\203", nullptr));
+        btnAddROI->setText(QCoreApplication::translate("frmERTCalibrationClass", "\346\267\273\345\212\240", nullptr));
+        btnDeleteROI->setText(QCoreApplication::translate("frmERTCalibrationClass", "\345\210\240\351\231\244", nullptr));
+        label_20->setText(QCoreApplication::translate("frmERTCalibrationClass", "ROI\345\256\275\345\272\246\357\274\232", nullptr));
+        label_18->setText(QCoreApplication::translate("frmERTCalibrationClass", "\344\272\244\345\217\211\347\272\277\351\225\277\345\272\246\357\274\232", nullptr));
+        btnGetCenter->setText(QCoreApplication::translate("frmERTCalibrationClass", "\350\216\267\345\217\226\345\234\206\345\277\203", nullptr));
         label_8->setText(QString());
-        groupC4->setTitle(QApplication::translate("frmERTCalibrationClass", "\345\217\202\346\225\260\350\256\276\347\275\256", nullptr));
-        comboGrayDirection->setItemText(0, QApplication::translate("frmERTCalibrationClass", "\347\231\275\345\210\260\351\273\221", nullptr));
-        comboGrayDirection->setItemText(1, QApplication::translate("frmERTCalibrationClass", "\351\273\221\345\210\260\347\231\275", nullptr));
+        groupC4->setTitle(QCoreApplication::translate("frmERTCalibrationClass", "\345\217\202\346\225\260\350\256\276\347\275\256", nullptr));
+        comboGrayDirection->setItemText(0, QCoreApplication::translate("frmERTCalibrationClass", "\347\231\275\345\210\260\351\273\221", nullptr));
+        comboGrayDirection->setItemText(1, QCoreApplication::translate("frmERTCalibrationClass", "\351\273\221\345\210\260\347\231\275", nullptr));
 
-        label_10->setText(QApplication::translate("frmERTCalibrationClass", "\347\201\260\345\272\246\346\226\271\345\220\221\357\274\232", nullptr));
-        label_14->setText(QApplication::translate("frmERTCalibrationClass", "\350\276\271\347\274\230\345\274\272\345\272\246\357\274\232", nullptr));
-        label_15->setText(QApplication::translate("frmERTCalibrationClass", "\346\211\253\346\217\217\346\226\271\345\220\221\357\274\232", nullptr));
-        comboScanDirection->setItemText(0, QApplication::translate("frmERTCalibrationClass", "\345\206\205\345\210\260\345\244\226", nullptr));
-        comboScanDirection->setItemText(1, QApplication::translate("frmERTCalibrationClass", "\345\244\226\345\210\260\345\206\205", nullptr));
+        label_10->setText(QCoreApplication::translate("frmERTCalibrationClass", "\347\201\260\345\272\246\346\226\271\345\220\221\357\274\232", nullptr));
+        label_14->setText(QCoreApplication::translate("frmERTCalibrationClass", "\350\276\271\347\274\230\345\274\272\345\272\246\357\274\232", nullptr));
+        label_15->setText(QCoreApplication::translate("frmERTCalibrationClass", "\346\211\253\346\217\217\346\226\271\345\220\221\357\274\232", nullptr));
+        comboScanDirection->setItemText(0, QCoreApplication::translate("frmERTCalibrationClass", "\345\206\205\345\210\260\345\244\226", nullptr));
+        comboScanDirection->setItemText(1, QCoreApplication::translate("frmERTCalibrationClass", "\345\244\226\345\210\260\345\206\205", nullptr));
 
-        label_16->setText(QApplication::translate("frmERTCalibrationClass", "\345\210\206\345\211\262\346\225\260\351\207\217\357\274\232", nullptr));
-        label_19->setText(QApplication::translate("frmERTCalibrationClass", "\345\211\224\351\231\244\350\267\235\347\246\273\357\274\232", nullptr));
-        groupC6->setTitle(QApplication::translate("frmERTCalibrationClass", "\350\276\223\345\207\272\346\225\260\346\215\256(\345\234\206\347\232\204\344\270\255\345\277\203\345\235\220\346\240\207)", nullptr));
-        tabWidget->setTabText(tabWidget->indexOf(tab_2), QApplication::translate("frmERTCalibrationClass", "\346\211\276\345\234\206\345\267\245\345\205\267", nullptr));
-        groupC7->setTitle(QApplication::translate("frmERTCalibrationClass", "\346\240\207\345\256\232\345\217\202\346\225\260", nullptr));
-        radioNinePoints->setText(QApplication::translate("frmERTCalibrationClass", "\344\271\235\347\202\271\346\240\207\345\256\232\345\217\202\346\225\260", nullptr));
-        radioRotateCenter->setText(QApplication::translate("frmERTCalibrationClass", "\346\227\213\350\275\254\344\270\255\345\277\203\346\240\207\345\256\232\345\217\202\346\225\260", nullptr));
-        groupC8->setTitle(QApplication::translate("frmERTCalibrationClass", "\345\235\220\346\240\207\346\225\260\346\215\256", nullptr));
+        label_16->setText(QCoreApplication::translate("frmERTCalibrationClass", "\345\210\206\345\211\262\346\225\260\351\207\217\357\274\232", nullptr));
+        label_19->setText(QCoreApplication::translate("frmERTCalibrationClass", "\345\211\224\351\231\244\350\267\235\347\246\273\357\274\232", nullptr));
+        groupC6->setTitle(QCoreApplication::translate("frmERTCalibrationClass", "\350\276\223\345\207\272\346\225\260\346\215\256(\345\234\206\347\232\204\344\270\255\345\277\203\345\235\220\346\240\207)", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab_2), QCoreApplication::translate("frmERTCalibrationClass", "\346\211\276\345\234\206\345\267\245\345\205\267", nullptr));
+        groupC7->setTitle(QCoreApplication::translate("frmERTCalibrationClass", "\346\240\207\345\256\232\345\217\202\346\225\260", nullptr));
+        radioNinePoints->setText(QCoreApplication::translate("frmERTCalibrationClass", "\344\271\235\347\202\271\346\240\207\345\256\232\345\217\202\346\225\260", nullptr));
+        radioRotateCenter->setText(QCoreApplication::translate("frmERTCalibrationClass", "\346\227\213\350\275\254\344\270\255\345\277\203\346\240\207\345\256\232\345\217\202\346\225\260", nullptr));
+        groupC8->setTitle(QCoreApplication::translate("frmERTCalibrationClass", "\345\235\220\346\240\207\346\225\260\346\215\256", nullptr));
         QTableWidgetItem *___qtablewidgetitem = tableWidget->horizontalHeaderItem(0);
-        ___qtablewidgetitem->setText(QApplication::translate("frmERTCalibrationClass", "\345\233\276\345\203\217\345\235\220\346\240\207X", nullptr));
+        ___qtablewidgetitem->setText(QCoreApplication::translate("frmERTCalibrationClass", "\345\233\276\345\203\217\345\235\220\346\240\207X", nullptr));
         QTableWidgetItem *___qtablewidgetitem1 = tableWidget->horizontalHeaderItem(1);
-        ___qtablewidgetitem1->setText(QApplication::translate("frmERTCalibrationClass", "\345\233\276\345\203\217\345\235\220\346\240\207Y", nullptr));
+        ___qtablewidgetitem1->setText(QCoreApplication::translate("frmERTCalibrationClass", "\345\233\276\345\203\217\345\235\220\346\240\207Y", nullptr));
         QTableWidgetItem *___qtablewidgetitem2 = tableWidget->horizontalHeaderItem(2);
-        ___qtablewidgetitem2->setText(QApplication::translate("frmERTCalibrationClass", "\346\234\272\346\242\260\345\235\220\346\240\207X", nullptr));
+        ___qtablewidgetitem2->setText(QCoreApplication::translate("frmERTCalibrationClass", "\346\234\272\346\242\260\345\235\220\346\240\207X", nullptr));
         QTableWidgetItem *___qtablewidgetitem3 = tableWidget->horizontalHeaderItem(3);
-        ___qtablewidgetitem3->setText(QApplication::translate("frmERTCalibrationClass", "\346\234\272\346\242\260\345\235\220\346\240\207Y", nullptr));
-        groupC9->setTitle(QApplication::translate("frmERTCalibrationClass", "\345\235\220\346\240\207\346\225\260\346\215\256", nullptr));
-        label_17->setText(QApplication::translate("frmERTCalibrationClass", "\345\237\272\345\207\206\350\247\222\345\272\246\357\274\232", nullptr));
-        checkUseRotateC->setText(QApplication::translate("frmERTCalibrationClass", "\346\240\207\345\256\232\346\227\213\350\275\254\344\270\255\345\277\203", nullptr));
-        label_21->setText(QApplication::translate("frmERTCalibrationClass", "\346\240\207\345\256\232\346\226\271\345\274\217\357\274\232", nullptr));
-        comboCalibMethod->setItemText(0, QApplication::translate("frmERTCalibrationClass", "\344\270\211\347\202\271\346\213\237\345\220\210\345\234\206\346\240\207\345\256\232", nullptr));
-        comboCalibMethod->setItemText(1, QApplication::translate("frmERTCalibrationClass", "\344\270\244\347\202\271+\350\247\222\345\272\246\346\240\207\345\256\232", nullptr));
+        ___qtablewidgetitem3->setText(QCoreApplication::translate("frmERTCalibrationClass", "\346\234\272\346\242\260\345\235\220\346\240\207Y", nullptr));
+        groupC9->setTitle(QCoreApplication::translate("frmERTCalibrationClass", "\345\235\220\346\240\207\346\225\260\346\215\256", nullptr));
+        label_17->setText(QCoreApplication::translate("frmERTCalibrationClass", "\345\237\272\345\207\206\350\247\222\345\272\246\357\274\232", nullptr));
+        checkUseRotateC->setText(QCoreApplication::translate("frmERTCalibrationClass", "\346\240\207\345\256\232\346\227\213\350\275\254\344\270\255\345\277\203", nullptr));
+        label_21->setText(QCoreApplication::translate("frmERTCalibrationClass", "\346\240\207\345\256\232\346\226\271\345\274\217\357\274\232", nullptr));
+        comboCalibMethod->setItemText(0, QCoreApplication::translate("frmERTCalibrationClass", "\344\270\211\347\202\271\346\213\237\345\220\210\345\234\206\346\240\207\345\256\232", nullptr));
+        comboCalibMethod->setItemText(1, QCoreApplication::translate("frmERTCalibrationClass", "\344\270\244\347\202\271+\350\247\222\345\272\246\346\240\207\345\256\232", nullptr));
 
         QTableWidgetItem *___qtablewidgetitem4 = tableWidgetR->horizontalHeaderItem(0);
-        ___qtablewidgetitem4->setText(QApplication::translate("frmERTCalibrationClass", "\345\233\276\345\203\217\345\235\220\346\240\207X", nullptr));
+        ___qtablewidgetitem4->setText(QCoreApplication::translate("frmERTCalibrationClass", "\345\233\276\345\203\217\345\235\220\346\240\207X", nullptr));
         QTableWidgetItem *___qtablewidgetitem5 = tableWidgetR->horizontalHeaderItem(1);
-        ___qtablewidgetitem5->setText(QApplication::translate("frmERTCalibrationClass", "\345\233\276\345\203\217\345\235\220\346\240\207Y", nullptr));
+        ___qtablewidgetitem5->setText(QCoreApplication::translate("frmERTCalibrationClass", "\345\233\276\345\203\217\345\235\220\346\240\207Y", nullptr));
         QTableWidgetItem *___qtablewidgetitem6 = tableWidgetR2->horizontalHeaderItem(0);
-        ___qtablewidgetitem6->setText(QApplication::translate("frmERTCalibrationClass", "\345\233\276\345\203\217\345\235\220\346\240\207X", nullptr));
+        ___qtablewidgetitem6->setText(QCoreApplication::translate("frmERTCalibrationClass", "\345\233\276\345\203\217\345\235\220\346\240\207X", nullptr));
         QTableWidgetItem *___qtablewidgetitem7 = tableWidgetR2->horizontalHeaderItem(1);
-        ___qtablewidgetitem7->setText(QApplication::translate("frmERTCalibrationClass", "\345\233\276\345\203\217\345\235\220\346\240\207Y", nullptr));
-        label_22->setText(QApplication::translate("frmERTCalibrationClass", "\346\227\213\350\275\254\350\247\222\345\272\246 -->", nullptr));
+        ___qtablewidgetitem7->setText(QCoreApplication::translate("frmERTCalibrationClass", "\345\233\276\345\203\217\345\235\220\346\240\207Y", nullptr));
+        label_22->setText(QCoreApplication::translate("frmERTCalibrationClass", "\346\227\213\350\275\254\350\247\222\345\272\246 -->", nullptr));
         label_23->setText(QString());
-        tabWidget->setTabText(tabWidget->indexOf(tab_3), QApplication::translate("frmERTCalibrationClass", "\346\240\207\345\256\232\350\256\276\347\275\256", nullptr));
-        groupC10->setTitle(QApplication::translate("frmERTCalibrationClass", "\350\276\223\345\207\272\346\225\260\346\215\256", nullptr));
-        tabWidget->setTabText(tabWidget->indexOf(tab_4), QApplication::translate("frmERTCalibrationClass", "\350\276\223\345\207\272\346\230\276\347\244\272", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab_3), QCoreApplication::translate("frmERTCalibrationClass", "\346\240\207\345\256\232\350\256\276\347\275\256", nullptr));
+        groupC10->setTitle(QCoreApplication::translate("frmERTCalibrationClass", "\350\276\223\345\207\272\346\225\260\346\215\256", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab_4), QCoreApplication::translate("frmERTCalibrationClass", "\350\276\223\345\207\272\346\230\276\347\244\272", nullptr));
     } // retranslateUi
 
 };

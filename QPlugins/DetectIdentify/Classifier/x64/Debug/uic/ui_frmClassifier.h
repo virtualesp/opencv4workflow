@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'frmClassifier.ui'
 **
-** Created by: Qt User Interface Compiler version 5.12.12
+** Created by: Qt User Interface Compiler version 5.14.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -496,56 +496,56 @@ public:
 
     void retranslateUi(QDialog *frmClassifierClass)
     {
-        frmClassifierClass->setWindowTitle(QApplication::translate("frmClassifierClass", "\345\210\206\347\261\273\345\231\250", nullptr));
-        groupCamera->setTitle(QApplication::translate("frmClassifierClass", "\345\233\276\345\203\217\345\257\271\350\261\241", nullptr));
-        lbl_inputimage->setText(QApplication::translate("frmClassifierClass", "\350\276\223\345\205\245\345\233\276\345\203\217\357\274\232", nullptr));
-#ifndef QT_NO_TOOLTIP
-        btnLinkImage->setToolTip(QApplication::translate("frmClassifierClass", "\351\223\276\346\216\245\345\233\276\345\203\217", nullptr));
-#endif // QT_NO_TOOLTIP
+        frmClassifierClass->setWindowTitle(QCoreApplication::translate("frmClassifierClass", "\345\210\206\347\261\273\345\231\250", nullptr));
+        groupCamera->setTitle(QCoreApplication::translate("frmClassifierClass", "\345\233\276\345\203\217\345\257\271\350\261\241", nullptr));
+        lbl_inputimage->setText(QCoreApplication::translate("frmClassifierClass", "\350\276\223\345\205\245\345\233\276\345\203\217\357\274\232", nullptr));
+#if QT_CONFIG(tooltip)
+        btnLinkImage->setToolTip(QCoreApplication::translate("frmClassifierClass", "\351\223\276\346\216\245\345\233\276\345\203\217", nullptr));
+#endif // QT_CONFIG(tooltip)
         btnLinkImage->setText(QString());
-#ifndef QT_NO_TOOLTIP
-        btnDelLinkImage->setToolTip(QApplication::translate("frmClassifierClass", "\345\210\240\351\231\244\345\233\276\345\203\217\351\223\276\346\216\245", nullptr));
-#endif // QT_NO_TOOLTIP
+#if QT_CONFIG(tooltip)
+        btnDelLinkImage->setToolTip(QCoreApplication::translate("frmClassifierClass", "\345\210\240\351\231\244\345\233\276\345\203\217\351\223\276\346\216\245", nullptr));
+#endif // QT_CONFIG(tooltip)
         btnDelLinkImage->setText(QString());
-        groupFolder->setTitle(QApplication::translate("frmClassifierClass", "\350\256\255\347\273\203\346\250\241\345\236\213", nullptr));
-        label_2->setText(QApplication::translate("frmClassifierClass", "\342\221\240\345\233\276\345\203\217\346\240\207\347\255\276\346\226\207\344\273\266\357\274\232", nullptr));
+        groupFolder->setTitle(QCoreApplication::translate("frmClassifierClass", "\350\256\255\347\273\203\346\250\241\345\236\213", nullptr));
+        label_2->setText(QCoreApplication::translate("frmClassifierClass", "\342\221\240\345\233\276\345\203\217\346\240\207\347\255\276\346\226\207\344\273\266\357\274\232", nullptr));
         txtLabels->setText(QString());
-        btnLabels->setText(QApplication::translate("frmClassifierClass", "\345\233\276\345\203\217\346\240\207\347\255\276", nullptr));
-        label_6->setText(QApplication::translate("frmClassifierClass", "\342\221\241\345\233\276\345\203\217\345\210\227\350\241\250\346\226\207\344\273\266\357\274\232", nullptr));
-        btnList->setText(QApplication::translate("frmClassifierClass", "\345\233\276\345\203\217\345\210\227\350\241\250", nullptr));
+        btnLabels->setText(QCoreApplication::translate("frmClassifierClass", "\345\233\276\345\203\217\346\240\207\347\255\276", nullptr));
+        label_6->setText(QCoreApplication::translate("frmClassifierClass", "\342\221\241\345\233\276\345\203\217\345\210\227\350\241\250\346\226\207\344\273\266\357\274\232", nullptr));
+        btnList->setText(QCoreApplication::translate("frmClassifierClass", "\345\233\276\345\203\217\345\210\227\350\241\250", nullptr));
         txtList->setText(QString());
-        label_7->setText(QApplication::translate("frmClassifierClass", "\342\221\242\344\277\235\345\255\230\346\250\241\345\236\213\346\226\207\344\273\266\357\274\232", nullptr));
+        label_7->setText(QCoreApplication::translate("frmClassifierClass", "\342\221\242\344\277\235\345\255\230\346\250\241\345\236\213\346\226\207\344\273\266\357\274\232", nullptr));
         txtSaveModel->setText(QString());
-        btnSaveModel->setText(QApplication::translate("frmClassifierClass", "\344\277\235\345\255\230\346\250\241\345\236\213", nullptr));
-        btnTrainModel->setText(QApplication::translate("frmClassifierClass", "\350\256\255\347\273\203\346\250\241\345\236\213", nullptr));
-        label_8->setText(QApplication::translate("frmClassifierClass", "\342\221\240\342\206\222\342\221\241\342\206\222\342\221\242\342\206\222", nullptr));
-        groupCamera_2->setTitle(QApplication::translate("frmClassifierClass", "\351\242\204\346\265\213\346\250\241\345\236\213", nullptr));
-        label_5->setText(QApplication::translate("frmClassifierClass", "\351\242\204\346\265\213\346\250\241\345\236\213\346\226\207\344\273\266\357\274\232", nullptr));
-        btnLoadModel->setText(QApplication::translate("frmClassifierClass", "\346\250\241\345\236\213\346\226\207\344\273\266", nullptr));
+        btnSaveModel->setText(QCoreApplication::translate("frmClassifierClass", "\344\277\235\345\255\230\346\250\241\345\236\213", nullptr));
+        btnTrainModel->setText(QCoreApplication::translate("frmClassifierClass", "\350\256\255\347\273\203\346\250\241\345\236\213", nullptr));
+        label_8->setText(QCoreApplication::translate("frmClassifierClass", "\342\221\240\342\206\222\342\221\241\342\206\222\342\221\242\342\206\222", nullptr));
+        groupCamera_2->setTitle(QCoreApplication::translate("frmClassifierClass", "\351\242\204\346\265\213\346\250\241\345\236\213", nullptr));
+        label_5->setText(QCoreApplication::translate("frmClassifierClass", "\351\242\204\346\265\213\346\250\241\345\236\213\346\226\207\344\273\266\357\274\232", nullptr));
+        btnLoadModel->setText(QCoreApplication::translate("frmClassifierClass", "\346\250\241\345\236\213\346\226\207\344\273\266", nullptr));
         txtLoadModel->setText(QString());
-        tabWidget->setTabText(tabWidget->indexOf(tab), QApplication::translate("frmClassifierClass", "\345\237\272\346\234\254\350\256\276\347\275\256", nullptr));
-        groupCamera_3->setTitle(QApplication::translate("frmClassifierClass", "\345\233\276\345\203\217\347\261\273\345\210\253\345\217\202\346\225\260", nullptr));
-        label_9->setText(QApplication::translate("frmClassifierClass", "\345\233\276\345\203\217\347\261\273\345\210\253\346\225\260\351\207\217\357\274\232", nullptr));
-        comboType->setItemText(0, QApplication::translate("frmClassifierClass", "2\347\247\215\347\261\273\345\210\253", nullptr));
-        comboType->setItemText(1, QApplication::translate("frmClassifierClass", "3\347\247\215\347\261\273\345\210\253", nullptr));
-        comboType->setItemText(2, QApplication::translate("frmClassifierClass", "4\347\247\215\347\261\273\345\210\253", nullptr));
-        comboType->setItemText(3, QApplication::translate("frmClassifierClass", "5\347\247\215\347\261\273\345\210\253", nullptr));
-        comboType->setItemText(4, QApplication::translate("frmClassifierClass", "6\347\247\215\347\261\273\345\210\253", nullptr));
-        comboType->setItemText(5, QApplication::translate("frmClassifierClass", "7\347\247\215\347\261\273\345\210\253", nullptr));
-        comboType->setItemText(6, QApplication::translate("frmClassifierClass", "8\347\247\215\347\261\273\345\210\253", nullptr));
-        comboType->setItemText(7, QApplication::translate("frmClassifierClass", "9\347\247\215\347\261\273\345\210\253", nullptr));
-        comboType->setItemText(8, QApplication::translate("frmClassifierClass", "10\347\247\215\347\261\273\345\210\253", nullptr));
-        comboType->setItemText(9, QApplication::translate("frmClassifierClass", "11\347\247\215\347\261\273\345\210\253", nullptr));
-        comboType->setItemText(10, QApplication::translate("frmClassifierClass", "12\347\247\215\347\261\273\345\210\253", nullptr));
-        comboType->setItemText(11, QApplication::translate("frmClassifierClass", "13\347\247\215\347\261\273\345\210\253", nullptr));
-        comboType->setItemText(12, QApplication::translate("frmClassifierClass", "14\347\247\215\347\261\273\345\210\253", nullptr));
-        comboType->setItemText(13, QApplication::translate("frmClassifierClass", "15\347\247\215\347\261\273\345\210\253", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab), QCoreApplication::translate("frmClassifierClass", "\345\237\272\346\234\254\350\256\276\347\275\256", nullptr));
+        groupCamera_3->setTitle(QCoreApplication::translate("frmClassifierClass", "\345\233\276\345\203\217\347\261\273\345\210\253\345\217\202\346\225\260", nullptr));
+        label_9->setText(QCoreApplication::translate("frmClassifierClass", "\345\233\276\345\203\217\347\261\273\345\210\253\346\225\260\351\207\217\357\274\232", nullptr));
+        comboType->setItemText(0, QCoreApplication::translate("frmClassifierClass", "2\347\247\215\347\261\273\345\210\253", nullptr));
+        comboType->setItemText(1, QCoreApplication::translate("frmClassifierClass", "3\347\247\215\347\261\273\345\210\253", nullptr));
+        comboType->setItemText(2, QCoreApplication::translate("frmClassifierClass", "4\347\247\215\347\261\273\345\210\253", nullptr));
+        comboType->setItemText(3, QCoreApplication::translate("frmClassifierClass", "5\347\247\215\347\261\273\345\210\253", nullptr));
+        comboType->setItemText(4, QCoreApplication::translate("frmClassifierClass", "6\347\247\215\347\261\273\345\210\253", nullptr));
+        comboType->setItemText(5, QCoreApplication::translate("frmClassifierClass", "7\347\247\215\347\261\273\345\210\253", nullptr));
+        comboType->setItemText(6, QCoreApplication::translate("frmClassifierClass", "8\347\247\215\347\261\273\345\210\253", nullptr));
+        comboType->setItemText(7, QCoreApplication::translate("frmClassifierClass", "9\347\247\215\347\261\273\345\210\253", nullptr));
+        comboType->setItemText(8, QCoreApplication::translate("frmClassifierClass", "10\347\247\215\347\261\273\345\210\253", nullptr));
+        comboType->setItemText(9, QCoreApplication::translate("frmClassifierClass", "11\347\247\215\347\261\273\345\210\253", nullptr));
+        comboType->setItemText(10, QCoreApplication::translate("frmClassifierClass", "12\347\247\215\347\261\273\345\210\253", nullptr));
+        comboType->setItemText(11, QCoreApplication::translate("frmClassifierClass", "13\347\247\215\347\261\273\345\210\253", nullptr));
+        comboType->setItemText(12, QCoreApplication::translate("frmClassifierClass", "14\347\247\215\347\261\273\345\210\253", nullptr));
+        comboType->setItemText(13, QCoreApplication::translate("frmClassifierClass", "15\347\247\215\347\261\273\345\210\253", nullptr));
 
         txtTypeName->setText(QString());
-        btnWrite->setText(QApplication::translate("frmClassifierClass", "\345\206\231\345\205\245", nullptr));
-        tabWidget->setTabText(tabWidget->indexOf(tab_2), QApplication::translate("frmClassifierClass", "\345\217\202\346\225\260\350\256\276\347\275\256", nullptr));
-        label_3->setText(QApplication::translate("frmClassifierClass", "\345\215\225\345\205\203\346\217\217\350\277\260\357\274\232", nullptr));
-        btnExecute->setText(QApplication::translate("frmClassifierClass", "\346\211\247\350\241\214", nullptr));
+        btnWrite->setText(QCoreApplication::translate("frmClassifierClass", "\345\206\231\345\205\245", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab_2), QCoreApplication::translate("frmClassifierClass", "\345\217\202\346\225\260\350\256\276\347\275\256", nullptr));
+        label_3->setText(QCoreApplication::translate("frmClassifierClass", "\345\215\225\345\205\203\346\217\217\350\277\260\357\274\232", nullptr));
+        btnExecute->setText(QCoreApplication::translate("frmClassifierClass", "\346\211\247\350\241\214", nullptr));
     } // retranslateUi
 
 };

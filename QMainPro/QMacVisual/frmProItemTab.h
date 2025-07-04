@@ -181,6 +181,12 @@ typedef int (*GetExportCsv)();
 typedef void (*SetExportCsv)();
 #pragma endregion
 
+
+#pragma region 目标检测
+//动态库--Yolov13
+typedef int (*GetYoloV13)();
+typedef void (*SetYoloV13)();
+#pragma endregion
 class frmProItemTab : public QWidget
 {
 	Q_OBJECT
@@ -732,5 +738,13 @@ private:
 	SetExportCsv setExportCsv;
 	int nExportCsvState;
 	int nExportCsvState_buf;
+#pragma endregion
+
+#pragma region 目标检测
+	//YoloV13
+	GetYoloV13 getYoloV13;
+	SetYoloV13 setYoloV13;
+	int nYoloV13State;
+	int nYoloV13State_buf;
 #pragma endregion
 };

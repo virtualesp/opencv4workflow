@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'frmPointPoint.ui'
 **
-** Created by: Qt User Interface Compiler version 5.12.12
+** Created by: Qt User Interface Compiler version 5.14.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -343,46 +343,46 @@ public:
 
     void retranslateUi(QDialog *frmPointPointClass)
     {
-        frmPointPointClass->setWindowTitle(QApplication::translate("frmPointPointClass", "\347\202\271+\347\202\271", nullptr));
-        groupCamera->setTitle(QApplication::translate("frmPointPointClass", "\345\233\276\345\203\217\345\257\271\350\261\241", nullptr));
-        label_4->setText(QApplication::translate("frmPointPointClass", "\350\276\223\345\205\245\345\233\276\345\203\217\357\274\232", nullptr));
-#ifndef QT_NO_TOOLTIP
-        btnLinkImage->setToolTip(QApplication::translate("frmPointPointClass", "\351\223\276\346\216\245\345\233\276\345\203\217", nullptr));
-#endif // QT_NO_TOOLTIP
+        frmPointPointClass->setWindowTitle(QCoreApplication::translate("frmPointPointClass", "\347\202\271+\347\202\271", nullptr));
+        groupCamera->setTitle(QCoreApplication::translate("frmPointPointClass", "\345\233\276\345\203\217\345\257\271\350\261\241", nullptr));
+        label_4->setText(QCoreApplication::translate("frmPointPointClass", "\350\276\223\345\205\245\345\233\276\345\203\217\357\274\232", nullptr));
+#if QT_CONFIG(tooltip)
+        btnLinkImage->setToolTip(QCoreApplication::translate("frmPointPointClass", "\351\223\276\346\216\245\345\233\276\345\203\217", nullptr));
+#endif // QT_CONFIG(tooltip)
         btnLinkImage->setText(QString());
-#ifndef QT_NO_TOOLTIP
-        btnDelLinkImage->setToolTip(QApplication::translate("frmPointPointClass", "\345\210\240\351\231\244\345\233\276\345\203\217\351\223\276\346\216\245", nullptr));
-#endif // QT_NO_TOOLTIP
+#if QT_CONFIG(tooltip)
+        btnDelLinkImage->setToolTip(QCoreApplication::translate("frmPointPointClass", "\345\210\240\351\231\244\345\233\276\345\203\217\351\223\276\346\216\245", nullptr));
+#endif // QT_CONFIG(tooltip)
         btnDelLinkImage->setText(QString());
-        groupC2->setTitle(QApplication::translate("frmPointPointClass", "\346\236\204\345\273\272\345\217\202\346\225\260", nullptr));
-#ifndef QT_NO_TOOLTIP
-        btnLinkPoint1->setToolTip(QApplication::translate("frmPointPointClass", "\351\223\276\346\216\245\347\202\2711\345\235\220\346\240\207", nullptr));
-#endif // QT_NO_TOOLTIP
+        groupC2->setTitle(QCoreApplication::translate("frmPointPointClass", "\346\236\204\345\273\272\345\217\202\346\225\260", nullptr));
+#if QT_CONFIG(tooltip)
+        btnLinkPoint1->setToolTip(QCoreApplication::translate("frmPointPointClass", "\351\223\276\346\216\245\347\202\2711\345\235\220\346\240\207", nullptr));
+#endif // QT_CONFIG(tooltip)
         btnLinkPoint1->setText(QString());
-#ifndef QT_NO_TOOLTIP
-        btnDelLinkPoint2->setToolTip(QApplication::translate("frmPointPointClass", "\345\210\240\351\231\244\347\202\2712\345\235\220\346\240\207\351\223\276\346\216\245", nullptr));
-#endif // QT_NO_TOOLTIP
+#if QT_CONFIG(tooltip)
+        btnDelLinkPoint2->setToolTip(QCoreApplication::translate("frmPointPointClass", "\345\210\240\351\231\244\347\202\2712\345\235\220\346\240\207\351\223\276\346\216\245", nullptr));
+#endif // QT_CONFIG(tooltip)
         btnDelLinkPoint2->setText(QString());
-#ifndef QT_NO_TOOLTIP
-        txtLinkPoint2->setToolTip(QApplication::translate("frmPointPointClass", "cv::Point\346\210\226cv::Point2f\347\261\273\345\236\213", nullptr));
-#endif // QT_NO_TOOLTIP
-        label_6->setText(QApplication::translate("frmPointPointClass", "\347\202\2711\345\235\220\346\240\207\357\274\232", nullptr));
-#ifndef QT_NO_TOOLTIP
-        btnDelLinkPoint1->setToolTip(QApplication::translate("frmPointPointClass", "\345\210\240\351\231\244\347\202\2711\345\235\220\346\240\207\351\223\276\346\216\245", nullptr));
-#endif // QT_NO_TOOLTIP
+#if QT_CONFIG(tooltip)
+        txtLinkPoint2->setToolTip(QCoreApplication::translate("frmPointPointClass", "cv::Point\346\210\226cv::Point2f\347\261\273\345\236\213", nullptr));
+#endif // QT_CONFIG(tooltip)
+        label_6->setText(QCoreApplication::translate("frmPointPointClass", "\347\202\2711\345\235\220\346\240\207\357\274\232", nullptr));
+#if QT_CONFIG(tooltip)
+        btnDelLinkPoint1->setToolTip(QCoreApplication::translate("frmPointPointClass", "\345\210\240\351\231\244\347\202\2711\345\235\220\346\240\207\351\223\276\346\216\245", nullptr));
+#endif // QT_CONFIG(tooltip)
         btnDelLinkPoint1->setText(QString());
-#ifndef QT_NO_TOOLTIP
-        btnLinkPoint2->setToolTip(QApplication::translate("frmPointPointClass", "\351\223\276\346\216\245\347\202\2712\345\235\220\346\240\207", nullptr));
-#endif // QT_NO_TOOLTIP
+#if QT_CONFIG(tooltip)
+        btnLinkPoint2->setToolTip(QCoreApplication::translate("frmPointPointClass", "\351\223\276\346\216\245\347\202\2712\345\235\220\346\240\207", nullptr));
+#endif // QT_CONFIG(tooltip)
         btnLinkPoint2->setText(QString());
-#ifndef QT_NO_TOOLTIP
-        txtLinkPoint1->setToolTip(QApplication::translate("frmPointPointClass", "cv::Point\346\210\226cv::Point2f\347\261\273\345\236\213", nullptr));
-#endif // QT_NO_TOOLTIP
-        label_7->setText(QApplication::translate("frmPointPointClass", "\347\202\2712\345\235\220\346\240\207\357\274\232", nullptr));
-        groupC3->setTitle(QApplication::translate("frmPointPointClass", "\350\276\223\345\207\272\346\225\260\346\215\256(\344\270\244\347\202\271\347\232\204\344\270\255\345\277\203\345\235\220\346\240\207\343\200\201\350\247\222\345\272\246\343\200\201\350\267\235\347\246\273)", nullptr));
-        tabWidget->setTabText(tabWidget->indexOf(tab), QApplication::translate("frmPointPointClass", "\345\237\272\346\234\254\350\256\276\347\275\256", nullptr));
-        label_3->setText(QApplication::translate("frmPointPointClass", "\345\215\225\345\205\203\346\217\217\350\277\260\357\274\232", nullptr));
-        btnExecute->setText(QApplication::translate("frmPointPointClass", "\346\211\247\350\241\214", nullptr));
+#if QT_CONFIG(tooltip)
+        txtLinkPoint1->setToolTip(QCoreApplication::translate("frmPointPointClass", "cv::Point\346\210\226cv::Point2f\347\261\273\345\236\213", nullptr));
+#endif // QT_CONFIG(tooltip)
+        label_7->setText(QCoreApplication::translate("frmPointPointClass", "\347\202\2712\345\235\220\346\240\207\357\274\232", nullptr));
+        groupC3->setTitle(QCoreApplication::translate("frmPointPointClass", "\350\276\223\345\207\272\346\225\260\346\215\256(\344\270\244\347\202\271\347\232\204\344\270\255\345\277\203\345\235\220\346\240\207\343\200\201\350\247\222\345\272\246\343\200\201\350\267\235\347\246\273)", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab), QCoreApplication::translate("frmPointPointClass", "\345\237\272\346\234\254\350\256\276\347\275\256", nullptr));
+        label_3->setText(QCoreApplication::translate("frmPointPointClass", "\345\215\225\345\205\203\346\217\217\350\277\260\357\274\232", nullptr));
+        btnExecute->setText(QCoreApplication::translate("frmPointPointClass", "\346\211\247\350\241\214", nullptr));
     } // retranslateUi
 
 };

@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'frmLink.ui'
 **
-** Created by: Qt User Interface Compiler version 5.12.12
+** Created by: Qt User Interface Compiler version 5.14.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -260,15 +260,15 @@ public:
 
     void retranslateUi(QWidget *frmLinkClass)
     {
-        frmLinkClass->setWindowTitle(QApplication::translate("frmLinkClass", "QMacVisual", nullptr));
+        frmLinkClass->setWindowTitle(QCoreApplication::translate("frmLinkClass", "QMacVisual", nullptr));
         QTableWidgetItem *___qtablewidgetitem = tableWidget->horizontalHeaderItem(0);
-        ___qtablewidgetitem->setText(QApplication::translate("frmLinkClass", "\347\274\226\345\217\267", nullptr));
+        ___qtablewidgetitem->setText(QCoreApplication::translate("frmLinkClass", "\347\274\226\345\217\267", nullptr));
         QTableWidgetItem *___qtablewidgetitem1 = tableWidget->horizontalHeaderItem(1);
-        ___qtablewidgetitem1->setText(QApplication::translate("frmLinkClass", "\345\217\230\351\207\217\345\220\215\347\247\260", nullptr));
+        ___qtablewidgetitem1->setText(QCoreApplication::translate("frmLinkClass", "\345\217\230\351\207\217\345\220\215\347\247\260", nullptr));
         QTableWidgetItem *___qtablewidgetitem2 = tableWidget->horizontalHeaderItem(2);
-        ___qtablewidgetitem2->setText(QApplication::translate("frmLinkClass", "\345\217\230\351\207\217\345\200\274", nullptr));
+        ___qtablewidgetitem2->setText(QCoreApplication::translate("frmLinkClass", "\345\217\230\351\207\217\345\200\274", nullptr));
         QTableWidgetItem *___qtablewidgetitem3 = tableWidget->horizontalHeaderItem(3);
-        ___qtablewidgetitem3->setText(QApplication::translate("frmLinkClass", "\345\217\230\351\207\217\347\261\273\345\236\213", nullptr));
+        ___qtablewidgetitem3->setText(QCoreApplication::translate("frmLinkClass", "\345\217\230\351\207\217\347\261\273\345\236\213", nullptr));
     } // retranslateUi
 
 };

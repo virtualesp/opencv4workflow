@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'frmCameraSetUp.ui'
 **
-** Created by: Qt User Interface Compiler version 5.12.12
+** Created by: Qt User Interface Compiler version 5.14.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -785,32 +785,32 @@ public:
 
     void retranslateUi(QDialog *frmCameraSetUpClass)
     {
-        frmCameraSetUpClass->setWindowTitle(QApplication::translate("frmCameraSetUpClass", "\347\233\270\346\234\272\350\256\276\347\275\256", nullptr));
+        frmCameraSetUpClass->setWindowTitle(QCoreApplication::translate("frmCameraSetUpClass", "\347\233\270\346\234\272\350\256\276\347\275\256", nullptr));
         QTableWidgetItem *___qtablewidgetitem = tableWidget->horizontalHeaderItem(0);
-        ___qtablewidgetitem->setText(QApplication::translate("frmCameraSetUpClass", "\347\233\270\346\234\272\345\210\227\350\241\250", nullptr));
-        label_2->setText(QApplication::translate("frmCameraSetUpClass", "\347\233\270\346\234\272\345\220\215\347\247\260\357\274\232", nullptr));
-        btnSearchCamera->setText(QApplication::translate("frmCameraSetUpClass", "\346\220\234\347\264\242\347\233\270\346\234\272", nullptr));
-        label_4->setText(QApplication::translate("frmCameraSetUpClass", "\345\242\236\347\233\212\357\274\232", nullptr));
-        label_5->setText(QApplication::translate("frmCameraSetUpClass", "\350\247\246\345\217\221\346\250\241\345\274\217\357\274\232", nullptr));
-        label_6->setText(QApplication::translate("frmCameraSetUpClass", "\351\200\211\346\213\251\347\233\270\346\234\272\345\220\215\347\247\260\357\274\232", nullptr));
+        ___qtablewidgetitem->setText(QCoreApplication::translate("frmCameraSetUpClass", "\347\233\270\346\234\272\345\210\227\350\241\250", nullptr));
+        label_2->setText(QCoreApplication::translate("frmCameraSetUpClass", "\347\233\270\346\234\272\345\220\215\347\247\260\357\274\232", nullptr));
+        btnSearchCamera->setText(QCoreApplication::translate("frmCameraSetUpClass", "\346\220\234\347\264\242\347\233\270\346\234\272", nullptr));
+        label_4->setText(QCoreApplication::translate("frmCameraSetUpClass", "\345\242\236\347\233\212\357\274\232", nullptr));
+        label_5->setText(QCoreApplication::translate("frmCameraSetUpClass", "\350\247\246\345\217\221\346\250\241\345\274\217\357\274\232", nullptr));
+        label_6->setText(QCoreApplication::translate("frmCameraSetUpClass", "\351\200\211\346\213\251\347\233\270\346\234\272\345\220\215\347\247\260\357\274\232", nullptr));
         lblType->setText(QString());
-        label_11->setText(QApplication::translate("frmCameraSetUpClass", "\345\244\207\346\263\250\357\274\232", nullptr));
-        comboTriggerMode->setItemText(0, QApplication::translate("frmCameraSetUpClass", "\350\277\236\347\273\255\351\207\207\351\233\206", nullptr));
-        comboTriggerMode->setItemText(1, QApplication::translate("frmCameraSetUpClass", "\350\275\257\344\273\266\350\247\246\345\217\221", nullptr));
-        comboTriggerMode->setItemText(2, QApplication::translate("frmCameraSetUpClass", "\347\241\254\344\273\266\350\247\246\345\217\221", nullptr));
+        label_11->setText(QCoreApplication::translate("frmCameraSetUpClass", "\345\244\207\346\263\250\357\274\232", nullptr));
+        comboTriggerMode->setItemText(0, QCoreApplication::translate("frmCameraSetUpClass", "\350\277\236\347\273\255\351\207\207\351\233\206", nullptr));
+        comboTriggerMode->setItemText(1, QCoreApplication::translate("frmCameraSetUpClass", "\350\275\257\344\273\266\350\247\246\345\217\221", nullptr));
+        comboTriggerMode->setItemText(2, QCoreApplication::translate("frmCameraSetUpClass", "\347\241\254\344\273\266\350\247\246\345\217\221", nullptr));
 
-        label_10->setText(QApplication::translate("frmCameraSetUpClass", "\350\266\205\346\227\266(ms)\357\274\232", nullptr));
-        label_3->setText(QApplication::translate("frmCameraSetUpClass", "\346\233\235\345\205\211(us)\357\274\232", nullptr));
-        label_7->setText(QApplication::translate("frmCameraSetUpClass", "\344\274\275\351\251\254\357\274\232", nullptr));
-        label_8->setText(QApplication::translate("frmCameraSetUpClass", "\345\257\271\346\257\224\345\272\246\357\274\232", nullptr));
-        btnConnect->setText(QApplication::translate("frmCameraSetUpClass", "\350\277\236\346\216\245\347\233\270\346\234\272", nullptr));
-        btnDisconnect->setText(QApplication::translate("frmCameraSetUpClass", "\346\226\255\345\274\200\347\233\270\346\234\272", nullptr));
-        btnSave->setText(QApplication::translate("frmCameraSetUpClass", "\344\277\235\345\255\230\345\217\202\346\225\260", nullptr));
-        label->setText(QApplication::translate("frmCameraSetUpClass", "\347\233\270\346\234\272\345\223\201\347\211\214\357\274\232", nullptr));
-        comboCamera->setItemText(0, QApplication::translate("frmCameraSetUpClass", "MindVision", nullptr));
-        comboCamera->setItemText(1, QApplication::translate("frmCameraSetUpClass", "HIKVision", nullptr));
+        label_10->setText(QCoreApplication::translate("frmCameraSetUpClass", "\350\266\205\346\227\266(ms)\357\274\232", nullptr));
+        label_3->setText(QCoreApplication::translate("frmCameraSetUpClass", "\346\233\235\345\205\211(us)\357\274\232", nullptr));
+        label_7->setText(QCoreApplication::translate("frmCameraSetUpClass", "\344\274\275\351\251\254\357\274\232", nullptr));
+        label_8->setText(QCoreApplication::translate("frmCameraSetUpClass", "\345\257\271\346\257\224\345\272\246\357\274\232", nullptr));
+        btnConnect->setText(QCoreApplication::translate("frmCameraSetUpClass", "\350\277\236\346\216\245\347\233\270\346\234\272", nullptr));
+        btnDisconnect->setText(QCoreApplication::translate("frmCameraSetUpClass", "\346\226\255\345\274\200\347\233\270\346\234\272", nullptr));
+        btnSave->setText(QCoreApplication::translate("frmCameraSetUpClass", "\344\277\235\345\255\230\345\217\202\346\225\260", nullptr));
+        label->setText(QCoreApplication::translate("frmCameraSetUpClass", "\347\233\270\346\234\272\345\223\201\347\211\214\357\274\232", nullptr));
+        comboCamera->setItemText(0, QCoreApplication::translate("frmCameraSetUpClass", "MindVision", nullptr));
+        comboCamera->setItemText(1, QCoreApplication::translate("frmCameraSetUpClass", "HIKVision", nullptr));
 
-        btnAddCamera->setText(QApplication::translate("frmCameraSetUpClass", "\346\267\273\345\212\240\347\233\270\346\234\272", nullptr));
+        btnAddCamera->setText(QCoreApplication::translate("frmCameraSetUpClass", "\346\267\273\345\212\240\347\233\270\346\234\272", nullptr));
     } // retranslateUi
 
 };

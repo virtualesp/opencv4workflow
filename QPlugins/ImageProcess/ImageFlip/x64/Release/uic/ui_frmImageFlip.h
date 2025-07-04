@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'frmImageFlip.ui'
 **
-** Created by: Qt User Interface Compiler version 5.12.12
+** Created by: Qt User Interface Compiler version 5.14.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -269,27 +269,27 @@ public:
 
     void retranslateUi(QDialog *frmImageFlipClass)
     {
-        frmImageFlipClass->setWindowTitle(QApplication::translate("frmImageFlipClass", "\345\233\276\345\203\217\347\277\273\350\275\254", nullptr));
-        groupCamera->setTitle(QApplication::translate("frmImageFlipClass", "\345\233\276\345\203\217\345\257\271\350\261\241", nullptr));
-        label_4->setText(QApplication::translate("frmImageFlipClass", "\350\276\223\345\205\245\345\233\276\345\203\217\357\274\232", nullptr));
-#ifndef QT_NO_TOOLTIP
-        btnLinkImage->setToolTip(QApplication::translate("frmImageFlipClass", "\351\223\276\346\216\245\345\233\276\345\203\217", nullptr));
-#endif // QT_NO_TOOLTIP
+        frmImageFlipClass->setWindowTitle(QCoreApplication::translate("frmImageFlipClass", "\345\233\276\345\203\217\347\277\273\350\275\254", nullptr));
+        groupCamera->setTitle(QCoreApplication::translate("frmImageFlipClass", "\345\233\276\345\203\217\345\257\271\350\261\241", nullptr));
+        label_4->setText(QCoreApplication::translate("frmImageFlipClass", "\350\276\223\345\205\245\345\233\276\345\203\217\357\274\232", nullptr));
+#if QT_CONFIG(tooltip)
+        btnLinkImage->setToolTip(QCoreApplication::translate("frmImageFlipClass", "\351\223\276\346\216\245\345\233\276\345\203\217", nullptr));
+#endif // QT_CONFIG(tooltip)
         btnLinkImage->setText(QString());
-#ifndef QT_NO_TOOLTIP
-        btnDelLinkImage->setToolTip(QApplication::translate("frmImageFlipClass", "\345\210\240\351\231\244\345\233\276\345\203\217\351\223\276\346\216\245", nullptr));
-#endif // QT_NO_TOOLTIP
+#if QT_CONFIG(tooltip)
+        btnDelLinkImage->setToolTip(QCoreApplication::translate("frmImageFlipClass", "\345\210\240\351\231\244\345\233\276\345\203\217\351\223\276\346\216\245", nullptr));
+#endif // QT_CONFIG(tooltip)
         btnDelLinkImage->setText(QString());
-        groupCamera_2->setTitle(QApplication::translate("frmImageFlipClass", "\347\277\273\350\275\254\345\217\202\346\225\260", nullptr));
-        label_5->setText(QApplication::translate("frmImageFlipClass", "\347\277\273\350\275\254\347\261\273\345\236\213\357\274\232", nullptr));
-        comboFlip->setItemText(0, QApplication::translate("frmImageFlipClass", "\344\270\215\347\277\273\350\275\254", nullptr));
-        comboFlip->setItemText(1, QApplication::translate("frmImageFlipClass", "\344\270\212\344\270\213\347\277\273\350\275\254", nullptr));
-        comboFlip->setItemText(2, QApplication::translate("frmImageFlipClass", "\345\267\246\345\217\263\347\277\273\350\275\254", nullptr));
-        comboFlip->setItemText(3, QApplication::translate("frmImageFlipClass", "\344\270\212\344\270\213\345\267\246\345\217\263\345\220\214\346\227\266\347\277\273\350\275\254", nullptr));
+        groupCamera_2->setTitle(QCoreApplication::translate("frmImageFlipClass", "\347\277\273\350\275\254\345\217\202\346\225\260", nullptr));
+        label_5->setText(QCoreApplication::translate("frmImageFlipClass", "\347\277\273\350\275\254\347\261\273\345\236\213\357\274\232", nullptr));
+        comboFlip->setItemText(0, QCoreApplication::translate("frmImageFlipClass", "\344\270\215\347\277\273\350\275\254", nullptr));
+        comboFlip->setItemText(1, QCoreApplication::translate("frmImageFlipClass", "\344\270\212\344\270\213\347\277\273\350\275\254", nullptr));
+        comboFlip->setItemText(2, QCoreApplication::translate("frmImageFlipClass", "\345\267\246\345\217\263\347\277\273\350\275\254", nullptr));
+        comboFlip->setItemText(3, QCoreApplication::translate("frmImageFlipClass", "\344\270\212\344\270\213\345\267\246\345\217\263\345\220\214\346\227\266\347\277\273\350\275\254", nullptr));
 
-        tabWidget->setTabText(tabWidget->indexOf(tab), QApplication::translate("frmImageFlipClass", "\345\237\272\346\234\254\350\256\276\347\275\256", nullptr));
-        label_3->setText(QApplication::translate("frmImageFlipClass", "\345\215\225\345\205\203\346\217\217\350\277\260\357\274\232", nullptr));
-        btnExecute->setText(QApplication::translate("frmImageFlipClass", "\346\211\247\350\241\214", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab), QCoreApplication::translate("frmImageFlipClass", "\345\237\272\346\234\254\350\256\276\347\275\256", nullptr));
+        label_3->setText(QCoreApplication::translate("frmImageFlipClass", "\345\215\225\345\205\203\346\217\217\350\277\260\357\274\232", nullptr));
+        btnExecute->setText(QCoreApplication::translate("frmImageFlipClass", "\346\211\247\350\241\214", nullptr));
     } // retranslateUi
 
 };

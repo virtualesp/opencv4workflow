@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'frmDistortionCalibration.ui'
 **
-** Created by: Qt User Interface Compiler version 5.12.12
+** Created by: Qt User Interface Compiler version 5.14.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -612,34 +612,34 @@ public:
 
     void retranslateUi(QDialog *frmDistortionCalibrationClass)
     {
-        frmDistortionCalibrationClass->setWindowTitle(QApplication::translate("frmDistortionCalibrationClass", "\347\225\270\345\217\230\346\240\207\345\256\232", nullptr));
-        label_3->setText(QApplication::translate("frmDistortionCalibrationClass", "\345\215\225\345\205\203\346\217\217\350\277\260\357\274\232", nullptr));
-        btnExecute->setText(QApplication::translate("frmDistortionCalibrationClass", "\346\211\247\350\241\214", nullptr));
-        groupCamera->setTitle(QApplication::translate("frmDistortionCalibrationClass", "\345\233\276\345\203\217\345\257\271\350\261\241", nullptr));
-        btnSelectPath->setText(QApplication::translate("frmDistortionCalibrationClass", "\350\267\257\345\276\204\351\200\211\346\213\251", nullptr));
-        label_2->setText(QApplication::translate("frmDistortionCalibrationClass", "\346\226\207\344\273\266\345\244\271\350\267\257\345\276\204\357\274\232", nullptr));
+        frmDistortionCalibrationClass->setWindowTitle(QCoreApplication::translate("frmDistortionCalibrationClass", "\347\225\270\345\217\230\346\240\207\345\256\232", nullptr));
+        label_3->setText(QCoreApplication::translate("frmDistortionCalibrationClass", "\345\215\225\345\205\203\346\217\217\350\277\260\357\274\232", nullptr));
+        btnExecute->setText(QCoreApplication::translate("frmDistortionCalibrationClass", "\346\211\247\350\241\214", nullptr));
+        groupCamera->setTitle(QCoreApplication::translate("frmDistortionCalibrationClass", "\345\233\276\345\203\217\345\257\271\350\261\241", nullptr));
+        btnSelectPath->setText(QCoreApplication::translate("frmDistortionCalibrationClass", "\350\267\257\345\276\204\351\200\211\346\213\251", nullptr));
+        label_2->setText(QCoreApplication::translate("frmDistortionCalibrationClass", "\346\226\207\344\273\266\345\244\271\350\267\257\345\276\204\357\274\232", nullptr));
         txtFolderPath->setText(QString());
-        groupC2->setTitle(QApplication::translate("frmDistortionCalibrationClass", "\347\225\270\345\217\230\345\217\202\346\225\260", nullptr));
-        comboType->setItemText(0, QApplication::translate("frmDistortionCalibrationClass", "\345\257\271\347\247\260\345\234\206\347\202\271", nullptr));
-        comboType->setItemText(1, QApplication::translate("frmDistortionCalibrationClass", "\351\235\236\345\257\271\347\247\260\345\234\206\347\202\271", nullptr));
+        groupC2->setTitle(QCoreApplication::translate("frmDistortionCalibrationClass", "\347\225\270\345\217\230\345\217\202\346\225\260", nullptr));
+        comboType->setItemText(0, QCoreApplication::translate("frmDistortionCalibrationClass", "\345\257\271\347\247\260\345\234\206\347\202\271", nullptr));
+        comboType->setItemText(1, QCoreApplication::translate("frmDistortionCalibrationClass", "\351\235\236\345\257\271\347\247\260\345\234\206\347\202\271", nullptr));
 
-        label_5->setText(QApplication::translate("frmDistortionCalibrationClass", "X\346\226\271\345\220\221\345\234\206\347\202\271\346\225\260\357\274\232", nullptr));
-        label_30->setText(QApplication::translate("frmDistortionCalibrationClass", "\345\234\206\345\275\242\346\240\207\345\256\232\347\211\210\347\261\273\345\236\213\357\274\232", nullptr));
-        label_4->setText(QApplication::translate("frmDistortionCalibrationClass", "\346\240\207\345\256\232\346\226\207\344\273\266\344\277\235\345\255\230\357\274\232", nullptr));
+        label_5->setText(QCoreApplication::translate("frmDistortionCalibrationClass", "X\346\226\271\345\220\221\345\234\206\347\202\271\346\225\260\357\274\232", nullptr));
+        label_30->setText(QCoreApplication::translate("frmDistortionCalibrationClass", "\345\234\206\345\275\242\346\240\207\345\256\232\347\211\210\347\261\273\345\236\213\357\274\232", nullptr));
+        label_4->setText(QCoreApplication::translate("frmDistortionCalibrationClass", "\346\240\207\345\256\232\346\226\207\344\273\266\344\277\235\345\255\230\357\274\232", nullptr));
         txtFolderParamPath->setText(QString());
-        btnStoragePath->setText(QApplication::translate("frmDistortionCalibrationClass", "\350\267\257\345\276\204\351\200\211\346\213\251", nullptr));
-        label_6->setText(QApplication::translate("frmDistortionCalibrationClass", "Y\346\226\271\345\220\221\345\234\206\347\202\271\346\225\260\357\274\232", nullptr));
-        label_7->setText(QApplication::translate("frmDistortionCalibrationClass", "\345\234\206\347\233\264\345\276\204\357\274\232", nullptr));
-        label_8->setText(QApplication::translate("frmDistortionCalibrationClass", "\345\234\206\346\234\200\345\244\247\351\235\242\347\247\257\357\274\232", nullptr));
-        label_9->setText(QApplication::translate("frmDistortionCalibrationClass", "\345\234\206\346\234\200\345\260\217\351\235\242\347\247\257\357\274\232", nullptr));
-        label_10->setText(QApplication::translate("frmDistortionCalibrationClass", "\346\234\200\345\260\217\345\234\206\345\272\246\357\274\232", nullptr));
-        label_11->setText(QApplication::translate("frmDistortionCalibrationClass", "\346\234\200\345\244\247\345\234\206\345\272\246\357\274\232", nullptr));
-        groupCamera_3->setTitle(QApplication::translate("frmDistortionCalibrationClass", "\345\217\202\346\225\260\350\260\203\350\257\225", nullptr));
-        btnBlobParam->setText(QApplication::translate("frmDistortionCalibrationClass", "Blob\345\217\202\346\225\260", nullptr));
-        btnCorrectedImage->setText(QApplication::translate("frmDistortionCalibrationClass", "\345\233\276\345\203\217\346\240\241\346\255\243", nullptr));
-        tabWidget->setTabText(tabWidget->indexOf(tab), QApplication::translate("frmDistortionCalibrationClass", "\345\237\272\346\234\254\350\256\276\347\275\256", nullptr));
-        groupC3->setTitle(QApplication::translate("frmDistortionCalibrationClass", "\350\276\223\345\207\272\346\225\260\346\215\256", nullptr));
-        tabWidget->setTabText(tabWidget->indexOf(tab_2), QApplication::translate("frmDistortionCalibrationClass", "\350\276\223\345\207\272\346\230\276\347\244\272", nullptr));
+        btnStoragePath->setText(QCoreApplication::translate("frmDistortionCalibrationClass", "\350\267\257\345\276\204\351\200\211\346\213\251", nullptr));
+        label_6->setText(QCoreApplication::translate("frmDistortionCalibrationClass", "Y\346\226\271\345\220\221\345\234\206\347\202\271\346\225\260\357\274\232", nullptr));
+        label_7->setText(QCoreApplication::translate("frmDistortionCalibrationClass", "\345\234\206\347\233\264\345\276\204\357\274\232", nullptr));
+        label_8->setText(QCoreApplication::translate("frmDistortionCalibrationClass", "\345\234\206\346\234\200\345\244\247\351\235\242\347\247\257\357\274\232", nullptr));
+        label_9->setText(QCoreApplication::translate("frmDistortionCalibrationClass", "\345\234\206\346\234\200\345\260\217\351\235\242\347\247\257\357\274\232", nullptr));
+        label_10->setText(QCoreApplication::translate("frmDistortionCalibrationClass", "\346\234\200\345\260\217\345\234\206\345\272\246\357\274\232", nullptr));
+        label_11->setText(QCoreApplication::translate("frmDistortionCalibrationClass", "\346\234\200\345\244\247\345\234\206\345\272\246\357\274\232", nullptr));
+        groupCamera_3->setTitle(QCoreApplication::translate("frmDistortionCalibrationClass", "\345\217\202\346\225\260\350\260\203\350\257\225", nullptr));
+        btnBlobParam->setText(QCoreApplication::translate("frmDistortionCalibrationClass", "Blob\345\217\202\346\225\260", nullptr));
+        btnCorrectedImage->setText(QCoreApplication::translate("frmDistortionCalibrationClass", "\345\233\276\345\203\217\346\240\241\346\255\243", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab), QCoreApplication::translate("frmDistortionCalibrationClass", "\345\237\272\346\234\254\350\256\276\347\275\256", nullptr));
+        groupC3->setTitle(QCoreApplication::translate("frmDistortionCalibrationClass", "\350\276\223\345\207\272\346\225\260\346\215\256", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab_2), QCoreApplication::translate("frmDistortionCalibrationClass", "\350\276\223\345\207\272\346\230\276\347\244\272", nullptr));
     } // retranslateUi
 
 };

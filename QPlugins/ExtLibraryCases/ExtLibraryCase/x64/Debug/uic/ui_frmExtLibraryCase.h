@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'frmExtLibraryCase.ui'
 **
-** Created by: Qt User Interface Compiler version 5.12.12
+** Created by: Qt User Interface Compiler version 5.14.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -174,11 +174,11 @@ public:
 
     void retranslateUi(QDialog *frmExtLibraryCaseClass)
     {
-        frmExtLibraryCaseClass->setWindowTitle(QApplication::translate("frmExtLibraryCaseClass", "\346\211\251\345\261\225\345\272\223\347\244\272\344\276\213", nullptr));
-        label_3->setText(QApplication::translate("frmExtLibraryCaseClass", "\345\215\225\345\205\203\346\217\217\350\277\260\357\274\232", nullptr));
-        btnExecute->setText(QApplication::translate("frmExtLibraryCaseClass", "\346\211\247\350\241\214", nullptr));
-        label->setText(QApplication::translate("frmExtLibraryCaseClass", "\346\234\254\346\211\251\345\261\225\345\272\223\347\244\272\344\276\213\345\261\225\347\244\272\357\274\232\345\234\206\345\275\242\347\232\204\346\217\220\345\217\226", nullptr));
-        tabWidget->setTabText(tabWidget->indexOf(tab), QApplication::translate("frmExtLibraryCaseClass", "\345\237\272\346\234\254\350\256\276\347\275\256", nullptr));
+        frmExtLibraryCaseClass->setWindowTitle(QCoreApplication::translate("frmExtLibraryCaseClass", "\346\211\251\345\261\225\345\272\223\347\244\272\344\276\213", nullptr));
+        label_3->setText(QCoreApplication::translate("frmExtLibraryCaseClass", "\345\215\225\345\205\203\346\217\217\350\277\260\357\274\232", nullptr));
+        btnExecute->setText(QCoreApplication::translate("frmExtLibraryCaseClass", "\346\211\247\350\241\214", nullptr));
+        label->setText(QCoreApplication::translate("frmExtLibraryCaseClass", "\346\234\254\346\211\251\345\261\225\345\272\223\347\244\272\344\276\213\345\261\225\347\244\272\357\274\232\345\234\206\345\275\242\347\232\204\346\217\220\345\217\226", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab), QCoreApplication::translate("frmExtLibraryCaseClass", "\345\237\272\346\234\254\350\256\276\347\275\256", nullptr));
     } // retranslateUi
 
 };

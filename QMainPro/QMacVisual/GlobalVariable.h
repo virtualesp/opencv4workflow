@@ -62,6 +62,7 @@ enum ToolNameList
     GENERAL_IO,                    //通用I/O
     DELAY_TOOL,                    //延时 
     EXPORT_CSV,                    //导出CSV 
+    YOLOV13,                    //YoloV13 
 	DEFULT_ERROR,
 };
 

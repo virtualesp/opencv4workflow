@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'frmExtensionLibrary.ui'
 **
-** Created by: Qt User Interface Compiler version 5.12.12
+** Created by: Qt User Interface Compiler version 5.14.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -231,21 +231,21 @@ public:
 
     void retranslateUi(QDialog *frmExtensionLibraryClass)
     {
-        frmExtensionLibraryClass->setWindowTitle(QApplication::translate("frmExtensionLibraryClass", "\346\211\251\345\261\225\345\272\223", nullptr));
-        groupBox->setTitle(QApplication::translate("frmExtensionLibraryClass", "\345\233\276\345\203\217\345\257\271\350\261\241", nullptr));
-#ifndef QT_NO_TOOLTIP
-        btnDelLinkImage->setToolTip(QApplication::translate("frmExtensionLibraryClass", "\345\210\240\351\231\244\345\233\276\345\203\217\351\223\276\346\216\245", nullptr));
-#endif // QT_NO_TOOLTIP
+        frmExtensionLibraryClass->setWindowTitle(QCoreApplication::translate("frmExtensionLibraryClass", "\346\211\251\345\261\225\345\272\223", nullptr));
+        groupBox->setTitle(QCoreApplication::translate("frmExtensionLibraryClass", "\345\233\276\345\203\217\345\257\271\350\261\241", nullptr));
+#if QT_CONFIG(tooltip)
+        btnDelLinkImage->setToolTip(QCoreApplication::translate("frmExtensionLibraryClass", "\345\210\240\351\231\244\345\233\276\345\203\217\351\223\276\346\216\245", nullptr));
+#endif // QT_CONFIG(tooltip)
         btnDelLinkImage->setText(QString());
-        label_4->setText(QApplication::translate("frmExtensionLibraryClass", "\350\276\223\345\205\245\345\233\276\345\203\217\357\274\232", nullptr));
-#ifndef QT_NO_TOOLTIP
-        btnLinkImage->setToolTip(QApplication::translate("frmExtensionLibraryClass", "\351\223\276\346\216\245\345\233\276\345\203\217", nullptr));
-#endif // QT_NO_TOOLTIP
+        label_4->setText(QCoreApplication::translate("frmExtensionLibraryClass", "\350\276\223\345\205\245\345\233\276\345\203\217\357\274\232", nullptr));
+#if QT_CONFIG(tooltip)
+        btnLinkImage->setToolTip(QCoreApplication::translate("frmExtensionLibraryClass", "\351\223\276\346\216\245\345\233\276\345\203\217", nullptr));
+#endif // QT_CONFIG(tooltip)
         btnLinkImage->setText(QString());
-        label->setText(QApplication::translate("frmExtensionLibraryClass", "\345\212\250\346\200\201\345\272\223\346\226\207\344\273\266\350\267\257\345\276\204\357\274\232", nullptr));
-        btnPath->setText(QApplication::translate("frmExtensionLibraryClass", "\350\267\257\345\276\204", nullptr));
-        btnSet->setText(QApplication::translate("frmExtensionLibraryClass", "\350\256\276\347\275\256", nullptr));
-        label_3->setText(QApplication::translate("frmExtensionLibraryClass", "\345\215\225\345\205\203\346\217\217\350\277\260\357\274\232", nullptr));
+        label->setText(QCoreApplication::translate("frmExtensionLibraryClass", "\345\212\250\346\200\201\345\272\223\346\226\207\344\273\266\350\267\257\345\276\204\357\274\232", nullptr));
+        btnPath->setText(QCoreApplication::translate("frmExtensionLibraryClass", "\350\267\257\345\276\204", nullptr));
+        btnSet->setText(QCoreApplication::translate("frmExtensionLibraryClass", "\350\256\276\347\275\256", nullptr));
+        label_3->setText(QCoreApplication::translate("frmExtensionLibraryClass", "\345\215\225\345\205\203\346\217\217\350\277\260\357\274\232", nullptr));
     } // retranslateUi
 
 };

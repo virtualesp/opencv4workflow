@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'frmProItemTab.ui'
 **
-** Created by: Qt User Interface Compiler version 5.12.12
+** Created by: Qt User Interface Compiler version 5.14.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -258,30 +258,30 @@ public:
 
     void retranslateUi(QWidget *frmProItemTabClass)
     {
-        frmProItemTabClass->setWindowTitle(QApplication::translate("frmProItemTabClass", "\346\265\201\347\250\213\345\233\276", nullptr));
-#ifndef QT_NO_TOOLTIP
-        btnAddProFlow->setToolTip(QApplication::translate("frmProItemTabClass", "\346\267\273\345\212\240\346\265\201\347\250\213", nullptr));
-#endif // QT_NO_TOOLTIP
+        frmProItemTabClass->setWindowTitle(QCoreApplication::translate("frmProItemTabClass", "\346\265\201\347\250\213\345\233\276", nullptr));
+#if QT_CONFIG(tooltip)
+        btnAddProFlow->setToolTip(QCoreApplication::translate("frmProItemTabClass", "\346\267\273\345\212\240\346\265\201\347\250\213", nullptr));
+#endif // QT_CONFIG(tooltip)
         btnAddProFlow->setText(QString());
-#ifndef QT_NO_TOOLTIP
-        btnDelProFlow->setToolTip(QApplication::translate("frmProItemTabClass", "\345\210\240\351\231\244\346\265\201\347\250\213", nullptr));
-#endif // QT_NO_TOOLTIP
+#if QT_CONFIG(tooltip)
+        btnDelProFlow->setToolTip(QCoreApplication::translate("frmProItemTabClass", "\345\210\240\351\231\244\346\265\201\347\250\213", nullptr));
+#endif // QT_CONFIG(tooltip)
         btnDelProFlow->setText(QString());
-#ifndef QT_NO_TOOLTIP
-        btnSetProFlow->setToolTip(QApplication::translate("frmProItemTabClass", "\346\265\201\347\250\213\350\256\276\347\275\256", nullptr));
-#endif // QT_NO_TOOLTIP
+#if QT_CONFIG(tooltip)
+        btnSetProFlow->setToolTip(QCoreApplication::translate("frmProItemTabClass", "\346\265\201\347\250\213\350\256\276\347\275\256", nullptr));
+#endif // QT_CONFIG(tooltip)
         btnSetProFlow->setText(QString());
-#ifndef QT_NO_TOOLTIP
-        btnRunOnce->setToolTip(QApplication::translate("frmProItemTabClass", "Once", nullptr));
-#endif // QT_NO_TOOLTIP
+#if QT_CONFIG(tooltip)
+        btnRunOnce->setToolTip(QCoreApplication::translate("frmProItemTabClass", "Once", nullptr));
+#endif // QT_CONFIG(tooltip)
         btnRunOnce->setText(QString());
-#ifndef QT_NO_TOOLTIP
-        btnRunCycle->setToolTip(QApplication::translate("frmProItemTabClass", "Cycle", nullptr));
-#endif // QT_NO_TOOLTIP
+#if QT_CONFIG(tooltip)
+        btnRunCycle->setToolTip(QCoreApplication::translate("frmProItemTabClass", "Cycle", nullptr));
+#endif // QT_CONFIG(tooltip)
         btnRunCycle->setText(QString());
-#ifndef QT_NO_TOOLTIP
-        btnStop->setToolTip(QApplication::translate("frmProItemTabClass", "Stop", nullptr));
-#endif // QT_NO_TOOLTIP
+#if QT_CONFIG(tooltip)
+        btnStop->setToolTip(QCoreApplication::translate("frmProItemTabClass", "Stop", nullptr));
+#endif // QT_CONFIG(tooltip)
         btnStop->setText(QString());
         dockTabWidget->setWindowTitle(QString());
     } // retranslateUi

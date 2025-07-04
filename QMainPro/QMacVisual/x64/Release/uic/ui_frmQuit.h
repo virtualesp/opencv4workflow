@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'frmQuit.ui'
 **
-** Created by: Qt User Interface Compiler version 5.12.12
+** Created by: Qt User Interface Compiler version 5.14.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -73,8 +73,8 @@ public:
 
     void retranslateUi(QWidget *frmQuitClass)
     {
-        frmQuitClass->setWindowTitle(QApplication::translate("frmQuitClass", "QMacVisual", nullptr));
-        label->setText(QApplication::translate("frmQuitClass", "\346\255\243\345\234\250\344\277\235\345\255\230\347\233\270\345\205\263\346\225\260\346\215\256\357\274\214\350\257\267\347\250\215\345\220\216...", nullptr));
+        frmQuitClass->setWindowTitle(QCoreApplication::translate("frmQuitClass", "QMacVisual", nullptr));
+        label->setText(QCoreApplication::translate("frmQuitClass", "\346\255\243\345\234\250\344\277\235\345\255\230\347\233\270\345\205\263\346\225\260\346\215\256\357\274\214\350\257\267\347\250\215\345\220\216...", nullptr));
     } // retranslateUi
 
 };

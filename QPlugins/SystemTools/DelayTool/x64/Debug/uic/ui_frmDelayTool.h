@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'frmDelayTool.ui'
 **
-** Created by: Qt User Interface Compiler version 5.12.12
+** Created by: Qt User Interface Compiler version 5.14.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -233,13 +233,13 @@ public:
 
     void retranslateUi(QDialog *frmDelayToolClass)
     {
-        frmDelayToolClass->setWindowTitle(QApplication::translate("frmDelayToolClass", "\345\273\266\346\227\266", nullptr));
-        radioThread->setText(QApplication::translate("frmDelayToolClass", "\347\272\277\347\250\213\344\274\221\347\234\240\346\227\266\351\227\264", nullptr));
-        radioTime->setText(QApplication::translate("frmDelayToolClass", "\345\273\266\346\227\266\346\227\266\351\227\264", nullptr));
-        label->setText(QApplication::translate("frmDelayToolClass", "\346\227\266\351\227\264\357\274\232", nullptr));
-        label_2->setText(QApplication::translate("frmDelayToolClass", "ms", nullptr));
-        label_3->setText(QApplication::translate("frmDelayToolClass", "\345\215\225\345\205\203\346\217\217\350\277\260\357\274\232", nullptr));
-        btnExecute->setText(QApplication::translate("frmDelayToolClass", "\346\211\247\350\241\214", nullptr));
+        frmDelayToolClass->setWindowTitle(QCoreApplication::translate("frmDelayToolClass", "\345\273\266\346\227\266", nullptr));
+        radioThread->setText(QCoreApplication::translate("frmDelayToolClass", "\347\272\277\347\250\213\344\274\221\347\234\240\346\227\266\351\227\264", nullptr));
+        radioTime->setText(QCoreApplication::translate("frmDelayToolClass", "\345\273\266\346\227\266\346\227\266\351\227\264", nullptr));
+        label->setText(QCoreApplication::translate("frmDelayToolClass", "\346\227\266\351\227\264\357\274\232", nullptr));
+        label_2->setText(QCoreApplication::translate("frmDelayToolClass", "ms", nullptr));
+        label_3->setText(QCoreApplication::translate("frmDelayToolClass", "\345\215\225\345\205\203\346\217\217\350\277\260\357\274\232", nullptr));
+        btnExecute->setText(QCoreApplication::translate("frmDelayToolClass", "\346\211\247\350\241\214", nullptr));
     } // retranslateUi
 
 };

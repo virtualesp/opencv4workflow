@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'frmImageRotate.ui'
 **
-** Created by: Qt User Interface Compiler version 5.12.12
+** Created by: Qt User Interface Compiler version 5.14.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -258,22 +258,22 @@ public:
 
     void retranslateUi(QDialog *frmImageRotateClass)
     {
-        frmImageRotateClass->setWindowTitle(QApplication::translate("frmImageRotateClass", "\345\233\276\345\203\217\346\227\213\350\275\254", nullptr));
-        groupCamera->setTitle(QApplication::translate("frmImageRotateClass", "\345\233\276\345\203\217\345\257\271\350\261\241", nullptr));
-        label_4->setText(QApplication::translate("frmImageRotateClass", "\350\276\223\345\205\245\345\233\276\345\203\217\357\274\232", nullptr));
-#ifndef QT_NO_TOOLTIP
-        btnLinkImage->setToolTip(QApplication::translate("frmImageRotateClass", "\351\223\276\346\216\245\345\233\276\345\203\217", nullptr));
-#endif // QT_NO_TOOLTIP
+        frmImageRotateClass->setWindowTitle(QCoreApplication::translate("frmImageRotateClass", "\345\233\276\345\203\217\346\227\213\350\275\254", nullptr));
+        groupCamera->setTitle(QCoreApplication::translate("frmImageRotateClass", "\345\233\276\345\203\217\345\257\271\350\261\241", nullptr));
+        label_4->setText(QCoreApplication::translate("frmImageRotateClass", "\350\276\223\345\205\245\345\233\276\345\203\217\357\274\232", nullptr));
+#if QT_CONFIG(tooltip)
+        btnLinkImage->setToolTip(QCoreApplication::translate("frmImageRotateClass", "\351\223\276\346\216\245\345\233\276\345\203\217", nullptr));
+#endif // QT_CONFIG(tooltip)
         btnLinkImage->setText(QString());
-#ifndef QT_NO_TOOLTIP
-        btnDelLinkImage->setToolTip(QApplication::translate("frmImageRotateClass", "\345\210\240\351\231\244\345\233\276\345\203\217\351\223\276\346\216\245", nullptr));
-#endif // QT_NO_TOOLTIP
+#if QT_CONFIG(tooltip)
+        btnDelLinkImage->setToolTip(QCoreApplication::translate("frmImageRotateClass", "\345\210\240\351\231\244\345\233\276\345\203\217\351\223\276\346\216\245", nullptr));
+#endif // QT_CONFIG(tooltip)
         btnDelLinkImage->setText(QString());
-        groupCamera_2->setTitle(QApplication::translate("frmImageRotateClass", "\346\227\213\350\275\254\345\217\202\346\225\260", nullptr));
-        label_5->setText(QApplication::translate("frmImageRotateClass", "\346\227\213\350\275\254\350\247\222\345\272\246\357\274\232", nullptr));
-        tabWidget->setTabText(tabWidget->indexOf(tab), QApplication::translate("frmImageRotateClass", "\345\237\272\346\234\254\350\256\276\347\275\256", nullptr));
-        label_3->setText(QApplication::translate("frmImageRotateClass", "\345\215\225\345\205\203\346\217\217\350\277\260\357\274\232", nullptr));
-        btnExecute->setText(QApplication::translate("frmImageRotateClass", "\346\211\247\350\241\214", nullptr));
+        groupCamera_2->setTitle(QCoreApplication::translate("frmImageRotateClass", "\346\227\213\350\275\254\345\217\202\346\225\260", nullptr));
+        label_5->setText(QCoreApplication::translate("frmImageRotateClass", "\346\227\213\350\275\254\350\247\222\345\272\246\357\274\232", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab), QCoreApplication::translate("frmImageRotateClass", "\345\237\272\346\234\254\350\256\276\347\275\256", nullptr));
+        label_3->setText(QCoreApplication::translate("frmImageRotateClass", "\345\215\225\345\205\203\346\217\217\350\277\260\357\274\232", nullptr));
+        btnExecute->setText(QCoreApplication::translate("frmImageRotateClass", "\346\211\247\350\241\214", nullptr));
     } // retranslateUi
 
 };

@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'frmProcessSetUp.ui'
 **
-** Created by: Qt User Interface Compiler version 5.12.12
+** Created by: Qt User Interface Compiler version 5.14.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -275,13 +275,13 @@ public:
 
     void retranslateUi(QWidget *frmProcessSetUpClass)
     {
-        frmProcessSetUpClass->setWindowTitle(QApplication::translate("frmProcessSetUpClass", "QMacVisual", nullptr));
-        btnProcessModify->setText(QApplication::translate("frmProcessSetUpClass", "\344\277\256\346\224\271", nullptr));
+        frmProcessSetUpClass->setWindowTitle(QCoreApplication::translate("frmProcessSetUpClass", "QMacVisual", nullptr));
+        btnProcessModify->setText(QCoreApplication::translate("frmProcessSetUpClass", "\344\277\256\346\224\271", nullptr));
         txtProcess->setText(QString());
-        label_2->setText(QApplication::translate("frmProcessSetUpClass", "\351\200\211\344\270\255\347\232\204\346\265\201\347\250\213\345\220\215\347\247\260\357\274\232", nullptr));
-        txtProject->setText(QApplication::translate("frmProcessSetUpClass", "\346\226\260\345\273\272\351\241\271\347\233\256", nullptr));
-        btnProjectModify->setText(QApplication::translate("frmProcessSetUpClass", "\344\277\256\346\224\271", nullptr));
-        label->setText(QApplication::translate("frmProcessSetUpClass", "\351\241\271\347\233\256\345\220\215\347\247\260\357\274\232", nullptr));
+        label_2->setText(QCoreApplication::translate("frmProcessSetUpClass", "\351\200\211\344\270\255\347\232\204\346\265\201\347\250\213\345\220\215\347\247\260\357\274\232", nullptr));
+        txtProject->setText(QCoreApplication::translate("frmProcessSetUpClass", "\346\226\260\345\273\272\351\241\271\347\233\256", nullptr));
+        btnProjectModify->setText(QCoreApplication::translate("frmProcessSetUpClass", "\344\277\256\346\224\271", nullptr));
+        label->setText(QCoreApplication::translate("frmProcessSetUpClass", "\351\241\271\347\233\256\345\220\215\347\247\260\357\274\232", nullptr));
     } // retranslateUi
 
 };

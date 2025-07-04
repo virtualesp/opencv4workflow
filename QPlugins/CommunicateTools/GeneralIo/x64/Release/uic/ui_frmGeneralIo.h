@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'frmGeneralIo.ui'
 **
-** Created by: Qt User Interface Compiler version 5.12.12
+** Created by: Qt User Interface Compiler version 5.14.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -938,21 +938,21 @@ public:
 
     void retranslateUi(QDialog *frmGeneralIoClass)
     {
-        frmGeneralIoClass->setWindowTitle(QApplication::translate("frmGeneralIoClass", "\351\200\232\347\224\250I/O", nullptr));
-        label_3->setText(QApplication::translate("frmGeneralIoClass", "\345\215\225\345\205\203\346\217\217\350\277\260\357\274\232", nullptr));
-        btnExecute->setText(QApplication::translate("frmGeneralIoClass", "\346\211\247\350\241\214", nullptr));
-        groupC->setTitle(QApplication::translate("frmGeneralIoClass", "I/O\345\215\241\345\257\271\350\261\241", nullptr));
-        label_5->setText(QApplication::translate("frmGeneralIoClass", "I/O\345\215\241\345\236\213\345\217\267\357\274\232", nullptr));
-        btnUpdata->setText(QApplication::translate("frmGeneralIoClass", "\346\233\264\346\226\260\345\210\227\350\241\250", nullptr));
-        groupC_2->setTitle(QApplication::translate("frmGeneralIoClass", "I/O\350\276\223\345\205\245\347\202\271(\350\257\273\345\217\226)", nullptr));
-        label_14->setText(QApplication::translate("frmGeneralIoClass", "0", nullptr));
-        label_13->setText(QApplication::translate("frmGeneralIoClass", "1", nullptr));
-        label_12->setText(QApplication::translate("frmGeneralIoClass", "2", nullptr));
-        label_11->setText(QApplication::translate("frmGeneralIoClass", "3", nullptr));
-        label_10->setText(QApplication::translate("frmGeneralIoClass", "4", nullptr));
-        label_9->setText(QApplication::translate("frmGeneralIoClass", "5", nullptr));
-        label_8->setText(QApplication::translate("frmGeneralIoClass", "6", nullptr));
-        label_7->setText(QApplication::translate("frmGeneralIoClass", "7", nullptr));
+        frmGeneralIoClass->setWindowTitle(QCoreApplication::translate("frmGeneralIoClass", "\351\200\232\347\224\250I/O", nullptr));
+        label_3->setText(QCoreApplication::translate("frmGeneralIoClass", "\345\215\225\345\205\203\346\217\217\350\277\260\357\274\232", nullptr));
+        btnExecute->setText(QCoreApplication::translate("frmGeneralIoClass", "\346\211\247\350\241\214", nullptr));
+        groupC->setTitle(QCoreApplication::translate("frmGeneralIoClass", "I/O\345\215\241\345\257\271\350\261\241", nullptr));
+        label_5->setText(QCoreApplication::translate("frmGeneralIoClass", "I/O\345\215\241\345\236\213\345\217\267\357\274\232", nullptr));
+        btnUpdata->setText(QCoreApplication::translate("frmGeneralIoClass", "\346\233\264\346\226\260\345\210\227\350\241\250", nullptr));
+        groupC_2->setTitle(QCoreApplication::translate("frmGeneralIoClass", "I/O\350\276\223\345\205\245\347\202\271(\350\257\273\345\217\226)", nullptr));
+        label_14->setText(QCoreApplication::translate("frmGeneralIoClass", "0", nullptr));
+        label_13->setText(QCoreApplication::translate("frmGeneralIoClass", "1", nullptr));
+        label_12->setText(QCoreApplication::translate("frmGeneralIoClass", "2", nullptr));
+        label_11->setText(QCoreApplication::translate("frmGeneralIoClass", "3", nullptr));
+        label_10->setText(QCoreApplication::translate("frmGeneralIoClass", "4", nullptr));
+        label_9->setText(QCoreApplication::translate("frmGeneralIoClass", "5", nullptr));
+        label_8->setText(QCoreApplication::translate("frmGeneralIoClass", "6", nullptr));
+        label_7->setText(QCoreApplication::translate("frmGeneralIoClass", "7", nullptr));
         checkInPutX0->setText(QString());
         checkInPutX1->setText(QString());
         checkInPutX2->setText(QString());
@@ -961,15 +961,15 @@ public:
         checkInPutX5->setText(QString());
         checkInPutX6->setText(QString());
         checkInPutX7->setText(QString());
-        groupC_3->setTitle(QApplication::translate("frmGeneralIoClass", "I/O\350\276\223\345\207\272\347\202\271(\345\206\231\345\205\245)", nullptr));
-        label_15->setText(QApplication::translate("frmGeneralIoClass", "0", nullptr));
-        label_16->setText(QApplication::translate("frmGeneralIoClass", "1", nullptr));
-        label_17->setText(QApplication::translate("frmGeneralIoClass", "2", nullptr));
-        label_18->setText(QApplication::translate("frmGeneralIoClass", "3", nullptr));
-        label_19->setText(QApplication::translate("frmGeneralIoClass", "4", nullptr));
-        label_20->setText(QApplication::translate("frmGeneralIoClass", "5", nullptr));
-        label_21->setText(QApplication::translate("frmGeneralIoClass", "6", nullptr));
-        label_22->setText(QApplication::translate("frmGeneralIoClass", "7", nullptr));
+        groupC_3->setTitle(QCoreApplication::translate("frmGeneralIoClass", "I/O\350\276\223\345\207\272\347\202\271(\345\206\231\345\205\245)", nullptr));
+        label_15->setText(QCoreApplication::translate("frmGeneralIoClass", "0", nullptr));
+        label_16->setText(QCoreApplication::translate("frmGeneralIoClass", "1", nullptr));
+        label_17->setText(QCoreApplication::translate("frmGeneralIoClass", "2", nullptr));
+        label_18->setText(QCoreApplication::translate("frmGeneralIoClass", "3", nullptr));
+        label_19->setText(QCoreApplication::translate("frmGeneralIoClass", "4", nullptr));
+        label_20->setText(QCoreApplication::translate("frmGeneralIoClass", "5", nullptr));
+        label_21->setText(QCoreApplication::translate("frmGeneralIoClass", "6", nullptr));
+        label_22->setText(QCoreApplication::translate("frmGeneralIoClass", "7", nullptr));
         checkOutPutY0->setText(QString());
         checkOutPutY1->setText(QString());
         checkOutPutY2->setText(QString());
@@ -978,7 +978,7 @@ public:
         checkOutPutY5->setText(QString());
         checkOutPutY6->setText(QString());
         checkOutPutY7->setText(QString());
-        tabWidget->setTabText(tabWidget->indexOf(tab), QApplication::translate("frmGeneralIoClass", "\345\237\272\346\234\254\350\256\276\347\275\256", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab), QCoreApplication::translate("frmGeneralIoClass", "\345\237\272\346\234\254\350\256\276\347\275\256", nullptr));
     } // retranslateUi
 
 };
