@@ -419,7 +419,7 @@ int frmImageView::RunToolPro()
 						{
 							text_content = QString::number(GetToolBase()->m_Tools[text_index].PublicThreeD.Distance, 'f', 3);
 						}
-						else if (strs[1] == "条形码" || strs[1] == "二维码")
+						else if (strs[1] == "条形码" || strs[1] == "二维码" || strs[1] == "识别内容")
 						{
 							for (int n = 0; n < GetToolBase()->m_Tools[text_index].PublicDetect.Code.size(); n++)
 							{

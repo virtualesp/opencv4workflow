@@ -32,6 +32,16 @@ public:
     QGridLayout *gridLayout;
     QSpacerItem *verticalSpacer;
     QSpacerItem *verticalSpacer_2;
+    QGridLayout *imageLayout;
+    QHBoxLayout *horizontalLayout;
+    QSpacerItem *horizontalSpacer;
+    QLabel *label_3;
+    QLineEdit *txtDescribe;
+    QSpacerItem *horizontalSpacer_8;
+    QPushButton *btnExecute;
+    QSpacerItem *horizontalSpacer_2;
+    QSpacerItem *verticalSpacer_4;
+    QSpacerItem *horizontalSpacer_3;
     QTabWidget *tabWidget;
     QWidget *tab;
     QGroupBox *groupCamera;
@@ -62,16 +72,6 @@ public:
     QComboBox *comboTypeBuf;
     QLineEdit *txtTypeName;
     QPushButton *btnWrite;
-    QGridLayout *imageLayout;
-    QHBoxLayout *horizontalLayout;
-    QSpacerItem *horizontalSpacer;
-    QLabel *label_3;
-    QLineEdit *txtDescribe;
-    QSpacerItem *horizontalSpacer_8;
-    QPushButton *btnExecute;
-    QSpacerItem *horizontalSpacer_2;
-    QSpacerItem *verticalSpacer_4;
-    QSpacerItem *horizontalSpacer_3;
 
     void setupUi(QDialog *frmClassifierClass)
     {
@@ -99,8 +99,77 @@ public:
 
         gridLayout->addItem(verticalSpacer_2, 0, 0, 1, 1);
 
+        imageLayout = new QGridLayout();
+        imageLayout->setSpacing(1);
+        imageLayout->setObjectName(QString::fromUtf8("imageLayout"));
+
+        gridLayout->addLayout(imageLayout, 1, 2, 1, 1);
+
+        horizontalLayout = new QHBoxLayout();
+        horizontalLayout->setSpacing(0);
+        horizontalLayout->setObjectName(QString::fromUtf8("horizontalLayout"));
+        horizontalLayout->setContentsMargins(-1, -1, -1, 6);
+        horizontalSpacer = new QSpacerItem(10, 20, QSizePolicy::Fixed, QSizePolicy::Minimum);
+
+        horizontalLayout->addItem(horizontalSpacer);
+
+        label_3 = new QLabel(frmClassifierClass);
+        label_3->setObjectName(QString::fromUtf8("label_3"));
+        sizePolicy.setHeightForWidth(label_3->sizePolicy().hasHeightForWidth());
+        label_3->setSizePolicy(sizePolicy);
+        label_3->setMaximumSize(QSize(83, 25));
+        QFont font;
+        font.setFamily(QString::fromUtf8("\345\276\256\350\275\257\351\233\205\351\273\221"));
+        font.setPointSize(10);
+        label_3->setFont(font);
+        label_3->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);"));
+
+        horizontalLayout->addWidget(label_3);
+
+        txtDescribe = new QLineEdit(frmClassifierClass);
+        txtDescribe->setObjectName(QString::fromUtf8("txtDescribe"));
+        sizePolicy.setHeightForWidth(txtDescribe->sizePolicy().hasHeightForWidth());
+        txtDescribe->setSizePolicy(sizePolicy);
+        txtDescribe->setMinimumSize(QSize(357, 30));
+        txtDescribe->setMaximumSize(QSize(16777215, 30));
+        txtDescribe->setFont(font);
+
+        horizontalLayout->addWidget(txtDescribe);
+
+        horizontalSpacer_8 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        horizontalLayout->addItem(horizontalSpacer_8);
+
+        btnExecute = new QPushButton(frmClassifierClass);
+        btnExecute->setObjectName(QString::fromUtf8("btnExecute"));
+        btnExecute->setMinimumSize(QSize(90, 37));
+        btnExecute->setFont(font);
+        btnExecute->setStyleSheet(QString::fromUtf8("QWidget{ background-color: rgb(85, 135, 127);}\n"
+"QWidget{ color: rgb(235, 235, 235);}\n"
+"QWidget{ border: 2px groove gray;border-radius: 8px;padding: 2px 4px;}\n"
+"QPushButton:hover{ background-color: rgb(85, 155, 127);}\n"
+"QPushButton:pressed{background-color: rgb(85, 175, 127);}"));
+
+        horizontalLayout->addWidget(btnExecute);
+
+        horizontalSpacer_2 = new QSpacerItem(6, 20, QSizePolicy::Fixed, QSizePolicy::Minimum);
+
+        horizontalLayout->addItem(horizontalSpacer_2);
+
+
+        gridLayout->addLayout(horizontalLayout, 3, 0, 1, 3);
+
+        verticalSpacer_4 = new QSpacerItem(20, 5, QSizePolicy::Minimum, QSizePolicy::Fixed);
+
+        gridLayout->addItem(verticalSpacer_4, 2, 0, 1, 1);
+
+        horizontalSpacer_3 = new QSpacerItem(3, 20, QSizePolicy::Fixed, QSizePolicy::Minimum);
+
+        gridLayout->addItem(horizontalSpacer_3, 1, 1, 1, 1);
+
         tabWidget = new QTabWidget(frmClassifierClass);
         tabWidget->setObjectName(QString::fromUtf8("tabWidget"));
+        tabWidget->setEnabled(true);
         QSizePolicy sizePolicy1(QSizePolicy::Fixed, QSizePolicy::Expanding);
         sizePolicy1.setHorizontalStretch(0);
         sizePolicy1.setVerticalStretch(0);
@@ -108,9 +177,6 @@ public:
         tabWidget->setSizePolicy(sizePolicy1);
         tabWidget->setMinimumSize(QSize(450, 550));
         tabWidget->setMaximumSize(QSize(16777215, 16777215));
-        QFont font;
-        font.setFamily(QString::fromUtf8("\345\276\256\350\275\257\351\233\205\351\273\221"));
-        font.setPointSize(10);
         tabWidget->setFont(font);
         tabWidget->setStyleSheet(QString::fromUtf8("background-color: #bcc2bc;"));
         tab = new QWidget();
@@ -157,7 +223,7 @@ public:
         btnDelLinkImage->setIconSize(QSize(27, 27));
         groupFolder = new QGroupBox(tab);
         groupFolder->setObjectName(QString::fromUtf8("groupFolder"));
-        groupFolder->setGeometry(QRect(9, 108, 427, 277));
+        groupFolder->setGeometry(QRect(9, 108, 427, 101));
         groupFolder->setFont(font);
         groupFolder->setStyleSheet(QString::fromUtf8("background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #dfd5cf, stop: 0.15 #acbbac, stop: 0.85 #acbbac,stop:1 #dfd5cf);\n"
 "color: rgb(85, 0, 255);"));
@@ -190,12 +256,14 @@ public:
 "QPushButton:pressed{background-color: rgb(85, 170, 127);}"));
         label_6 = new QLabel(groupFolder);
         label_6->setObjectName(QString::fromUtf8("label_6"));
+        label_6->setEnabled(false);
         label_6->setGeometry(QRect(13, 100, 136, 19));
         label_6->setFont(font1);
         label_6->setStyleSheet(QString::fromUtf8("color: rgb(30, 30, 30);\n"
 "background: transparent;"));
         btnList = new QPushButton(groupFolder);
         btnList->setObjectName(QString::fromUtf8("btnList"));
+        btnList->setEnabled(false);
         btnList->setGeometry(QRect(352, 122, 70, 32));
         btnList->setFont(font2);
         btnList->setStyleSheet(QString::fromUtf8("QWidget{ background-color: rgb(85, 120, 127);}\n"
@@ -205,24 +273,28 @@ public:
 "QPushButton:pressed{background-color: rgb(85, 170, 127);}"));
         txtList = new QLineEdit(groupFolder);
         txtList->setObjectName(QString::fromUtf8("txtList"));
+        txtList->setEnabled(false);
         txtList->setGeometry(QRect(13, 124, 333, 27));
         txtList->setFont(font);
         txtList->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
         txtList->setReadOnly(true);
         label_7 = new QLabel(groupFolder);
         label_7->setObjectName(QString::fromUtf8("label_7"));
+        label_7->setEnabled(false);
         label_7->setGeometry(QRect(13, 166, 136, 19));
         label_7->setFont(font1);
         label_7->setStyleSheet(QString::fromUtf8("color: rgb(30, 30, 30);\n"
 "background: transparent;"));
         txtSaveModel = new QLineEdit(groupFolder);
         txtSaveModel->setObjectName(QString::fromUtf8("txtSaveModel"));
+        txtSaveModel->setEnabled(false);
         txtSaveModel->setGeometry(QRect(13, 190, 333, 27));
         txtSaveModel->setFont(font);
         txtSaveModel->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
         txtSaveModel->setReadOnly(true);
         btnSaveModel = new QPushButton(groupFolder);
         btnSaveModel->setObjectName(QString::fromUtf8("btnSaveModel"));
+        btnSaveModel->setEnabled(false);
         btnSaveModel->setGeometry(QRect(352, 188, 70, 32));
         btnSaveModel->setFont(font2);
         btnSaveModel->setStyleSheet(QString::fromUtf8("QWidget{ background-color: rgb(85, 120, 127);}\n"
@@ -232,6 +304,7 @@ public:
 "QPushButton:pressed{background-color: rgb(85, 170, 127);}"));
         btnTrainModel = new QPushButton(groupFolder);
         btnTrainModel->setObjectName(QString::fromUtf8("btnTrainModel"));
+        btnTrainModel->setEnabled(false);
         btnTrainModel->setGeometry(QRect(329, 237, 93, 35));
         btnTrainModel->setMinimumSize(QSize(82, 35));
         btnTrainModel->setFont(font);
@@ -242,6 +315,7 @@ public:
 "QPushButton:pressed{background-color: rgb(85, 175, 127);}"));
         label_8 = new QLabel(groupFolder);
         label_8->setObjectName(QString::fromUtf8("label_8"));
+        label_8->setEnabled(false);
         label_8->setGeometry(QRect(200, 244, 123, 22));
         QFont font3;
         font3.setFamily(QString::fromUtf8("\351\273\221\344\275\223"));
@@ -251,7 +325,7 @@ public:
 "background: transparent;"));
         groupCamera_2 = new QGroupBox(tab);
         groupCamera_2->setObjectName(QString::fromUtf8("groupCamera_2"));
-        groupCamera_2->setGeometry(QRect(9, 403, 427, 97));
+        groupCamera_2->setGeometry(QRect(10, 220, 427, 97));
         groupCamera_2->setFont(font);
         groupCamera_2->setStyleSheet(QString::fromUtf8("background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #dfd5cf, stop: 0.15 #acbbac, stop: 0.85 #acbbac,stop:1 #dfd5cf);\n"
 "color: rgb(85, 0, 255);"));
@@ -279,6 +353,7 @@ public:
         tabWidget->addTab(tab, QString());
         tab_2 = new QWidget();
         tab_2->setObjectName(QString::fromUtf8("tab_2"));
+        tab_2->setEnabled(false);
         groupCamera_3 = new QGroupBox(tab_2);
         groupCamera_3->setObjectName(QString::fromUtf8("groupCamera_3"));
         groupCamera_3->setGeometry(QRect(9, 18, 427, 175));
@@ -308,7 +383,7 @@ public:
         comboType->addItem(QString());
         comboType->setObjectName(QString::fromUtf8("comboType"));
         comboType->setGeometry(QRect(132, 38, 105, 27));
-        comboType->setMinimumSize(QSize(63, 27));
+        comboType->setMinimumSize(QSize(51, 27));
         comboType->setFont(font);
         comboType->setStyleSheet(QString::fromUtf8("QComboBox {\n"
 "    border: 1px solid gray;\n"
@@ -356,7 +431,7 @@ public:
         comboTypeBuf = new QComboBox(groupCamera_3);
         comboTypeBuf->setObjectName(QString::fromUtf8("comboTypeBuf"));
         comboTypeBuf->setGeometry(QRect(13, 96, 150, 27));
-        comboTypeBuf->setMinimumSize(QSize(63, 27));
+        comboTypeBuf->setMinimumSize(QSize(51, 27));
         comboTypeBuf->setFont(font);
         comboTypeBuf->setStyleSheet(QString::fromUtf8("QComboBox {\n"
 "    border: 1px solid gray;\n"
@@ -420,71 +495,6 @@ public:
 
         gridLayout->addWidget(tabWidget, 1, 0, 1, 1);
 
-        imageLayout = new QGridLayout();
-        imageLayout->setSpacing(1);
-        imageLayout->setObjectName(QString::fromUtf8("imageLayout"));
-
-        gridLayout->addLayout(imageLayout, 1, 2, 1, 1);
-
-        horizontalLayout = new QHBoxLayout();
-        horizontalLayout->setSpacing(0);
-        horizontalLayout->setObjectName(QString::fromUtf8("horizontalLayout"));
-        horizontalLayout->setContentsMargins(-1, -1, -1, 6);
-        horizontalSpacer = new QSpacerItem(10, 20, QSizePolicy::Fixed, QSizePolicy::Minimum);
-
-        horizontalLayout->addItem(horizontalSpacer);
-
-        label_3 = new QLabel(frmClassifierClass);
-        label_3->setObjectName(QString::fromUtf8("label_3"));
-        sizePolicy.setHeightForWidth(label_3->sizePolicy().hasHeightForWidth());
-        label_3->setSizePolicy(sizePolicy);
-        label_3->setMaximumSize(QSize(83, 25));
-        label_3->setFont(font);
-        label_3->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);"));
-
-        horizontalLayout->addWidget(label_3);
-
-        txtDescribe = new QLineEdit(frmClassifierClass);
-        txtDescribe->setObjectName(QString::fromUtf8("txtDescribe"));
-        sizePolicy.setHeightForWidth(txtDescribe->sizePolicy().hasHeightForWidth());
-        txtDescribe->setSizePolicy(sizePolicy);
-        txtDescribe->setMinimumSize(QSize(357, 30));
-        txtDescribe->setMaximumSize(QSize(16777215, 30));
-        txtDescribe->setFont(font);
-
-        horizontalLayout->addWidget(txtDescribe);
-
-        horizontalSpacer_8 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
-
-        horizontalLayout->addItem(horizontalSpacer_8);
-
-        btnExecute = new QPushButton(frmClassifierClass);
-        btnExecute->setObjectName(QString::fromUtf8("btnExecute"));
-        btnExecute->setMinimumSize(QSize(90, 37));
-        btnExecute->setFont(font);
-        btnExecute->setStyleSheet(QString::fromUtf8("QWidget{ background-color: rgb(85, 135, 127);}\n"
-"QWidget{ color: rgb(235, 235, 235);}\n"
-"QWidget{ border: 2px groove gray;border-radius: 8px;padding: 2px 4px;}\n"
-"QPushButton:hover{ background-color: rgb(85, 155, 127);}\n"
-"QPushButton:pressed{background-color: rgb(85, 175, 127);}"));
-
-        horizontalLayout->addWidget(btnExecute);
-
-        horizontalSpacer_2 = new QSpacerItem(6, 20, QSizePolicy::Fixed, QSizePolicy::Minimum);
-
-        horizontalLayout->addItem(horizontalSpacer_2);
-
-
-        gridLayout->addLayout(horizontalLayout, 3, 0, 1, 3);
-
-        verticalSpacer_4 = new QSpacerItem(20, 5, QSizePolicy::Minimum, QSizePolicy::Fixed);
-
-        gridLayout->addItem(verticalSpacer_4, 2, 0, 1, 1);
-
-        horizontalSpacer_3 = new QSpacerItem(3, 20, QSizePolicy::Fixed, QSizePolicy::Minimum);
-
-        gridLayout->addItem(horizontalSpacer_3, 1, 1, 1, 1);
-
 
         retranslateUi(frmClassifierClass);
 
@@ -497,6 +507,8 @@ public:
     void retranslateUi(QDialog *frmClassifierClass)
     {
         frmClassifierClass->setWindowTitle(QCoreApplication::translate("frmClassifierClass", "\345\210\206\347\261\273\345\231\250", nullptr));
+        label_3->setText(QCoreApplication::translate("frmClassifierClass", "\345\215\225\345\205\203\346\217\217\350\277\260\357\274\232", nullptr));
+        btnExecute->setText(QCoreApplication::translate("frmClassifierClass", "\346\211\247\350\241\214", nullptr));
         groupCamera->setTitle(QCoreApplication::translate("frmClassifierClass", "\345\233\276\345\203\217\345\257\271\350\261\241", nullptr));
         lbl_inputimage->setText(QCoreApplication::translate("frmClassifierClass", "\350\276\223\345\205\245\345\233\276\345\203\217\357\274\232", nullptr));
 #if QT_CONFIG(tooltip)
@@ -508,7 +520,7 @@ public:
 #endif // QT_CONFIG(tooltip)
         btnDelLinkImage->setText(QString());
         groupFolder->setTitle(QCoreApplication::translate("frmClassifierClass", "\350\256\255\347\273\203\346\250\241\345\236\213", nullptr));
-        label_2->setText(QCoreApplication::translate("frmClassifierClass", "\342\221\240\345\233\276\345\203\217\346\240\207\347\255\276\346\226\207\344\273\266\357\274\232", nullptr));
+        label_2->setText(QCoreApplication::translate("frmClassifierClass", "\345\233\276\345\203\217\346\240\207\347\255\276\346\226\207\344\273\266\357\274\232", nullptr));
         txtLabels->setText(QString());
         btnLabels->setText(QCoreApplication::translate("frmClassifierClass", "\345\233\276\345\203\217\346\240\207\347\255\276", nullptr));
         label_6->setText(QCoreApplication::translate("frmClassifierClass", "\342\221\241\345\233\276\345\203\217\345\210\227\350\241\250\346\226\207\344\273\266\357\274\232", nullptr));
@@ -544,8 +556,6 @@ public:
         txtTypeName->setText(QString());
         btnWrite->setText(QCoreApplication::translate("frmClassifierClass", "\345\206\231\345\205\245", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(tab_2), QCoreApplication::translate("frmClassifierClass", "\345\217\202\346\225\260\350\256\276\347\275\256", nullptr));
-        label_3->setText(QCoreApplication::translate("frmClassifierClass", "\345\215\225\345\205\203\346\217\217\350\277\260\357\274\232", nullptr));
-        btnExecute->setText(QCoreApplication::translate("frmClassifierClass", "\346\211\247\350\241\214", nullptr));
     } // retranslateUi
 
 };
