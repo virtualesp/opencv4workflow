@@ -8,3 +8,5 @@ Qt5.14.2 + Visual Studio 2022，C++语言标准 C++ 14 （旧版）
 # 新增OCR识别
 下载ONNX Runtime v1.22，将lib放至.\QPlugins\OCR\OCR\onnxruntime目录下，并将lib目录里的所有文件放至.\QSoftExe\Debug或者\QSoftExe\Release下
 
+# 新增海康工业摄像头
+对接海康工业摄像头MVS4.5.1.2，请从海康开放平台下载对应sdk
