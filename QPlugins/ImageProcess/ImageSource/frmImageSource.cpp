@@ -4,7 +4,8 @@
 #include <QDesktopWidget>
 #include <QThread>
 #include <QElapsedTimer>
-
+#include <MvCameraControl.h>
+cv::Mat frmImageSource::srcImage = cv::Mat(); // 定义并初始化
 frmImageSource::frmImageSource(QString toolName, QToolBase* toolBase, QWidget* parent)
 	: Toolnterface(toolName, toolBase, parent)
 {
@@ -43,6 +44,7 @@ frmImageSource::frmImageSource(QString toolName, QToolBase* toolBase, QWidget* p
 	btnCalibGroupRadio->addButton(ui.radioCalibFile, 1);
 	connect(ui.radioCalibFile, SIGNAL(toggled(bool)), this, SLOT(onCalibRadioClick(bool)));
 	imgIndex = 0;
+
 }
 
 frmImageSource::~frmImageSource()
@@ -157,7 +159,44 @@ int frmImageSource::Execute(const QString toolname)
 	GetToolBase()->m_Tools[tool_index].PublicResult.State = true;
 	return 0;
 }
+void __stdcall ImageCallBackEx(unsigned char* pData, MV_FRAME_OUT_INFO_EX* pFrameInfo, void* pUser) {
+	if (!pFrameInfo || !pData) return;
 
+	cv::Mat imgConverted;
+	// 根据像素格式选择转换方式
+    switch (pFrameInfo->enPixelType) 
+    {
+    case PixelType_Gvsp_Mono8:  // 单通道灰度图
+		imgConverted = cv::Mat(pFrameInfo->nHeight, pFrameInfo->nWidth,
+			CV_8UC1, pData).clone(); // 必须克隆数据
+		break;
+
+    case PixelType_Gvsp_BayerRG8:  // Bayer格式需转RGB
+	{
+		cv::Mat bayerImg = cv::Mat(pFrameInfo->nHeight, pFrameInfo->nWidth, CV_8UC1, pData).clone();
+		cv::cvtColor(bayerImg, imgConverted, cv::COLOR_BayerRG2RGB); // Bayer转RGB
+	}
+		break;
+	case PixelType_Gvsp_BayerGB8:
+	{
+		cv::Mat bayerImg = cv::Mat(pFrameInfo->nHeight, pFrameInfo->nWidth, CV_8UC1, pData).clone();
+		cv::cvtColor(bayerImg, imgConverted, cv::COLOR_BayerGB2RGB); // Bayer转RGB
+	}
+		break;
+    case PixelType_Gvsp_RGB8_Packed:  // 原生RGB
+		imgConverted = cv::Mat(pFrameInfo->nHeight, pFrameInfo->nWidth,
+			CV_8UC3, pData).clone();
+		break;
+
+    default:
+		{
+			std::cerr << "Unsupported pixel format: " << pFrameInfo->enPixelType << std::endl;
+			return;
+		}
+    }
+	// 安全存储到全局变量（深拷贝）
+	frmImageSource::srcImage = imgConverted.clone();
+}
 int frmImageSource::RunToolPro(QString image_path, const int index)
 {
 	QDir dir(image_path);
@@ -432,6 +471,64 @@ int frmImageSource::RunToolPro(QString image_path, const int index)
 						}
 					}
 				}
+				else if (gvariable.camera_variable_link.value(key).camera_type == "HIKVision")
+				{
+					loop2:
+					// ch:探测网络最佳包大小(只对GigE相机有效) | en:Detection network optimal package size(It only works for the GigE camera)
+					if (gvariable.CameraVar.hikvision_deviceInfo->nTLayerType == MV_GIGE_DEVICE)
+					{
+						int nPacketSize = MV_CC_GetOptimalPacketSize(hikvision_haldle);
+						if (nPacketSize > 0)
+						{
+							int nRet = MV_CC_SetIntValueEx(hikvision_haldle, "GevSCPSPacketSize", nPacketSize);
+							if (nRet != MV_OK)
+							{
+								printf("Warning: Set Packet Size fail nRet [0x%x]!", nRet);
+							}
+						}
+						else
+						{
+							printf("Warning: Get Packet Size fail nRet [0x%x]!", nPacketSize);
+						}
+					}
+					// ch:注册抓图回调 | en:Register image callback
+					int nRet = MV_CC_RegisterImageCallBackEx(hikvision_haldle, ImageCallBackEx, hikvision_haldle);
+					if (MV_OK != nRet)
+					{
+						printf("Register Image CallBack fail! nRet [0x%x]\n", nRet);
+						break;
+					}
+					nRet = MV_CC_StartGrabbing(hikvision_haldle);
+					if (nRet == MV_OK)
+					{
+						//等待图像回调
+						QElapsedTimer t;
+						t.start();
+						while (t.elapsed() < time_out);
+						if (frmImageSource::srcImage.empty())
+						{
+							//子线程中操作GUI要用信号与槽
+							emit sig_Message();
+							return -2;
+						}
+					}
+					else 
+					{
+						++cam_count;
+						if (cam_count > 20)
+						{
+							GetToolBase()->m_Tools[tool_index].PublicResult.State = false;
+							return -2;
+						}
+						else
+						{
+							QElapsedTimer t;
+							t.start();
+							while (t.elapsed() < 50);
+							goto loop2;
+						}
+					};
+				}
 			}
 		}
 		else
@@ -603,6 +700,13 @@ int frmImageSource::ExecuteCameraLink(const QMap<QString, gVariable::Camera_Var>
 						return 0;
 					}
 				}
+				else if (gvariable.camera_variable_link.value(key).camera_type == "HIKVision")
+				{
+					gvariable.CameraVar.hikvision_deviceInfo = gvariable.camera_variable_link.value(key).hikvision_deviceInfo;
+					hikvision_haldle = gvariable.camera_variable_link.value(key).hikvision_haldle_value;
+					time_out = gvariable.camera_variable_link.value(key).time_out;
+					cam_state = 1;
+				}
 			}
 		}
 		return 0;
@@ -664,6 +768,14 @@ void frmImageSource::on_comboCamera_currentIndexChanged(int index)
 				choose_index = index;
 				return;
 			}
+		}
+		if (gvariable.camera_variable_link.value(key).camera_type == "HIKVision")
+		{
+			gvariable.CameraVar.hikvision_deviceInfo = gvariable.camera_variable_link.value(key).hikvision_deviceInfo;
+			hikvision_haldle = gvariable.camera_variable_link.value(key).hikvision_haldle_value;
+			time_out = gvariable.camera_variable_link.value(key).time_out;
+			cam_state = 1;
+			choose_index = index;
 		}
 	}
 }

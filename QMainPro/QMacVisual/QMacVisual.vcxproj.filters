@@ -191,6 +191,9 @@
     <ClCompile Include="ipaddress.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="MvCamera.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="frmRegister.h">

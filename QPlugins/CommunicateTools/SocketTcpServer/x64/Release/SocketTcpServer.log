@@ -1,1 +1,14 @@
-﻿  SocketTcpServer.vcxproj -> G:\QMacVisual(CV3)(25000)\QMacVisual(CV3)2022.9.21(25000)\QMacVisual(CV3)\QSoftExe\Release\Plugins\SocketTcpServer.dll
+﻿   Qt/MSBuild: 3.4.0.1
+   Qt: 5.14.2
+  Toolnterface.cpp
+  frmSocketTcpServer.cpp
+  mytitlebar.cpp
+  SocketTcpServer.cpp
+  qrc_sub_res.cpp
+  moc_Toolnterface.cpp
+  moc_frmSocketTcpServer.cpp
+  moc_mytitlebar.cpp
+  moc_QToolBase.cpp
+  moc_SocketTcpServer.cpp
+    正在创建库 ../../../QSoftExe/Release/Plugins/SocketTcpServer.lib 和对象 ../../../QSoftExe/Release/Plugins/SocketTcpServer.exp
+  SocketTcpServer.vcxproj -> G:\QMacVisual(CV3)(25000)\QMacVisual(CV3)2022.9.21(25000)\QMacVisual(CV3)\QSoftExe\Release\Plugins\SocketTcpServer.dll

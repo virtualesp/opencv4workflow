@@ -1,6 +1,6 @@
-﻿  Reading Qt configuration (C:/Qt/Qt5.12.12/5.12.12/msvc2017_64/bin/qmake)
-  uic frmMeasureCalibration.ui
-  rcc sub_res.qrc
+﻿   Qt/MSBuild: 3.4.0.1
+  Reading Qt configuration (E:/Qt/Qt5.14.2/5.14.2/msvc2017_64/bin/qmake)
+   Qt: 5.14.2
   moc QToolBase.h
   moc Toolnterface.h
   moc frmMeasureCalibration.h
@@ -32,4 +32,4 @@
   moc_ControlItem.cpp
   moc_MeasureCalibration.cpp
     正在创建库 ../../../QSoftExe/Debug/Plugins/MeasureCalibration.lib 和对象 ../../../QSoftExe/Debug/Plugins/MeasureCalibration.exp
-  MeasureCalibration.vcxproj -> E:\QMacVisual(CV3)\QSoftExe\Debug\Plugins\MeasureCalibration.dll
+  MeasureCalibration.vcxproj -> G:\QMacVisual(CV3)(25000)\QMacVisual(CV3)2022.9.21(25000)\QMacVisual(CV3)\QSoftExe\Debug\Plugins\MeasureCalibration.dll

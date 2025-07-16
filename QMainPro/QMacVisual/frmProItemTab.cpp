@@ -1469,6 +1469,7 @@ ToolNameList frmProItemTab::GetProcessItemNum(const QString itemName)
 	if (itemName.contains("延时")) return ToolNameList::DELAY_TOOL;
 	if (itemName.contains("导出CSV")) return ToolNameList::EXPORT_CSV;
 	if (itemName.contains("YoloV13")) return ToolNameList::YOLOV13;
+	if (itemName.contains("OCR")) return ToolNameList::OCR;
 	return ToolNameList::DEFULT_ERROR;
 }
 
@@ -2422,6 +2423,25 @@ Toolnterface* frmProItemTab::GetNewToolDlg(const int mode, const QString sToolNa
 			if (open)
 			{
 				nClassifierState_buf = 1;
+				Toolnterface* frmPage = open(sToolName, QConfig::ToolBase[flow_index]);
+				frmPage->setObjectName(sToolName);
+				return frmPage;
+			}
+		}
+	}break;
+#pragma endregion
+#pragma region OCR
+	case OCR: {
+		//OCR
+		QLibrary mylib("./Plugins/OCR.dll");   //声明所用到的dll文件
+		if (mylib.load())    //判断是否正确加载
+		{
+			getQRcodeIdentifyState = (GetQRcodeIdentify)mylib.resolve("ShowFormState");
+			setQRcodeIdentifyState = (SetQRcodeIdentify)mylib.resolve("SetFormState");
+			Funs open = (Funs)mylib.resolve("showDialog");
+			if (open)
+			{
+				nQRcodeIdentifyState_buf = 1;
 				Toolnterface* frmPage = open(sToolName, QConfig::ToolBase[flow_index]);
 				frmPage->setObjectName(sToolName);
 				return frmPage;

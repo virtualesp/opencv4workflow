@@ -7,6 +7,7 @@
 #include <QWidgetAction>
 #include <QElapsedTimer>
 #include "datavar.h"
+#include "MvCameraControl.h"
 
 frmCameraSetUp::frmCameraSetUp(QWidget* parent)
 	: QDialog(parent)
@@ -207,11 +208,54 @@ void frmCameraSetUp::on_btnSearchCamera_clicked()
 		break;
 	case 1:
 		//海康威视
+		MV_CC_DEVICE_INFO_LIST stDeviceList; // 存储设备列表的结构体
+		memset(&stDeviceList, 0, sizeof(MV_CC_DEVICE_INFO_LIST)); // 初始化清零
 
+		// 枚举设备（支持GigE网口和USB设备）
+		int nRet = MV_CC_EnumDevices(MV_GIGE_DEVICE | MV_USB_DEVICE, &stDeviceList);
+		if (nRet == MV_OK && stDeviceList.nDeviceNum > 0) {
+			for (unsigned int i = 0; i < stDeviceList.nDeviceNum; i++) {
+				MV_CC_DEVICE_INFO* pDeviceInfo = stDeviceList.pDeviceInfo[i];
+				// 判断设备类型（GigE/USB）
+				if (pDeviceInfo->nTLayerType == MV_GIGE_DEVICE) {
+					std::cout << "GigE相机IP: "
+						<< pDeviceInfo->SpecialInfo.stGigEInfo.nCurrentIp << std::endl;
+				}
+				else if (pDeviceInfo->nTLayerType == MV_USB_DEVICE) {
+					std::cout << "USB相机序列号: "
+						<< pDeviceInfo->SpecialInfo.stUsb3VInfo.chSerialNumber << std::endl;
+				}
+			}
+		}
+		else {
+			std::cerr << "未找到设备或枚举失败！错误码: " << nRet << std::endl;
+			QMessageBox msgBox(QMessageBox::Icon::NoIcon, "错误", "未搜索到海康威视相机！");
+		}
+
+		hCameraList.clear();
+		hCameraList.append(stDeviceList);
+		for (int i = 0; i < stDeviceList.nDeviceNum; i++)
+		{
+			/*unsigned char* pch = (unsigned char*)&stDeviceList.pDeviceInfo[i]->SpecialInfo.stGigEInfo.nCurrentIp;
+			char szIPAddr[64] = { 0 };
+			sprintf(szIPAddr, "%d.%d.%d.%d", *(pch + 3), *(pch + 2), *(pch + 1), *(pch));*/
+			ui.comboCameraName->addItem(IPIntToStr(stDeviceList.pDeviceInfo[i]->SpecialInfo.stGigEInfo.nCurrentIp));
+		}
 		break;
 	}
 }
+QString frmCameraSetUp::IPIntToStr(uint32_t ipInt)
+{
 
+	QString ipA = QString::number(ipInt >> 24);
+	QString ipB = QString::number((ipInt & 0x00FFFFFF) >> 16);
+	QString ipC = QString::number((ipInt & 0x0000FFFF) >> 8);
+	QString ipD = QString::number(ipInt & 0x000000FF);
+
+	//QString ipStr = ipA + "." + ipB + "." + ipC + "." + ipD;
+	QString ipStr = ipD + "." + ipC + "." + ipB + "." + ipA;
+	return ipStr;
+}
 void frmCameraSetUp::on_btnConnect_clicked()
 {
 	//连接相机	
@@ -330,6 +374,7 @@ void frmCameraSetUp::on_btnConnect_clicked()
 	else if (strs[0] == "HIKVision")
 	{
 		//海康威视
+		connectHikVison();
 
 	}
 	//更新获取图像工具
@@ -346,7 +391,582 @@ void frmCameraSetUp::on_btnConnect_clicked()
 		}
 	}
 }
+//海康连接
+void frmCameraSetUp::connectHikVison()
+{
+	int nRet = MV_CC_Initialize();
+	if (MV_OK != nRet)
+	{
+		printf("Initialize SDK fail! nRet [0x%x]\n", nRet);
+		return;
+	}
+	camera_keys.clear();
+	camera_keys = global_camera_content.uniqueKeys();
+	int count = 0;
+	int ccd_Index = 0;
+	for (int k = 0; k < camera_keys.length(); k++)
+	{
+		QString key = camera_keys[k];
+		if (key == ui.lblType->text())
+		{
+			ccd_Index = k;
+			count = 1;
+			ui.spinExposure->setValue(global_camera_content.value(key).global_exposure);
+			ui.spinGain->setValue(global_camera_content.value(key).global_gain);
+			ui.spinGamma->setValue(global_camera_content.value(key).global_gamma);
+			ui.spinContrast->setValue(global_camera_content.value(key).global_contrast);
+			ui.comboTriggerMode->setCurrentText(global_camera_content.value(key).global_trigger_mode);
+			ui.spinTimeOut->setValue(global_camera_content.value(key).global_timeout);
+			CameraContent.ccd_index = ccd_Index;
+			global_camera_content.insert(key, CameraContent);
+			break;
+		}
+	}
+	if (count == 0)
+	{
+		emit dataVar::fProItemTab->sig_ErrorClick();
+		emit dataVar::fProItemTab->sig_Log("该相机参数未保存！");
+		QMessageBox msgBox(QMessageBox::Icon::NoIcon, "错误", "该相机参数未保存！");
+		msgBox.setWindowIcon(QIcon(":/res/ico/error.png"));
+		msgBox.exec();
+		return;
+	}
+	for (int n = 0; n < dataVar::camera_state.count(); n++)
+	{
+		if (dataVar::camera_state[n] == ui.lblType->text())
+		{
+			emit dataVar::fProItemTab->sig_ErrorClick();
+			emit dataVar::fProItemTab->sig_Log(ui.lblType->text() + "相机已连接！");
+			QMessageBox msgBox(QMessageBox::Icon::NoIcon, "错误", ui.lblType->text() + "相机已连接！");
+			msgBox.setWindowIcon(QIcon(":/res/ico/error.png"));
+			msgBox.exec();
+			return;
+		}
+	}
+	//初始化相机，(-1,-1)表示加载上次退出前保存的参数，如果是第一次使用该相机，则加载默认参数
+	/*if ((status = CameraInit(&sCameraList[ccd_Index], -1, -1, &mindvision_haldle)) != CAMERA_STATUS_SUCCESS)
+	{
+		emit dataVar::fProItemTab->sig_ErrorClick();
+		emit dataVar::fProItemTab->sig_Log("初始化相机失败！");
+		QMessageBox msgBox(QMessageBox::Icon::NoIcon, "错误", "初始化相机失败！");
+		msgBox.setWindowIcon(QIcon(":/res/ico/error.png"));
+		msgBox.exec();
+		return;
+	}*/
+	std::string id;
+	//查询设备列表
+	int tempValue = MV_CC_EnumDevices(MV_GIGE_DEVICE | MV_USB_DEVICE, &hCameraList[0]);
+	if (tempValue != 0)
+		//设备更新成功接收命令的返回值为0，返回值不为0则为异常
+		return;
+	if (hCameraList[0].nDeviceNum == 0)
+		//未找到任何相机
+		return;
+	MV_CC_DEVICE_INFO* pDeviceInfo = hCameraList[0].pDeviceInfo[ccd_Index];
 
+	if (NULL == pDeviceInfo)
+	{
+		return;
+	}
+	if (pDeviceInfo->nTLayerType == MV_USB_DEVICE)
+	{
+		if (id == (char*)pDeviceInfo->SpecialInfo.stUsb3VInfo.chSerialNumber || id == (char*)pDeviceInfo->SpecialInfo.stUsb3VInfo.chUserDefinedName || id == (char*)pDeviceInfo->SpecialInfo.stUsb3VInfo.chSerialNumber || id == "PECVD")
+		{
+			m_Device = hCameraList[0].pDeviceInfo[ccd_Index];
+			//return;
+		}
+	}
+
+	if (pDeviceInfo->nTLayerType == MV_GIGE_DEVICE)
+	{
+		if (id == (char*)pDeviceInfo->SpecialInfo.stUsb3VInfo.chSerialNumber || id == (char*)pDeviceInfo->SpecialInfo.stGigEInfo.chUserDefinedName || id == (char*)pDeviceInfo->SpecialInfo.stGigEInfo.chSerialNumber || id == "PECVD")
+		{
+			m_Device = hCameraList[0].pDeviceInfo[ccd_Index];
+			//return;
+		}
+	}
+	//continue;
+//}
+	if (m_Device == NULL)
+	{
+		//未找到指定名称的相机
+		return;
+	}
+
+	tempValue = MV_CC_CreateHandle(&m_hDevHandle, m_Device);
+	if (tempValue != 0)
+		return;
+
+	tempValue = MV_CC_OpenDevice(m_hDevHandle);
+	if (tempValue != 0)
+	{
+		MV_CC_DestroyHandle(m_hDevHandle);
+		m_hDevHandle = NULL;
+		return;
+		emit dataVar::fProItemTab->sig_ErrorClick();
+		emit dataVar::fProItemTab->sig_Log("初始化相机失败！");
+		QMessageBox msgBox(QMessageBox::Icon::NoIcon, "错误", "初始化相机失败！");
+		msgBox.setWindowIcon(QIcon(":/res/ico/error.png"));
+		msgBox.exec();
+	}
+	else
+	{
+		setTriggerMode(1);
+	}
+	if (m_Device->nTLayerType == MV_GIGE_DEVICE)
+	{
+	}
+	if (m_Device->nTLayerType == MV_USB_DEVICE)
+	{
+		MV_CC_SetImageNodeNum(&m_hDevHandle, 2);
+	}
+
+	////获得该相机的特性描述
+	//CameraGetCapability(mindvision_haldle, &sCameraInfo);
+	//mindvision_framebuffer = (BYTE*)CameraAlignMalloc(sCameraInfo.sResolutionRange.iWidthMax * sCameraInfo.sResolutionRange.iWidthMax * 3, 16);
+	////设置曝光
+	//CameraSetAeState(mindvision_haldle, false);
+	//CameraSetExposureTime(mindvision_haldle, ui.spinExposure->value());
+	////设置增益
+	//CameraSetAnalogGain(mindvision_haldle, ui.spinGain->value());
+	////设置伽马
+	//CameraSetGamma(mindvision_haldle, ui.spinGamma->value() * 100);
+	////设置对比度
+	//CameraSetContrast(mindvision_haldle, ui.spinContrast->value());
+	////设置触发模式
+	//int iModeSel = 0;
+	//if (ui.comboTriggerMode->currentIndex() == 0)
+	//{
+	//	iModeSel = 0;
+	//}
+	//else if (ui.comboTriggerMode->currentIndex() == 1)
+	//{
+	//	iModeSel = 1;
+	//}
+	//else if (ui.comboTriggerMode->currentIndex() == 2)
+	//{
+	//	iModeSel = 2;
+	//}
+	//CameraSetTriggerMode(mindvision_haldle, iModeSel);
+	////保存当前相机参数到指定的参数组中
+	//CameraSaveParameter(mindvision_haldle, 0);
+	//if (sCameraInfo.sIspCapacity.bMonoSensor)
+	//{
+	//	CameraSetIspOutFormat(mindvision_haldle, CAMERA_MEDIA_TYPE_MONO8);
+	//}
+	//CameraPlay(mindvision_haldle);
+
+	//设置曝光
+	setExposureAuto(false);
+	setExposureTime(ui.spinExposure->value());
+	//设置增益
+	setGainAuto(false);
+	/*m_pcMyCamera->SetFloatValue("Gain", (float)ui.spinGain->value());*/
+	MV_CC_SetFloatValue(m_hDevHandle, "Gain", (float)ui.spinGain->value());
+	//设置伽马
+	MV_CC_SetFloatValue(m_hDevHandle, "Gamma", (float)ui.spinGamma->value() * 100);
+	//设置对比度
+    // Define a variable of type MV_CC_CCM_PARAM_EX and initialize it properly
+    MV_CC_CCM_PARAM_EX ccmParam;
+    ccmParam.bCCMEnable = true; // Example initialization, adjust as needed
+    ccmParam.nCCMat[0] = ui.spinContrast->value(); // Assuming spinContrast provides a valid value
+    ccmParam.nCCMScale = 1; // Example scale, adjust as needed
+
+    // Pass the address of the variable to the function
+    MV_CC_SetBayerCCMParamEx(m_hDevHandle, &ccmParam);
+	//设置触发模式
+	setTriggerMode(0);
+	if (ui.comboTriggerMode->currentIndex() == 0)
+	{
+		setTriggerSource(0);
+	}
+	else if (ui.comboTriggerMode->currentIndex() == 1)
+	{
+		setTriggerSource(7);
+	}
+	else if (ui.comboTriggerMode->currentIndex() == 2)
+	{
+		setTriggerSource(1);
+	}
+	gVariable::CameraVar.camera_type = "HIKVision";
+    // Update the type of `hikvision_haldle_value` in `gVariable::CameraVar` to match the type of `m_hDevHandle` (void*).  
+    // This ensures compatibility and resolves the type mismatch error.  
+
+    // In the definition of `gVariable::CameraVar`, update the type of `hikvision_haldle_value` from `int` to `void*`.  
+    struct CameraVar {  
+       QString camera_type;  
+       void* hikvision_haldle_value; // Change from int to void*  
+       BYTE* mindvision_framebuffer_value;  
+       int time_out;  
+       // Other members remain unchanged  
+    };  
+
+    // Ensure this change is reflected wherever `hikvision_haldle_value` is used in the codebase.
+	gVariable::CameraVar.hikvision_haldle_value = m_hDevHandle;
+	gVariable::CameraVar.hikvision_deviceInfo = m_Device;
+	//gVariable::CameraVar.hikvision_framebuffer_value = mindvision_framebuffer;
+	gVariable::CameraVar.time_out = ui.spinTimeOut->value();
+	gVariable::camera_variable_link.insert(ui.lblType->text(), gVariable::CameraVar);
+	dataVar::camera_state.append(ui.lblType->text());
+	emit dataVar::fProItemTab->sig_InfoClick();
+	emit dataVar::fProItemTab->sig_Log(ui.lblType->text() + "相机连接成功！");
+	QMessageBox msgBox(QMessageBox::Icon::NoIcon, "提示", ui.lblType->text() + "相机连接成功！");
+	msgBox.setWindowIcon(QIcon(":/res/ico/info.png"));
+	msgBox.exec();
+}
+
+
+
+//启动相机采集
+int frmCameraSetUp::startCamera()
+{
+	int tempValue = MV_CC_StartGrabbing(m_hDevHandle);
+	if (tempValue != 0)
+	{
+		return -1;
+	}
+	else
+	{
+		return 0;
+	}
+}
+
+//停止相机采集
+int frmCameraSetUp::stopCamera()
+{
+	int tempValue = MV_CC_StopGrabbing(m_hDevHandle);
+	if (tempValue != 0)
+	{
+		return -1;
+	}
+	else
+	{
+		return 0;
+	}
+}
+
+//关闭相机
+int frmCameraSetUp::closeCamera()
+{
+	if (NULL == m_hDevHandle)
+	{
+		return -1;
+	}
+	MV_CC_CloseDevice(m_hDevHandle);
+	int tempValue = MV_CC_DestroyHandle(m_hDevHandle);
+	m_hDevHandle = NULL;
+	if (tempValue != 0)
+	{
+		return -1;
+	}
+	else
+	{
+		return 0;
+	}
+}
+
+//发送软触发
+int frmCameraSetUp::softTrigger()
+{
+	int tempValue = MV_CC_SetCommandValue(m_hDevHandle, "TriggerSoftware");
+	if (tempValue != 0)
+	{
+		return -1;
+	}
+	else
+	{
+		return 0;
+	}
+}
+
+//读取相机中的图像
+int frmCameraSetUp::ReadBuffer(cv::Mat& image)
+{
+	cv::Mat* getImage = new cv::Mat();
+	unsigned int nRecvBufSize = 0;
+	MVCC_INTVALUE stParam;
+	memset(&stParam, 0, sizeof(MVCC_INTVALUE));
+	int tempValue = MV_CC_GetIntValue(m_hDevHandle, "PayloadSize", &stParam);
+	if (tempValue != 0)
+	{
+		return -1;
+	}
+	nRecvBufSize = stParam.nCurValue;
+	unsigned char* pDate;
+	pDate = (unsigned char*)malloc(nRecvBufSize);
+
+	MV_FRAME_OUT_INFO_EX stImageInfo = { 0 };
+	tempValue = MV_CC_GetOneFrameTimeout(m_hDevHandle, pDate, nRecvBufSize, &stImageInfo, 700);
+	if (tempValue != 0)
+	{
+		return -1;
+	}
+	m_nBufSizeForSaveImage = stImageInfo.nWidth * stImageInfo.nHeight * 3 + 2048;
+	unsigned char* m_pBufForSaveImage;
+	m_pBufForSaveImage = (unsigned char*)malloc(m_nBufSizeForSaveImage);
+
+
+	bool isMono;
+	switch (stImageInfo.enPixelType)
+	{
+	case PixelType_Gvsp_Mono8:
+	case PixelType_Gvsp_Mono10:
+	case PixelType_Gvsp_Mono10_Packed:
+	case PixelType_Gvsp_Mono12:
+	case PixelType_Gvsp_Mono12_Packed:
+		isMono = true;
+		break;
+	default:
+		isMono = false;
+		break;
+	}
+	if (isMono)
+	{
+		*getImage = cv::Mat(stImageInfo.nHeight, stImageInfo.nWidth, CV_8UC1, pDate);
+		//imwrite("d:\\测试opencv_Mono.tif", image);
+	}
+	else
+	{
+		//转换图像格式为BGR8
+		MV_CC_PIXEL_CONVERT_PARAM stConvertParam = { 0 };
+		memset(&stConvertParam, 0, sizeof(MV_CC_PIXEL_CONVERT_PARAM));
+		stConvertParam.nWidth = stImageInfo.nWidth;                 //ch:图像宽 | en:image width
+		stConvertParam.nHeight = stImageInfo.nHeight;               //ch:图像高 | en:image height
+		//stConvertParam.pSrcData = m_pBufForDriver;                  //ch:输入数据缓存 | en:input data buffer
+		stConvertParam.pSrcData = pDate;                  //ch:输入数据缓存 | en:input data buffer
+		stConvertParam.nSrcDataLen = stImageInfo.nFrameLen;         //ch:输入数据大小 | en:input data size
+		stConvertParam.enSrcPixelType = stImageInfo.enPixelType;    //ch:输入像素格式 | en:input pixel format
+		stConvertParam.enDstPixelType = PixelType_Gvsp_BGR8_Packed; //ch:输出像素格式 | en:output pixel format  适用于OPENCV的图像格式
+		//stConvertParam.enDstPixelType = PixelType_Gvsp_RGB8_Packed; //ch:输出像素格式 | en:output pixel format
+		stConvertParam.pDstBuffer = m_pBufForSaveImage;                    //ch:输出数据缓存 | en:output data buffer
+		stConvertParam.nDstBufferSize = m_nBufSizeForSaveImage;            //ch:输出缓存大小 | en:output buffer size
+		MV_CC_ConvertPixelType(m_hDevHandle, &stConvertParam);
+
+		*getImage = cv::Mat(stImageInfo.nHeight, stImageInfo.nWidth, CV_8UC3, m_pBufForSaveImage);
+		//imwrite("d:\\测试opencv_Color.tif", image);
+	}
+	(*getImage).copyTo(image);
+	(*getImage).release();
+	free(pDate);
+	free(m_pBufForSaveImage);
+	return 0;
+}
+
+//获取图像高度值
+int frmCameraSetUp::getHeight()
+{
+	MVCC_INTVALUE stParam;
+	memset(&stParam, 0, sizeof(MVCC_INTVALUE));
+	int tempValue = MV_CC_GetIntValue(m_hDevHandle, "Height", &stParam);
+	int value = stParam.nCurValue;
+	if (tempValue != 0)
+	{
+		return -1;
+	}
+	else
+	{
+		return value;
+	}
+}
+
+//获取图像宽度值
+int frmCameraSetUp::getWidth()
+{
+	MVCC_INTVALUE stParam;
+	memset(&stParam, 0, sizeof(MVCC_INTVALUE));
+	int tempValue = MV_CC_GetIntValue(m_hDevHandle, "Width", &stParam);
+	int value = stParam.nCurValue;
+	if (tempValue != 0)
+	{
+		return -1;
+	}
+	else
+	{
+		return value;
+	}
+}
+
+//获取相机曝光时间
+float frmCameraSetUp::getExposureTime()
+{
+	MVCC_FLOATVALUE stParam;
+	memset(&stParam, 0, sizeof(MVCC_INTVALUE));
+	int tempValue = MV_CC_GetFloatValue(m_hDevHandle, "ExposureTime", &stParam);
+	float value = stParam.fCurValue;
+	if (tempValue != 0)
+	{
+		return -1;
+	}
+	else
+	{
+		return value;
+	}
+}
+
+//设置图像ROI高度
+int frmCameraSetUp::setHeight(unsigned int height)
+{
+	int tempValue = MV_CC_SetIntValue(m_hDevHandle, "Height", height);
+	if (tempValue != 0)
+	{
+		return -1;
+	}
+	else
+	{
+		return 0;
+	}
+}
+
+//设置图像ROI宽度
+int frmCameraSetUp::setWidth(unsigned int width)
+{
+	int tempValue = MV_CC_SetIntValue(m_hDevHandle, "Width", width);
+	if (tempValue != 0)
+	{
+		return -1;
+	}
+	else
+	{
+		return 0;
+	}
+}
+
+//设置图像水平偏移OffsetX
+int frmCameraSetUp::setOffsetX(unsigned int offsetX)
+{
+	int tempValue = MV_CC_SetIntValue(m_hDevHandle, "OffsetX", offsetX);
+	if (tempValue != 0)
+	{
+		return -1;
+	}
+	else
+	{
+		return 0;
+	}
+}
+
+//设置图像竖直偏移OffsetY
+int frmCameraSetUp::setOffsetY(unsigned int offsetY)
+{
+	int tempValue = MV_CC_SetIntValue(m_hDevHandle, "OffsetY", offsetY);
+	if (tempValue != 0)
+	{
+		return -1;
+	}
+	else
+	{
+		return 0;
+	}
+}
+
+//设置是否为触发模式
+int frmCameraSetUp::setTriggerMode(unsigned int TriggerModeNum)
+{
+	//0：Off  1：On
+	int tempValue = MV_CC_SetEnumValue(m_hDevHandle, "TriggerMode", TriggerModeNum);
+	if (tempValue != 0)
+	{
+		return -1;
+	}
+	else
+	{
+		return 0;
+	}
+}
+
+//设置触发源
+int frmCameraSetUp::setTriggerSource(unsigned int TriggerSourceNum)
+{
+	//0：Line0  1：Line1  7：Software
+	int tempValue = MV_CC_SetEnumValue(m_hDevHandle, "TriggerSource", TriggerSourceNum);
+	if (tempValue != 0)
+	{
+		return -1;
+	}
+	else
+	{
+		return 0;
+	}
+}
+
+//设置帧率控制使能
+int frmCameraSetUp::setFrameRateEnable(bool comm)
+{
+	int tempValue = MV_CC_SetBoolValue(m_hDevHandle, "AcquisitionFrameRateEnable", comm);
+	if (tempValue != 0)
+	{
+		return -1;
+	}
+	else
+	{
+		return 0;
+	}
+}
+
+//设置心跳时间
+int frmCameraSetUp::setHeartBeatTime(unsigned int time)
+{
+	//心跳时间最小为500ms
+	if (time < 500)
+		time = 500;
+	int tempValue = MV_CC_SetIntValue(m_hDevHandle, "GevHeartbeatTimeout", time);
+	if (tempValue != 0)
+	{
+		return -1;
+	}
+	else
+	{
+		return 0;
+	}
+}
+
+//设置曝光时间
+int frmCameraSetUp::setExposureTime(float ExposureTimeNum)
+{
+	int tempValue = MV_CC_SetFloatValue(m_hDevHandle, "ExposureTime", ExposureTimeNum);
+	if (tempValue != 0)
+	{
+		return -1;
+	}
+	else
+	{
+		return 0;
+	}
+}
+//关闭自动曝光
+int frmCameraSetUp::setExposureAuto(bool exposureAutoFlag)
+{
+	int tempValue = MV_CC_SetEnumValue(m_hDevHandle, "ExposureAuto", exposureAutoFlag);
+	if (tempValue != 0)
+	{
+		return -1;
+	}
+	else
+	{
+		return 0;
+	}
+}
+
+//关闭自动增益
+int frmCameraSetUp::setGainAuto(bool gainAutoFlag)
+{
+	int tempValue = MV_CC_SetEnumValue(m_hDevHandle, "GainAuto", gainAutoFlag);
+	if (tempValue != 0)
+	{
+		return -1;
+	}
+	else
+	{
+		return 0;
+	}
+}
+
+//清理相机缓存
+void frmCameraSetUp::clearBuffer()
+{
+	//stopCamera();
+	//startCamera();
+}
 //初始化相机连接
 void frmCameraSetUp::InitCameraConnect(QString camera_key_value)
 {	
@@ -435,6 +1055,11 @@ void frmCameraSetUp::InitCameraConnect(QString camera_key_value)
 		emit dataVar::fProItemTab->sig_InfoClick();
 		emit dataVar::fProItemTab->sig_Log(camera_key_value + "相机连接成功！");
 	}
+	else if (strs[0] == "HIKVision") 
+	{
+		//海康卫视
+		connectHikVison();
+	}
 	//更新获取图像工具
 	QList<int> link_keys = dataVar::all_link_process.uniqueKeys();
 	for (int i = 0; i < link_keys.length(); i++)
@@ -504,7 +1129,47 @@ void frmCameraSetUp::on_btnDisconnect_clicked()
 	else if (strs[0] == "HIKVision")
 	{
 		//海康威视
+		// ch:停止取流 | en:Stop grab image
+		int nRet = MV_CC_StopGrabbing(m_hDevHandle);
+		if (MV_OK != nRet)
+		{
+			printf("Stop Grabbing fail! nRet [0x%x]\n", nRet);
+		}
 
+		// ch:注销抓图回调 | en:Unregister image callback
+		nRet = MV_CC_RegisterImageCallBackEx(m_hDevHandle, NULL, NULL);
+		if (MV_OK != nRet)
+		{
+			printf("Unregister Image CallBack fail! nRet [0x%x]\n", nRet);
+		}
+
+		// ch:关闭设备 | en:Close device
+		nRet = MV_CC_CloseDevice(m_hDevHandle);
+		if (MV_OK != nRet)
+		{
+			printf("Close Device fail! nRet [0x%x]\n", nRet);
+		}
+
+		// ch:销毁句柄 | en:Destroy handle
+		nRet = MV_CC_DestroyHandle(m_hDevHandle);
+		if (MV_OK != nRet)
+		{
+			printf("Destroy Handle fail! nRet [0x%x]\n", nRet);
+		}
+		if (m_hDevHandle != NULL)
+		{
+			MV_CC_DestroyHandle(m_hDevHandle);
+			m_hDevHandle = NULL;
+		}
+		// ch:反初始化SDK | en:Finalize SDK
+		MV_CC_Finalize();
+		dataVar::camera_state.removeOne(ui.lblType->text());
+		gVariable::camera_variable_link.remove(ui.lblType->text());
+		emit dataVar::fProItemTab->sig_InfoClick();
+		emit dataVar::fProItemTab->sig_Log(ui.lblType->text() + "已断开连接！");
+		QMessageBox msgBox(QMessageBox::Icon::NoIcon, "提示", "该相机已断开连接！");
+		msgBox.setWindowIcon(QIcon(":/res/ico/info.png"));
+		msgBox.exec();
 	}
 	//更新获取图像工具
 	QList<int> link_keys = dataVar::all_link_process.uniqueKeys();

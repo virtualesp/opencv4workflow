@@ -187,6 +187,12 @@ typedef void (*SetExportCsv)();
 typedef int (*GetYoloV13)();
 typedef void (*SetYoloV13)();
 #pragma endregion
+
+#pragma region OCR
+//¶¯Ì¬¿â--OCR
+typedef int (*GetOCR)();
+typedef void (*SetOCR)();
+#pragma endregion
 class frmProItemTab : public QWidget
 {
 	Q_OBJECT
@@ -746,5 +752,13 @@ private:
 	SetYoloV13 setYoloV13;
 	int nYoloV13State;
 	int nYoloV13State_buf;
+#pragma endregion
+
+#pragma region OCR
+	//OCR
+	GetOCR getOCR;
+	SetOCR setOCR;
+	int nOCRState;
+	int nOCRState_buf;
 #pragma endregion
 };

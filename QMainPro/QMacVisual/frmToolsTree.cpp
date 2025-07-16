@@ -128,6 +128,12 @@ void frmToolsTree::ToolsTreeWidgetInit()
 	toolPair.second = ToolNameList;
 	ToolNamesVec.push_back(toolPair);
 	ToolNameList.clear();
+	//OCR
+	LoadPlugins("OCR识别");  //加载OCR识别	
+	toolPair.first = "OCR识别";
+	toolPair.second = ToolNameList;
+	ToolNamesVec.push_back(toolPair);
+	ToolNameList.clear();
 	//循环处理图标	
 	for (int i = 0; i < ToolNamesVec.size(); i++)
 	{
@@ -266,5 +272,6 @@ QString frmToolsTree::GetIconName(QString Name)
 	if (Name.contains("延时")) IconName = ":/res/ico/delay.png";	
 	if (Name.contains("导出CSV")) IconName = ":/res/ico/export_csv.png";
 	if (Name.contains("YoloV13")) IconName = ":/res/ico/classifier.png";
+	if (Name.contains("OCR")) IconName = ":/res/ico/ocr.png";
 	return IconName;
 }

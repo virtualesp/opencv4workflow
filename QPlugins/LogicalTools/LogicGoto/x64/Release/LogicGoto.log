@@ -1,1 +1,14 @@
-﻿  LogicGoto.vcxproj -> G:\QMacVisual(CV3)(25000)\QMacVisual(CV3)2022.9.21(25000)\QMacVisual(CV3)\QSoftExe\Release\Plugins\LogicGoto.dll
+﻿   Qt/MSBuild: 3.4.0.1
+   Qt: 5.14.2
+  mytitlebar.cpp
+  Toolnterface.cpp
+  frmLogicGoto.cpp
+  LogicGoto.cpp
+  qrc_sub_res.cpp
+  moc_Toolnterface.cpp
+  moc_QToolBase.cpp
+  moc_mytitlebar.cpp
+  moc_frmLogicGoto.cpp
+  moc_LogicGoto.cpp
+    正在创建库 ../../../QSoftExe/Release/Plugins/LogicGoto.lib 和对象 ../../../QSoftExe/Release/Plugins/LogicGoto.exp
+  LogicGoto.vcxproj -> G:\QMacVisual(CV3)(25000)\QMacVisual(CV3)2022.9.21(25000)\QMacVisual(CV3)\QSoftExe\Release\Plugins\LogicGoto.dll

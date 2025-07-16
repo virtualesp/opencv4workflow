@@ -1349,6 +1349,15 @@ void QtWidgetsSaveLoad::saveToolParam(int index, QString tool_name, QVariant var
 		wi_dataList.g_camera = init_data.g_camera;
 		dataImageSourceList[index].append(wi_dataList);
 	}
+	else if (tool_name == "OCR")
+	{
+		InitImageSourceData init_data;
+		init_data = var.value<InitImageSourceData>();
+		WidgetInfo wi_dataList;
+		wi_dataList.camera_index = init_data.camera_index;
+		wi_dataList.g_camera = init_data.g_camera;
+		dataImageSourceList[index].append(wi_dataList);
+	}
 }
 
 void QtWidgetsSaveLoad::saveToolParam2(int index, QString tool_name, QVariant var)

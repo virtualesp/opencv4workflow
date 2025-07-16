@@ -72,7 +72,7 @@
     <ClCompile>
       <OpenMPSupport>
       </OpenMPSupport>
-      <AdditionalIncludeDirectories>./MIPP;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../../../QMainPro/QMacVisual/include;./MIPP;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="Configuration">

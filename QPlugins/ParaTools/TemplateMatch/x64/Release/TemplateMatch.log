@@ -1,1 +1,24 @@
-﻿  TemplateMatch.vcxproj -> G:\QMacVisual(CV3)(25000)\QMacVisual(CV3)2022.9.21(25000)\QMacVisual(CV3)\QSoftExe\Release\Plugins\TemplateMatch.dll
+﻿   Qt/MSBuild: 3.4.0.1
+   Qt: 5.14.2
+  ImageItem.cpp
+  Toolnterface.cpp
+  BaseItem.cpp
+  ControlItem.cpp
+  frmTemplateMatch.cpp
+  mytitlebar.cpp
+  QGraphicsScenes.cpp
+  QGraphicsViews.cpp
+  TemplateMatch.cpp
+  qrc_sub_res.cpp
+  moc_Toolnterface.cpp
+  moc_BaseItem.cpp
+  moc_ControlItem.cpp
+  moc_QGraphicsScenes.cpp
+  moc_frmTemplateMatch.cpp
+  moc_ImageItem.cpp
+  moc_mytitlebar.cpp
+  moc_QGraphicsViews.cpp
+  moc_QToolBase.cpp
+  moc_TemplateMatch.cpp
+    正在创建库 ../../../QSoftExe/Release/Plugins/TemplateMatch.lib 和对象 ../../../QSoftExe/Release/Plugins/TemplateMatch.exp
+  TemplateMatch.vcxproj -> G:\QMacVisual(CV3)(25000)\QMacVisual(CV3)2022.9.21(25000)\QMacVisual(CV3)\QSoftExe\Release\Plugins\TemplateMatch.dll

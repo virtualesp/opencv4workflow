@@ -1,1 +1,14 @@
-﻿  GeneralIo.vcxproj -> G:\QMacVisual(CV3)(25000)\QMacVisual(CV3)2022.9.21(25000)\QMacVisual(CV3)\QSoftExe\Release\Plugins\GeneralIo.dll
+﻿   Qt/MSBuild: 3.4.0.1
+   Qt: 5.14.2
+  frmGeneralIo.cpp
+  mytitlebar.cpp
+  Toolnterface.cpp
+  GeneralIo.cpp
+  qrc_sub_res.cpp
+  moc_Toolnterface.cpp
+  moc_QToolBase.cpp
+  moc_frmGeneralIo.cpp
+  moc_mytitlebar.cpp
+  moc_GeneralIo.cpp
+    正在创建库 ../../../QSoftExe/Release/Plugins/GeneralIo.lib 和对象 ../../../QSoftExe/Release/Plugins/GeneralIo.exp
+  GeneralIo.vcxproj -> G:\QMacVisual(CV3)(25000)\QMacVisual(CV3)2022.9.21(25000)\QMacVisual(CV3)\QSoftExe\Release\Plugins\GeneralIo.dll

@@ -6,7 +6,7 @@
 #include <opencv2\opencv.hpp>
 #include "winsock2.h"
 #include "./CommTools/Camera/MindVision/Include/CameraApi.h"
-
+#include "CameraParams.h"
 class QToolBase;
 
 class gVariable 
@@ -43,6 +43,8 @@ public:
 	{
 		QString camera_type;
 		CameraHandle mindvision_haldle_value;
+		void* hikvision_haldle_value;
+		MV_CC_DEVICE_INFO* hikvision_deviceInfo;
 		BYTE* mindvision_framebuffer_value = nullptr;
 		int time_out;
 	} Camera_Var;

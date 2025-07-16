@@ -1361,7 +1361,7 @@ bool QToolBase::RunCommunicationLink(const QString toolname)
 			}
 		}
 		QString str_name_buf = m_Tools[i].PublicToolName.mid(0, str_count);
-		if (str_name_buf == "获取图像" || toolname == "通讯工具" || str_name_buf == "YoloV13")
+		if (str_name_buf == "获取图像" || toolname == "通讯工具" || str_name_buf == "YoloV13" || str_name_buf == "OCR")
 		{
 			nResult = m_Tools[i].PublicToolDlg->ExecuteCameraLink(gVariable::camera_variable_link);
 		}

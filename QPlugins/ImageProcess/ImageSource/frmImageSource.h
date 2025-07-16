@@ -84,8 +84,8 @@ private:
 	QButtonGroup* btnCalibGroupRadio;
 	QStringList strs;
 	QStringList mImgNames;
-	cv::Mat srcImage;	
-	cv::Mat dstImage;
+	
+	cv::Mat dstImage= cv::Mat();
 	int tool_index = 0;
 	int param_index = 0;
 	int imgIndex;
@@ -96,12 +96,16 @@ private:
 	int choose_num;
 	int cam_state;
 	CameraHandle mindvision_haldle;
+	void* hikvision_haldle;
 	BYTE* mindvision_framebuffer = nullptr;
 	tSdkFrameHead m_sFrInfo_A;	 //用于保存当前图像帧的帧头信息		
 	tSdkFrameHead sFrameInfo_A;
 	BYTE* pbyBuffer_A;
 	CameraSdkStatus status_A;
 	int time_out;
+public:
+	//static cv::Mat srcImg;
+	static cv::Mat srcImage; //原图像
 };
 
 //全局变量控制

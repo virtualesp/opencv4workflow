@@ -1,1 +1,24 @@
-﻿  ImageRepair.vcxproj -> G:\QMacVisual(CV3)(25000)\QMacVisual(CV3)2022.9.21(25000)\QMacVisual(CV3)\QSoftExe\Release\Plugins\ImageRepair.dll
+﻿   Qt/MSBuild: 3.4.0.1
+   Qt: 5.14.2
+  frmImageRepair.cpp
+  mytitlebar.cpp
+  QGraphicsScenes.cpp
+  QGraphicsViews.cpp
+  Toolnterface.cpp
+  BaseItem.cpp
+  ControlItem.cpp
+  ImageItem.cpp
+  ImageRepair.cpp
+  qrc_sub_res.cpp
+  moc_Toolnterface.cpp
+  moc_QToolBase.cpp
+  moc_mytitlebar.cpp
+  moc_QGraphicsViews.cpp
+  moc_QGraphicsScenes.cpp
+  moc_BaseItem.cpp
+  moc_ControlItem.cpp
+  moc_ImageItem.cpp
+  moc_frmImageRepair.cpp
+  moc_ImageRepair.cpp
+    正在创建库 ../../../QSoftExe/Release/Plugins/ImageRepair.lib 和对象 ../../../QSoftExe/Release/Plugins/ImageRepair.exp
+  ImageRepair.vcxproj -> G:\QMacVisual(CV3)(25000)\QMacVisual(CV3)2022.9.21(25000)\QMacVisual(CV3)\QSoftExe\Release\Plugins\ImageRepair.dll
