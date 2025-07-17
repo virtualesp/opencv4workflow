@@ -4,6 +4,8 @@
 #include <QPainter>
 #include <QFile>
 
+
+
 BaseWindow::BaseWindow(QWidget*parent)
 	: QDialog(parent)
 {
@@ -82,6 +84,8 @@ void BaseWindow::onButtonMaxClicked()
 	QRect FactRect = QRect(desktopRect.x() - 3, desktopRect.y() - 3, desktopRect.width() + 6, desktopRect.height() + 6);
 	setGeometry(FactRect);
 }
+
+
 
 void BaseWindow::onButtonCloseClicked()
 {

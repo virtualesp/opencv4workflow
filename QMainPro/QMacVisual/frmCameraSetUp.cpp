@@ -407,7 +407,8 @@ void frmCameraSetUp::connectHikVison()
 	for (int k = 0; k < camera_keys.length(); k++)
 	{
 		QString key = camera_keys[k];
-		if (key == ui.lblType->text())
+		QString camera_name = ui.lblType->text();
+		if (!key.isEmpty())
 		{
 			ccd_Index = k;
 			count = 1;
@@ -433,7 +434,7 @@ void frmCameraSetUp::connectHikVison()
 	}
 	for (int n = 0; n < dataVar::camera_state.count(); n++)
 	{
-		if (dataVar::camera_state[n] == ui.lblType->text())
+		if (dataVar::camera_state[n] == ui.lblType->text() && !ui.lblType->text().isEmpty() && ui.lblType->text() != "")
 		{
 			emit dataVar::fProItemTab->sig_ErrorClick();
 			emit dataVar::fProItemTab->sig_Log(ui.lblType->text() + "相机已连接！");
@@ -454,15 +455,20 @@ void frmCameraSetUp::connectHikVison()
 		return;
 	}*/
 	std::string id;
+	MV_CC_DEVICE_INFO_LIST CameraList = MV_CC_DEVICE_INFO_LIST();
 	//查询设备列表
-	int tempValue = MV_CC_EnumDevices(MV_GIGE_DEVICE | MV_USB_DEVICE, &hCameraList[0]);
+	if (hCameraList.size() > 0)
+	{
+		CameraList = hCameraList[0];
+	}
+	int tempValue = MV_CC_EnumDevices(MV_GIGE_DEVICE | MV_USB_DEVICE, &CameraList);
 	if (tempValue != 0)
 		//设备更新成功接收命令的返回值为0，返回值不为0则为异常
 		return;
-	if (hCameraList[0].nDeviceNum == 0)
+	if (CameraList.nDeviceNum == 0)
 		//未找到任何相机
 		return;
-	MV_CC_DEVICE_INFO* pDeviceInfo = hCameraList[0].pDeviceInfo[ccd_Index];
+	MV_CC_DEVICE_INFO* pDeviceInfo = CameraList.pDeviceInfo[ccd_Index];
 
 	if (NULL == pDeviceInfo)
 	{
@@ -472,7 +478,7 @@ void frmCameraSetUp::connectHikVison()
 	{
 		if (id == (char*)pDeviceInfo->SpecialInfo.stUsb3VInfo.chSerialNumber || id == (char*)pDeviceInfo->SpecialInfo.stUsb3VInfo.chUserDefinedName || id == (char*)pDeviceInfo->SpecialInfo.stUsb3VInfo.chSerialNumber || id == "PECVD")
 		{
-			m_Device = hCameraList[0].pDeviceInfo[ccd_Index];
+			m_Device = CameraList.pDeviceInfo[ccd_Index];
 			//return;
 		}
 	}
@@ -481,7 +487,7 @@ void frmCameraSetUp::connectHikVison()
 	{
 		if (id == (char*)pDeviceInfo->SpecialInfo.stUsb3VInfo.chSerialNumber || id == (char*)pDeviceInfo->SpecialInfo.stGigEInfo.chUserDefinedName || id == (char*)pDeviceInfo->SpecialInfo.stGigEInfo.chSerialNumber || id == "PECVD")
 		{
-			m_Device = hCameraList[0].pDeviceInfo[ccd_Index];
+			m_Device = CameraList.pDeviceInfo[ccd_Index];
 			//return;
 		}
 	}

@@ -10,7 +10,8 @@
 #include "frmLogin.h"
 #include "frmPermis.h"
 #include "frmAbout.h"
-
+#include <MvCameraControl.h>
+#include <gvariable.h>
 MainWidget::MainWidget(QWidget *parent) : QWidget(parent)
 {    
     this->resize(1360, 768);
@@ -42,6 +43,7 @@ MainWidget::MainWidget(QWidget *parent) : QWidget(parent)
 
 void MainWidget::doClose()
 {
+
     QMessageBox *msgBox = new QMessageBox(this);  
     msgBox->setIcon(QMessageBox::Question);
     msgBox->setWindowTitle("提示!");
@@ -58,7 +60,16 @@ void MainWidget::doClose()
         bun_cancel->deleteLater();
     }
     else
-    {          
+    {
+        if (gVariable::CameraVar.hikvision_haldle_value != nullptr)
+        {
+            //停止相机抓图
+            int tempValue = MV_CC_StopGrabbing(gVariable::CameraVar.hikvision_haldle_value);
+            //释放相机资源
+            int nRet = MV_CC_CloseDevice(gVariable::CameraVar.hikvision_haldle_value);
+            //反初始化相机
+            MV_CC_Finalize();
+        }
         m_pHeadWidget->close();
         m_pHeadWidget->deleteLater();
         dataVar::m_pWindow->close(); 

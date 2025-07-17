@@ -1,5 +1,5 @@
 ﻿   Qt/MSBuild: 3.4.0.1
    Qt: 5.14.2
-  frmCameraSetUp.cpp
-G:\QMacVisual(CV3)(25000)\QMacVisual(CV3)2022.9.21(25000)\QMacVisual(CV3)\QMainPro\QMacVisual\frmCameraSetUp.cpp(793,1): warning C4789: 函数“float __cdecl frmCameraSetUp::getExposureTime(void) __ptr64”中的缓冲区“stParam”(大小为 28 字节)将溢出；从偏移 32 时开始，将会写入 0 字节
+  basemainwindow.cpp
+  mainwidget.cpp
   QMacVisual.vcxproj -> G:\QMacVisual(CV3)(25000)\QMacVisual(CV3)2022.9.21(25000)\QMacVisual(CV3)\QSoftExe\Release\QMacVisual.exe
