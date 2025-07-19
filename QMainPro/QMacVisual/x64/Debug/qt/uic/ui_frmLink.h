@@ -237,6 +237,7 @@ public:
 "QScrollBar::sub-line:horizontal{\n"
 "		background:url(:/res/ico/left.png) center no-repeat;}"));
         tableWidget->setHorizontalScrollBarPolicy(Qt::ScrollBarAsNeeded);
+        tableWidget->setAutoScroll(true);
         tableWidget->setGridStyle(Qt::DashLine);
         tableWidget->horizontalHeader()->setDefaultSectionSize(195);
 

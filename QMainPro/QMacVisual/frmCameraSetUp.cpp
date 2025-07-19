@@ -581,8 +581,8 @@ void frmCameraSetUp::connectHikVison()
     // Pass the address of the variable to the function
     MV_CC_SetBayerCCMParamEx(m_hDevHandle, &ccmParam);
 	//设置触发模式
-	setTriggerMode(0);
-	if (ui.comboTriggerMode->currentIndex() == 0)
+	setTriggerMode(1);
+	/*if (ui.comboTriggerMode->currentIndex() == 0)
 	{
 		setTriggerSource(0);
 	}
@@ -593,7 +593,11 @@ void frmCameraSetUp::connectHikVison()
 	else if (ui.comboTriggerMode->currentIndex() == 2)
 	{
 		setTriggerSource(1);
-	}
+	}*/
+	setTriggerSource(7);//设置为软触发模式
+	// 开始取流
+	int tempvalue = MV_CC_StartGrabbing(m_hDevHandle);
+	
 	gVariable::CameraVar.camera_type = "HIKVision";
     // Update the type of `hikvision_haldle_value` in `gVariable::CameraVar` to match the type of `m_hDevHandle` (void*).  
     // This ensures compatibility and resolves the type mismatch error.  

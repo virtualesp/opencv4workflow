@@ -1268,6 +1268,8 @@ void QtWidgetsSaveLoad::saveToolParam(int index, QString tool_name, QVariant var
 		wi_dataList.global_state = init_data.global_state;
 		wi_dataList.global_content = init_data.global_content;
 		wi_dataList.global_prefix = init_data.global_prefix;
+		wi_dataList.global_OK_text = init_data.global_OK_text;
+		wi_dataList.global_NG_text = init_data.global_NG_text;
 		wi_dataList.global_ok_color = init_data.global_ok_color;
 		wi_dataList.global_ng_color = init_data.global_ng_color;
 		wi_dataList.contour_color = init_data.contour_color;
@@ -2545,6 +2547,8 @@ void  QtWidgetsSaveLoad::loadFromFileFirst()
 						init_data.global_state = dataImageViewList[m].at(image_view_count).global_state;
 						init_data.global_content = dataImageViewList[m].at(image_view_count).global_content;
 						init_data.global_prefix = dataImageViewList[m].at(image_view_count).global_prefix;
+						init_data.global_OK_text = dataImageViewList[m].at(image_view_count).global_OK_text;
+						init_data.global_NG_text = dataImageViewList[m].at(image_view_count).global_NG_text;
 						init_data.global_ok_color = dataImageViewList[m].at(image_view_count).global_ok_color;
 						init_data.global_ng_color = dataImageViewList[m].at(image_view_count).global_ng_color;
 						init_data.contour_color = dataImageViewList[m].at(image_view_count).contour_color;

@@ -5,7 +5,8 @@
 #include <QThread>
 #include <QElapsedTimer>
 #include <MvCameraControl.h>
-cv::Mat frmImageSource::srcImage = cv::Mat(); // 定义并初始化
+
+cv::Mat frmImageSource::srcImg = cv::Mat(); // 定义并初始化
 frmImageSource::frmImageSource(QString toolName, QToolBase* toolBase, QWidget* parent)
 	: Toolnterface(toolName, toolBase, parent)
 {
@@ -154,7 +155,7 @@ int frmImageSource::Execute(const QString toolname)
 		return -2;
 	}
 	GetToolBase()->m_Tools[tool_index].PublicToolName = toolname;
-	GetToolBase()->m_Tools[tool_index].PublicImage.InputImage = srcImage;
+	GetToolBase()->m_Tools[tool_index].PublicImage.InputImage = srcImg;
 	GetToolBase()->m_Tools[tool_index].PublicImage.OutputImage = dstImage;
 	GetToolBase()->m_Tools[tool_index].PublicResult.State = true;
 	return 0;
@@ -175,12 +176,14 @@ void __stdcall ImageCallBackEx(unsigned char* pData, MV_FRAME_OUT_INFO_EX* pFram
 	{
 		cv::Mat bayerImg = cv::Mat(pFrameInfo->nHeight, pFrameInfo->nWidth, CV_8UC1, pData).clone();
 		cv::cvtColor(bayerImg, imgConverted, cv::COLOR_BayerRG2RGB); // Bayer转RGB
+		bayerImg.release();
 	}
 		break;
 	case PixelType_Gvsp_BayerGB8:
 	{
 		cv::Mat bayerImg = cv::Mat(pFrameInfo->nHeight, pFrameInfo->nWidth, CV_8UC1, pData).clone();
 		cv::cvtColor(bayerImg, imgConverted, cv::COLOR_BayerGB2RGB); // Bayer转RGB
+		bayerImg.release();
 	}
 		break;
     case PixelType_Gvsp_RGB8_Packed:  // 原生RGB
@@ -195,7 +198,8 @@ void __stdcall ImageCallBackEx(unsigned char* pData, MV_FRAME_OUT_INFO_EX* pFram
 		}
     }
 	// 安全存储到全局变量（深拷贝）
-	frmImageSource::srcImage = imgConverted.clone();
+	frmImageSource::srcImg = imgConverted.clone();
+	imgConverted.release(); // 释放临时图像
 }
 int frmImageSource::RunToolPro(QString image_path, const int index)
 {
@@ -206,8 +210,8 @@ int frmImageSource::RunToolPro(QString image_path, const int index)
 	switch (index)
 	{
 	case 0:
-		srcImage = cv::imread(image_path.toLocal8Bit().data(), cv::IMREAD_UNCHANGED);
-		if (true == srcImage.empty())
+		srcImg = cv::imread(image_path.toLocal8Bit().data(), cv::IMREAD_UNCHANGED);
+		if (true == srcImg.empty())
 		{
 			//子线程中操作GUI要用信号与槽
 			emit sig_Message();
@@ -220,23 +224,23 @@ int frmImageSource::RunToolPro(QString image_path, const int index)
 			int i_type = strs.size() - 1;
 			if (strs[i_type] == "bmp")
 			{
-				if (srcImage.cols <= 1280)
+				if (srcImg.cols <= 1280)
 				{
 					QThread::msleep(15);
 				}
-				else if (srcImage.cols > 1280 && srcImage.cols < 2048)
+				else if (srcImg.cols > 1280 && srcImg.cols < 2048)
 				{
 					QThread::msleep(30);
 				}
-				else if (srcImage.cols >= 2048 && srcImage.cols < 4000)
+				else if (srcImg.cols >= 2048 && srcImg.cols < 4000)
 				{
 					QThread::msleep(50);
 				}
-				else if (srcImage.cols >= 4000 && srcImage.cols < 6000)
+				else if (srcImg.cols >= 4000 && srcImg.cols < 6000)
 				{
 					QThread::msleep(80);
 				}
-				else if (srcImage.cols >= 6000 && srcImage.cols < 20000)
+				else if (srcImg.cols >= 6000 && srcImg.cols < 20000)
 				{
 					QThread::msleep(150);
 				}
@@ -272,7 +276,7 @@ int frmImageSource::RunToolPro(QString image_path, const int index)
 					GetToolBase()->m_Tools[tool_index].PublicResult.State = false;
 					return -2;
 				}
-				cv::undistort(srcImage, dstImage, GetToolBase()->m_Tools[param_index].PublicCalib.CameraMatrix, GetToolBase()->m_Tools[param_index].PublicCalib.DistCoeffs);
+				cv::undistort(srcImg, dstImage, GetToolBase()->m_Tools[param_index].PublicCalib.CameraMatrix, GetToolBase()->m_Tools[param_index].PublicCalib.DistCoeffs);
 			}
 			else if (ui.radioCalibFile->isChecked() == true)
 			{
@@ -286,13 +290,13 @@ int frmImageSource::RunToolPro(QString image_path, const int index)
 				}
 				else
 				{
-					cv::undistort(srcImage, dstImage, cameraMatrixRead, distCoeffsRead);
+					cv::undistort(srcImg, dstImage, cameraMatrixRead, distCoeffsRead);
 				}
 			}
 		}
 		else
 		{
-			srcImage.copyTo(dstImage);
+			srcImg.copyTo(dstImage);
 		}
 		return 0;
 		break;
@@ -321,13 +325,13 @@ int frmImageSource::RunToolPro(QString image_path, const int index)
 			emit sig_PathMessage();
 			return -1;
 		}
-		srcImage = cv::imread((image_path + "/" + mImgNames[imgIndex]).toLocal8Bit().data(), cv::IMREAD_UNCHANGED);
+		srcImg = cv::imread((image_path + "/" + mImgNames[imgIndex]).toLocal8Bit().data(), cv::IMREAD_UNCHANGED);
 		imgIndex += 1;
 		if (imgIndex == mImgNames.size())
 		{
 			imgIndex = 0;
 		}
-		if (true == srcImage.empty())
+		if (true == srcImg.empty())
 		{
 			//子线程中操作GUI要用信号与槽
 			emit sig_Message();
@@ -340,23 +344,23 @@ int frmImageSource::RunToolPro(QString image_path, const int index)
 			int i_type = strs.size() - 1;
 			if (strs[i_type] == "bmp")
 			{
-				if (srcImage.cols <= 1280)
+				if (srcImg.cols <= 1280)
 				{
 					QThread::msleep(15);
 				}
-				else if (srcImage.cols > 1280 && srcImage.cols < 2048)
+				else if (srcImg.cols > 1280 && srcImg.cols < 2048)
 				{
 					QThread::msleep(30);
 				}
-				else if (srcImage.cols >= 2048 && srcImage.cols < 4000)
+				else if (srcImg.cols >= 2048 && srcImg.cols < 4000)
 				{
 					QThread::msleep(50);
 				}
-				else if (srcImage.cols >= 4000 && srcImage.cols < 6000)
+				else if (srcImg.cols >= 4000 && srcImg.cols < 6000)
 				{
 					QThread::msleep(80);
 				}
-				else if (srcImage.cols >= 6000 && srcImage.cols < 20000)
+				else if (srcImg.cols >= 6000 && srcImg.cols < 20000)
 				{
 					QThread::msleep(150);
 				}
@@ -391,7 +395,7 @@ int frmImageSource::RunToolPro(QString image_path, const int index)
 					GetToolBase()->m_Tools[tool_index].PublicResult.State = false;
 					return -2;
 				}
-				cv::undistort(srcImage, dstImage, GetToolBase()->m_Tools[param_index].PublicCalib.CameraMatrix, GetToolBase()->m_Tools[param_index].PublicCalib.DistCoeffs);
+				cv::undistort(srcImg, dstImage, GetToolBase()->m_Tools[param_index].PublicCalib.CameraMatrix, GetToolBase()->m_Tools[param_index].PublicCalib.DistCoeffs);
 			}
 			else if (ui.radioCalibFile->isChecked() == true)
 			{
@@ -401,18 +405,18 @@ int frmImageSource::RunToolPro(QString image_path, const int index)
 					fs["cameraMatrix"] >> cameraMatrixRead;
 					fs["distCoeffs"] >> distCoeffsRead;
 					fs.release();
-					cv::undistort(srcImage, dstImage, cameraMatrixRead, distCoeffsRead);
+					cv::undistort(srcImg, dstImage, cameraMatrixRead, distCoeffsRead);
 					init_param_buf = 1;
 				}
 				else
 				{
-					cv::undistort(srcImage, dstImage, cameraMatrixRead, distCoeffsRead);
+					cv::undistort(srcImg, dstImage, cameraMatrixRead, distCoeffsRead);
 				}
 			}
 		}
 		else
 		{
-			srcImage.copyTo(dstImage);
+			srcImg.copyTo(dstImage);
 		}
 		return 0;
 		break;
@@ -447,7 +451,7 @@ int frmImageSource::RunToolPro(QString image_path, const int index)
 							CameraImageOverlay(mindvision_haldle, mindvision_framebuffer, &sFrameInfo_A);
 							//由于SDK输出的数据默认是从底到顶，转换为OpenCV图片需要做一下垂直镜像
 							CameraFlipFrameBuffer(mindvision_framebuffer, &sFrameInfo_A, 1);
-							srcImage = cv::Mat(cv::Size(sFrameInfo_A.iWidth, sFrameInfo_A.iHeight), sFrameInfo_A.uiMediaType == CAMERA_MEDIA_TYPE_MONO8 ? CV_8UC1 : CV_8UC3, mindvision_framebuffer);
+							srcImg = cv::Mat(cv::Size(sFrameInfo_A.iWidth, sFrameInfo_A.iHeight), sFrameInfo_A.uiMediaType == CAMERA_MEDIA_TYPE_MONO8 ? CV_8UC1 : CV_8UC3, mindvision_framebuffer);
 						}
 						//在成功调用CameraGetImageBuffer后，必须调用CameraReleaseImageBuffer来释放获得的buffer		
 						CameraReleaseImageBuffer(mindvision_haldle, pbyBuffer_A);
@@ -474,43 +478,48 @@ int frmImageSource::RunToolPro(QString image_path, const int index)
 				else if (gvariable.camera_variable_link.value(key).camera_type == "HIKVision")
 				{
 					loop2:
-					// ch:探测网络最佳包大小(只对GigE相机有效) | en:Detection network optimal package size(It only works for the GigE camera)
-					if (gvariable.CameraVar.hikvision_deviceInfo->nTLayerType == MV_GIGE_DEVICE)
-					{
-						int nPacketSize = MV_CC_GetOptimalPacketSize(hikvision_haldle);
-						if (nPacketSize > 0)
-						{
-							int nRet = MV_CC_SetIntValueEx(hikvision_haldle, "GevSCPSPacketSize", nPacketSize);
-							if (nRet != MV_OK)
-							{
-								printf("Warning: Set Packet Size fail nRet [0x%x]!", nRet);
-							}
-						}
-						else
-						{
-							printf("Warning: Get Packet Size fail nRet [0x%x]!", nPacketSize);
-						}
-					}
-					// ch:注册抓图回调 | en:Register image callback
-					int nRet = MV_CC_RegisterImageCallBackEx(hikvision_haldle, ImageCallBackEx, hikvision_haldle);
-					if (MV_OK != nRet)
-					{
-						printf("Register Image CallBack fail! nRet [0x%x]\n", nRet);
-						break;
-					}
-					nRet = MV_CC_StartGrabbing(hikvision_haldle);
+					//// ch:探测网络最佳包大小(只对GigE相机有效) | en:Detection network optimal package size(It only works for the GigE camera)
+					//if (gvariable.CameraVar.hikvision_deviceInfo->nTLayerType == MV_GIGE_DEVICE)
+					//{
+					//	int nPacketSize = MV_CC_GetOptimalPacketSize(hikvision_haldle);
+					//	if (nPacketSize > 0)
+					//	{
+					//		int nRet = MV_CC_SetIntValueEx(hikvision_haldle, "GevSCPSPacketSize", nPacketSize);
+					//		if (nRet != MV_OK)
+					//		{
+					//			printf("Warning: Set Packet Size fail nRet [0x%x]!", nRet);
+					//		}
+					//	}
+					//	else
+					//	{
+					//		printf("Warning: Get Packet Size fail nRet [0x%x]!", nPacketSize);
+					//	}
+					//}
+					//// ch:注册抓图异步回调 | en:Register image callback
+					//int nRet = MV_CC_RegisterImageCallBackEx(hikvision_haldle, ImageCallBackEx, hikvision_haldle);
+					//if (MV_OK != nRet)
+					//{
+					//	printf("Register Image CallBack fail! nRet [0x%x]\n", nRet);
+					//	break;
+					//}
+					
+					//int nRet = MV_CC_StartGrabbing(hikvision_haldle);
+					
+					int nRet = MV_CC_SetCommandValue(hikvision_haldle, "TriggerSoftware");
+
 					if (nRet == MV_OK)
 					{
-						//等待图像回调
-						QElapsedTimer t;
-						t.start();
-						while (t.elapsed() < time_out);
-						if (frmImageSource::srcImage.empty())
-						{
-							//子线程中操作GUI要用信号与槽
-							emit sig_Message();
-							return -2;
-						}
+						////异步抓图等待图像回调
+						//QElapsedTimer t;
+						//t.start();
+						//while (t.elapsed() < time_out);
+						//if (frmImageSource::srcImg.empty())
+						//{
+						//	//子线程中操作GUI要用信号与槽
+						//	emit sig_Message();
+						//	return -2;
+						//}
+						
 					}
 					else 
 					{
@@ -527,7 +536,15 @@ int frmImageSource::RunToolPro(QString image_path, const int index)
 							while (t.elapsed() < 50);
 							goto loop2;
 						}
-					};
+					}
+					//改成同步获取抓图
+					ReadBuffer(m_nBufSizeForSaveImage, hikvision_haldle, srcImg);
+					//// ch:停止取流 | en:Stop grab image
+					//nRet = MV_CC_StopGrabbing(hikvision_haldle);
+					//if (MV_OK != nRet)
+					//{
+					//	printf("Stop Grabbing fail! nRet [0x%x]\n", nRet);
+					//}
 				}
 			}
 		}
@@ -541,7 +558,7 @@ int frmImageSource::RunToolPro(QString image_path, const int index)
 			GetToolBase()->m_Tools[tool_index].PublicResult.State = false;
 			return -1;
 		}
-		if (true == srcImage.empty())
+		if (true == srcImg.empty())
 		{
 			//子线程中操作GUI要用信号与槽
 			emit sig_Message();
@@ -577,7 +594,7 @@ int frmImageSource::RunToolPro(QString image_path, const int index)
 					GetToolBase()->m_Tools[tool_index].PublicResult.State = false;
 					return -2;
 				}
-				cv::undistort(srcImage, dstImage, GetToolBase()->m_Tools[param_index].PublicCalib.CameraMatrix, GetToolBase()->m_Tools[param_index].PublicCalib.DistCoeffs);
+				cv::undistort(srcImg, dstImage, GetToolBase()->m_Tools[param_index].PublicCalib.CameraMatrix, GetToolBase()->m_Tools[param_index].PublicCalib.DistCoeffs);
 			}
 			else if (ui.radioCalibFile->isChecked() == true)
 			{
@@ -591,20 +608,91 @@ int frmImageSource::RunToolPro(QString image_path, const int index)
 				}
 				else
 				{
-					cv::undistort(srcImage, dstImage, cameraMatrixRead, distCoeffsRead);
+					cv::undistort(srcImg, dstImage, cameraMatrixRead, distCoeffsRead);
 				}
 			}
 		}
 		else
 		{
-			srcImage.copyTo(dstImage);
+			srcImg.copyTo(dstImage);
 		}
 		return 0;
 		break;
 	}
 	return 0;
 }
+//读取相机中的图像
+int frmImageSource::ReadBuffer(unsigned int m_nBufSizeForSaveImage,void* m_hDevHandle, cv::Mat& image)
+{
+	cv::Mat* getImage = new cv::Mat();
+	unsigned int nRecvBufSize = 0;
+	MVCC_INTVALUE stParam;
+	memset(&stParam, 0, sizeof(MVCC_INTVALUE));
+	int tempValue = MV_CC_GetIntValue(m_hDevHandle, "PayloadSize", &stParam);
+	if (tempValue != 0)
+	{
+		return -1;
+	}
+	nRecvBufSize = stParam.nCurValue;
+	unsigned char* pDate;
+	pDate = (unsigned char*)malloc(nRecvBufSize);
 
+	MV_FRAME_OUT_INFO_EX stImageInfo = { 0 };
+	tempValue = MV_CC_GetOneFrameTimeout(m_hDevHandle, pDate, nRecvBufSize, &stImageInfo, 700);
+	if (tempValue != 0)
+	{
+		return -1;
+	}
+	m_nBufSizeForSaveImage = stImageInfo.nWidth * stImageInfo.nHeight * 3 + 2048;
+	unsigned char* m_pBufForSaveImage;
+	m_pBufForSaveImage = (unsigned char*)malloc(m_nBufSizeForSaveImage);
+
+
+	bool isMono;
+	switch (stImageInfo.enPixelType)
+	{
+	case PixelType_Gvsp_Mono8:
+	case PixelType_Gvsp_Mono10:
+	case PixelType_Gvsp_Mono10_Packed:
+	case PixelType_Gvsp_Mono12:
+	case PixelType_Gvsp_Mono12_Packed:
+		isMono = true;
+		break;
+	default:
+		isMono = false;
+		break;
+	}
+	if (isMono)
+	{
+		*getImage = cv::Mat(stImageInfo.nHeight, stImageInfo.nWidth, CV_8UC1, pDate);
+		//imwrite("d:\\测试opencv_Mono.tif", image);
+	}
+	else
+	{
+		//转换图像格式为BGR8
+		MV_CC_PIXEL_CONVERT_PARAM stConvertParam = { 0 };
+		memset(&stConvertParam, 0, sizeof(MV_CC_PIXEL_CONVERT_PARAM));
+		stConvertParam.nWidth = stImageInfo.nWidth;                 //ch:图像宽 | en:image width
+		stConvertParam.nHeight = stImageInfo.nHeight;               //ch:图像高 | en:image height
+		//stConvertParam.pSrcData = m_pBufForDriver;                  //ch:输入数据缓存 | en:input data buffer
+		stConvertParam.pSrcData = pDate;                  //ch:输入数据缓存 | en:input data buffer
+		stConvertParam.nSrcDataLen = stImageInfo.nFrameLen;         //ch:输入数据大小 | en:input data size
+		stConvertParam.enSrcPixelType = stImageInfo.enPixelType;    //ch:输入像素格式 | en:input pixel format
+		stConvertParam.enDstPixelType = PixelType_Gvsp_BGR8_Packed; //ch:输出像素格式 | en:output pixel format  适用于OPENCV的图像格式
+		//stConvertParam.enDstPixelType = PixelType_Gvsp_RGB8_Packed; //ch:输出像素格式 | en:output pixel format
+		stConvertParam.pDstBuffer = m_pBufForSaveImage;                    //ch:输出数据缓存 | en:output data buffer
+		stConvertParam.nDstBufferSize = m_nBufSizeForSaveImage;            //ch:输出缓存大小 | en:output buffer size
+		MV_CC_ConvertPixelType(m_hDevHandle, &stConvertParam);
+
+		*getImage = cv::Mat(stImageInfo.nHeight, stImageInfo.nWidth, CV_8UC3, m_pBufForSaveImage);
+		//imwrite("d:\\测试opencv_Color.tif", image);
+	}
+	(*getImage).copyTo(image);
+	(*getImage).release();
+	free(pDate);
+	free(m_pBufForSaveImage);
+	return 0;
+}
 void frmImageSource::slot_Message()
 {
 	QMessageBox::warning(this, "提示", "加载图像失败！", QMessageBox::Ok);

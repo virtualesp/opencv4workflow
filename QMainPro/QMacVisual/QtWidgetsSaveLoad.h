@@ -116,6 +116,8 @@ struct InitImageViewData
 	QVector<QString> global_prefix;
 	QVector<QColor> global_ok_color;
 	QVector<QColor> global_ng_color;
+	QVector<QString> global_OK_text;
+	QVector<QString> global_NG_text;
 	QColor contour_color;
 };
 Q_DECLARE_METATYPE(InitImageViewData);
@@ -443,6 +445,8 @@ public:
 	QVector<QString> global_state;
 	QVector<QString> global_content;
 	QVector<QString> global_prefix;
+	QVector<QString> global_OK_text;
+	QVector<QString> global_NG_text;
 	QVector<QColor> global_ok_color;
 	QVector<QColor> global_ng_color;
 	QColor contour_color;
@@ -510,7 +514,7 @@ public:
 			<< wi.mit_over_time_value << wi.mit_remark_value << wi.portname_value << wi.baudrate_value << wi.parity_value << wi.databits_value << wi.stopbits_value << wi.flowcontrol_value << wi.protocol_value;
 		dataStream << wi.camera_key_value << wi.ccd_index << wi.camera_state << wi.global_exposure << wi.global_gain << wi.global_gamma << wi.global_contrast << wi.global_trigger_mode << wi.camera_type << wi.mindvision_haldle_value << wi.mindvision_framebuffer_value << wi.time_out;
 		dataStream << wi.camera_index << wi.g_camera << wi.type << wi.x << wi.y << wi.width << wi.height << wi.Lenth1 << wi.Lenth2 << wi.Pi << wi.R << wi.init_points << wi.list_ps << wi.color;
-		dataStream << wi.key << wi.global_pos_xy << wi.global_state << wi.global_content << wi.global_prefix << wi.global_ok_color << wi.global_ng_color << wi.contour_color << wi.srcStandardImage << wi.type_key << wi.type_names << wi.file_model << wi.srcModelImage << wi.datum_center;
+		dataStream << wi.key << wi.global_pos_xy << wi.global_state << wi.global_content << wi.global_prefix << wi.global_OK_text << wi.global_NG_text << wi.global_ok_color << wi.global_ng_color << wi.contour_color << wi.srcStandardImage << wi.type_key << wi.type_names << wi.file_model << wi.srcModelImage << wi.datum_center;
 		dataStream << wi.use_roi << wi.fileModelName << wi.PixelEquivalentX << wi.PixelEquivalentY << wi.RadiusMin << wi.RadiusMax << wi.segment_line_num << wi.ring_s_points << wi.ring_b_points << wi.x1 << wi.y1 << wi.x2 << wi.y2 << wi.line_s_points << wi.line_b_points
 			<< wi.row << wi.col << wi.len1 << wi.len2 << wi.angle << wi.pp1 << wi.pp2 << wi.csv_key << wi.csv_names << wi.dirPath << wi.image_link << wi.goto_index << wi.g_tools << wi.io_index << wi.io_tools;
 		dataStream << wi.plc_index << wi.plc_tools << wi.plc_key << wi.mit_code << wi.mit_state << wi.mit_method << wi.mit_address << wi.mit_data << wi.sport_index << wi.sport_tools << wi.client_index << wi.client_tools << wi.server_index << wi.server_tools;
@@ -530,7 +534,7 @@ public:
 			>> wi.mit_over_time_value >> wi.mit_remark_value >> wi.portname_value >> wi.baudrate_value >> wi.parity_value >> wi.databits_value >> wi.stopbits_value >> wi.flowcontrol_value >> wi.protocol_value;
 		dataStream >> wi.camera_key_value >> wi.ccd_index >> wi.camera_state >> wi.global_exposure >> wi.global_gain >> wi.global_gamma >> wi.global_contrast >> wi.global_trigger_mode >> wi.camera_type >> wi.mindvision_haldle_value >> wi.mindvision_framebuffer_value >> wi.time_out;
 		dataStream >> wi.camera_index >> wi.g_camera >> wi.type >> wi.x >> wi.y >> wi.width >> wi.height >> wi.Lenth1 >> wi.Lenth2 >> wi.Pi >> wi.R >> wi.init_points >> wi.list_ps >> wi.color;
-		dataStream >> wi.key >> wi.global_pos_xy >> wi.global_state >> wi.global_content >> wi.global_prefix >> wi.global_ok_color >> wi.global_ng_color >> wi.contour_color >> wi.srcStandardImage >> wi.type_key >> wi.type_names >> wi.file_model >> wi.srcModelImage >> wi.datum_center;
+		dataStream >> wi.key >> wi.global_pos_xy >> wi.global_state >> wi.global_content >> wi.global_prefix >> wi.global_OK_text >> wi.global_NG_text >> wi.global_ok_color >> wi.global_ng_color >> wi.contour_color >> wi.srcStandardImage >> wi.type_key >> wi.type_names >> wi.file_model >> wi.srcModelImage >> wi.datum_center;
 		dataStream >> wi.use_roi >> wi.fileModelName >> wi.PixelEquivalentX >> wi.PixelEquivalentY >> wi.RadiusMin >> wi.RadiusMax >> wi.segment_line_num >> wi.ring_s_points >> wi.ring_b_points >> wi.x1 >> wi.y1 >> wi.x2 >> wi.y2 >> wi.line_s_points >> wi.line_b_points
 			>> wi.row >> wi.col >> wi.len1 >> wi.len2 >> wi.angle >> wi.pp1 >> wi.pp2 >> wi.csv_key >> wi.csv_names >> wi.dirPath >> wi.image_link >> wi.goto_index >> wi.g_tools >> wi.io_index >> wi.io_tools;
 		dataStream >> wi.plc_index >> wi.plc_tools >> wi.plc_key >> wi.mit_code >> wi.mit_state >> wi.mit_method >> wi.mit_address >> wi.mit_data >> wi.sport_index >> wi.sport_tools >> wi.client_index >> wi.client_tools >> wi.server_index >> wi.server_tools;

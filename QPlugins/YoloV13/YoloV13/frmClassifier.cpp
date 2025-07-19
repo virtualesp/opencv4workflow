@@ -11,7 +11,6 @@
 #include "YOLO12.hpp" 
 #include <Windows.h>
 
-
 cv::Mat frmClassifier::GetYoloV13(std::string modelPath, std::string labelsPath, cv::Mat image, bool isGPU)
 {
 
@@ -173,7 +172,7 @@ int frmClassifier::RunToolPro()
 	try
 	{
 		srcImage = GetToolBase()->m_Tools[image_index].PublicImage.OutputImage;
-		GetToolBase()->m_Tools[tool_index].PublicImage.OutputImage = srcImage;
+		//GetToolBase()->m_Tools[tool_index].PublicImage.OutputImage = srcImage;
 		QString type;
 		bool state = PredictionImage(srcImage, type);
 		GetToolBase()->m_Tools[tool_index].PublicDetect.Category = type;

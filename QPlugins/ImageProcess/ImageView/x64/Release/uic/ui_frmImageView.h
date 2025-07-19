@@ -117,6 +117,10 @@ public:
     QPushButton *btnBack;
     QLabel *label;
     QPushButton *btnSave;
+    QLabel *label_18;
+    QLabel *label_19;
+    QLineEdit *txtOKtext;
+    QLineEdit *txtNGtext;
     QSpacerItem *horizontalSpacer_3;
 
     void setupUi(QDialog *frmImageViewClass)
@@ -795,7 +799,7 @@ public:
 "background: transparent;"));
         btnOkColor = new QPushButton(groupCamera_4);
         btnOkColor->setObjectName(QString::fromUtf8("btnOkColor"));
-        btnOkColor->setGeometry(QRect(95, 238, 260, 27));
+        btnOkColor->setGeometry(QRect(95, 238, 91, 27));
         btnOkColor->setStyleSheet(QString::fromUtf8("border:none;\n"
 "background-color: rgba(0, 255, 0);"));
         label_12 = new QLabel(groupCamera_4);
@@ -838,7 +842,7 @@ public:
 "background: transparent;"));
         btnNgColor = new QPushButton(groupCamera_4);
         btnNgColor->setObjectName(QString::fromUtf8("btnNgColor"));
-        btnNgColor->setGeometry(QRect(95, 288, 260, 27));
+        btnNgColor->setGeometry(QRect(95, 288, 91, 27));
         btnNgColor->setStyleSheet(QString::fromUtf8("border:none;\n"
 "background-color: rgba(255, 0, 0);"));
         txtPrefix = new QLineEdit(groupCamera_4);
@@ -951,6 +955,34 @@ public:
 "QWidget{ border: 2px groove gray;border-radius: 5px;padding: 2px 4px;}\n"
 "QPushButton:hover{ background-color: rgba(125, 255, 127,200);}\n"
 "QPushButton:pressed{background-color: rgba(125, 255, 127,255);}"));
+        label_18 = new QLabel(groupCamera_4);
+        label_18->setObjectName(QString::fromUtf8("label_18"));
+        label_18->setGeometry(QRect(200, 240, 61, 19));
+        label_18->setFont(font);
+        label_18->setStyleSheet(QString::fromUtf8("color: rgb(0, 0, 0);\n"
+"background: transparent;"));
+        label_19 = new QLabel(groupCamera_4);
+        label_19->setObjectName(QString::fromUtf8("label_19"));
+        label_19->setGeometry(QRect(200, 290, 61, 19));
+        label_19->setFont(font);
+        label_19->setStyleSheet(QString::fromUtf8("color: rgb(0, 0, 0);\n"
+"background: transparent;"));
+        txtOKtext = new QLineEdit(groupCamera_4);
+        txtOKtext->setObjectName(QString::fromUtf8("txtOKtext"));
+        txtOKtext->setGeometry(QRect(270, 240, 141, 27));
+        txtOKtext->setFont(font);
+        txtOKtext->setStyleSheet(QString::fromUtf8("color: rgb(0, 0, 200);\n"
+"background-color: rgba(220, 220, 227,250);"));
+        txtOKtext->setAlignment(Qt::AlignCenter);
+        txtOKtext->setReadOnly(false);
+        txtNGtext = new QLineEdit(groupCamera_4);
+        txtNGtext->setObjectName(QString::fromUtf8("txtNGtext"));
+        txtNGtext->setGeometry(QRect(270, 290, 141, 27));
+        txtNGtext->setFont(font);
+        txtNGtext->setStyleSheet(QString::fromUtf8("color: rgb(0, 0, 200);\n"
+"background-color: rgba(220, 220, 227,250);"));
+        txtNGtext->setAlignment(Qt::AlignCenter);
+        txtNGtext->setReadOnly(false);
         label_17->raise();
         label_10->raise();
         btnOkColor->raise();
@@ -972,6 +1004,10 @@ public:
         btnBack->raise();
         label->raise();
         btnSave->raise();
+        label_18->raise();
+        label_19->raise();
+        txtOKtext->raise();
+        txtNGtext->raise();
         stackedWidget->addWidget(page_2);
         tabWidget->addTab(tab_2, QString());
 
@@ -1081,6 +1117,8 @@ public:
         btnBack->setText(QCoreApplication::translate("frmImageViewClass", "\344\270\212\344\270\200\351\241\265", nullptr));
         label->setText(QString());
         btnSave->setText(QCoreApplication::translate("frmImageViewClass", "\345\217\202\346\225\260\344\277\235\345\255\230", nullptr));
+        label_18->setText(QCoreApplication::translate("frmImageViewClass", "OK\346\226\207\346\234\254\357\274\232", nullptr));
+        label_19->setText(QCoreApplication::translate("frmImageViewClass", "NG\346\226\207\346\234\254\357\274\232", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(tab_2), QCoreApplication::translate("frmImageViewClass", "\346\226\207\346\234\254\350\256\276\347\275\256", nullptr));
     } // retranslateUi
 

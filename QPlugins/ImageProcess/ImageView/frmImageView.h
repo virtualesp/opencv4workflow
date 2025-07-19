@@ -16,6 +16,8 @@ struct InitImageViewData
 	QVector<QString> global_prefix;
 	QVector<QColor> global_ok_color;
 	QVector<QColor> global_ng_color;
+	QVector<QString> global_OK_text;
+	QVector<QString> global_NG_text;
 	QColor contour_color;
 };
 Q_DECLARE_METATYPE(InitImageViewData);
@@ -113,6 +115,8 @@ private:
 		QString global_prefix;
 		QColor global_ok_color;
 		QColor global_ng_color;
+		QString global_OKtext;
+		QString global_NGtext;
 	} Text_Content;
 	Text_Content TextContent;
 	QMap<QString, Text_Content> global_text_content;

@@ -11,7 +11,7 @@
 #include "frmPermis.h"
 #include "frmAbout.h"
 #include <MvCameraControl.h>
-#include <gvariable.h>
+#include "gvariable.h"
 MainWidget::MainWidget(QWidget *parent) : QWidget(parent)
 {    
     this->resize(1360, 768);

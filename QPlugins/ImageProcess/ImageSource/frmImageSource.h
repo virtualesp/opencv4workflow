@@ -70,6 +70,7 @@ signals:
 private slots:
 	void onRadioClick(bool);
 	void onCalibRadioClick(bool);
+	int ReadBuffer(unsigned int m_nBufSizeForSaveImage, void* m_hDevHandle, cv::Mat& image);
 	void slot_Message();
 	void slot_PathMessage();
 
@@ -105,7 +106,9 @@ private:
 	int time_out;
 public:
 	//static cv::Mat srcImg;
-	static cv::Mat srcImage; //原图像
+	static cv::Mat srcImg; //原图像
+		// 用于保存图像的缓存
+	unsigned int m_nBufSizeForSaveImage;
 };
 
 //全局变量控制

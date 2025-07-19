@@ -578,13 +578,13 @@ int frmImageView::RunToolPro()
 				}
 				if (text_state == true)
 				{
-					getViewMsg.append(global_text_content.value(text_keys[m]).global_prefix + text_content + " 结果为:OK");
-					WriteString(out_img, global_text_content.value(text_keys[m]).global_prefix + text_content + " 结果为:OK", text_pos, global_text_content.value(text_keys[m]).global_ok_color, ui.spinTextSize->value(), ui.checkBoldFont->isChecked());
+					getViewMsg.append(global_text_content.value(text_keys[m]).global_prefix + text_content + " 结果为:"+ui.txtOKtext->text());
+					WriteString(out_img, global_text_content.value(text_keys[m]).global_prefix + text_content + " 结果为:"+ui.txtOKtext->text(), text_pos, global_text_content.value(text_keys[m]).global_ok_color, ui.spinTextSize->value(), ui.checkBoldFont->isChecked());
 				}
 				else
 				{
-					getViewMsg.append(global_text_content.value(text_keys[m]).global_prefix + text_content + " 结果为:NG");
-					WriteString(out_img, global_text_content.value(text_keys[m]).global_prefix + text_content + " 结果为:NG", text_pos, global_text_content.value(text_keys[m]).global_ng_color, ui.spinTextSize->value(), ui.checkBoldFont->isChecked());
+					getViewMsg.append(global_text_content.value(text_keys[m]).global_prefix + text_content + " 结果为:"+ ui.txtNGtext->text());
+					WriteString(out_img, global_text_content.value(text_keys[m]).global_prefix + text_content + " 结果为:" + ui.txtNGtext->text(), text_pos, global_text_content.value(text_keys[m]).global_ng_color, ui.spinTextSize->value(), ui.checkBoldFont->isChecked());
 				}
 			}
 			v_state = true;
@@ -754,6 +754,8 @@ int frmImageView::InitSetToolData(const QVariant data)
 			TextContent.global_prefix = init_data.global_prefix[m];
 			TextContent.global_ok_color = init_data.global_ok_color[m];
 			TextContent.global_ng_color = init_data.global_ng_color[m];
+			TextContent.global_OKtext = init_data.global_OK_text[m];
+			TextContent.global_NGtext = init_data.global_NG_text[m];
 			global_text_content.insert(init_data.key[m], TextContent);
 		}	
 		color = init_data.contour_color;
@@ -784,6 +786,8 @@ QVariant frmImageView::InitGetToolData()
 		init_data.global_prefix.append(global_text_content.value(key).global_prefix);
 		init_data.global_ok_color.append(global_text_content.value(key).global_ok_color);
 		init_data.global_ng_color.append(global_text_content.value(key).global_ng_color);
+		init_data.global_OK_text.append(global_text_content.value(key).global_OKtext);
+		init_data.global_NG_text.append(global_text_content.value(key).global_NGtext);
 	}	
 	init_data.contour_color = color;
 	return QVariant::fromValue(init_data);
@@ -983,6 +987,8 @@ void frmImageView::slot_TextDoubleClicked(int row, int column)
 				ui.txtContent->setText(global_text_content.value(key).global_content);
 				content_buf = global_text_content.value(key).global_content;
 				ui.txtPrefix->setText(global_text_content.value(key).global_prefix);
+				ui.txtOKtext->setText(global_text_content.value(key).global_OKtext);
+				ui.txtNGtext->setText(global_text_content.value(key).global_NGtext);
 				ok_color = global_text_content.value(key).global_ok_color;
 				ng_color = global_text_content.value(key).global_ng_color;
 				QString style_ok_color = "background-color: rgb(" + QString::number(ok_color.red()) + "," + QString::number(ok_color.green()) + "," + QString::number(ok_color.blue()) + ")";
@@ -1011,6 +1017,8 @@ void frmImageView::on_btnSave_clicked()
 	TextContent.global_prefix = ui.txtPrefix->text();
 	TextContent.global_ok_color = ok_color;
 	TextContent.global_ng_color = ng_color;
+	TextContent.global_OKtext = ui.txtOKtext->text();
+	TextContent.global_NGtext = ui.txtNGtext->text();
 	if (content_buf != QString() && content_buf != ui.txtContent->text())
 	{
 		global_text_content.remove(content_buf);
