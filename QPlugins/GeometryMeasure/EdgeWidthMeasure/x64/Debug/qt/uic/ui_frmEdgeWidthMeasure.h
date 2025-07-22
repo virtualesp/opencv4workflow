@@ -15,6 +15,7 @@
 #include <QtWidgets/QCheckBox>
 #include <QtWidgets/QComboBox>
 #include <QtWidgets/QDialog>
+#include <QtWidgets/QDoubleSpinBox>
 #include <QtWidgets/QGridLayout>
 #include <QtWidgets/QGroupBox>
 #include <QtWidgets/QHBoxLayout>
@@ -52,6 +53,10 @@ public:
     QSpinBox *spinSegment;
     QLabel *label_19;
     QSpinBox *spinCullDistance;
+    QLabel *label_22;
+    QLabel *label_23;
+    QDoubleSpinBox *spinUpDistance;
+    QDoubleSpinBox *spinLowDistance;
     QGroupBox *groupC3;
     QTextEdit *txtMsg;
     QWidget *tab_2;
@@ -169,7 +174,7 @@ public:
         btnDelLinkImage->setIconSize(QSize(27, 27));
         groupC2 = new QGroupBox(tab);
         groupC2->setObjectName(QString::fromUtf8("groupC2"));
-        groupC2->setGeometry(QRect(9, 108, 427, 119));
+        groupC2->setGeometry(QRect(9, 108, 427, 191));
         groupC2->setFont(font);
         groupC2->setStyleSheet(QString::fromUtf8("background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #dfd5cf, stop: 0.15 #acbbac, stop: 0.85 #acbbac,stop:1 #dfd5cf);\n"
 "color: rgb(85, 0, 255);"));
@@ -303,15 +308,65 @@ public:
         spinCullDistance->setMinimum(1);
         spinCullDistance->setMaximum(100);
         spinCullDistance->setValue(5);
+        label_22 = new QLabel(groupC2);
+        label_22->setObjectName(QString::fromUtf8("label_22"));
+        label_22->setGeometry(QRect(13, 133, 81, 19));
+        label_22->setFont(font1);
+        label_22->setStyleSheet(QString::fromUtf8("color: rgb(30, 30, 30);\n"
+"background: transparent;"));
+        label_23 = new QLabel(groupC2);
+        label_23->setObjectName(QString::fromUtf8("label_23"));
+        label_23->setGeometry(QRect(243, 133, 81, 19));
+        label_23->setFont(font1);
+        label_23->setStyleSheet(QString::fromUtf8("color: rgb(30, 30, 30);\n"
+"background: transparent;"));
+        spinUpDistance = new QDoubleSpinBox(groupC2);
+        spinUpDistance->setObjectName(QString::fromUtf8("spinUpDistance"));
+        spinUpDistance->setGeometry(QRect(100, 130, 91, 31));
+        spinUpDistance->setFont(font2);
+        spinUpDistance->setStyleSheet(QString::fromUtf8("QWidget{color: rgb(85, 0, 155);background-color: rgb(180, 180, 210);}\n"
+"QDoubleSpinBox::up-button{\n"
+"    border:transparent;\n"
+"}\n"
+"QDoubleSpinBox::down-button{\n"
+"    border:transparent;\n"
+"}\n"
+"QDoubleSpinBox::up-arrow{\n"
+"    image:url(:/resource/up.png);\n"
+"}\n"
+"QDoubleSpinBox::down-arrow{\n"
+"    image:url(:/resource/down.png);\n"
+"}"));
+        spinUpDistance->setAlignment(Qt::AlignCenter);
+        spinUpDistance->setMaximum(9999999.990000000223517);
+        spinLowDistance = new QDoubleSpinBox(groupC2);
+        spinLowDistance->setObjectName(QString::fromUtf8("spinLowDistance"));
+        spinLowDistance->setGeometry(QRect(330, 130, 91, 31));
+        spinLowDistance->setFont(font2);
+        spinLowDistance->setStyleSheet(QString::fromUtf8("QWidget{color: rgb(85, 0, 155);background-color: rgb(180, 180, 210);}\n"
+"QDoubleSpinBox::up-button{\n"
+"    border:transparent;\n"
+"}\n"
+"QDoubleSpinBox::down-button{\n"
+"    border:transparent;\n"
+"}\n"
+"QDoubleSpinBox::up-arrow{\n"
+"    image:url(:/resource/up.png);\n"
+"}\n"
+"QDoubleSpinBox::down-arrow{\n"
+"    image:url(:/resource/down.png);\n"
+"}"));
+        spinLowDistance->setAlignment(Qt::AlignCenter);
+        spinLowDistance->setMaximum(9999999.990000000223517);
         groupC3 = new QGroupBox(tab);
         groupC3->setObjectName(QString::fromUtf8("groupC3"));
-        groupC3->setGeometry(QRect(9, 244, 427, 271));
+        groupC3->setGeometry(QRect(9, 314, 427, 201));
         groupC3->setFont(font);
         groupC3->setStyleSheet(QString::fromUtf8("background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #dfd5cf, stop: 0.15 #acbbac, stop: 0.85 #acbbac,stop:1 #dfd5cf);\n"
 "color: rgb(85, 0, 255);"));
         txtMsg = new QTextEdit(groupC3);
         txtMsg->setObjectName(QString::fromUtf8("txtMsg"));
-        txtMsg->setGeometry(QRect(4, 32, 419, 235));
+        txtMsg->setGeometry(QRect(4, 32, 419, 161));
         QFont font3;
         font3.setFamily(QString::fromUtf8("\345\276\256\350\275\257\351\233\205\351\273\221"));
         txtMsg->setFont(font3);
@@ -673,6 +728,8 @@ public:
         label_14->setText(QCoreApplication::translate("frmEdgeWidthMeasureClass", "\350\276\271\347\274\230\345\274\272\345\272\246\357\274\232", nullptr));
         label_18->setText(QCoreApplication::translate("frmEdgeWidthMeasureClass", "\345\210\206\345\211\262\346\225\260\351\207\217\357\274\232", nullptr));
         label_19->setText(QCoreApplication::translate("frmEdgeWidthMeasureClass", "\345\211\224\351\231\244\350\267\235\347\246\273\357\274\232", nullptr));
+        label_22->setText(QCoreApplication::translate("frmEdgeWidthMeasureClass", "\344\270\212\351\231\220\350\267\235\347\246\273\357\274\232", nullptr));
+        label_23->setText(QCoreApplication::translate("frmEdgeWidthMeasureClass", "\344\270\213\351\231\220\350\267\235\347\246\273\357\274\232", nullptr));
         groupC3->setTitle(QCoreApplication::translate("frmEdgeWidthMeasureClass", "\350\276\223\345\207\272\346\225\260\346\215\256(\350\276\271\347\274\230\345\256\275\345\272\246)", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(tab), QCoreApplication::translate("frmEdgeWidthMeasureClass", "\345\237\272\346\234\254\350\256\276\347\275\256", nullptr));
         groupC4->setTitle(QCoreApplication::translate("frmEdgeWidthMeasureClass", "ROI\345\257\271\350\261\241", nullptr));

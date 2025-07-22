@@ -29,6 +29,7 @@
   mytitlebar.cpp
   QGraphicsViews.cpp
   QRoundProgressBar.cpp
+G:\QMacVisual(CV3)(25000)\QMacVisual(CV3)2022.9.21(25000)\QMacVisual(CV3)\QMainPro\QMacVisual\frmCameraSetUp.cpp(890,1): warning C4789: 函数“float __cdecl frmCameraSetUp::getExposureTime(void) __ptr64”中的缓冲区“stParam”(大小为 28 字节)将溢出；从偏移 32 时开始，将会写入 0 字节
   QToolBase.cpp
   qttreewidget.cpp
   QtWidgetsSaveLoad.cpp
@@ -36,7 +37,12 @@
   SoftKey.cpp
   SQLite.cpp
   XML.cpp
-G:\QMacVisual(CV3)(25000)\QMacVisual(CV3)2022.9.21(25000)\QMacVisual(CV3)\QMainPro\QMacVisual\frmCameraSetUp.cpp(803,1): warning C4789: 函数“float __cdecl frmCameraSetUp::getExposureTime(void) __ptr64”中的缓冲区“stParam”(大小为 28 字节)将溢出；从偏移 32 时开始，将会写入 0 字节
+  savelog.cpp
+  showcpumemory.cpp
+  Toolnterface.cpp
+  datavar.cpp
+  frmRegister.cpp
+  frmVisualLogo.cpp
 D:\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.43.34808\include\xutility(1371,31): warning C4996: 'stdext::checked_array_iterator<const T *>': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
 D:\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.43.34808\include\xutility(1371,31): warning C4996:         with
 D:\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.43.34808\include\xutility(1371,31): warning C4996:         [
@@ -207,12 +213,6 @@ D:\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.43.34808\include\xut
 D:\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.43.34808\include\xutility(1488,42): warning C4996:         ]
   (编译源文件“QRoundProgressBar.cpp”)
   
-  savelog.cpp
-  showcpumemory.cpp
-  Toolnterface.cpp
-  datavar.cpp
-  frmRegister.cpp
-  frmVisualLogo.cpp
   headwidget.cpp
   mainwidget.cpp
   mainwindow.cpp

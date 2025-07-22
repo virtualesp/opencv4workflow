@@ -31,6 +31,7 @@ public:
 		cv::Point3d global_cvpoint3d_value;
 		std::vector<float> global_array_float_value;
 		std::vector<double> global_array_double_value;
+		cv::Mat srcImg;
 	} Global_Var;
 	static Global_Var GlobalVar;
 	static QMap<QString, Global_Var> global_variable_link;	
@@ -50,6 +51,8 @@ public:
 		MV_CC_DEVICE_INFO* hikvision_deviceInfo;
 		BYTE* mindvision_framebuffer_value = nullptr;
 		int time_out;
+		cv::Mat srcImg;
+		int index;  //触发模式索引
 	} Camera_Var;
 	static Camera_Var CameraVar;
 	static QMap<QString, Camera_Var> camera_variable_link;

@@ -1,16 +1,5 @@
-﻿  Reading Qt configuration (C:/Qt/Qt5.12.12/5.12.12/msvc2017_64/bin/qmake)
-  uic frmEdgeWidthMeasure.ui
-  rcc sub_res.qrc
-  moc Toolnterface.h
-  moc QToolBase.h
-  moc mytitlebar.h
-  moc frmEdgeWidthMeasure.h
-  moc QGraphicsViews.h
-  moc QGraphicsScenes.h
-  moc ImageItem.h
-  moc BaseItem.h
-  moc ControlItem.h
-  moc EdgeWidthMeasure.h
+﻿   Qt/MSBuild: 3.4.0.1
+   Qt: 5.14.2
   frmEdgeWidthMeasure.cpp
   ImageItem.cpp
   mytitlebar.cpp
@@ -32,4 +21,4 @@
   moc_ControlItem.cpp
   moc_EdgeWidthMeasure.cpp
     正在创建库 ../../../QSoftExe/Debug/Plugins/Z_EdgeWidthMeasure.lib 和对象 ../../../QSoftExe/Debug/Plugins/Z_EdgeWidthMeasure.exp
-  Z_EdgeWidthMeasure.vcxproj -> E:\QMacVisual(CV3)\QSoftExe\Debug\Plugins\Z_EdgeWidthMeasure.dll
+  Z_EdgeWidthMeasure.vcxproj -> G:\QMacVisual(CV3)(25000)\QMacVisual(CV3)2022.9.21(25000)\QMacVisual(CV3)\QSoftExe\Debug\Plugins\Z_EdgeWidthMeasure.dll

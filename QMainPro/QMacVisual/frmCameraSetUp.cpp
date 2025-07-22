@@ -391,6 +391,48 @@ void frmCameraSetUp::on_btnConnect_clicked()
 		}
 	}
 }
+void __stdcall ImageCallBackEx(unsigned char* pData, MV_FRAME_OUT_INFO_EX* pFrameInfo, void* pUser) {
+	if (!pFrameInfo || !pData) return;
+
+	cv::Mat imgConverted;
+	// 根据像素格式选择转换方式
+	switch (pFrameInfo->enPixelType)
+	{
+	case PixelType_Gvsp_Mono8:  // 单通道灰度图
+		imgConverted = cv::Mat(pFrameInfo->nHeight, pFrameInfo->nWidth,
+			CV_8UC1, pData).clone(); // 必须克隆数据
+		break;
+
+	case PixelType_Gvsp_BayerRG8:  // Bayer格式需转RGB
+	{
+		cv::Mat bayerImg = cv::Mat(pFrameInfo->nHeight, pFrameInfo->nWidth, CV_8UC1, pData).clone();
+		cv::cvtColor(bayerImg, imgConverted, cv::COLOR_BayerRG2RGB); // Bayer转RGB
+		bayerImg.release();
+	}
+	break;
+	case PixelType_Gvsp_BayerGB8:
+	{
+		cv::Mat bayerImg = cv::Mat(pFrameInfo->nHeight, pFrameInfo->nWidth, CV_8UC1, pData).clone();
+		cv::cvtColor(bayerImg, imgConverted, cv::COLOR_BayerGB2RGB); // Bayer转RGB
+		bayerImg.release();
+	}
+	break;
+	case PixelType_Gvsp_RGB8_Packed:  // 原生RGB
+		imgConverted = cv::Mat(pFrameInfo->nHeight, pFrameInfo->nWidth,
+			CV_8UC3, pData).clone();
+		break;
+
+	default:
+	{
+		std::cerr << "Unsupported pixel format: " << pFrameInfo->enPixelType << std::endl;
+		return;
+	}
+	}
+	// 安全存储到全局变量（深拷贝）
+	gVariable::CameraVar.srcImg = imgConverted.clone();
+	imgConverted.release(); // 释放临时图像
+}
+
 //海康连接
 void frmCameraSetUp::connectHikVison()
 {
@@ -517,7 +559,7 @@ void frmCameraSetUp::connectHikVison()
 	}
 	else
 	{
-		setTriggerMode(1);
+		//setTriggerMode(1);
 	}
 	if (m_Device->nTLayerType == MV_GIGE_DEVICE)
 	{
@@ -526,6 +568,24 @@ void frmCameraSetUp::connectHikVison()
 	{
 		MV_CC_SetImageNodeNum(&m_hDevHandle, 2);
 	}
+	// ch:探测网络最佳包大小(只对GigE相机有效) | en:Detection network optimal package size(It only works for the GigE camera)
+	if (m_Device->nTLayerType == MV_GIGE_DEVICE)
+	{
+		int nPacketSize = MV_CC_GetOptimalPacketSize(m_hDevHandle);
+		if (nPacketSize > 0)
+		{
+			int nRet = MV_CC_SetIntValueEx(m_hDevHandle, "GevSCPSPacketSize", nPacketSize);
+			if (nRet != MV_OK)
+			{
+				printf("Warning: Set Packet Size fail nRet [0x%x]!", nRet);
+			}
+		}
+		else
+		{
+			printf("Warning: Get Packet Size fail nRet [0x%x]!", nPacketSize);
+		}
+	}
+	
 
 	////获得该相机的特性描述
 	//CameraGetCapability(mindvision_haldle, &sCameraInfo);
@@ -581,23 +641,49 @@ void frmCameraSetUp::connectHikVison()
     // Pass the address of the variable to the function
     MV_CC_SetBayerCCMParamEx(m_hDevHandle, &ccmParam);
 	//设置触发模式
-	setTriggerMode(1);
-	/*if (ui.comboTriggerMode->currentIndex() == 0)
+	//setTriggerMode(1);
+	if (ui.comboTriggerMode->currentIndex() == 0)// 连续采集模式
 	{
+		setTriggerMode(0);
 		setTriggerSource(0);
+		// ch:注册抓图异步回调 | en:Register image callback
+		nRet = MV_CC_RegisterImageCallBackEx(m_hDevHandle, ImageCallBackEx, m_hDevHandle);
+		if (MV_OK != nRet)
+		{
+			printf("Register Image CallBack fail! nRet [0x%x]\n", nRet);
+			return;
+		}
 	}
-	else if (ui.comboTriggerMode->currentIndex() == 1)
+	else if (ui.comboTriggerMode->currentIndex() == 1) // 软件触发模式
 	{
-		setTriggerSource(7);
+		setTriggerMode(1);
+		setTriggerSource(7); // 设置触发源为软件
 	}
-	else if (ui.comboTriggerMode->currentIndex() == 2)
+	else if (ui.comboTriggerMode->currentIndex() == 2) // 硬件触发模式
 	{
-		setTriggerSource(1);
-	}*/
-	setTriggerSource(7);//设置为软触发模式
+		int nRet = setTriggerMode(1); 
+		if (nRet == MV_OK) {
+			setTriggerSource(0); // 触发源为硬件
+			nRet = MV_CC_SetEnumValue(m_hDevHandle, "TriggerActivation", 0);  // 触发激活为上升沿
+			// ch:注册抓图异步回调 | en:Register image callback
+			nRet = MV_CC_RegisterImageCallBackEx(m_hDevHandle, ImageCallBackEx, m_hDevHandle);
+			if (MV_OK != nRet)
+			{
+				printf("Register Image CallBack fail! nRet [0x%x]\n", nRet);
+				return;
+			}
+		}
+		else 
+		{
+			setTriggerSource(1); // 触发源为硬件
+		}
+	}
+	//setTriggerSource(7);//设置为软触发模式
+
+	
+
 	// 开始取流
 	int tempvalue = MV_CC_StartGrabbing(m_hDevHandle);
-	
 	gVariable::CameraVar.camera_type = "HIKVision";
     // Update the type of `hikvision_haldle_value` in `gVariable::CameraVar` to match the type of `m_hDevHandle` (void*).  
     // This ensures compatibility and resolves the type mismatch error.  
@@ -612,6 +698,7 @@ void frmCameraSetUp::connectHikVison()
     };  
 
     // Ensure this change is reflected wherever `hikvision_haldle_value` is used in the codebase.
+	gVariable::CameraVar.index = ui.comboTriggerMode->currentIndex();
 	gVariable::CameraVar.hikvision_haldle_value = m_hDevHandle;
 	gVariable::CameraVar.hikvision_deviceInfo = m_Device;
 	//gVariable::CameraVar.hikvision_framebuffer_value = mindvision_framebuffer;

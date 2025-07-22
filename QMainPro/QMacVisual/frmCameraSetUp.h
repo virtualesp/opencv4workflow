@@ -82,6 +82,7 @@ private:
 	MV_CC_DEVICE_INFO* m_Device = NULL;
 	void* m_hDevHandle;
 	CMvCamera* m_pcMyCamera = new CMvCamera();
+	gVariable gvariable;
 public:	
 	//相机
 	typedef struct CAMERACONTENT

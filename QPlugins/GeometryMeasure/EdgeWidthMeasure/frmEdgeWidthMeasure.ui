@@ -274,7 +274,7 @@ QPushButton:pressed{background-color: rgba(226, 172, 162, 200);}</string>
          <x>9</x>
          <y>108</y>
          <width>427</width>
-         <height>119</height>
+         <height>191</height>
         </rect>
        </property>
        <property name="font">
@@ -575,14 +575,138 @@ QSpinBox::down-arrow{
          <number>5</number>
         </property>
        </widget>
+       <widget class="QLabel" name="label_22">
+        <property name="geometry">
+         <rect>
+          <x>13</x>
+          <y>133</y>
+          <width>81</width>
+          <height>19</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>微软雅黑</family>
+          <pointsize>10</pointsize>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(30, 30, 30);
+background: transparent;</string>
+        </property>
+        <property name="text">
+         <string>上限距离：</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_23">
+        <property name="geometry">
+         <rect>
+          <x>243</x>
+          <y>133</y>
+          <width>81</width>
+          <height>19</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>微软雅黑</family>
+          <pointsize>10</pointsize>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(30, 30, 30);
+background: transparent;</string>
+        </property>
+        <property name="text">
+         <string>下限距离：</string>
+        </property>
+       </widget>
+       <widget class="QDoubleSpinBox" name="spinUpDistance">
+        <property name="geometry">
+         <rect>
+          <x>100</x>
+          <y>130</y>
+          <width>91</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>微软雅黑</family>
+          <pointsize>11</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QWidget{color: rgb(85, 0, 155);background-color: rgb(180, 180, 210);}
+QDoubleSpinBox::up-button{
+    border:transparent;
+}
+QDoubleSpinBox::down-button{
+    border:transparent;
+}
+QDoubleSpinBox::up-arrow{
+    image:url(:/resource/up.png);
+}
+QDoubleSpinBox::down-arrow{
+    image:url(:/resource/down.png);
+}</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+        <property name="maximum">
+         <double>9999999.990000000223517</double>
+        </property>
+       </widget>
+       <widget class="QDoubleSpinBox" name="spinLowDistance">
+        <property name="geometry">
+         <rect>
+          <x>330</x>
+          <y>130</y>
+          <width>91</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>微软雅黑</family>
+          <pointsize>11</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QWidget{color: rgb(85, 0, 155);background-color: rgb(180, 180, 210);}
+QDoubleSpinBox::up-button{
+    border:transparent;
+}
+QDoubleSpinBox::down-button{
+    border:transparent;
+}
+QDoubleSpinBox::up-arrow{
+    image:url(:/resource/up.png);
+}
+QDoubleSpinBox::down-arrow{
+    image:url(:/resource/down.png);
+}</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+        <property name="maximum">
+         <double>9999999.990000000223517</double>
+        </property>
+       </widget>
       </widget>
       <widget class="QGroupBox" name="groupC3">
        <property name="geometry">
         <rect>
          <x>9</x>
-         <y>244</y>
+         <y>314</y>
          <width>427</width>
-         <height>271</height>
+         <height>201</height>
         </rect>
        </property>
        <property name="font">
@@ -604,7 +728,7 @@ color: rgb(85, 0, 255);</string>
           <x>4</x>
           <y>32</y>
           <width>419</width>
-          <height>235</height>
+          <height>161</height>
          </rect>
         </property>
         <property name="font">

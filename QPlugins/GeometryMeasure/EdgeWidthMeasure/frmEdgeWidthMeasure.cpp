@@ -414,10 +414,22 @@ int frmEdgeWidthMeasure::RunToolPro()
 			}			
 			GetToolBase()->m_Tools[tool_index].PublicImage.Name = "图像";
 		}
-		GetToolBase()->m_Tools[tool_index].PublicImage.OutputImage = dstImage;
-		GetToolBase()->m_Tools[tool_index].PublicImage.OutputRoiImage = dstRoiImage;
-		GetToolBase()->m_Tools[tool_index].PublicGeometry.Distance = Distance;	
-		GetToolBase()->m_Tools[tool_index].PublicResult.State = true;
+		// 判断距离是否在上下限内
+		if (Distance >= ui.spinLowDistance->value() && Distance <= ui.spinUpDistance->value()) 
+		{
+			GetToolBase()->m_Tools[tool_index].PublicImage.OutputImage = dstImage;
+			GetToolBase()->m_Tools[tool_index].PublicImage.OutputRoiImage = dstRoiImage;
+			GetToolBase()->m_Tools[tool_index].PublicGeometry.Distance = Distance;
+			GetToolBase()->m_Tools[tool_index].PublicResult.State = true;
+		}
+		else
+		{
+			GetToolBase()->m_Tools[tool_index].PublicImage.OutputImage = dstImage;
+			GetToolBase()->m_Tools[tool_index].PublicImage.OutputRoiImage = dstRoiImage;
+			GetToolBase()->m_Tools[tool_index].PublicGeometry.Distance = Distance;
+			GetToolBase()->m_Tools[tool_index].PublicResult.State = false;
+		}
+		
 		return 0;
 	}
 	catch (...)

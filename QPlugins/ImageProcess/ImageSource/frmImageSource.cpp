@@ -504,41 +504,57 @@ int frmImageSource::RunToolPro(QString image_path, const int index)
 					//}
 					
 					//int nRet = MV_CC_StartGrabbing(hikvision_haldle);
-					
-					int nRet = MV_CC_SetCommandValue(hikvision_haldle, "TriggerSoftware");
-
-					if (nRet == MV_OK)
-					{
-						////异步抓图等待图像回调
-						//QElapsedTimer t;
-						//t.start();
-						//while (t.elapsed() < time_out);
-						//if (frmImageSource::srcImg.empty())
-						//{
-						//	//子线程中操作GUI要用信号与槽
-						//	emit sig_Message();
-						//	return -2;
-						//}
-						
-					}
-					else 
-					{
-						++cam_count;
-						if (cam_count > 20)
+						if (gvariable.camera_variable_link.value(key).index == 0) //连续模式
 						{
-							GetToolBase()->m_Tools[tool_index].PublicResult.State = false;
-							return -2;
-						}
-						else
-						{
+							//异步抓图等待图像回调
 							QElapsedTimer t;
 							t.start();
-							while (t.elapsed() < 50);
-							goto loop2;
+							while (t.elapsed() < time_out);
+							if (gvariable.camera_variable_link.value(key).srcImg.empty())
+							{
+								//子线程中操作GUI要用信号与槽
+								emit sig_Message();
+								return -2;
+							}
 						}
-					}
-					//改成同步获取抓图
-					ReadBuffer(m_nBufSizeForSaveImage, hikvision_haldle, srcImg);
+						else if (gvariable.camera_variable_link.value(key).index == 1) //软件触发模式
+						{
+							int nRet = MV_CC_SetCommandValue(hikvision_haldle, "TriggerSoftware");
+
+							if (nRet == MV_OK)
+							{
+
+
+							}
+							else
+							{
+								++cam_count;
+								if (cam_count > 20)
+								{
+									GetToolBase()->m_Tools[tool_index].PublicResult.State = false;
+									break;
+								}
+								else
+								{
+									QElapsedTimer t;
+									t.start();
+									while (t.elapsed() < 50);
+									goto loop2;
+								}
+							}
+							//改成同步获取抓图会有2-3秒的延迟
+							ReadBuffer(m_nBufSizeForSaveImage, hikvision_haldle, srcImg, key);
+						}
+						else if (gvariable.camera_variable_link.value(key).index == 2) //硬件触发模式
+						{
+							
+							//改成同步获取抓图会有2-3秒的延迟
+							ReadBuffer(m_nBufSizeForSaveImage, hikvision_haldle, srcImg, key);
+						}
+				
+					
+
+
 					//// ch:停止取流 | en:Stop grab image
 					//nRet = MV_CC_StopGrabbing(hikvision_haldle);
 					//if (MV_OK != nRet)
@@ -622,7 +638,7 @@ int frmImageSource::RunToolPro(QString image_path, const int index)
 	return 0;
 }
 //读取相机中的图像
-int frmImageSource::ReadBuffer(unsigned int m_nBufSizeForSaveImage,void* m_hDevHandle, cv::Mat& image)
+int frmImageSource::ReadBuffer(unsigned int m_nBufSizeForSaveImage,void* m_hDevHandle, cv::Mat& image,QString key)
 {
 	cv::Mat* getImage = new cv::Mat();
 	unsigned int nRecvBufSize = 0;
@@ -638,7 +654,7 @@ int frmImageSource::ReadBuffer(unsigned int m_nBufSizeForSaveImage,void* m_hDevH
 	pDate = (unsigned char*)malloc(nRecvBufSize);
 
 	MV_FRAME_OUT_INFO_EX stImageInfo = { 0 };
-	tempValue = MV_CC_GetOneFrameTimeout(m_hDevHandle, pDate, nRecvBufSize, &stImageInfo, 700);
+	tempValue = MV_CC_GetOneFrameTimeout(m_hDevHandle, pDate, nRecvBufSize, &stImageInfo, gvariable.camera_variable_link.value(key).time_out);
 	if (tempValue != 0)
 	{
 		return -1;
@@ -792,6 +808,7 @@ int frmImageSource::ExecuteCameraLink(const QMap<QString, gVariable::Camera_Var>
 				{
 					gvariable.CameraVar.hikvision_deviceInfo = gvariable.camera_variable_link.value(key).hikvision_deviceInfo;
 					hikvision_haldle = gvariable.camera_variable_link.value(key).hikvision_haldle_value;
+					//gvariable.GlobalVar.srcImg = gvariable.camera_variable_link.value(key).srcImg;
 					time_out = gvariable.camera_variable_link.value(key).time_out;
 					cam_state = 1;
 				}
@@ -861,6 +878,7 @@ void frmImageSource::on_comboCamera_currentIndexChanged(int index)
 		{
 			gvariable.CameraVar.hikvision_deviceInfo = gvariable.camera_variable_link.value(key).hikvision_deviceInfo;
 			hikvision_haldle = gvariable.camera_variable_link.value(key).hikvision_haldle_value;
+			//gvariable.GlobalVar.srcImg = gvariable.camera_variable_link.value(key).srcImg;
 			time_out = gvariable.camera_variable_link.value(key).time_out;
 			cam_state = 1;
 			choose_index = index;

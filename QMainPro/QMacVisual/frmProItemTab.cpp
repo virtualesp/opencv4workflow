@@ -1259,21 +1259,40 @@ void frmProItemTab::timerEvent()
 #pragma endregion	
 #pragma region 目标检测
 		//YoloV13
-		if (nClassifierState_buf == 1)
+		if (nYoloV13State_buf == 1)
 		{
-			nClassifierState = getClassifierState();
-			if (nClassifierState == 1)
+			nYoloV13State = getYoloV13();
+			if (nYoloV13State == 1)
 			{
 				dataVar::int_link = 1;
 				frmLink* fLink = new frmLink();
 				fLink->exec();
-				setClassifierState();
-				nClassifierState = 0;
+				setYoloV13();
+				nYoloV13State = 0;
+			}
+		}
+#pragma endregion
+#pragma region OCR
+		//OCR
+		if (nClassifierState_buf == 1)
+		{
+			nOCRState = getOCR();
+			if (nOCRState == 1)
+			{
+				dataVar::int_link = 1;
+				frmLink* fLink = new frmLink();
+				fLink->exec();
+				setOCR();
+				nOCRState = 0;
 			}
 		}
 #pragma endregion
 	}
-	catch (...) {}
+	catch (...) {
+		//报错信息
+		emit sig_InfoClick();
+		emit sig_Log("流程错误！");
+	}
 }
 
 //流程列表初始化
@@ -2417,12 +2436,12 @@ Toolnterface* frmProItemTab::GetNewToolDlg(const int mode, const QString sToolNa
 		QLibrary mylib("./Plugins/YoloV13.dll");   //声明所用到的dll文件
 		if (mylib.load())    //判断是否正确加载
 		{
-			getClassifierState = (GetClassifier)mylib.resolve("ShowFormState");
-			setClassifierState = (SetClassifier)mylib.resolve("SetFormState");
+			getYoloV13 = (GetYoloV13)mylib.resolve("ShowFormState");
+			setYoloV13 = (SetYoloV13)mylib.resolve("SetFormState");
 			Funs open = (Funs)mylib.resolve("showDialog");
 			if (open)
 			{
-				nClassifierState_buf = 1;
+				nYoloV13State_buf = 1;
 				Toolnterface* frmPage = open(sToolName, QConfig::ToolBase[flow_index]);
 				frmPage->setObjectName(sToolName);
 				return frmPage;
@@ -2436,12 +2455,12 @@ Toolnterface* frmProItemTab::GetNewToolDlg(const int mode, const QString sToolNa
 		QLibrary mylib("./Plugins/OCR.dll");   //声明所用到的dll文件
 		if (mylib.load())    //判断是否正确加载
 		{
-			getQRcodeIdentifyState = (GetQRcodeIdentify)mylib.resolve("ShowFormState");
-			setQRcodeIdentifyState = (SetQRcodeIdentify)mylib.resolve("SetFormState");
+			getOCR = (GetOCR)mylib.resolve("ShowFormState");
+			setOCR = (SetOCR)mylib.resolve("SetFormState");
 			Funs open = (Funs)mylib.resolve("showDialog");
 			if (open)
 			{
-				nQRcodeIdentifyState_buf = 1;
+				nOCRState_buf = 1;
 				Toolnterface* frmPage = open(sToolName, QConfig::ToolBase[flow_index]);
 				frmPage->setObjectName(sToolName);
 				return frmPage;

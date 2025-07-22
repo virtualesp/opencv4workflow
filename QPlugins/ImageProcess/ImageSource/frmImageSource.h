@@ -70,7 +70,7 @@ signals:
 private slots:
 	void onRadioClick(bool);
 	void onCalibRadioClick(bool);
-	int ReadBuffer(unsigned int m_nBufSizeForSaveImage, void* m_hDevHandle, cv::Mat& image);
+	int ReadBuffer(unsigned int m_nBufSizeForSaveImage, void* m_hDevHandle, cv::Mat& image, QString key);
 	void slot_Message();
 	void slot_PathMessage();
 

@@ -22,8 +22,8 @@ QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_frmImageSource_t {
-    QByteArrayData data[25];
-    char stringdata0[479];
+    QByteArrayData data[26];
+    char stringdata0[483];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -55,8 +55,9 @@ QT_MOC_LITERAL(19, 398, 22), // "m_nBufSizeForSaveImage"
 QT_MOC_LITERAL(20, 421, 12), // "m_hDevHandle"
 QT_MOC_LITERAL(21, 434, 8), // "cv::Mat&"
 QT_MOC_LITERAL(22, 443, 5), // "image"
-QT_MOC_LITERAL(23, 449, 12), // "slot_Message"
-QT_MOC_LITERAL(24, 462, 16) // "slot_PathMessage"
+QT_MOC_LITERAL(23, 449, 3), // "key"
+QT_MOC_LITERAL(24, 453, 12), // "slot_Message"
+QT_MOC_LITERAL(25, 466, 16) // "slot_PathMessage"
 
     },
     "frmImageSource\0sig_Message\0\0sig_PathMessage\0"
@@ -71,8 +72,8 @@ QT_MOC_LITERAL(24, 462, 16) // "slot_PathMessage"
     "on_comboCamera_currentIndexChanged\0"
     "index\0onRadioClick\0onCalibRadioClick\0"
     "ReadBuffer\0m_nBufSizeForSaveImage\0"
-    "m_hDevHandle\0cv::Mat&\0image\0slot_Message\0"
-    "slot_PathMessage"
+    "m_hDevHandle\0cv::Mat&\0image\0key\0"
+    "slot_Message\0slot_PathMessage"
 };
 #undef QT_MOC_LITERAL
 
@@ -107,9 +108,9 @@ static const uint qt_meta_data_frmImageSource[] = {
       14,    1,  116,    2, 0x08 /* Private */,
       16,    1,  119,    2, 0x08 /* Private */,
       17,    1,  122,    2, 0x08 /* Private */,
-      18,    3,  125,    2, 0x08 /* Private */,
-      23,    0,  132,    2, 0x08 /* Private */,
-      24,    0,  133,    2, 0x08 /* Private */,
+      18,    4,  125,    2, 0x08 /* Private */,
+      24,    0,  134,    2, 0x08 /* Private */,
+      25,    0,  135,    2, 0x08 /* Private */,
 
  // signals: parameters
     QMetaType::Void,
@@ -129,7 +130,7 @@ static const uint qt_meta_data_frmImageSource[] = {
     QMetaType::Void, QMetaType::Int,   15,
     QMetaType::Void, QMetaType::Bool,    2,
     QMetaType::Void, QMetaType::Bool,    2,
-    QMetaType::Int, QMetaType::UInt, QMetaType::VoidStar, 0x80000000 | 21,   19,   20,   22,
+    QMetaType::Int, QMetaType::UInt, QMetaType::VoidStar, 0x80000000 | 21, QMetaType::QString,   19,   20,   22,   23,
     QMetaType::Void,
     QMetaType::Void,
 
@@ -157,7 +158,7 @@ void frmImageSource::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _
         case 12: _t->on_comboCamera_currentIndexChanged((*reinterpret_cast< int(*)>(_a[1]))); break;
         case 13: _t->onRadioClick((*reinterpret_cast< bool(*)>(_a[1]))); break;
         case 14: _t->onCalibRadioClick((*reinterpret_cast< bool(*)>(_a[1]))); break;
-        case 15: { int _r = _t->ReadBuffer((*reinterpret_cast< uint(*)>(_a[1])),(*reinterpret_cast< void*(*)>(_a[2])),(*reinterpret_cast< cv::Mat(*)>(_a[3])));
+        case 15: { int _r = _t->ReadBuffer((*reinterpret_cast< uint(*)>(_a[1])),(*reinterpret_cast< void*(*)>(_a[2])),(*reinterpret_cast< cv::Mat(*)>(_a[3])),(*reinterpret_cast< QString(*)>(_a[4])));
             if (_a[0]) *reinterpret_cast< int*>(_a[0]) = std::move(_r); }  break;
         case 16: _t->slot_Message(); break;
         case 17: _t->slot_PathMessage(); break;
