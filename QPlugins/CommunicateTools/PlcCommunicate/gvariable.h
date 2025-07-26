@@ -5,6 +5,7 @@
 #include <QPointF>
 #include <QTcpSocket>
 #include <opencv2\opencv.hpp>
+#include "libmodbus/modbus.h"
 
 class QToolBase;
 
@@ -59,6 +60,7 @@ public:
 		int mit_port_value;
 		int mit_over_time_value;
 		QString mit_remark_value;
+		modbus_t *ctx;
 	} PlcCommunicate_Var;
 	PlcCommunicate_Var PlcCommunicateVar;
 	QMap<QString, PlcCommunicate_Var> plccommunicate_variable_link;

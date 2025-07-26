@@ -68,6 +68,12 @@ private slots:
 private:
 	int RunToolPro();
 
+	void disconnect(QString key);
+
+	bool writeRegister(int num, int value, QString key);
+
+	int readRegister(int num, QString key, int nb);
+
 private:
 	gVariable gvariable;
 	QStringList strs;

@@ -22,8 +22,8 @@ QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_frmInstrumentation_t {
-    QByteArrayData data[38];
-    char stringdata0[644];
+    QByteArrayData data[41];
+    char stringdata0[671];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -52,24 +52,27 @@ QT_MOC_LITERAL(16, 281, 10), // "port_value"
 QT_MOC_LITERAL(17, 292, 15), // "over_time_value"
 QT_MOC_LITERAL(18, 308, 14), // "InitPlcConnect"
 QT_MOC_LITERAL(19, 323, 13), // "plc_key_value"
-QT_MOC_LITERAL(20, 337, 21), // "InitSerialportConnect"
-QT_MOC_LITERAL(21, 359, 20), // "serialport_key_value"
-QT_MOC_LITERAL(22, 380, 14), // "portname_value"
-QT_MOC_LITERAL(23, 395, 14), // "baudrate_value"
-QT_MOC_LITERAL(24, 410, 12), // "parity_value"
-QT_MOC_LITERAL(25, 423, 14), // "databits_value"
-QT_MOC_LITERAL(26, 438, 14), // "stopbits_value"
-QT_MOC_LITERAL(27, 453, 17), // "flowcontrol_value"
-QT_MOC_LITERAL(28, 471, 17), // "InitServerConnect"
-QT_MOC_LITERAL(29, 489, 16), // "server_key_value"
-QT_MOC_LITERAL(30, 506, 17), // "InitClientConnect"
-QT_MOC_LITERAL(31, 524, 16), // "client_key_value"
-QT_MOC_LITERAL(32, 541, 13), // "onIoConnected"
-QT_MOC_LITERAL(33, 555, 16), // "onIoDisconnected"
-QT_MOC_LITERAL(34, 572, 17), // "onMitPlcConnected"
-QT_MOC_LITERAL(35, 590, 20), // "onMitPlcDisconnected"
-QT_MOC_LITERAL(36, 611, 14), // "onTcpConnected"
-QT_MOC_LITERAL(37, 626, 17) // "onTcpDisconnected"
+QT_MOC_LITERAL(20, 337, 18), // "InvoicePLC_connect"
+QT_MOC_LITERAL(21, 356, 2), // "IP"
+QT_MOC_LITERAL(22, 359, 4), // "Port"
+QT_MOC_LITERAL(23, 364, 21), // "InitSerialportConnect"
+QT_MOC_LITERAL(24, 386, 20), // "serialport_key_value"
+QT_MOC_LITERAL(25, 407, 14), // "portname_value"
+QT_MOC_LITERAL(26, 422, 14), // "baudrate_value"
+QT_MOC_LITERAL(27, 437, 12), // "parity_value"
+QT_MOC_LITERAL(28, 450, 14), // "databits_value"
+QT_MOC_LITERAL(29, 465, 14), // "stopbits_value"
+QT_MOC_LITERAL(30, 480, 17), // "flowcontrol_value"
+QT_MOC_LITERAL(31, 498, 17), // "InitServerConnect"
+QT_MOC_LITERAL(32, 516, 16), // "server_key_value"
+QT_MOC_LITERAL(33, 533, 17), // "InitClientConnect"
+QT_MOC_LITERAL(34, 551, 16), // "client_key_value"
+QT_MOC_LITERAL(35, 568, 13), // "onIoConnected"
+QT_MOC_LITERAL(36, 582, 16), // "onIoDisconnected"
+QT_MOC_LITERAL(37, 599, 17), // "onMitPlcConnected"
+QT_MOC_LITERAL(38, 617, 20), // "onMitPlcDisconnected"
+QT_MOC_LITERAL(39, 638, 14), // "onTcpConnected"
+QT_MOC_LITERAL(40, 653, 17) // "onTcpDisconnected"
 
     },
     "frmInstrumentation\0onButtonCloseClicked\0"
@@ -80,7 +83,8 @@ QT_MOC_LITERAL(37, 626, 17) // "onTcpDisconnected"
     "on_comboProtocol_currentIndexChanged\0"
     "InitIoConnect\0io_key_value\0ip_value\0"
     "port_value\0over_time_value\0InitPlcConnect\0"
-    "plc_key_value\0InitSerialportConnect\0"
+    "plc_key_value\0InvoicePLC_connect\0IP\0"
+    "Port\0InitSerialportConnect\0"
     "serialport_key_value\0portname_value\0"
     "baudrate_value\0parity_value\0databits_value\0"
     "stopbits_value\0flowcontrol_value\0"
@@ -98,7 +102,7 @@ static const uint qt_meta_data_frmInstrumentation[] = {
        8,       // revision
        0,       // classname
        0,    0, // classinfo
-      22,   14, // methods
+      23,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -106,28 +110,29 @@ static const uint qt_meta_data_frmInstrumentation[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags
-       1,    0,  124,    2, 0x08 /* Private */,
-       3,    0,  125,    2, 0x08 /* Private */,
-       4,    0,  126,    2, 0x08 /* Private */,
-       5,    0,  127,    2, 0x08 /* Private */,
-       6,    0,  128,    2, 0x08 /* Private */,
-       7,    0,  129,    2, 0x08 /* Private */,
-       8,    0,  130,    2, 0x08 /* Private */,
-       9,    0,  131,    2, 0x08 /* Private */,
-      10,    1,  132,    2, 0x08 /* Private */,
-      11,    2,  135,    2, 0x08 /* Private */,
-      12,    1,  140,    2, 0x08 /* Private */,
-      13,    4,  143,    2, 0x0a /* Public */,
-      18,    4,  152,    2, 0x0a /* Public */,
-      20,    7,  161,    2, 0x0a /* Public */,
-      28,    2,  176,    2, 0x0a /* Public */,
-      30,    3,  181,    2, 0x0a /* Public */,
-      32,    0,  188,    2, 0x08 /* Private */,
-      33,    0,  189,    2, 0x08 /* Private */,
-      34,    0,  190,    2, 0x08 /* Private */,
-      35,    0,  191,    2, 0x08 /* Private */,
-      36,    0,  192,    2, 0x08 /* Private */,
-      37,    0,  193,    2, 0x08 /* Private */,
+       1,    0,  129,    2, 0x08 /* Private */,
+       3,    0,  130,    2, 0x08 /* Private */,
+       4,    0,  131,    2, 0x08 /* Private */,
+       5,    0,  132,    2, 0x08 /* Private */,
+       6,    0,  133,    2, 0x08 /* Private */,
+       7,    0,  134,    2, 0x08 /* Private */,
+       8,    0,  135,    2, 0x08 /* Private */,
+       9,    0,  136,    2, 0x08 /* Private */,
+      10,    1,  137,    2, 0x08 /* Private */,
+      11,    2,  140,    2, 0x08 /* Private */,
+      12,    1,  145,    2, 0x08 /* Private */,
+      13,    4,  148,    2, 0x0a /* Public */,
+      18,    4,  157,    2, 0x0a /* Public */,
+      20,    2,  166,    2, 0x0a /* Public */,
+      23,    7,  171,    2, 0x0a /* Public */,
+      31,    2,  186,    2, 0x0a /* Public */,
+      33,    3,  191,    2, 0x0a /* Public */,
+      35,    0,  198,    2, 0x08 /* Private */,
+      36,    0,  199,    2, 0x08 /* Private */,
+      37,    0,  200,    2, 0x08 /* Private */,
+      38,    0,  201,    2, 0x08 /* Private */,
+      39,    0,  202,    2, 0x08 /* Private */,
+      40,    0,  203,    2, 0x08 /* Private */,
 
  // slots: parameters
     QMetaType::Void,
@@ -143,9 +148,10 @@ static const uint qt_meta_data_frmInstrumentation[] = {
     QMetaType::Void, QMetaType::Int,    2,
     QMetaType::Void, QMetaType::QString, QMetaType::QString, QMetaType::Int, QMetaType::Int,   14,   15,   16,   17,
     QMetaType::Void, QMetaType::QString, QMetaType::QString, QMetaType::Int, QMetaType::Int,   19,   15,   16,   17,
-    QMetaType::Void, QMetaType::QString, QMetaType::QString, QMetaType::Int, QMetaType::QString, QMetaType::QString, QMetaType::QString, QMetaType::QString,   21,   22,   23,   24,   25,   26,   27,
-    QMetaType::Void, QMetaType::QString, QMetaType::Int,   29,   16,
-    QMetaType::Void, QMetaType::QString, QMetaType::QString, QMetaType::Int,   31,   15,   16,
+    QMetaType::Bool, QMetaType::QString, QMetaType::Int,   21,   22,
+    QMetaType::Void, QMetaType::QString, QMetaType::QString, QMetaType::Int, QMetaType::QString, QMetaType::QString, QMetaType::QString, QMetaType::QString,   24,   25,   26,   27,   28,   29,   30,
+    QMetaType::Void, QMetaType::QString, QMetaType::Int,   32,   16,
+    QMetaType::Void, QMetaType::QString, QMetaType::QString, QMetaType::Int,   34,   15,   16,
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
@@ -175,15 +181,17 @@ void frmInstrumentation::qt_static_metacall(QObject *_o, QMetaObject::Call _c, i
         case 10: _t->on_comboProtocol_currentIndexChanged((*reinterpret_cast< int(*)>(_a[1]))); break;
         case 11: _t->InitIoConnect((*reinterpret_cast< QString(*)>(_a[1])),(*reinterpret_cast< QString(*)>(_a[2])),(*reinterpret_cast< int(*)>(_a[3])),(*reinterpret_cast< int(*)>(_a[4]))); break;
         case 12: _t->InitPlcConnect((*reinterpret_cast< QString(*)>(_a[1])),(*reinterpret_cast< QString(*)>(_a[2])),(*reinterpret_cast< int(*)>(_a[3])),(*reinterpret_cast< int(*)>(_a[4]))); break;
-        case 13: _t->InitSerialportConnect((*reinterpret_cast< QString(*)>(_a[1])),(*reinterpret_cast< QString(*)>(_a[2])),(*reinterpret_cast< int(*)>(_a[3])),(*reinterpret_cast< QString(*)>(_a[4])),(*reinterpret_cast< QString(*)>(_a[5])),(*reinterpret_cast< QString(*)>(_a[6])),(*reinterpret_cast< QString(*)>(_a[7]))); break;
-        case 14: _t->InitServerConnect((*reinterpret_cast< QString(*)>(_a[1])),(*reinterpret_cast< int(*)>(_a[2]))); break;
-        case 15: _t->InitClientConnect((*reinterpret_cast< QString(*)>(_a[1])),(*reinterpret_cast< QString(*)>(_a[2])),(*reinterpret_cast< int(*)>(_a[3]))); break;
-        case 16: _t->onIoConnected(); break;
-        case 17: _t->onIoDisconnected(); break;
-        case 18: _t->onMitPlcConnected(); break;
-        case 19: _t->onMitPlcDisconnected(); break;
-        case 20: _t->onTcpConnected(); break;
-        case 21: _t->onTcpDisconnected(); break;
+        case 13: { bool _r = _t->InvoicePLC_connect((*reinterpret_cast< QString(*)>(_a[1])),(*reinterpret_cast< int(*)>(_a[2])));
+            if (_a[0]) *reinterpret_cast< bool*>(_a[0]) = std::move(_r); }  break;
+        case 14: _t->InitSerialportConnect((*reinterpret_cast< QString(*)>(_a[1])),(*reinterpret_cast< QString(*)>(_a[2])),(*reinterpret_cast< int(*)>(_a[3])),(*reinterpret_cast< QString(*)>(_a[4])),(*reinterpret_cast< QString(*)>(_a[5])),(*reinterpret_cast< QString(*)>(_a[6])),(*reinterpret_cast< QString(*)>(_a[7]))); break;
+        case 15: _t->InitServerConnect((*reinterpret_cast< QString(*)>(_a[1])),(*reinterpret_cast< int(*)>(_a[2]))); break;
+        case 16: _t->InitClientConnect((*reinterpret_cast< QString(*)>(_a[1])),(*reinterpret_cast< QString(*)>(_a[2])),(*reinterpret_cast< int(*)>(_a[3]))); break;
+        case 17: _t->onIoConnected(); break;
+        case 18: _t->onIoDisconnected(); break;
+        case 19: _t->onMitPlcConnected(); break;
+        case 20: _t->onMitPlcDisconnected(); break;
+        case 21: _t->onTcpConnected(); break;
+        case 22: _t->onTcpDisconnected(); break;
         default: ;
         }
     }
@@ -218,13 +226,13 @@ int frmInstrumentation::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 22)
+        if (_id < 23)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 22;
+        _id -= 23;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 22)
+        if (_id < 23)
             *reinterpret_cast<int*>(_a[0]) = -1;
-        _id -= 22;
+        _id -= 23;
     }
     return _id;
 }

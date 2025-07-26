@@ -380,6 +380,259 @@ int frmPlcCommunicate::RunToolPro()
 				}
 				break;
 			}
+			else if (strs[0] == "Inovance PLC")
+			{
+				register_keys = global_mit_register_content.uniqueKeys();
+				if (register_keys.count() == 0)
+				{
+					GetToolBase()->m_Tools[tool_index].PublicResult.State = false;
+					return -1;
+				}
+				h2 = QThread::currentThread();
+				for (int m = 0; m < register_keys.length(); m++)
+				{
+					QString mit_key = register_keys[m];
+					if (global_mit_register_content.value(mit_key).mit_code == "二进制码")
+					{
+						string device = global_mit_register_content.value(mit_key).mit_address.mid(1).toStdString();
+						if (global_mit_register_content.value(mit_key).mit_state == "Read")
+						{
+							if (global_mit_register_content.value(mit_key).mit_method == "字")
+							{
+								short value = 0;
+								bool state;
+								int val;
+								if (h1 != h2)
+								{
+									//state = emit sig_BinaryRead1D(plc_tcp_client, device, value);
+									state = emit readRegister(global_mit_register_content.value(mit_key).mit_address.mid(1).toInt(), key, 1);
+									val = readRegister(global_mit_register_content.value(mit_key).mit_address.mid(1).toInt(), key,1);
+								}
+								else
+								{
+									//state = BinaryRead1D(plc_tcp_client, device, value);
+									state = emit readRegister(global_mit_register_content.value(mit_key).mit_address.mid(1).toInt(), key, 1);
+									val = readRegister(global_mit_register_content.value(mit_key).mit_address.mid(1).toInt(), key, 1);
+								}
+								if (state == false)
+								{
+									GetToolBase()->m_Tools[tool_index].PublicResult.State = false;
+									return -1;
+								}
+								RegisterReadData.append(val);
+							}
+							else if (global_mit_register_content.value(mit_key).mit_method == "双字")
+							{
+								int value = 0;
+								bool state;
+								int val;
+								if (h1 != h2)
+								{
+									//state = emit sig_BinaryRead2D(plc_tcp_client, device, value);
+									state = emit readRegister(global_mit_register_content.value(mit_key).mit_address.mid(1).toInt(), key, 2);
+									val = readRegister(global_mit_register_content.value(mit_key).mit_address.mid(1).toInt(), key, 2);
+								}
+								else
+								{
+									//state = BinaryRead2D(plc_tcp_client, device, value);
+									state = emit readRegister(global_mit_register_content.value(mit_key).mit_address.mid(1).toInt(), key, 2);
+									val = readRegister(global_mit_register_content.value(mit_key).mit_address.mid(1).toInt(), key, 2);
+								}
+								if (state == false)
+								{
+									GetToolBase()->m_Tools[tool_index].PublicResult.State = false;
+									return -1;
+								}
+								RegisterReadData.append(val);
+							}
+						}
+						else if (global_mit_register_content.value(global_mit_register_content.value(mit_key).mit_address).mit_state == "Write")
+						{
+							if (global_mit_register_content.value(global_mit_register_content.value(mit_key).mit_address).mit_method == "字")
+							{
+								short value = 0;
+								bool state;
+								//使用全局变量
+								for (int n = 0; n < global_keys.length(); n++)
+								{
+									QString g_key = global_keys[n];
+									if (g_key == global_mit_register_content.value(mit_key).mit_data)
+									{
+										value = gvariable.global_variable_link.value(g_key).global_int_value;
+										break;
+									}
+								}
+								if (h1 != h2)
+								{
+									//state = emit sig_BinaryWrite1D(plc_tcp_client, device, value);
+									state = emit writeRegister(global_mit_register_content.value(mit_key).mit_address.mid(1).toInt(),value, key);
+								}
+								else
+								{
+									//state = BinaryWrite1D(plc_tcp_client, device, value);
+									state = emit writeRegister(global_mit_register_content.value(mit_key).mit_address.mid(1).toInt(), value, key);
+								}
+								if (state == false)
+								{
+									GetToolBase()->m_Tools[tool_index].PublicResult.State = false;
+									return -1;
+								}
+								RegisterWriteData.append(value);
+							}
+							else if (global_mit_register_content.value(mit_key).mit_method == "双字")
+							{
+								int value = 0;
+								bool state;
+								//使用全局变量
+								for (int n = 0; n < global_keys.length(); n++)
+								{
+									QString g_key = global_keys[n];
+									if (g_key == global_mit_register_content.value(mit_key).mit_data)
+									{
+										value = gvariable.global_variable_link.value(g_key).global_int_value;
+										break;
+									}
+								}
+								if (h1 != h2)
+								{
+									//state = emit sig_BinaryWrite2D(plc_tcp_client, device, value);
+									state = emit writeRegister(global_mit_register_content.value(mit_key).mit_address.mid(1).toInt(), value, key);
+								}
+								else
+								{
+									//state = BinaryWrite2D(plc_tcp_client, device, value);
+									state = emit writeRegister(global_mit_register_content.value(mit_key).mit_address.mid(1).toInt(), value, key);
+								}
+								if (state == false)
+								{
+									GetToolBase()->m_Tools[tool_index].PublicResult.State = false;
+									return -1;
+								}
+								RegisterWriteData.append(value);
+							}
+						}
+					}
+					else if (global_mit_register_content.value(mit_key).mit_code == "ASCII码")
+					{
+						QString device = global_mit_register_content.value(mit_key).mit_address.mid(1);
+						if (global_mit_register_content.value(mit_key).mit_state == "Read")
+						{
+							if (global_mit_register_content.value(mit_key).mit_method == "字")
+							{
+								short val = 0;
+								bool state;
+								if (h1 != h2)
+								{
+									//state = emit sig_AsciiRead1D(plc_tcp_client, device, value);
+									state = emit readRegister(global_mit_register_content.value(mit_key).mit_address.mid(1).toInt(), key, 1);
+									val = readRegister(global_mit_register_content.value(mit_key).mit_address.mid(1).toInt(), key, 1);
+								}
+								else
+								{
+									//state = AsciiRead1D(plc_tcp_client, device, value);
+									state = emit readRegister(global_mit_register_content.value(mit_key).mit_address.mid(1).toInt(), key, 1);
+									val = readRegister(global_mit_register_content.value(mit_key).mit_address.mid(1).toInt(), key, 1);
+								}
+								if (state == false)
+								{
+									GetToolBase()->m_Tools[tool_index].PublicResult.State = false;
+									return -1;
+								}
+								RegisterReadData.append(val);
+							}
+							else if (global_mit_register_content.value(mit_key).mit_method == "双字")
+							{
+								int val = 0;
+								bool state;
+								if (h1 != h2)
+								{
+									//state = emit sig_AsciiRead2D(plc_tcp_client, device, value);
+									state = emit readRegister(global_mit_register_content.value(mit_key).mit_address.mid(1).toInt(), key, 2);
+									val = readRegister(global_mit_register_content.value(mit_key).mit_address.mid(1).toInt(), key, 2);
+								}
+								else
+								{
+									//state = AsciiRead2D(plc_tcp_client, device, value);
+									state = emit readRegister(global_mit_register_content.value(mit_key).mit_address.mid(1).toInt(), key, 2);
+									val = readRegister(global_mit_register_content.value(mit_key).mit_address.mid(1).toInt(), key, 2);
+								}
+								if (state == false)
+								{
+									GetToolBase()->m_Tools[tool_index].PublicResult.State = false;
+									return -1;
+								}
+								RegisterReadData.append(val);
+							}
+						}
+						else if (global_mit_register_content.value(mit_key).mit_state == "Write")
+						{
+							if (global_mit_register_content.value(mit_key).mit_method == "字")
+							{
+								short value = 0;
+								bool state;
+								//使用全局变量
+								for (int n = 0; n < global_keys.length(); n++)
+								{
+									QString g_key = global_keys[n];
+									if (g_key == global_mit_register_content.value(mit_key).mit_data)
+									{
+										value = gvariable.global_variable_link.value(g_key).global_int_value;
+										break;
+									}
+								}
+								if (h1 != h2)
+								{
+									//state = emit sig_AsciiWrite1D(plc_tcp_client, device, value);
+									state = emit writeRegister(global_mit_register_content.value(mit_key).mit_address.mid(1).toInt(), value, key);
+								}
+								else
+								{
+									//state = AsciiWrite1D(plc_tcp_client, device, value);
+									state = emit writeRegister(global_mit_register_content.value(mit_key).mit_address.mid(1).toInt(), value, key);
+								}
+								if (state == false)
+								{
+									GetToolBase()->m_Tools[tool_index].PublicResult.State = false;
+									return -1;
+								}
+								RegisterWriteData.append(value);
+							}
+							else if (global_mit_register_content.value(mit_key).mit_method == "双字")
+							{
+								int value = 0;
+								bool state;
+								//使用全局变量
+								for (int n = 0; n < global_keys.length(); n++)
+								{
+									QString g_key = global_keys[n];
+									if (g_key == global_mit_register_content.value(mit_key).mit_data)
+									{
+										value = gvariable.global_variable_link.value(g_key).global_int_value;
+										break;
+									}
+								}
+								if (h1 != h2)
+								{
+									//state = emit sig_AsciiWrite2D(plc_tcp_client, device, value);
+									state = emit writeRegister(global_mit_register_content.value(mit_key).mit_address.mid(1).toInt(), value, key);
+								}
+								else
+								{
+									//state = AsciiWrite2D(plc_tcp_client, device, value);
+									state = emit writeRegister(global_mit_register_content.value(mit_key).mit_address.mid(1).toInt(), value, key);
+								}
+								if (state == false)
+								{
+									GetToolBase()->m_Tools[tool_index].PublicResult.State = false;
+									return -1;
+								}
+								RegisterWriteData.append(value);
+							}
+						}
+					}
+				}
+				break;
+			}
 		}
 		GetToolBase()->m_Tools[tool_index].PublicCommunication.RegisterReadData = RegisterReadData;
 		GetToolBase()->m_Tools[tool_index].PublicCommunication.RegisterWriteData = RegisterWriteData;
@@ -392,7 +645,62 @@ int frmPlcCommunicate::RunToolPro()
 		return -1;
 	}
 }
+void frmPlcCommunicate::disconnect(QString key)
+{
+	try
+	{
+		modbus_close(gvariable.plccommunicate_variable_link.value(key).ctx);
+		modbus_free(gvariable.plccommunicate_variable_link.value(key).ctx);
+		gvariable.plccommunicate_variable_link[key].connect_state = 0;
+		std::cout << "PLC disconnect success " << std::endl;
+	}
+	catch (...) {
 
+	}
+}
+bool frmPlcCommunicate::writeRegister(int num, int value,QString key)
+{
+	try
+	{
+		if (modbus_write_register(gvariable.plccommunicate_variable_link.value(key).ctx, num, value) == -1)
+		{
+			std::cerr << "Failed to write to register: " << modbus_strerror(errno) << std::endl;
+			return false;
+		}
+		else
+		{
+			//std::cout << "Changed Register " << num << " to : " << value << std::endl;
+			return true;
+		}
+	}
+	catch (...) {
+		return false;
+	}
+}
+
+int frmPlcCommunicate::readRegister(int num,QString key,int nb)
+{
+	uint16_t regs[1];
+	try
+	{
+		int res = modbus_read_registers(gvariable.plccommunicate_variable_link.value(key).ctx, num, nb, regs);
+		if (res == -1)
+		{
+			std::cerr << "Failed to read registers: " << modbus_strerror(errno) << std::endl;
+			// 读取失败返回值0x0000
+			regs[0] = 0x0000;
+		}
+		else
+		{
+			//std::cout << "Read Register " << num << " : " << regs[0] << std::endl;
+		}
+	}
+	catch (...) {
+
+	}
+	// 返回读取值
+	return regs[0];
+}
 void frmPlcCommunicate::on_comboCommName_currentIndexChanged(int index)
 {
 	plc_tcp_state = 0;
@@ -411,7 +719,7 @@ void frmPlcCommunicate::on_comboCommName_currentIndexChanged(int index)
 			{
 				return;
 			}
-			if (strs[0] == "Mitsubishi PLC")
+			if (strs[0] == "Mitsubishi PLC" || strs[0] == "Inovance PLC")
 			{
 				plc_tcp_client = gvariable.plccommunicate_variable_link.value(key).mit_value;
 			}
@@ -513,7 +821,7 @@ int frmPlcCommunicate::ExecutePlcCommunicateLink(const QMap<QString, gVariable::
 					{
 						return -1;
 					}
-					if (strs[0] == "Mitsubishi PLC")
+					if (strs[0] == "Mitsubishi PLC" || strs[0] == "Inovance PLC")
 					{
 						plc_tcp_client = gvariable.plccommunicate_variable_link.value(key).mit_value;
 					}

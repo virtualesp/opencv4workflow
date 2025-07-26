@@ -1,6 +1,4 @@
-﻿   Qt/MSBuild: 3.4.0.1
-   Qt: 5.14.2
-  frmEdgeWidthMeasure.cpp
+﻿  frmEdgeWidthMeasure.cpp
   ImageItem.cpp
   mytitlebar.cpp
   QGraphicsScenes.cpp

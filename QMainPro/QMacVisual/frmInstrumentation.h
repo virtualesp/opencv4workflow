@@ -23,6 +23,8 @@ private:
 	int GetValue(QVector<int> n);
 	void moveRow(QTableWidget* pTable, int nFrom, int nTo);
 
+	void disconnectInovance();
+
 private slots:
 	void onButtonCloseClicked();
 
@@ -44,6 +46,7 @@ private slots:
 public slots:
 	void InitIoConnect(QString io_key_value, QString ip_value, int port_value, int over_time_value);
 	void InitPlcConnect(QString plc_key_value, QString ip_value, int port_value, int over_time_value);
+	bool InovancePLC_connect(QString IP, int Port);
 	void InitSerialportConnect(QString serialport_key_value, QString portname_value, int baudrate_value, QString parity_value, QString databits_value, QString stopbits_value, QString flowcontrol_value);
 	void InitServerConnect(QString server_key_value, int port_value);
 	void InitClientConnect(QString client_key_value, QString ip_value, int port_value);
@@ -62,6 +65,8 @@ private:
 	int io_client_state = 0;
 	QTcpSocket* mit_plc_client;
 	int mit_plc_client_state = 0;
+	QTcpSocket* inv_plc_client; //汇川PLC
+	int inv_plc_client_state = 0; //汇川PLC状态
 	QSerialPort* s_port;
 	bool s_port_state;
 	QTcpServer* server;	
@@ -90,6 +95,7 @@ public:
 		QString global_remark;
 	} Plc_Content;
 	Plc_Content PlcContent;
+	modbus_t *ctx;
 	QMap<QString, Plc_Content> global_plc_content;
 	//串口通信
 	typedef struct SERIALPORTCONTENT

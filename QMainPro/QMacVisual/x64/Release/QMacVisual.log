@@ -1,5 +1,43 @@
 ﻿   Qt/MSBuild: 3.4.0.1
+  Reading Qt configuration (E:/Qt/Qt5.14.2/5.14.2/msvc2017_64/bin/qmake)
    Qt: 5.14.2
+  moc savelog.h
+  moc Toolnterface.h
+  moc showcpumemory.h
+  moc frmLog.h
+  moc clogmodel.h
+  moc basemainwindow.h
+  moc cmysplashscreen.h
+  moc autoThread.h
+  moc frmLogin.h
+  moc dockwidget.h
+  moc headwidget.h
+  moc frmAbout.h
+  moc frmImageView.h
+  moc FlowListWidget.h
+  moc GlobalVariable.h
+  moc frmToolsTree.h
+  moc frmProItemTab.h
+  moc frmPermis.h
+  moc mainwidget.h
+  moc mainwindow.h
+  moc mytitlebar.h
+  moc frmProcessSetUp.h
+  moc frmSystemSetUp.h
+  moc frmImageLayout.h
+  moc frmGlobalVariable.h
+  moc frmCameraSetUp.h
+  moc frmInstrumentation.h
+  moc frmQuit.h
+  moc frmLink.h
+  moc ipaddress.h
+  moc manualThread.h
+  moc QGraphicsViews.h
+  moc QToolBase.h
+  moc qttreewidget.h
+  moc QRoundProgressBar.h
+  moc frmVisualLogo.h
+  moc frmRegister.h
   autoThread.cpp
   basemainwindow.cpp
   clogmodel.cpp
@@ -29,20 +67,11 @@
   mytitlebar.cpp
   QGraphicsViews.cpp
   QRoundProgressBar.cpp
-G:\QMacVisual(CV3)(25000)\QMacVisual(CV3)2022.9.21(25000)\QMacVisual(CV3)\QMainPro\QMacVisual\frmCameraSetUp.cpp(890,1): warning C4789: 函数“float __cdecl frmCameraSetUp::getExposureTime(void) __ptr64”中的缓冲区“stParam”(大小为 28 字节)将溢出；从偏移 32 时开始，将会写入 0 字节
   QToolBase.cpp
+G:\QMacVisual(CV3)(25000)\QMacVisual(CV3)2022.9.21(25000)\QMacVisual(CV3)\QMainPro\QMacVisual\frmCameraSetUp.cpp(890,1): warning C4789: 函数“float __cdecl frmCameraSetUp::getExposureTime(void) __ptr64”中的缓冲区“stParam”(大小为 28 字节)将溢出；从偏移 32 时开始，将会写入 0 字节
   qttreewidget.cpp
   QtWidgetsSaveLoad.cpp
   FolderOperation.cpp
-  SoftKey.cpp
-  SQLite.cpp
-  XML.cpp
-  savelog.cpp
-  showcpumemory.cpp
-  Toolnterface.cpp
-  datavar.cpp
-  frmRegister.cpp
-  frmVisualLogo.cpp
 D:\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.43.34808\include\xutility(1371,31): warning C4996: 'stdext::checked_array_iterator<const T *>': warning STL4043: stdext::checked_array_iterator, stdext::unchecked_array_iterator, and related factory functions are non-Standard extensions and will be removed in the future. std::span (since C++20) and gsl::span can be used instead. You can define _SILENCE_STDEXT_ARR_ITERS_DEPRECATION_WARNING or _SILENCE_ALL_MS_EXT_DEPRECATION_WARNINGS to suppress this warning.
 D:\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.43.34808\include\xutility(1371,31): warning C4996:         with
 D:\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.43.34808\include\xutility(1371,31): warning C4996:         [
@@ -213,6 +242,15 @@ D:\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.43.34808\include\xut
 D:\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.43.34808\include\xutility(1488,42): warning C4996:         ]
   (编译源文件“QRoundProgressBar.cpp”)
   
+  SoftKey.cpp
+  SQLite.cpp
+  XML.cpp
+  savelog.cpp
+  showcpumemory.cpp
+  Toolnterface.cpp
+  datavar.cpp
+  frmRegister.cpp
+  frmVisualLogo.cpp
   headwidget.cpp
   mainwidget.cpp
   mainwindow.cpp

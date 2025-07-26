@@ -10,6 +10,8 @@
 #include "winsock2.h"
 #include "./CommTools/Camera/MindVision/Include/CameraApi.h"
 #include "CameraParams.h"
+#include "modbus.h"
+
 class QToolBase;
 
 class gVariable 
@@ -76,6 +78,7 @@ public:
 		int mit_port_value;
 		int mit_over_time_value;
 		QString mit_remark_value;
+		modbus_t *ctx;
 	} PlcCommunicate_Var;
 	static PlcCommunicate_Var PlcCommunicateVar;
 	static QMap<QString, PlcCommunicate_Var> plccommunicate_variable_link;

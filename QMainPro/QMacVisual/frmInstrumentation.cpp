@@ -7,6 +7,7 @@
 #include <QPainter>
 #include <QWidgetAction>
 #include "datavar.h"
+#include "modbus-tcp.h"
 
 frmInstrumentation::frmInstrumentation(QWidget* parent)
 	: QDialog(parent)
@@ -178,6 +179,7 @@ void frmInstrumentation::slotInstrumentChanged(int index)
 		ui.comboInstrumentName->addItem("Omron PLC");
 		ui.comboInstrumentName->addItem("Siemens PLC");
 		ui.comboInstrumentName->addItem("Keyence PLC");
+		ui.comboInstrumentName->addItem("Inovance PLC"); //汇川PLC
 		ui.stackedWidget->setCurrentIndex(1);
 		break;
 	case 2:
@@ -251,7 +253,7 @@ void frmInstrumentation::on_btnAdd_clicked()
 				strs.reserve(10);
 				strs.clear();
 				strs = all_instrument[i].split("_");
-				if (strs[0] == "Mitsubishi PLC" || strs[0] == "Omron PLC" || strs[0] == "Siemens PLC" || strs[0] == "Keyence PLC")
+				if (strs[0] == "Mitsubishi PLC" || strs[0] == "Omron PLC" || strs[0] == "Siemens PLC" || strs[0] == "Keyence PLC" || strs[0] == "Inovance PLC")
 				{
 					all_instrument_max.append(strs[1].toInt());
 				}
@@ -472,6 +474,64 @@ void frmInstrumentation::on_btnConnect_clicked()
 			msgBox.exec();
 		}
 		return;
+	}
+	else if (strs[0] == "Inovance PLC")
+	{
+	//汇川PLC通信
+	comm_keys.clear();
+	comm_keys = global_plc_content.uniqueKeys();
+	int count = 0;
+	for (int k = 0; k < comm_keys.length(); k++)
+	{
+		QString key = comm_keys[k];
+		if (key == ui.lblType->text())
+		{
+			count = 1;
+			ui.widgetPlcIP->setIP(global_plc_content.value(key).global_ip);
+			ui.spinPlcPort->setValue(global_plc_content.value(key).global_port);
+			ui.spinPlcTimeOut->setValue(global_plc_content.value(key).global_timeout);
+			ui.txtPlcRemark->setText(global_plc_content.value(key).global_remark);
+		}
+	}
+	if (count == 0)
+	{
+		emit dataVar::fProItemTab->sig_ErrorClick();
+		emit dataVar::fProItemTab->sig_Log("该仪器通讯参数未保存！");
+		QMessageBox msgBox(QMessageBox::Icon::NoIcon, "错误", "该仪器通讯参数未保存！");
+		msgBox.setWindowIcon(QIcon(":/res/ico/error.png"));
+		msgBox.exec();
+		return;
+	}
+	for (int n = 0; n < dataVar::mit_plc_client_ip.count(); n++)
+	{
+		if (dataVar::mit_plc_client_ip[n] == ui.widgetPlcIP->getIP() && dataVar::mit_plc_client_port[n] == ui.spinPlcPort->text())
+		{
+			emit dataVar::fProItemTab->sig_ErrorClick();
+			emit dataVar::fProItemTab->sig_Log(ui.lblType->text() + "可编程控制器已连接！");
+			QMessageBox msgBox(QMessageBox::Icon::NoIcon, "错误", ui.lblType->text() + "可编程控制器已连接！");
+			msgBox.setWindowIcon(QIcon(":/res/ico/error.png"));
+			msgBox.exec();
+			return;
+		}
+	}
+	mit_plc_client = new QTcpSocket(this);
+	mit_plc_client->connectToHost(QHostAddress(ui.widgetPlcIP->getIP()), ui.spinPlcPort->value());
+	connect(mit_plc_client, SIGNAL(connected()), this, SLOT(onMitPlcConnected()));
+	connect(mit_plc_client, SIGNAL(disconnected()), this, SLOT(onMitPlcDisconnected()));
+	bool mit_plc_client_connected = InovancePLC_connect(QHostAddress(ui.widgetPlcIP->getIP()).toString(), ui.spinPlcPort->value()); //mit_plc_client->waitForConnected(ui.spinPlcTimeOut->value());
+	if (mit_plc_client_connected == false)
+	{
+		disconnect(mit_plc_client, SIGNAL(connected()), this, SLOT(onMitPlcConnected()));
+		disconnect(mit_plc_client, SIGNAL(disconnected()), this, SLOT(onMitPlcDisconnected()));
+		delete mit_plc_client;
+		mit_plc_client = nullptr;
+		emit dataVar::fProItemTab->sig_ErrorClick();
+		emit dataVar::fProItemTab->sig_Log(ui.lblType->text() + "可编程控制器连接失败！");
+		QMessageBox msgBox(QMessageBox::Icon::NoIcon, "提示", ui.lblType->text() + "可编程控制器连接失败！");
+		msgBox.setWindowIcon(QIcon(":/res/ico/error.png"));
+		msgBox.exec();
+	}
+	return;
 	}
 	else if (strs[0] == "SerialPort")
 	{
@@ -798,8 +858,79 @@ void frmInstrumentation::InitPlcConnect(QString plc_key_value, QString ip_value,
 			}
 		}
 	}
+	else if (strs[0] == "Inovance PLC")
+	{
+		mit_plc_client = new QTcpSocket(this);
+		mit_plc_client->connectToHost(QHostAddress(ip_value), port_value);
+		
+		connect(mit_plc_client, SIGNAL(connected()), this, SLOT(onMitPlcConnected()));
+		connect(mit_plc_client, SIGNAL(disconnected()), this, SLOT(onMitPlcDisconnected()));
+		bool mit_plc_client_connected = InovancePLC_connect(QHostAddress(ip_value).toString(), port_value); //mit_plc_client->waitForConnected(over_time_value);
+		if (mit_plc_client_connected == false)
+		{
+			disconnect(mit_plc_client, SIGNAL(connected()), this, SLOT(onMitPlcConnected()));
+			disconnect(mit_plc_client, SIGNAL(disconnected()), this, SLOT(onMitPlcDisconnected()));
+			delete mit_plc_client;
+			mit_plc_client = nullptr;
+			emit dataVar::fProItemTab->sig_ErrorClick();
+			emit dataVar::fProItemTab->sig_Log(plc_key_value + "可编程控制器连接失败！");
+			dataVar::mit_plc_client_ip.removeOne(ip_value);
+			dataVar::mit_plc_client_port.removeOne(QString::number(port_value));
+		}
+		else
+		{
+			gVariable::PlcCommunicateVar.mit_value = mit_plc_client;
+			gVariable::plccommunicate_variable_link.insert(plc_key_value, gVariable::PlcCommunicateVar);
+			//更新通讯工具
+			QList<int> link_keys = dataVar::all_link_process.uniqueKeys();
+			for (int i = 0; i < link_keys.length(); i++)
+			{
+				int key = link_keys[i];
+				for (int j = 0; j < 20; j++)
+				{
+					if (j == key)
+					{
+						QConfig::ToolBase[key]->RunCommunicationLink("通讯工具");
+					}
+				}
+			}
+		}
+	}
 }
+bool frmInstrumentation::InovancePLC_connect(QString IP,int Port)
+{
+	try
+	{
+		std::cout << "modbus init success" << std::endl;
 
+		// 设置PLC的IP地址与端口，建立TCP连接
+		ctx = modbus_new_tcp(IP.toStdString().c_str(), Port);
+		if (ctx == NULL)
+		{
+			std::cout << "Unable to allocate libmodbus context " << modbus_strerror(errno) << std::endl;
+		}
+
+		//std::cout << "modbus_connect(ctx) =  " << modbus_connect(ctx) << std::endl;
+		if (modbus_connect(ctx) == -1)
+		{
+			modbus_close(ctx);
+			modbus_free(ctx);
+			std::cout << "PLC connect failed " << modbus_strerror(errno) << std::endl;
+			return false;
+		}
+		else
+		{
+			std::cout << "PLC connect success " << std::endl;
+			inv_plc_client_state = 1;
+			gVariable::PlcCommunicateVar.ctx = ctx;
+			return true;
+		}
+	}
+	catch (...) {
+		return false;
+	}
+	
+}
 //初始化串口通信连接
 void frmInstrumentation::InitSerialportConnect(QString serialport_key_value, QString portname_value, int baudrate_value, QString parity_value, QString databits_value, QString stopbits_value, QString flowcontrol_value)
 {
@@ -1091,9 +1222,10 @@ void frmInstrumentation::onMitPlcConnected()
 		{
 			dataVar::mit_plc_client_ip.append(ui.widgetPlcIP->getIP());
 			dataVar::mit_plc_client_port.append(QString::number(ui.spinPlcPort->value()));
+			gVariable::PlcCommunicateVar.ctx = ctx;
 			gVariable::PlcCommunicateVar.mit_value = mit_plc_client;
 			gVariable::PlcCommunicateVar.connect_state = 1;
-			gVariable::PlcCommunicateVar.plc_type = "Mitsubishi PLC";
+			gVariable::PlcCommunicateVar.plc_type = ui.comboInstrumentName->itemText(ui.comboInstrumentName->currentIndex()); //"Mitsubishi PLC";
 			gVariable::PlcCommunicateVar.mit_ip_value = ui.widgetPlcIP->getIP();
 			gVariable::PlcCommunicateVar.mit_port_value = ui.spinPlcPort->value();
 			gVariable::PlcCommunicateVar.mit_over_time_value = ui.spinPlcTimeOut->value();
@@ -1154,12 +1286,14 @@ void frmInstrumentation::onMitPlcDisconnected()
 					disconnect(gVariable::plccommunicate_variable_link.value(key).mit_value, SIGNAL(disconnected()), this, SLOT(onMitPlcDisconnected()));
 					if (gVariable::plccommunicate_variable_link.value(key).mit_value != nullptr)
 					{
+
 						gVariable::PlcCommunicateVar.connect_state = 0;
 						dataVar::mit_plc_client_ip.removeOne(gVariable::plccommunicate_variable_link.value(key).mit_ip_value);
 						dataVar::mit_plc_client_port.removeOne(QString::number(gVariable::plccommunicate_variable_link.value(key).mit_port_value));
 						gVariable::plccommunicate_variable_link.value(key).mit_value->close();
 						gVariable::plccommunicate_variable_link.value(key).mit_value->deleteLater();
 						gVariable::PlcCommunicateVar.mit_value = nullptr;
+						gVariable::PlcCommunicateVar.ctx = nullptr;
 						gVariable::plccommunicate_variable_link.insert(key, gVariable::PlcCommunicateVar);
 						mit_plc_client = nullptr;
 						emit dataVar::fProItemTab->sig_ErrorClick();
@@ -1382,6 +1516,46 @@ void frmInstrumentation::on_btnDisconnect_clicked()
 			return;
 		}
 	}
+	else if (strs[0] == "Inovance PLC")
+	{
+		//汇川PLC通信
+		comm_keys.clear();
+		comm_keys = gVariable::plccommunicate_variable_link.uniqueKeys();
+		int count = 0;
+		for (int k = 0; k < comm_keys.length(); k++)
+		{
+			QString key = comm_keys[k];
+			if (key == ui.lblType->text())
+			{
+				if (gVariable::plccommunicate_variable_link.value(key).mit_value->isOpen() == true)
+				{
+					mit_plc_client_state = 1;
+					gVariable::PlcCommunicateVar.connect_state = 0;
+					dataVar::mit_plc_client_ip.removeOne(gVariable::plccommunicate_variable_link.value(key).mit_ip_value);
+					dataVar::mit_plc_client_port.removeOne(QString::number(gVariable::plccommunicate_variable_link.value(key).mit_port_value));
+					gVariable::plccommunicate_variable_link.value(key).mit_value->close();
+					gVariable::plccommunicate_variable_link.value(key).mit_value->deleteLater();
+					gVariable::plccommunicate_variable_link.remove(key);
+					disconnectInovance();//汇川PLC断开连接
+					count = 1;
+					emit dataVar::fProItemTab->sig_InfoClick();
+					emit dataVar::fProItemTab->sig_Log(ui.lblType->text() + "已断开连接！");
+					QMessageBox msgBox(QMessageBox::Icon::NoIcon, "提示", ui.lblType->text() + "已断开连接！");
+					msgBox.setWindowIcon(QIcon(":/res/ico/info.png"));
+					msgBox.exec();
+				}
+			}
+		}
+		if (count == 0)
+		{
+			emit dataVar::fProItemTab->sig_ErrorClick();
+			emit dataVar::fProItemTab->sig_Log("该仪器未连接！");
+			QMessageBox msgBox(QMessageBox::Icon::NoIcon, "错误", "该仪器未连接！");
+			msgBox.setWindowIcon(QIcon(":/res/ico/error.png"));
+			msgBox.exec();
+			return;
+		}
+	}
 	else if (strs[0] == "SerialPort")
 	{
 		//串口通信
@@ -1519,7 +1693,7 @@ void frmInstrumentation::on_btnSave_clicked()
 		IoContent.global_remark = ui.txtIoRemark->text();
 		global_io_content.insert(ui.lblType->text(), IoContent);
 	}
-	else if (strs[0] == "Mitsubishi PLC" || strs[0] == "Omron PLC" || strs[0] == "Siemens PLC" || strs[0] == "Keyence PLC")
+	else if (strs[0] == "Mitsubishi PLC" || strs[0] == "Omron PLC" || strs[0] == "Siemens PLC" || strs[0] == "Keyence PLC" || strs[0] == "Inovance PLC")
 	{
 		//PLC通信		
 		PlcContent.global_ip = ui.widgetPlcIP->getIP();
@@ -1590,7 +1764,7 @@ void frmInstrumentation::slot_DoubleClicked(int row, int column)
 			return;
 		}
 	}
-	else if (strs[0] == "Mitsubishi PLC" || strs[0] == "Omron PLC" || strs[0] == "Siemens PLC" || strs[0] == "Keyence PLC")
+	else if (strs[0] == "Mitsubishi PLC" || strs[0] == "Omron PLC" || strs[0] == "Siemens PLC" || strs[0] == "Keyence PLC" || strs[0] == "Inovance PLC")
 	{
 		ui.stackedWidget->setCurrentIndex(1);
 		comm_keys.clear();
@@ -1714,7 +1888,7 @@ void frmInstrumentation::slot_DeleteName()
 			global_io_content.remove(str);
 			gVariable::generalio_variable_link.remove(str);
 		}
-		else if (strs[0] == "Mitsubishi PLC" || strs[0] == "Omron PLC" || strs[0] == "Siemens PLC" || strs[0] == "Keyence PLC")
+		else if (strs[0] == "Mitsubishi PLC" || strs[0] == "Omron PLC" || strs[0] == "Siemens PLC" || strs[0] == "Keyence PLC" || strs[0] == "Inovance PLC")
 		{
 			//PLC通信
 			global_plc_content.remove(str);
@@ -1783,4 +1957,18 @@ void frmInstrumentation::moveRow(QTableWidget* pTable, int nFrom, int nTo)
 		nTo--;
 	}
 	pTable->removeRow(nFrom); pTable->selectRow(nTo);
+}
+void frmInstrumentation::disconnectInovance()
+{
+	try
+	{
+		modbus_close(ctx);
+		modbus_free(ctx);
+		gVariable::PlcCommunicateVar.ctx = nullptr;
+		gVariable::SocketTcpClientVar.connect_state = 0;
+		std::cout << "PLC disconnect success " << std::endl;
+	}
+	catch (...) {
+
+	}
 }

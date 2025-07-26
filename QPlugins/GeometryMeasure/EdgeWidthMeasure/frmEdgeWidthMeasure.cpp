@@ -428,6 +428,7 @@ int frmEdgeWidthMeasure::RunToolPro()
 			GetToolBase()->m_Tools[tool_index].PublicImage.OutputRoiImage = dstRoiImage;
 			GetToolBase()->m_Tools[tool_index].PublicGeometry.Distance = Distance;
 			GetToolBase()->m_Tools[tool_index].PublicResult.State = false;
+			return -1;
 		}
 		
 		return 0;
