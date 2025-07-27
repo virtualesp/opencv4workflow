@@ -58,6 +58,7 @@ private slots:
 	void on_btnDelLinkMitRegisterData_clicked();
 	void on_btnMitSave_clicked();
 	void on_btnMitBack_clicked();
+	bool InovancePLC_connect(QString key);
 	void on_comboCommName_currentIndexChanged(int index);
 	void slot_PlcDoubleClicked(int, int);
 

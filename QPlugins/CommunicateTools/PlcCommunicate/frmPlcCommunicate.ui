@@ -700,7 +700,7 @@ QPushButton:pressed{background-color: rgb(117, 83, 96);}</string>
 color: rgb(85, 0, 255);</string>
          </property>
          <property name="title">
-          <string>三菱PLC设置</string>
+          <string>PLC设置</string>
          </property>
          <widget class="QLabel" name="label_14">
           <property name="geometry">
@@ -868,7 +868,7 @@ QPushButton:pressed{background-color: rgba(225, 255, 127,255);}</string>
            <string/>
           </property>
           <property name="pixmap">
-           <pixmap resource="../../ImageProcess/ImageView/sub_res.qrc">:/resource/right_2.png</pixmap>
+           <pixmap>:/resource/right_2.png</pixmap>
           </property>
           <property name="scaledContents">
            <bool>true</bool>

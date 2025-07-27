@@ -388,6 +388,15 @@ int frmPlcCommunicate::RunToolPro()
 					GetToolBase()->m_Tools[tool_index].PublicResult.State = false;
 					return -1;
 				}
+				//PLC断连重连
+				if (!InovancePLC_connect(key)) 
+				{
+					if (!InovancePLC_connect(key))
+					{
+						GetToolBase()->m_Tools[tool_index].PublicResult.State = false;
+						return -1;
+					}
+				}
 				h2 = QThread::currentThread();
 				for (int m = 0; m < register_keys.length(); m++)
 				{
@@ -465,12 +474,12 @@ int frmPlcCommunicate::RunToolPro()
 								if (h1 != h2)
 								{
 									//state = emit sig_BinaryWrite1D(plc_tcp_client, device, value);
-									state = emit writeRegister(global_mit_register_content.value(mit_key).mit_address.mid(1).toInt(),value, key);
+									state = writeRegister(global_mit_register_content.value(mit_key).mit_address.mid(1).toInt(),value, key);
 								}
 								else
 								{
 									//state = BinaryWrite1D(plc_tcp_client, device, value);
-									state = emit writeRegister(global_mit_register_content.value(mit_key).mit_address.mid(1).toInt(), value, key);
+									state = writeRegister(global_mit_register_content.value(mit_key).mit_address.mid(1).toInt(), value, key);
 								}
 								if (state == false)
 								{
@@ -496,12 +505,12 @@ int frmPlcCommunicate::RunToolPro()
 								if (h1 != h2)
 								{
 									//state = emit sig_BinaryWrite2D(plc_tcp_client, device, value);
-									state = emit writeRegister(global_mit_register_content.value(mit_key).mit_address.mid(1).toInt(), value, key);
+									state = writeRegister(global_mit_register_content.value(mit_key).mit_address.mid(1).toInt(), value, key);
 								}
 								else
 								{
 									//state = BinaryWrite2D(plc_tcp_client, device, value);
-									state = emit writeRegister(global_mit_register_content.value(mit_key).mit_address.mid(1).toInt(), value, key);
+									state = writeRegister(global_mit_register_content.value(mit_key).mit_address.mid(1).toInt(), value, key);
 								}
 								if (state == false)
 								{
@@ -583,12 +592,12 @@ int frmPlcCommunicate::RunToolPro()
 								if (h1 != h2)
 								{
 									//state = emit sig_AsciiWrite1D(plc_tcp_client, device, value);
-									state = emit writeRegister(global_mit_register_content.value(mit_key).mit_address.mid(1).toInt(), value, key);
+									state = writeRegister(global_mit_register_content.value(mit_key).mit_address.mid(1).toInt(), value, key);
 								}
 								else
 								{
 									//state = AsciiWrite1D(plc_tcp_client, device, value);
-									state = emit writeRegister(global_mit_register_content.value(mit_key).mit_address.mid(1).toInt(), value, key);
+									state = writeRegister(global_mit_register_content.value(mit_key).mit_address.mid(1).toInt(), value, key);
 								}
 								if (state == false)
 								{
@@ -614,12 +623,12 @@ int frmPlcCommunicate::RunToolPro()
 								if (h1 != h2)
 								{
 									//state = emit sig_AsciiWrite2D(plc_tcp_client, device, value);
-									state = emit writeRegister(global_mit_register_content.value(mit_key).mit_address.mid(1).toInt(), value, key);
+									state = writeRegister(global_mit_register_content.value(mit_key).mit_address.mid(1).toInt(), value, key);
 								}
 								else
 								{
 									//state = AsciiWrite2D(plc_tcp_client, device, value);
-									state = emit writeRegister(global_mit_register_content.value(mit_key).mit_address.mid(1).toInt(), value, key);
+									state = writeRegister(global_mit_register_content.value(mit_key).mit_address.mid(1).toInt(), value, key);
 								}
 								if (state == false)
 								{
@@ -683,7 +692,8 @@ int frmPlcCommunicate::readRegister(int num,QString key,int nb)
 	uint16_t regs[1];
 	try
 	{
-		int res = modbus_read_registers(gvariable.plccommunicate_variable_link.value(key).ctx, num, nb, regs);
+		modbus_t* ctx = gvariable.plccommunicate_variable_link.value(key).ctx;
+		int res = modbus_read_registers(ctx, num, nb, regs);
 		if (res == -1)
 		{
 			std::cerr << "Failed to read registers: " << modbus_strerror(errno) << std::endl;
@@ -1155,7 +1165,43 @@ void frmPlcCommunicate::on_btnMitBack_clicked()
 {
 	ui.stackedWidget->setCurrentIndex(0);
 }
+bool frmPlcCommunicate::InovancePLC_connect(QString key)
+{
+	try
+	{
+		std::cout << "modbus init success" << std::endl;
+		QString IP = gvariable.plccommunicate_variable_link.value(key).mit_ip_value;
+		int Port = gvariable.plccommunicate_variable_link.value(key).mit_port_value;
+		modbus_close(gvariable.plccommunicate_variable_link.value(key).ctx);
+		modbus_free(gvariable.plccommunicate_variable_link.value(key).ctx);
+		// 设置PLC的IP地址与端口，建立TCP连接
+		modbus_t *ctx = modbus_new_tcp(IP.toStdString().c_str(), Port);
+		if (ctx == NULL)
+		{
+			std::cout << "Unable to allocate libmodbus context " << modbus_strerror(errno) << std::endl;
+		}
 
+		//std::cout << "modbus_connect(ctx) =  " << modbus_connect(ctx) << std::endl;
+		if (modbus_connect(ctx) == -1)
+		{
+			modbus_close(ctx);
+			modbus_free(ctx);
+			std::cout << "PLC connect failed " << modbus_strerror(errno) << std::endl;
+			return false;
+		}
+		else
+		{
+			std::cout << "PLC connect success " << std::endl;
+			gvariable.plccommunicate_variable_link[key].connect_state = 1;
+			gvariable.plccommunicate_variable_link[key].ctx = ctx;
+			return true;
+		}
+	}
+	catch (...) {
+		return false;
+	}
+
+}
 #pragma region 三菱PLC
 #pragma region Ascii
 //写入16位寄存器

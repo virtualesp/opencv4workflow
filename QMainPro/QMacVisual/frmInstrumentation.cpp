@@ -1297,7 +1297,7 @@ void frmInstrumentation::onMitPlcDisconnected()
 						gVariable::plccommunicate_variable_link.insert(key, gVariable::PlcCommunicateVar);
 						mit_plc_client = nullptr;
 						emit dataVar::fProItemTab->sig_ErrorClick();
-						emit dataVar::fProItemTab->sig_Log(key + "三菱PLC已断开连接，请检查网口或电源！");
+						emit dataVar::fProItemTab->sig_Log(key + "PLC已断开连接，请检查网口或电源！");
 					}
 				}
 			}
@@ -1966,7 +1966,7 @@ void frmInstrumentation::disconnectInovance()
 		modbus_free(ctx);
 		gVariable::PlcCommunicateVar.ctx = nullptr;
 		gVariable::SocketTcpClientVar.connect_state = 0;
-		std::cout << "PLC disconnect success " << std::endl;
+		std::cout << "Inovance PLC disconnect success " << std::endl;
 	}
 	catch (...) {
 
